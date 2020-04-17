@@ -4,7 +4,7 @@ description: Support Hydra and OpenVPN protocols
 
 # VPN SDK for Android
 
-[![](https://camo.githubusercontent.com/96e035b772594b98ab503a86e2fb294d9a78044f/68747470733a2f2f6a69747061636b2e696f2f762f416e63686f7246726565506172746e65722f68796472612d73646b2d616e64726f69642e737667)](https://jitpack.io/#AnchorFreePartner/hydra-sdk-android)
+Current version:[![](https://camo.githubusercontent.com/96e035b772594b98ab503a86e2fb294d9a78044f/68747470733a2f2f6a69747061636b2e696f2f762f416e63686f7246726565506172746e65722f68796472612d73646b2d616e64726f69642e737667)](https://jitpack.io/#AnchorFreePartner/hydra-sdk-android)
 
 ## General
 
