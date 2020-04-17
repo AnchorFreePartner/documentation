@@ -12,5 +12,5 @@ If the task shows failed under status, the export task will need to run again.
 
 To export session data, a date range must be first selected. It can be completed by selecting the preset This week, This month, Yesterday, Last week, Last month or manually selecting the dates.
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 

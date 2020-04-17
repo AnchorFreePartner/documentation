@@ -26,7 +26,7 @@ A. **Origin Settings** part.
 2. Select **HTTPS Only** option in the **Origin protocol Policy**.
 3. Leave the rest of the **Origin Settings** by default.
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 B. Scroll down for **Default Cache Behavior Settings** part.
 
@@ -37,7 +37,7 @@ B. Scroll down for **Default Cache Behavior Settings** part.
 5. In **Forward Cookies** select **All**.
 6. In **Query String Forwarding and Caching** select **Forward all, cache based on whitelist**.
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%2812%29.png)
 
 C. Leave by default **Distribution Settings** part.
 
@@ -45,7 +45,7 @@ D.   Scroll down and hit **Create Distribution** button .
 
 It takes AWS about 10 minutes to create a distribution. Once it is complete you can find your CloudFront Distribution by clicking on your newly created distribution from the list and looking up its domain name.
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 So next time, when you are using SDK, input newly generated distribution link as a base URL instead of backend.northghost.com. This will help to avoid blockage by 3rd parties resources.
 
