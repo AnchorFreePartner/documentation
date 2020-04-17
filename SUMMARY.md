@@ -23,6 +23,7 @@
 
 * [VPN SDK for Android](sdk/untitled.md)
 * [IPSEC VPN SDK for iOS/macOS](sdk/ipsec-vpn-sdk-for-ios-macos.md)
+* [Hydra SDK for Windows](sdk/hydra-sdk-for-windows.md)
 * [Hydra VPN SDK for iOS/macOS](sdk/hydra-vpn-sdk-for-ios/README.md)
   * [Changelog](sdk/hydra-vpn-sdk-for-ios/changelog.md)
 
@@ -34,6 +35,7 @@
 
 * [Hydra VPN SDK demo for iOS](demo-applications/untitled.md)
 * [IPSEC VPN SDK demo for iOS](demo-applications/ipsec-vpn-sdk-demo-for-ios.md)
+* [Hydra VPN SDK demo for Windows](demo-applications/hydra-vpn-sdk-demo-for-windows.md)
 
 ## Resources
 
