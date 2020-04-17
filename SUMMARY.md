@@ -21,7 +21,7 @@
 
 ## SDK
 
-* [Untitled](sdk/untitled.md)
+* [Android SDK](sdk/untitled.md)
 
 ## REST API
 
