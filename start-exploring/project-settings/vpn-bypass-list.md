@@ -1,0 +1,2 @@
+# VPN Bypass list
+
