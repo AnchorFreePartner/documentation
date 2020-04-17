@@ -7,8 +7,6 @@ description: >-
 
 # OpenVPN SDK for Windows
 
-## Description
-
 Download [the last version SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FCakeTubeSDK_Win_version_1.3.3.218_partnerapi_1.0.2.42%20_with_TAP_signed.zip?alt=media&token=80766b10-1121-4bb9-9e38-af8159409ab7)
 
 The Windows SDK provides API allowing:
