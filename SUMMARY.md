@@ -29,7 +29,8 @@
 
 ## REST API
 
-* [Untitled](rest-api/untitled.md)
+* [Partner API](https://backend.northghost.com/doc/partner/index.html)
+* [User API](https://backend.northghost.com/doc/user/index.html)
 
 ## Demo applications
 
