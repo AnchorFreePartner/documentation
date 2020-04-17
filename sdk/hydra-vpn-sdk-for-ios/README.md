@@ -2,7 +2,7 @@
 description: Support Hydra protocol
 ---
 
-# Hydra VPN SDK for iOS
+# Hydra VPN SDK for iOS/macOS
 
 HydraSDK for iOS and macOS provides client API to authorize users and connect them to backend VPN services.
 

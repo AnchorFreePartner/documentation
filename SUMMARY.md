@@ -22,7 +22,7 @@
 ## SDK
 
 * [VPN SDK for Android](sdk/untitled.md)
-* [Hydra VPN SDK for iOS](sdk/hydra-vpn-sdk-for-ios/README.md)
+* [Hydra VPN SDK for iOS/macOS](sdk/hydra-vpn-sdk-for-ios/README.md)
   * [Changelog](sdk/hydra-vpn-sdk-for-ios/changelog.md)
 
 ## REST API
