@@ -6,7 +6,7 @@ To access the feature, first select the Settings tab and then pick VPN Bypass li
 
 **Adding a Single Site**
 
-To add a site that will be bypassed by the VPN, click on the " ![](../../.gitbook/assets/image%20%285%29.png) Add". A new line without a domain will be generated in the list of sites. 
+To add a site that will be bypassed by the VPN, click on the " ![](../../.gitbook/assets/image%20%286%29.png) Add". A new line without a domain will be generated in the list of sites. 
 
 Enter the domain and then click on the Add button.
 
@@ -24,7 +24,7 @@ Select the Save button.
 
 **Deleting a Site**
 
-Click on the ![](../../.gitbook/assets/image%20%284%29.png) trash can that is one the line of the site that needs to be removed.
+Click on the ![](../../.gitbook/assets/image%20%285%29.png) trash can that is one the line of the site that needs to be removed.
 
 **Search**
 

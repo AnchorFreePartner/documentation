@@ -13,7 +13,7 @@
   * [User Payments methods](start-exploring/project-settings/user-payments-methods.md)
   * [VPN Bypass list](start-exploring/project-settings/vpn-bypass-list.md)
   * [Client Networks](start-exploring/project-settings/client-networks.md)
-  * [Members](start-exploring/project-settings/members.md)
+  * [Member](start-exploring/project-settings/members.md)
 * [Project Dashboard](start-exploring/project-dashboard/README.md)
   * [General](start-exploring/project-dashboard/general.md)
   * [Location Loading](start-exploring/project-dashboard/untitled.md)
