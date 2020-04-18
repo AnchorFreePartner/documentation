@@ -8,7 +8,7 @@ description: >-
 
 ## What is Pango Platform
 
-
+The Pango Platform mission is to protect everyone’s freedom on the internet and provide the highest level of cyber security as a service.
 
 ## With Pango Console you can:
 
