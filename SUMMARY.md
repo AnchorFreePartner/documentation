@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Pango Platform](README.md)
+* [What is Pango Platform](README.md)
 
 ## Start Exploring
 

@@ -1,4 +1,10 @@
-# Pango Platform
+---
+description: >-
+  Dig into our Pango Platform documentation and quickstarts. You're covered with
+  everything from SDKs to sample apps for Windows, macOS, iOS, and Android.
+---
+
+# What is Pango Platform
 
 ## VPN Platform Flow
 
