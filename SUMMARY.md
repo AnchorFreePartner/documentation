@@ -48,4 +48,5 @@
 * [Use cases](resources/use-cases.md)
 * [FAQ](resources/faq/README.md)
   * [AWS CloudFront Distribution](resources/faq/aws-cloudfront-distribution.md)
+  * [VPN Platform Flow](resources/faq/vpn-platform-flow.md)
 
