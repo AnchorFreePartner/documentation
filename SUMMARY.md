@@ -36,7 +36,7 @@
 * [Partner API](https://backend.northghost.com/doc/partner/index.html)
 * [User API](https://backend.northghost.com/doc/user/index.html)
 
-## Demo applications
+## Sample applications <a id="demo-applications"></a>
 
 * [Hydra VPN SDK demo for iOS](demo-applications/untitled.md)
 * [IPSEC VPN SDK demo for iOS](demo-applications/ipsec-vpn-sdk-demo-for-ios.md)
