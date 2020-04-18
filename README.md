@@ -12,7 +12,9 @@ description: >-
 
 ## With Pango Console you can:
 
-
+1. Create projects for your applications with unique parameters. 
+2. Manage users. 
+3. See Dashboard with real-time data.
 
 ## What's more?
 
