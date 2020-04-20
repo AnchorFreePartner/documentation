@@ -40,6 +40,7 @@
 
 * [Hydra VPN SDK demo for iOS](demo-applications/untitled.md)
 * [IPSEC VPN SDK demo for iOS](demo-applications/ipsec-vpn-sdk-demo-for-ios.md)
+* [Anchorfree Hydra VPN SDK demo for Android](demo-applications/anchorfree-hydra-vpn-sdk-demo-for-android.md)
 * [Hydra VPN SDK demo for Windows](demo-applications/hydra-vpn-sdk-demo-for-windows.md)
 * [OpenVPN SDK for Windows](demo-applications/openvpn-sdk-for-windows.md)
 
