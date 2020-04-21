@@ -46,7 +46,7 @@ where "_firebase\_api\_key_" is the key of the Firebase project.  How to create 
 
 {% page-ref page="../../../resources/how-to/create-the-firebase-project-for-user-authentication.md" %}
 
-### custom authentication methods
+### custom methods
 
 If you have a User authentication service, we can make a plugin and support your service for your projects. Requirements for the Plugin you can see:
 
