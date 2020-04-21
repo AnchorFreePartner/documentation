@@ -34,9 +34,13 @@ Auth Settings:
 }
 ```
 
-where "_firebase\_api\_key_" is the key of the Firebase project.  How to create a Firebase project:
+where "_firebase\_api\_key_" is the key of the Firebase project.  How to create a Firebase project: 
 
+{% hint style="info" %}
+test
+{% endhint %}
 
+{% page-ref page="../../resources/how-to/create-the-firebase-project-for-user-authentication.md" %}
 
 ### custom authentication methods
 
