@@ -10,7 +10,7 @@
 * [Project Settings](start-exploring/project-settings/README.md)
   * [General](start-exploring/project-settings/general/README.md)
     * [Project config description \(JSON format\)](start-exploring/project-settings/general/project-config-description-json-format.md)
-  * [User Authentification methods](start-exploring/project-settings/user-authentification-methods.md)
+  * [User Authentication methods](start-exploring/project-settings/user-authentification-methods.md)
   * [User Payments methods](start-exploring/project-settings/user-payments-methods.md)
   * [VPN Bypass list](start-exploring/project-settings/vpn-bypass-list.md)
   * [Client Networks](start-exploring/project-settings/client-networks.md)
@@ -48,7 +48,9 @@
 ## Resources
 
 * [Use cases](resources/use-cases.md)
+* [How-to](resources/how-to/README.md)
+  * [Create the Firebase project for User Authentication](resources/how-to/create-the-firebase-project-for-user-authentication.md)
+  * [AWS CloudFront Distribution of the Platform URL](resources/how-to/aws-cloudfront-distribution.md)
 * [FAQ](resources/faq/README.md)
-  * [AWS CloudFront Distribution](resources/faq/aws-cloudfront-distribution.md)
   * [VPN Platform Flow](resources/faq/vpn-platform-flow.md)
 
