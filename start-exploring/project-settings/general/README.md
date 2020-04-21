@@ -10,7 +10,7 @@ description: Show us the project settings.
 
 For 'Login' you should use the Project ID. You can see the Project ID on the top left side like "_afdemo_" in this example:
 
-![](../../../.gitbook/assets/image%20%283%29.png)
+![](../../../.gitbook/assets/image%20%284%29.png)
 
 * **Company name** - text field with a company name of owner this project.
 * **Type** - the project type. 
@@ -22,7 +22,7 @@ For 'Login' you should use the Project ID. You can see the Project ID on the top
 * **Default Bandwidth limit \(Mb\)** -  you can use this parameter for set the daily bandwidth limit for new registered users. For example, if you set "100", new registered users will have 100MB daily limit. If this parameter will empty, new registered users will have unlimited daily limit.
 * **Default License** - you can select default license for new registered users. Exist the list of licenses:
 
-![](../../../.gitbook/assets/image%20%282%29.png)
+![](../../../.gitbook/assets/image%20%283%29.png)
 
 Each license includes 2 parameters. The first parameter is the devices limit, the second parameter - the concurrent sessions limit \(not used more\). For example, the license "20-100" gives to user limits: 20 devices and 100 concurrent sessions. The "_default_" license gives to user unlimited devices and unlimited concurrent sessions.
 
@@ -37,7 +37,9 @@ Each license includes 2 parameters. The first parameter is the devices limit, th
 
 ### Actions
 
-* Upload image - 
-* Save changes - 
-* Delete project - 
+* **Upload image** - click the button and select icon-file to upload \(see parameter "**Icon**"\).
+* **Save changes** - click the button to save all changes on the General screen.
+* **Delete project** - click the button to delete the project. For the approval of this action you should manually set the Private key \(see parameter "Private Key"\) in the opened form and click the button "Delete project" in this form:
+
+![](../../../.gitbook/assets/image%20%282%29.png)
 
