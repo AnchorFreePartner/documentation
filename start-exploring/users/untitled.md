@@ -8,7 +8,7 @@ Select the user tab.
 
 Check the checkboxes for the users that need to be updated.
 
-Click on ![](../../.gitbook/assets/image%20%2811%29.png) Update 
+Click on ![](../../.gitbook/assets/image%20%2813%29.png) Update 
 
 A dialog box will appear and two fields will be available to be updated:  Status and Description
 
@@ -26,9 +26,9 @@ Log into the portal.
 
 Select the user tab.
 
-Click on ![](../../.gitbook/assets/image%20%2818%29.png) Mass update.
+Click on ![](../../.gitbook/assets/image%20%2820%29.png) Mass update.
 
 Upload the file by clicking on the Add file button and selecting the file.
 
-![](../../.gitbook/assets/image%20%2817%29.png)
+![](../../.gitbook/assets/image%20%2819%29.png)
 

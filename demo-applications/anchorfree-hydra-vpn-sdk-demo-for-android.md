@@ -19,15 +19,15 @@ Minimum Android SDK version 15
 3. Register an account at [developer.anchorfree.com](https://developer.anchorfree.com/)
 4. Create a project
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
     5. Add locations
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
    6. Login to the app using **project\_id** from dashboard
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
    7. Click "Connect"
 
