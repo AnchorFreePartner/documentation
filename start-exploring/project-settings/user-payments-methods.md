@@ -16,7 +16,11 @@ The Platform support next Payment methods:
 
 _apple_ - this method support Apple In-App Purchases subscription. It is standard method for iOS and macOS applications. 
 
-Example of Payment method Settings:
+#### Necessary steps: 
+
+1. ..
+2. ..
+3. add the "_apple_" method to your project with settings. Example of Payment method Settings:
 
 ```text
 {
@@ -34,7 +38,7 @@ Example of Payment method Settings:
 
 ### google
 
-_google_ - this method support Google In-App subscription. It is standard method for Android applications.
+_google_ - this method support Google In-App subscription. It is standard method for Android applications published in the Google Play Store.
 
 #### Necessary steps: 
 
@@ -43,7 +47,7 @@ _google_ - this method support Google In-App subscription. It is standard method
 3. Press Done in the Play console's service account section to refresh and then grant access to the service account
 4. Go get a google api client library for your server platform from [https://developers.google.com/api-client-library](https://developers.google.com/api-client-library)
 5. Use your particular platform's client library to build a service interface and directly read the result of your purchase verification. 
-6. add the "google" method to your project with settings. Example of Payment method Settings:
+6. add the "_google_" method to your project with settings. Example of Payment method Settings:
 
 ```text
 {
@@ -69,7 +73,28 @@ _google_ - this method support Google In-App subscription. It is standard method
 
 ### huawei
 
-...
+_huawei_ - this method support Huawei In-App subscription. It is standard method for Android applications published in the Huawei Store.
+
+#### Necessary steps:
+
+1. ...
+2. .
+3. add the "_huawei_" method to your project with settings. Example of Payment method Settings:
+
+   ```text
+   {
+     "url": "https://subscr-dre.iap.hicloud.com",
+     "client_id": "101123456",
+     "client_secret": "8970db64cd9f11234567890c98eb80977393aadf553517aff812345678908bff"
+   }
+   ```
+
+"_url_" - URL for purchase receipt verification. Standard URL of Huawei Store is "[_https://subscr-dre.iap.hicloud.com_](https://subscr-dre.iap.hicloud.com
+)".
+
+"_client\_id_" - 
+
+"client\_secret" - 
 
 ### custom methods
 
