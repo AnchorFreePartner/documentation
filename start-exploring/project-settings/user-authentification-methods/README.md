@@ -6,6 +6,8 @@ description: The list of User Authentication methods of the project.
 
 Client applications can use these methods for User authentication. See parameter "_auth\_method_" in SDK or REST API [_/user/login_](https://backend.northghost.com/doc/user/index.html#!/user-controller/loginDevice). Each project user should be registered in the project. 
 
+The project can use more than one user authentication methods.
+
 The Platform support next Authentication methods:
 
 ### anonymous
