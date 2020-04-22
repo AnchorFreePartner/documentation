@@ -18,9 +18,11 @@ _apple_ - this method support Apple In-App Purchases subscription. It is standar
 
 #### Necessary steps: 
 
-1. ..
-2. ..
-3. add the "_apple_" method to your project with settings. Example of Payment method Settings:
+1. Make a Shared Secret key from iTunes Connect for In-App Purchase. See the instruction how you can do it:
+
+{% page-ref page="../../../resources/how-to/untitled.md" %}
+
+   2. add the "_apple_" method to your project with settings. Example of Payment method Settings:
 
 ```text
 {
@@ -34,7 +36,7 @@ _apple_ - this method support Apple In-App Purchases subscription. It is standar
 
 "_bundle_" - the bundle of your iOS or macOS application. You can found it in your [appstoreconnect.apple.com](https://appstoreconnect.apple.com).
 
-"_password_" - 
+"_password_" -  Shared Secret key from iTunes Connect for In-App Purchase \(see step 1\)
 
 ### google
 
