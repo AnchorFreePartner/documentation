@@ -1,4 +1,4 @@
-# Untitled
+# Payments Plugin requirements
 
 AnchorFree VPN SDK: Purchase API guide
 
