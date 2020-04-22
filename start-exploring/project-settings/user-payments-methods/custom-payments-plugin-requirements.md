@@ -32,69 +32,42 @@ Body JSON object detail
 
 body format
 
-"user\_info": {
-
- "bandwidth\_limit": "500000000",
-
- "license\_id": 1
-
+```text
+"user_info": {
+ "bandwidth_limit": "500000000",
+ "license_id": 1
 },
-
-"purchase\_info": {
-
+"purchase_info": {
  "ticket": {
-
  "orderId":"1299976ABC3169054705758ABC",
-
  "transactionId":"1299976ABC3169054705758ABC",
-
  "purchaseTime":1345678900000,
-
  "expireTime":167890000000,
-
  "purchaseState":0,
-
  "purchaseToken":"rojeslcdyyiapnqcynkjyyjh"
-
  “trialLength”: 7
-
  “duration”: 30
-
  “usdAmount”: 7.99
-
  “originalPurchaseTime”:123445000,
-
- “planName”: “abc\_yearly\_trial\_2999”
-
+ “planName”: “abc_yearly_trial_2999”
  “environment”:”production”
-
- “purchaseHistory”: \[
-
+ “purchaseHistory”: [
  {
-
  “transactionId”:”12FJR4TR123456”,
-
  "purchaseTime":1345678900000,
-
  "expireTime":167890000000,
-
  "purchaseState":0,
-
  "purchaseToken":"rojeslcdyyiapnqcynkjyyjh"
-
  },
-
- {\(all transaction history\)
-
+ {(all transaction history)
  }
-
- \]
-
+ ]
  },
-
- "type": "general\_bitdefender",
-
+ "type": "general_bitdefender",
 }
+```
+
+
 
 purchase\_info “ticket” detail
 
@@ -356,73 +329,42 @@ Response
   </tbody>
 </table>response format example
 
-"is\_valid": true,
-
-"partner\_user\_id": “usernameofyourservice”,
-
-"user\_info": {
-
- "bandwidth\_limit": Null, // Null gives unlimited bandwidth
-
- "license\_id": 1 //1 gives 10,000 devices, which we consider unlimited
-
+```text
+"is_valid": true,
+"partner_user_id": “usernameofyourservice”,
+"user_info": {
+ "bandwidth_limit": Null, // Null gives unlimited bandwidth
+ "license_id": 1 //1 gives 10,000 devices, which we consider unlimited
 },
-
-"purchase\_info": {
-
+"purchase_info": {
  "ticket": {
-
  "orderId":"1299976ABC3169054705758ABC", //This is the ID for the subscription
-
  "transactionId":"1299976ABC3169054705758ABC", //If renewal happened, keep the orderId while sending a purchase with new transactionId
-
  "purchaseTime":1345678900000, //Time of the latest transaction. Changes in every renewal.
-
  "expireTime":167890000000,
-
  "purchaseState":0,
-
  "purchaseToken":"rojeslcdyyiapnqcynkjyyjh"
-
  “trialLength”: 0
-
  “duration”: 30
-
  “usdAmount”: 7.99
-
  “originalPurchaseTime”:123445000, //Time of the FIRST purchase. This does not change even for renewal transaction.
-
- “planName”: “abc\_yearly\_trial\_2999”
-
+ “planName”: “abc_yearly_trial_2999”
  “environment”: “production”
-
- “purchaseHistory”: \[
-
+ “purchaseHistory”: [
  {
-
  “transactionId”:”12FJR4TR123456”,
-
  "purchaseTime":1345678900000,
-
  "expireTime":167890000000,
-
  "purchaseState":0,
-
  "purchaseToken":"rojeslcdyyiapnqcynkjyyjh"
-
  },
-
- {\(all transaction history\)
-
+ {(all transaction history)
  }
-
- \]
-
+ ]
  },
-
- "type": "general\_bitdefender",
-
+ "type": "general_bitdefender",
 }
+```
 
 ### Verify purchase
 
