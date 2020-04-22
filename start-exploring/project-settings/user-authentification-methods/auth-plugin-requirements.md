@@ -20,11 +20,11 @@ _**App**_ - your application with ours SDK
 
 **2 Phase \(Login to Platform\)**: 
 
-   **Step 4**: The App call _POST /user/logi_n method \(or call login method of ours SDK\) with  the parameter "_auth\_method_" = you plugin name and "_access\_token_" = oAuth token. 
+**Step 4**: The App call POST __`/user/login` method \(or call login method of ours SDK\) with  the parameter "_auth\_method_" = you plugin name and "_access\_token_" = oAuth token. 
 
-   **Step 5**: The Platform verify this oAuth token in your oAuth Server. In this flow we call "GetUserInfo \(_oauth\_token\)"_ method \(the name can be changed\). __You should provide this method for us.
+**Step 5**: The Platform verify this oAuth token in your oAuth Server. In this flow we call "GetUserInfo \(_oauth\_token\)"_ method \(the name can be changed\). __You should provide this method for us.
 
-   **Step 6**: The example of the response this method: 
+**Step 6**: The example of the response this method: 
 
 ```text
 { 
@@ -46,7 +46,7 @@ or
 
 If user oAuth token verification successful we get "result": "OK" and additional user information, for example, UID in your side. If user oAuth token verification failed we get "result": "Not exist" or any similar response. 
 
-   **Step 7**:  If verification failed the Platform return the error code:
+**Step 7**:  If verification failed the Platform return the error code:
 
 ```text
 {
