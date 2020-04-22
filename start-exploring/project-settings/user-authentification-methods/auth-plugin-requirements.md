@@ -6,7 +6,7 @@ description: Description and requirements of a user authentication plugin.
 
 We can make a plugin for any authentication service compatible with the next flow: 
 
-![](../../../.gitbook/assets/screen-shot-2020-04-21-at-5.09.41-pm.png)
+![](../../../.gitbook/assets/screen-shot-2020-04-21-at-5.40.02-pm.png)
 
 This is piece of the full Flow diagram:
 
