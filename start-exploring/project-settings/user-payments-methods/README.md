@@ -1,14 +1,38 @@
 ---
-description: The list of User Payment methods of the project.
+description: >-
+  Your application can include paid functions. Usually free users can have only
+  a 100MB bandwidth limit per day but paid user - without any bandwidth
+  limitation.
 ---
 
 # User Payments methods
 
-Your application can include paid functions. For example, free users can have only a 100MB bandwidth limit per day but paid user - without any bandwidth limitation. To support this logic the application should provide to the Platform a purchase receipt for verification and registration.
+## Purchase overall flow
 
-There is the client-side method POST /user/purchase \(included in SDK methods too\) with parameter "type". This parameter decides what the user payment method used for user application. Each method should be registered in the project. 
+### First purchase
 
-The project can use more than one User Payment methods.
+* When user is authorized and logged in your application, the default user state is “free” with bandwidth limit.
+* A user to add purchase \(in-app subscription\) e.g., In-app purchase on the Android Play or Apple Store.
+* The application call POST [`/user/purchase`](https://backend.northghost.com/doc/user/index.html#!/user-controller/sendPurchase) \(same method in SDK\) and send purchase receipt to Platform.
+* The Platform verify the purchase against in Purchase service \(for example in Android Play or Apple Store\).
+* If the purchase is valid, Platform to remove the bandwidth limit for this user.
+
+### During use
+
+* The Platform will call the Purchase service once a day per user to verify each purchase. 
+* If invalid, the user will be converted to a limited user again.
+
+Above process will be done based on Platform _user\_id_, user unique identifier.
+
+## Payment methods in your project
+
+{% hint style="info" %}
+Each method should be registered in the project. 
+{% endhint %}
+
+{% hint style="info" %}
+Your project can use more than one Payment methods.
+{% endhint %}
 
 The Platform support next Payment methods:
 

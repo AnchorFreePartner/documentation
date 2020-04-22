@@ -2,40 +2,9 @@
 
 AnchorFree VPN SDK: Purchase API guide
 
-## Purchase API overall flow
-
-### First purchase
-
-* When user is authorized and logged in, the default user state is “free” with bandwidth limit
-* Add a new valid purchase when upgrade happens. 2 variations:
-  * i. Partner server \(PS\) to add purchase to the user on AnchorFree backend \(AFB\) &gt; e.g., when purchase happened on a website
-  * ii. Client to add purchase right after successful transaction &gt; e.g., In-app purchase on the Android app
-  * \(i\) would be preferable
-* If the purchase is valid, AF to remove the bandwidth limit
-  * At least in the variation \(ii\), AFB needs to verify the purchase against PS
-
-### During use
-
-* AFB will call PS once a day per user to verify purchase. If invalid, the user will be blocked
-  * This could be optional if PS side cannot prepare for the API and structure needed
-* When renewal happens, PS should add the renewal purchase to AFB. Otherwise purchase will become invalid and user goes back to free
-
-### Cancel / refund
-
-* Once subscription is canceled, PS should delete purchase from the user right after expiration date
-* Same applies to refund
-
-Above process will be done based on AnchorFree’s user\_id \(subscriberId\), user unique identifier.
-
 ## Purchase APIs details
 
-Purchase type = “general\_biddefender”
-
-### SDK
-
-HydraSdk.purchase \(java.lang.String rawJson, java.lang.String type, CompletableCallback callback\)
-
-rawJson should follow the API body defined below.
+### 
 
 ### Server side: Add purchase
 
