@@ -19,7 +19,7 @@
     * [Project config description \(JSON format\)](start-exploring/project-settings/general/project-config-description-json-format.md)
   * [User Authentication methods](start-exploring/project-settings/user-authentification-methods/README.md)
     * [Auth Plugin requirements](start-exploring/project-settings/user-authentification-methods/auth-plugin-requirements.md)
-  * [User Payment methods](start-exploring/project-settings/user-payments-methods.md)
+  * [User Payments methods](start-exploring/project-settings/user-payments-methods.md)
   * [VPN Bypass list](start-exploring/project-settings/vpn-bypass-list.md)
   * [Client Networks](start-exploring/project-settings/client-networks.md)
   * [Member](start-exploring/project-settings/members.md)
