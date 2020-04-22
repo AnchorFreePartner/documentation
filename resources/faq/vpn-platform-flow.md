@@ -7,7 +7,7 @@ description: >-
 
 # VPN Platform Flow
 
-  
+   
 
-![](../../.gitbook/assets/flow-1.jpg)
+![](../../.gitbook/assets/flow-1-1.jpg)
 

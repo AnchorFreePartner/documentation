@@ -20,6 +20,7 @@
   * [General](start-exploring/project-dashboard/general.md)
   * [Location Loading](start-exploring/project-dashboard/untitled.md)
 * [Users](start-exploring/users/README.md)
+  * [General](start-exploring/users/general.md)
   * [Search](start-exploring/users/search.md)
   * [Update and Mass Update](start-exploring/users/untitled.md)
 * [Export Data](start-exploring/export-data.md)
