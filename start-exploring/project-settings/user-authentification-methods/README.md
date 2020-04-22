@@ -30,7 +30,7 @@ _firebase_ - this user authentication method sup\[port the Google Firebase Authe
 
 {% page-ref page="./" %}
 
-This service support different of user sign-in methods - ![](../../../.gitbook/assets/image%20%2828%29.png)_Email/password_, ![](../../../.gitbook/assets/image.png)_Phone,_ ![](../../../.gitbook/assets/image%20%281%29.png)_Google_, ![](../../../.gitbook/assets/image%20%286%29.png)_Facebook_, ![](../../../.gitbook/assets/image%20%284%29.png)_Microsoft_, ![](../../../.gitbook/assets/image%20%288%29.png)_Apple_ and more. 
+This service support different of user sign-in methods - ![](../../../.gitbook/assets/image%20%2835%29.png)_Email/password_, ![](../../../.gitbook/assets/image.png)_Phone,_ ![](../../../.gitbook/assets/image%20%283%29.png)_Google_, ![](../../../.gitbook/assets/image%20%288%29.png)_Facebook_, ![](../../../.gitbook/assets/image%20%286%29.png)_Microsoft_, ![](../../../.gitbook/assets/image%20%2812%29.png)_Apple_ and more. 
 
 {% hint style="info" %}
 If a user sign-in 2 or more devices with the same sign-in account, all devices will be assigned to one user account. The authorized user can be free or paid \(applies to all of his devices\).
