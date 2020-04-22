@@ -54,6 +54,7 @@
 * [How-to](resources/how-to/README.md)
   * [Create the Firebase project for User Authentication](resources/how-to/create-the-firebase-project-for-user-authentication.md)
   * [AWS CloudFront Distribution of the Platform URL](resources/how-to/aws-cloudfront-distribution.md)
+  * [How can I get Shared Secret key from iTunes Connect for In-App Purchase](resources/how-to/untitled.md)
 * [FAQ](resources/faq/README.md)
   * [VPN Platform Flow](resources/faq/vpn-platform-flow.md)
 
