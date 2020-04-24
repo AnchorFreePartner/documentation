@@ -36,7 +36,7 @@ Your project can use more than one Payment methods.
 
 The Platform support next Payment methods:
 
-### apple
+### ![](../../../.gitbook/assets/apple_icon.png) apple
 
 _apple_ - this method support Apple In-App Purchases subscription. It is standard method for iOS and macOS applications.
 
@@ -62,7 +62,7 @@ _apple_ - this method support Apple In-App Purchases subscription. It is standar
 
 "_password_" - Shared Secret key from iTunes Connect for In-App Purchase \(see step 1\)
 
-### google
+### ![](../../../.gitbook/assets/google_icon.svg) google
 
 _google_ - this method support Google In-App subscription. It is standard method for Android applications published in the Google Play Store.
 
@@ -97,23 +97,27 @@ _google_ - this method support Google In-App subscription. It is standard method
 
 "_credentials_" - this JSON block you should replace to your JSON private key \(see step 2\).
 
-### huawei
+### ![](../../../.gitbook/assets/huawei_icon.jpeg) huawei
 
 _huawei_ - this method support Huawei In-App subscription. It is standard method for Android applications published in the Huawei Store.
 
 #### Necessary steps:
 
-1. Set up Huawei IAP. Follow official guideline: \[[https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-configuring-appGallery-connect](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-configuring-appGallery-connect)\]
-2. Open `agconnect-services.json` file. You need to find `client_id` and `client_secret` for the next step.
-3. Add the "_huawei_" method to your project with settings. Example of Payment method Settings:
+1. Set up Huawei IAP. Follow official guideline: 
 
-   ```text
-   {
-     "url": "https://subscr-dre.iap.hicloud.com",
-     "client_id": "101123456",
-     "client_secret": "8970db64cd9f11234567890c98eb80977393aadf553517aff812345678908bff"
-   }
-   ```
+{% page-ref page="./" %}
+
+   2. Open `agconnect-services.json` file. You need to find `client_id` and `client_secret` for the next step.
+
+   3. Add the "_huawei_" method to your project with settings. Example of Payment method Settings:
+
+```text
+{
+  "url": "https://subscr-dre.iap.hicloud.com",
+  "client_id": "101123456",
+  "client_secret": "8970db64cd9f11234567890c98eb80977393aadf553517aff812345678908bff"
+}
+```
 
 "_url_" - URL for purchase receipt verification. Standard URL of Huawei Store is "[_https://subscr-dre.iap.hicloud.com_](https://subscr-dre.iap.hicloud.com%20)".
 
@@ -121,18 +125,20 @@ _huawei_ - this method support Huawei In-App subscription. It is standard method
 
 "client\_secret" - client secret, can be found in `agconnect-services.json`
 
-1. Send purchase request
+   4. Send purchase request
 
-   4.1. Do purchase as it described in the doc: [https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-development-guide-v4](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-development-guide-v4)
+   4.1. Do purchase as it described in the doc: 
 
-   4.2. Parse result and send purchase to the server 
+{% page-ref page="./" %}
 
-   ```text
-        val purchaseResultInfo: PurchaseResultInfo = Iap.getIapClient(activity).parsePurchaseResultInfoFromIntent(data)
-        backendApi.purchase(purchaseResultInfo.inAppPurchaseData, "huawei", callback)
-   ```
+  4.2. Parse result and send purchase to the server 
 
-### custom methods
+```text
+val purchaseResultInfo: PurchaseResultInfo = Iap.getIapClient(activity).parsePurchaseResultInfoFromIntent(data)
+backendApi.purchase(purchaseResultInfo.inAppPurchaseData, "huawei", callback)
+```
+
+### ![](../../../.gitbook/assets/plugin_icon.webp) custom methods
 
 If you use another Payments service, we can make a plugin and support your service too. The new service can be one of the popular public services or custom service in your side.
 

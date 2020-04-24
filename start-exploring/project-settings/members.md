@@ -6,7 +6,7 @@ Click the Settings tab.
 
 Now select the Member tab.
 
-Pick the " ![](../../.gitbook/assets/image%20%2822%29.png) Add" Member.
+Pick the " ![](../../.gitbook/assets/image%20%2817%29.png) Add" Member.
 
 Enter the email address of the user.
 

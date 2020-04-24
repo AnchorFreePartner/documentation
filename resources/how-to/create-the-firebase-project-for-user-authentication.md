@@ -20,31 +20,31 @@ To use Firebase Authentication in our application and Platform project, you need
 
 **Step 1:** Open the [Firebase Website](https://firebase.google.com/) and login into it.
 
-**Step 2:** After login, click on the "**Go To Console**" button that is present on the upper right side of the website.
+**Step 2:** After login, click on the "**Go To Console**" button that is present on the upper right side of the website.  
 
-![](../../.gitbook/assets/image%20%2828%29.png)
+![](../../.gitbook/assets/firebase-login.png)
 
-**Step 3:** If you don't have Firebase project for your application, click on "**Add Project**".
+**Step 3:** If you don't have Firebase project for your application, click on "**Add Project**".  
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/firebase-add-project.png)
 
-**Step 4:** Enter the required details of the project and click on submit.
+**Step 4:** Enter the required details of the project and click on submit.  
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/firebase-project-details.jpg)
 
-**Step 5:** After creating a project, you will see the below image of your project dashboard.
+**Step 5:** After creating a project, you will see the below image of your project dashboard.  
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/firebase-dashboard.jpg)
 
 Here, all the services of Firebase are shown and you can use any of them.
 
-**Step 6:** In this blog, we are interested in the authentication part, so click on the "**Authentication**" button and then switch to "**Sign-in method**" tab.
+**Step 6:** In this blog, we are interested in the authentication part, so click on the "**Authentication**" button and then switch to "**Sign-in method**" tab.  
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/firebase-signin-methods.jpg)
 
-**Step 7:** In our example, we will sign-in by email. So, click on the edit button next to the "**Email/Password**" option and you will see the below screen.
+**Step 7:** In our example, we will sign-in by email. So, click on the edit button next to the "**Email/Password**" option and you will see the below screen.  
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../../.gitbook/assets/firebase_signin_method.png)
 
 {% hint style="info" %}
 You can use any available sign-in method available in Firebase Authentication.
@@ -52,11 +52,9 @@ You can use any available sign-in method available in Firebase Authentication.
 
 **Step 8:** Enable Email/Password sign-in and click on "**Save**". You are done with the Firebase part.
 
-**Step 9:** Open Firebase project settings:
+**Step 9:** Open Firebase project settings:  
 
- 
-
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/firebase_settings.png)
 
 **Step 10:** Found "_Web API Key_", for example  `Web API Key: "AIzaSyBAw-hTjky776yqQccP987654dbJas_Lb0"` and set it in to auth settings your "_firebase_" auth method in your Platform project:
 

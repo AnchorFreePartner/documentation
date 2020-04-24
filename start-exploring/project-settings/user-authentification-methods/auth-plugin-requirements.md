@@ -4,9 +4,9 @@ description: Description and requirements of a user authentication plugin.
 
 # Auth Plugin requirements
 
-We can make a plugin for any authentication service compatible with the next flow: 
+We can make a plugin for any authentication service compatible with the next flow:  
 
-![](../../../.gitbook/assets/screen-shot-2020-04-21-at-5.40.02-pm.png)
+![](../../../.gitbook/assets/auth_flow.png)
 
 This is piece of the full Flow diagram:
 
