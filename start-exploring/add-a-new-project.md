@@ -1,7 +1,5 @@
 # Create the new Project
 
-
-
 **How to add the new project to Developer Portal**
 
 1. Open [https://developer.anchorfree.com/](https://developer.anchorfree.com/#) web page
