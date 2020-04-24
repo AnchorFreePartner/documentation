@@ -105,7 +105,7 @@ _huawei_ - this method support Huawei In-App subscription. It is standard method
 
 1. Set up Huawei IAP. Follow official guideline: [https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-configuring-appGallery-connect]
 2. Open `agconnect-services.json` file. You need to find `client_id` and `client_secret` for the next step.
-3. Ddd the "_huawei_" method to your project with settings. Example of Payment method Settings:
+3. Add the "_huawei_" method to your project with settings. Example of Payment method Settings:
 
    ```text
    {
