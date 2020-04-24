@@ -1,4 +1,10 @@
+---
+description: Description and requirements of a user payments plugin.
+---
+
 # Payments Plugin requirements
+
+You need a payment plugin if your application uses another payment service, not supported in the Platform side payment methods.
 
 AnchorFree VPN SDK: Purchase API guide
 

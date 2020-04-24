@@ -4,6 +4,8 @@ description: Description and requirements of a user authentication plugin.
 
 # Auth Plugin requirements
 
+You need an plugin if your application uses another authentication service, not supported in the Platform side auth methods.
+
 We can make a plugin for any authentication service compatible with the next flow:  
 
 ![](../../../.gitbook/assets/auth_flow.png)
