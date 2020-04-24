@@ -27,7 +27,7 @@ Above process will be done based on Platform _user\_id_, user unique identifier.
 ## Payment methods in your project
 
 {% hint style="info" %}
-Each method should be registered in the project. 
+Each method should be registered in the project.
 {% endhint %}
 
 {% hint style="info" %}
@@ -38,15 +38,15 @@ The Platform support next Payment methods:
 
 ### apple
 
-_apple_ - this method support Apple In-App Purchases subscription. It is standard method for iOS and macOS applications. 
+_apple_ - this method support Apple In-App Purchases subscription. It is standard method for iOS and macOS applications.
 
-#### Necessary steps: 
+#### Necessary steps:
 
 1. Make a Shared Secret key from iTunes Connect for In-App Purchase. See the instruction how you can do it:
 
 {% page-ref page="../../../resources/how-to/untitled.md" %}
 
-   2. add the "_apple_" method to your project with settings. Example of Payment method Settings:
+1. add the "_apple_" method to your project with settings. Example of Payment method Settings:
 
 ```text
 {
@@ -60,13 +60,13 @@ _apple_ - this method support Apple In-App Purchases subscription. It is standar
 
 "_bundle_" - the bundle of your iOS or macOS application. You can found it in your [appstoreconnect.apple.com](https://appstoreconnect.apple.com).
 
-"_password_" -  Shared Secret key from iTunes Connect for In-App Purchase \(see step 1\)
+"_password_" - Shared Secret key from iTunes Connect for In-App Purchase \(see step 1\)
 
 ### google
 
 _google_ - this method support Google In-App subscription. It is standard method for Android applications published in the Google Play Store.
 
-#### Necessary steps: 
+#### Necessary steps:
 
 1. Make an API project, from the API Access link in your Google Play console
 2. Make a new service account, **save** the JSON private key that gets generated. You'll need to take this file to your server.
@@ -95,7 +95,7 @@ _google_ - this method support Google In-App subscription. It is standard method
 
 "_application_": "_AnchorFree-Backend/1.0_" - the constant.
 
-"_credentials_" -  this JSON block you should replace to your JSON private key \(see step 2\). 
+"_credentials_" - this JSON block you should replace to your JSON private key \(see step 2\).
 
 ### huawei
 
@@ -103,7 +103,7 @@ _huawei_ - this method support Huawei In-App subscription. It is standard method
 
 #### Necessary steps:
 
-1. Set up Huawei IAP. Follow official guideline: [https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-configuring-appGallery-connect]
+1. Set up Huawei IAP. Follow official guideline: \[[https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-configuring-appGallery-connect](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-configuring-appGallery-connect)\]
 2. Open `agconnect-services.json` file. You need to find `client_id` and `client_secret` for the next step.
 3. Add the "_huawei_" method to your project with settings. Example of Payment method Settings:
 
@@ -115,24 +115,26 @@ _huawei_ - this method support Huawei In-App subscription. It is standard method
    }
    ```
 
-"_url_" - URL for purchase receipt verification. Standard URL of Huawei Store is "[_https://subscr-dre.iap.hicloud.com_](https://subscr-dre.iap.hicloud.com
-)".
+"_url_" - URL for purchase receipt verification. Standard URL of Huawei Store is "[_https://subscr-dre.iap.hicloud.com_](https://subscr-dre.iap.hicloud.com%20)".
 
 "_client\_id_" - client id, can be found in `agconnect-services.json`
 
 "client\_secret" - client secret, can be found in `agconnect-services.json`
 
-4. Send purchase request
-4.1. Do purchase as it described in the doc: https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-development-guide-v4
-4.2. Parse result and send purchase to the server 
-```code
+1. Send purchase request
+
+   4.1. Do purchase as it described in the doc: [https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-development-guide-v4](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-development-guide-v4)
+
+   4.2. Parse result and send purchase to the server 
+
+   ```text
         val purchaseResultInfo: PurchaseResultInfo = Iap.getIapClient(activity).parsePurchaseResultInfoFromIntent(data)
         backendApi.purchase(purchaseResultInfo.inAppPurchaseData, "huawei", callback)
-```        
+   ```
 
 ### custom methods
 
-If you use another Payments service, we can make a plugin and support your service too. The new service can be one of the popular public services or custom service in your side. 
+If you use another Payments service, we can make a plugin and support your service too. The new service can be one of the popular public services or custom service in your side.
 
 Requirements for the Plugin of a custom service in your side you can see:
 

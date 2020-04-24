@@ -57,7 +57,5 @@ If user oAuth token verification successful we get "result": "OK" and additional
 
  If verification successful the Platform registered user and his device in the project. Process registration can include set specific user parameters like - _Traffic_, _License_, _Status_, _Extref_, _Description_, _User country_ \(it depends on your application logic\)_._ See description of these parameters:
 
-{% page-ref page="../../users/general.md" %}
-
 
 

@@ -5,7 +5,7 @@
 ## Start Exploring
 
 * [Sign Up to Developer console](start-exploring/untitled.md)
-* [Add a new Project](start-exploring/add-a-new-project.md)
+* [Create the new Project](start-exploring/add-a-new-project.md)
 * [Project Dashboard](start-exploring/project-dashboard/README.md)
   * [General](start-exploring/project-dashboard/general.md)
   * [Location Loading](start-exploring/project-dashboard/untitled.md)
