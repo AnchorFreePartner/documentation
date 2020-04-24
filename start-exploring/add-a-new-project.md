@@ -47,7 +47,7 @@ As a result, you can find your created project \(project cards view\):
 
 {% page-ref page="network-locations/locations.md" %}
 
-    2. Add a list of project users: 
+    2. Add a list of project users:
 
 {% page-ref page="project-settings/members.md" %}
 
