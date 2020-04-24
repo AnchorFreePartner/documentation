@@ -13,33 +13,33 @@ Secret key has been designed for the users to make it easy for them to control t
 
 ## Follow below mentioned steps to easily obtain Shared Secret key from iTunes Connect for In-App Purchase:
 
- **Step 1:** Login into your iTunes Connect Development account
+ **Step 1:** Login into your iTunes Connect Development account  
 
-![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//76cc6d3b.png)
+![](../../.gitbook/assets/itunes_connect_login.png)
 
- **Step 2:** Click on My Apps icon
+ **Step 2:** Click on My Apps icon  
 
-![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//102d797f7.png)
+![](../../.gitbook/assets/itunes_connect_myapps.png)
 
- **Step 3:** All of your created applications will appear. Click on the specific app for which you want to enable In-App Purchase
+ **Step 3:** All of your created applications will appear. Click on the specific app for which you want to enable In-App Purchase  
 
-![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//78879112.png)
+![](../../.gitbook/assets/itunes_connect_app.png)
 
- **Step 4:** Go to **Features**
+ **Step 4:** Go to **Features**  
 
-![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//1039fe542.png)
+![](../../.gitbook/assets/itunes_connect_features.png)
 
- **Step 5:** Click on **App Specific Shared Secret**
+ **Step 5:** Click on **App Specific Shared Secret**  
 
-![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//8020ad07.png)
+![](../../.gitbook/assets/itunes_connect_secret.png)
 
- **Step 6:** A pop-up window will appear, click on **Generate App-Specific Shared Secret**
+ **Step 6:** A pop-up window will appear, click on **Generate App-Specific Shared Secret**  
 
-![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//813de8be.png)
+![](../../.gitbook/assets/itunes_connect_generate_app_secret.png)
 
- **Step 7:** Here is your Shared Secret Key, copy and paste it into the respective field on creator software
+ **Step 7:** Here is your Shared Secret Key, copy and paste it into the respective field on creator software  
 
-![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//8220f03e.png)
+![](../../.gitbook/assets/itunes_connect_secret_key.png)
 
 ## **What is the Secret Key?**
 
