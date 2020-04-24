@@ -6,7 +6,7 @@ Click the Settings tab.
 
 Now select the Member tab.
 
-Pick the " ![](../../.gitbook/assets/image%20%2817%29.png) Add" Member.
+Pick the "  Add" Member.
 
 Enter the email address of the user.
 
@@ -15,6 +15,4 @@ For role, users can either be Project admin or Project support.  The difference 
 **Client Support of applications**
 
 If this portal administrator will respond to questions from other users concerning issues with the client, select the clients that the user will receive emails from.
-
-![](../../.gitbook/assets/image%20%285%29.png)
 
