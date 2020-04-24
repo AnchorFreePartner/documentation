@@ -103,9 +103,9 @@ _huawei_ - this method support Huawei In-App subscription. It is standard method
 
 #### Necessary steps:
 
-1. ...
-2. .
-3. add the "_huawei_" method to your project with settings. Example of Payment method Settings:
+1. Set up Huawei IAP. Follow official guideline: [https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-configuring-appGallery-connect]
+2. Open `agconnect-services.json` file. You need to find `client_id` and `client_secret` for the next step.
+3. Ddd the "_huawei_" method to your project with settings. Example of Payment method Settings:
 
    ```text
    {
@@ -118,9 +118,17 @@ _huawei_ - this method support Huawei In-App subscription. It is standard method
 "_url_" - URL for purchase receipt verification. Standard URL of Huawei Store is "[_https://subscr-dre.iap.hicloud.com_](https://subscr-dre.iap.hicloud.com
 )".
 
-"_client\_id_" - 
+"_client\_id_" - client id, can be found in `agconnect-services.json`
 
-"client\_secret" - 
+"client\_secret" - client secret, can be found in `agconnect-services.json`
+
+4. Send purchase request
+4.1. Do purchase as it described in the doc: https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/iap-development-guide-v4
+4.2. Parse result and send purchase to the server 
+```code
+        val purchaseResultInfo: PurchaseResultInfo = Iap.getIapClient(activity).parsePurchaseResultInfoFromIntent(data)
+        backendApi.purchase(purchaseResultInfo.inAppPurchaseData, "huawei", callback)
+```        
 
 ### custom methods
 
