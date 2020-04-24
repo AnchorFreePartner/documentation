@@ -4,7 +4,7 @@
 
 **How to add the new project to Developer Portal**
 
-1. Open [https://developer.anchorfree.com/\#](https://developer.anchorfree.com/#) web page
+1. Open [https://developer.anchorfree.com/](https://developer.anchorfree.com/#) web page
 2. Click Sign in button
 3. Enter your valid creds and click ‘Sign in’ button:
 
@@ -45,8 +45,15 @@ As a result, you can find your created project \(project cards view\):
 
 **How to configure recently added project to Developer Portal**
 
-1. [Add a list of locations](https://wifisb.zendesk.com/hc/en-us/articles/360016154332-Adding-Networks-VPN-servers)
-2. [Add a list of project users](https://wifisb.zendesk.com/hc/en-us/articles/360016261132-Adding-Users-to-the-Portal): admin and support roles
+1. Add a list of locations:
+
+{% page-ref page="network-locations/locations.md" %}
+
+    2. Add a list of project users: 
+
+{% page-ref page="project-settings/members.md" %}
+
+
 
 
 
