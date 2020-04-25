@@ -6,8 +6,6 @@ description: Description and requirements of a user payments plugin.
 
 You need a payment plugin if your application uses another payment service, not supported in the Platform side payment methods.
 
-AnchorFree VPN SDK: Purchase API guide
-
 ## Payment Flow
 
 **Step 1.** Your App made a subscription in your Payment service and get a purchase receipt.
@@ -24,7 +22,7 @@ AnchorFree VPN SDK: Purchase API guide
 * If the result _Success_, the Platform:
   * changes the user status to _Paid_ ,
   * changes the user bandwidth limit to _Unlimited,_
-  * send to App _Result._
+  * send to App _purchase\_id._
 
 **Step 4.**  The Platform will check check the _Purchase receipt_ each 24 hours.
 
@@ -34,30 +32,13 @@ AnchorFree VPN SDK: Purchase API guide
   * changes the user status to _Free_ ,
   * changes the user bandwidth limit to _Free limit = 100Mb._
 
-## Purchase APIs details
+## Purchase receipt example
 
-### 
-
-### Server side: Add purchase
-
-POST:
-
-[https://backend.northghost.com/partner/subscribers/{user\_id}/purchase](https://backend.northghost.com/partner/subscribers/%7buser_id%7d/purchase)
-
-Parameters
-
-| Field name | Type | quantity | Max length | Mandatory | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| user\_id | integer | 1..1 | 64 | Yes | Unique user ID for AFB |
-| access\_token |  |  |  | Yes | Unique token for partner to access the API. Expire every 24 hours |
-| body | object |  |  | Yes | Details of valid purchase associated with the user |
-
-Body JSON object detail
+Purchase receipt should be in JSON format and include next details:
 
 | Field name | Type | quantity | Max length | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | purchase\_info | object |  |  | Purchase vendor specific data about the purchase, such as receipt |
-| user\_info | object |  |  | User’s bandwidth limit and licence ID to determine user status and plan |
 | Ticket | object |  |  | Raw JSON ticket/ receipt of the purchase. “orderId” will be used as a unique key for each subscription |
 | Type | String |  |  | Payment type description \(“general”\) |
 | active\_timestamp | Number, Long | 1..1 | 13 | Active time for current paid subscription period |
@@ -65,37 +46,17 @@ Body JSON object detail
 body format
 
 ```text
-"user_info": {
- "bandwidth_limit": "500000000",
- "license_id": 1
-},
-"purchase_info": {
- "ticket": {
- "orderId":"1299976ABC3169054705758ABC",
- "transactionId":"1299976ABC3169054705758ABC",
- "purchaseTime":1345678900000,
- "expireTime":167890000000,
- "purchaseState":0,
- "purchaseToken":"rojeslcdyyiapnqcynkjyyjh"
- “trialLength”: 7
- “duration”: 30
- “usdAmount”: 7.99
- “originalPurchaseTime”:123445000,
- “planName”: “abc_yearly_trial_2999”
- “environment”:”production”
- “purchaseHistory”: [
- {
- “transactionId”:”12FJR4TR123456”,
- "purchaseTime":1345678900000,
- "expireTime":167890000000,
- "purchaseState":0,
- "purchaseToken":"rojeslcdyyiapnqcynkjyyjh"
- },
- {(all transaction history)
- }
- ]
- },
- "type": "general_bitdefender",
+"receipt": {
+  "orderId": "1299976ABC3169054705758ABC",
+  "transactionId": "1299976ABC3169054705758ABC",
+  "purchaseTime": 1345678900000,
+  "expireTime": 167890000000,
+  "purchaseState": 0,
+  “trialLength”: 7,
+  “usdAmount”: 7.99,
+  “originalPurchaseTime”: 123445000,
+  “planName”: “abc_yearly_trial_2999”,
+  "type": "mcafee"
 }
 ```
 
@@ -108,9 +69,6 @@ purchase\_info “ticket” detail
     <tr>
       <th style="text-align:left">Field name</th>
       <th style="text-align:left">Type</th>
-      <th style="text-align:left">quantity</th>
-      <th style="text-align:left">Max length</th>
-      <th style="text-align:left">Mandatory</th>
       <th style="text-align:left">Description</th>
     </tr>
   </thead>
@@ -118,43 +76,28 @@ purchase\_info “ticket” detail
     <tr>
       <td style="text-align:left">orderId</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes</td>
       <td style="text-align:left">Unique identifier for the subscription which should not change upon renewal.
         This ID is used to verify purchase.</td>
     </tr>
     <tr>
       <td style="text-align:left">transactionId</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes (for auto renewals)</td>
       <td style="text-align:left">Unique identifier for each transaction (purchase), if the payment system
         sends different IDs for different transactions.</td>
     </tr>
     <tr>
       <td style="text-align:left">purchaseTime</td>
       <td style="text-align:left">Long</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes</td>
       <td style="text-align:left">Unix timestamp when the most recent transaction occurred for the subscription</td>
     </tr>
     <tr>
       <td style="text-align:left">expireTime</td>
       <td style="text-align:left">Long</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes</td>
       <td style="text-align:left">Unix timestamp when the most recent period will expire</td>
     </tr>
     <tr>
       <td style="text-align:left">purchaseState</td>
       <td style="text-align:left">Int</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes</td>
       <td style="text-align:left">
         <p>0: Successful paid transaction, 1: Refunded transaction, 2: Free transaction
           (trial)</p>
@@ -162,85 +105,29 @@ purchase\_info “ticket” detail
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">purchaseToken</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">No</td>
-      <td style="text-align:left">Optional field to put any token/receipt string</td>
-    </tr>
-    <tr>
       <td style="text-align:left">trialLength</td>
       <td style="text-align:left">Int</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes</td>
       <td style="text-align:left">Number of days of free trial for the subscription. 0: No trial</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">duration</td>
-      <td style="text-align:left">Int</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">No</td>
-      <td style="text-align:left">Subscription&#x2019;s renewal cycle in days. It can either be static number
-        of reflect actual duration of the most recent period.</td>
     </tr>
     <tr>
       <td style="text-align:left">usdAmount</td>
       <td style="text-align:left">Float</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">No</td>
       <td style="text-align:left">User facing unit price of the subscription in USD. It is not mandatory
         but it is very important to have this. If it is trial, it should be 0.</td>
     </tr>
     <tr>
       <td style="text-align:left">originalPurchaseTime</td>
       <td style="text-align:left">Long</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes</td>
       <td style="text-align:left">UNIX timestamp when the first transaction made for the subscription (new
         purchase or trial start)</td>
     </tr>
     <tr>
       <td style="text-align:left">planName</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Yes</td>
       <td style="text-align:left">Plan or SKU name of the subscription for reference</td>
     </tr>
-    <tr>
-      <td style="text-align:left">environment</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">No</td>
-      <td style="text-align:left">&#x201C;Production&#x201D; or &#x201C;Test&#x201D;. If null, it is assumed
-        as a production (real) purchase.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">purchaseHistory</td>
-      <td style="text-align:left">array</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">No</td>
-      <td style="text-align:left">
-        <p>Store all transactions happened, i.e., new purchases and renewals, for
-          the subscription (orderId).</p>
-        <p>If there is purchaseHistory, transactionId and purchaseTime are mandatory.</p>
-      </td>
-    </tr>
   </tbody>
-</table>Response
-
-| Field name | Type | quantity | Max length | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| purchase\_id | integer | 1..1 | 64 | Unique ID for each purchase for the user |
-
-### Server side: Delete purchase
+</table>## Server side: Delete purchase
 
 DELETE:
 
