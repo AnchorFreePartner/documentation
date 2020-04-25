@@ -8,6 +8,32 @@ You need a payment plugin if your application uses another payment service, not 
 
 AnchorFree VPN SDK: Purchase API guide
 
+## Payment Flow
+
+**Step 1.** Your App made a subscription in your Payment service and get a purchase receipt.
+
+**Step 2.** Send ****the ****_purchase receipt_ to the Platform side:
+
+1. the App call POST [`/user/purchase`](https://backend.northghost.com/doc/all/index.html#!/user-controller/sendPurchase) \(SDK include the same method\) with parameters `token = your purchase receipt` and `type = name your plagin`.
+2. your Backend call [POST](https://backend.northghost.com/doc/all/index.html#!/partner-controller/sendPurchaseByPartner) [`/partner/subscribers/{user_id}/purchase`](https://backend.northghost.com/doc/all/index.html#!/partner-controller/sendPurchaseByPartner) with parameters `body = your purchase receipt` and `user_id = the user ID`.
+
+**Step 3.** The Platform verifies the purchase receipt in your Payment service. 
+
+* If the result _Failed_, the Platform:
+  * returns the error code. 
+* If the result _Success_, the Platform:
+  * changes the user status to _Paid_ ,
+  * changes the user bandwidth limit to _Unlimited,_
+  * send to App _Result._
+
+**Step 4.**  The Platform will check check the _Purchase receipt_ each 24 hours.
+
+* If the result _Success_, the Platform:
+  * does nothing.
+* If the result _Failed_, the Platform:  
+  * changes the user status to _Free_ ,
+  * changes the user bandwidth limit to _Free limit = 100Mb._
+
 ## Purchase APIs details
 
 ### 

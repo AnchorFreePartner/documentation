@@ -18,7 +18,7 @@ _**oAuth Server**_ - you User authentication service.
 
 _**App**_ - your application with ours SDK
 
-**1 Phase \(Authorization\)**: A user authentication in oAuth Server. The result is the App gets an oAuth token \(1-3 steps\).
+**1 Phase \(Authorization\)**: A user authentication in oAuth Server. The result is the App gets an oAuth token \(**1-3 Steps** in the Flow diagram\).
 
 **2 Phase \(Login to Platform\)**: 
 
