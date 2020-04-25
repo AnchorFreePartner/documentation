@@ -129,18 +129,18 @@ purchase\_info “ticket” detail
   </tbody>
 </table>## Server side: Delete purchase
 
-DELETE:
+For delete a purchase you need to call API method DELETE:
 
 [https://backend.northghost.com/partner/subscribers/{user\_id}/purchase](https://backend.northghost.com/partner/subscribers/%7buser_id%7d/purchase)
 
-Parameters
+with next parameters:
 
-| Field name | Type | quantity | Max length | Mandatory | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| user\_id | integer | 1..1 | 64 | Yes | Unique user ID in AFB |
-| access\_token |  |  |  | Yes | Unique token for partner to access the API. Expire every 24 hours |
-| purchase\_id | integer | 1..1 | 64 | Yes | AnchorFree Unique ID for each purchase for the user. Sent as a response back when a purchase is added to a user |
-| purchase\_info | object |  |  | No | Append the latest purchase\_info for the to be deleted purchase. It is important to change the purchaseState appropriately especially for refund. |
+| Field name | Type | Mandatory | Description |
+| :--- | :--- | :--- | :--- |
+| user\_id | integer | Yes | Unique user ID in the Platform |
+| access\_token | string | Yes | Unique token for partner API. Expire every 24 hours. |
+| purchase\_id | integer | Yes | Platform purchase ID of the user. Sent as a response back when a purchase is added to a user. |
+| purchase\_info | object | No | Append the latest _purchase\_info_ for the to be deleted purchase. It is important to change the _purchaseState_ appropriately especially for refund. |
 
 ## Partner side APIs detail
 
