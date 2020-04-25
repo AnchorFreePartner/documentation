@@ -131,9 +131,7 @@ purchase\_info “_receipt_” detail
   </tbody>
 </table>## Server side: Delete purchase
 
-For delete a purchase you need to call API method DELETE:
-
-[https://backend.northghost.com/partner/subscribers/{user\_id}/purchase](https://backend.northghost.com/partner/subscribers/%7buser_id%7d/purchase)
+For delete a purchase you need to call API method DELETE [`/partner/subscribers/{user_id}/purchase`](https://backend.northghost.com/doc/all/index.html#!/partner-controller/deletePurchaseByPartner)\`\`
 
 with next parameters:
 
