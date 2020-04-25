@@ -59,9 +59,7 @@ body format
 }
 ```
 
-
-
-purchase\_info “ticket” detail
+purchase\_info “_receipt_” detail
 
 <table>
   <thead>
