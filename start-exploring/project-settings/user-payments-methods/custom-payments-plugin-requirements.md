@@ -39,8 +39,7 @@ Purchase receipt should be in JSON format and include next details:
 | Field name | Type | Description |
 | :--- | :--- | :--- |
 | purchase\_info | object | Purchase vendor specific data about the purchase, such as receipt |
-| Ticket | object | Raw JSON ticket/ receipt of the purchase. “orderId” will be used as a unique key for each subscription |
-| Type | String | Payment type description \(“general”\) |
+| receipt | object | Raw JSON receipt of the purchase. “orderId” will be used as a unique key for each subscription |
 | active\_timestamp | Number, Long | Active time for current paid subscription period |
 
 body format
@@ -75,29 +74,29 @@ purchase\_info “ticket” detail
   <tbody>
     <tr>
       <td style="text-align:left">orderId</td>
-      <td style="text-align:left">String</td>
+      <td style="text-align:left">string</td>
       <td style="text-align:left">Unique identifier for the subscription which should not change upon renewal.
         This ID is used to verify purchase.</td>
     </tr>
     <tr>
       <td style="text-align:left">transactionId</td>
-      <td style="text-align:left">String</td>
+      <td style="text-align:left">string</td>
       <td style="text-align:left">Unique identifier for each transaction (purchase), if the payment system
         sends different IDs for different transactions.</td>
     </tr>
     <tr>
       <td style="text-align:left">purchaseTime</td>
-      <td style="text-align:left">Long</td>
+      <td style="text-align:left">long</td>
       <td style="text-align:left">Unix timestamp when the most recent transaction occurred for the subscription</td>
     </tr>
     <tr>
       <td style="text-align:left">expireTime</td>
-      <td style="text-align:left">Long</td>
+      <td style="text-align:left">long</td>
       <td style="text-align:left">Unix timestamp when the most recent period will expire</td>
     </tr>
     <tr>
       <td style="text-align:left">purchaseState</td>
-      <td style="text-align:left">Int</td>
+      <td style="text-align:left">int</td>
       <td style="text-align:left">
         <p>0: Successful paid transaction, 1: Refunded transaction, 2: Free transaction
           (trial)</p>
@@ -106,25 +105,30 @@ purchase\_info “ticket” detail
     </tr>
     <tr>
       <td style="text-align:left">trialLength</td>
-      <td style="text-align:left">Int</td>
+      <td style="text-align:left">int</td>
       <td style="text-align:left">Number of days of free trial for the subscription. 0: No trial</td>
     </tr>
     <tr>
       <td style="text-align:left">usdAmount</td>
-      <td style="text-align:left">Float</td>
+      <td style="text-align:left">float</td>
       <td style="text-align:left">User facing unit price of the subscription in USD. It is not mandatory
         but it is very important to have this. If it is trial, it should be 0.</td>
     </tr>
     <tr>
       <td style="text-align:left">originalPurchaseTime</td>
-      <td style="text-align:left">Long</td>
+      <td style="text-align:left">long</td>
       <td style="text-align:left">UNIX timestamp when the first transaction made for the subscription (new
         purchase or trial start)</td>
     </tr>
     <tr>
       <td style="text-align:left">planName</td>
-      <td style="text-align:left">String</td>
+      <td style="text-align:left">string</td>
       <td style="text-align:left">Plan or SKU name of the subscription for reference</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">type</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">Payment Plugin name</td>
     </tr>
   </tbody>
 </table>## Server side: Delete purchase
