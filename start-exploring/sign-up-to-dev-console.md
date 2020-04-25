@@ -1,3 +1,9 @@
+---
+description: >-
+  If you’re thinking about signing up with Developer Console and want to learn
+  the basics, access this six-step tutorial.
+---
+
 # Sign Up to Developer console
 
 **How to create a new Developer account with Pango \(AnchorFree\)**
