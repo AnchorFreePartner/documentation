@@ -8,7 +8,9 @@ Client applications can use these methods for User authentication. See parameter
 
 The project can use more than one user authentication methods.
 
-The Platform support next Authentication methods:
+The Platform support next Authentication methods.
+
+## Methods
 
 ### anonymous
 
@@ -55,4 +57,44 @@ If you have a User authentication service, we can make a plugin and support your
 {% page-ref page="auth-plugin-requirements.md" %}
 
 Please contact us for any questions about Plugin.
+
+## Actions
+
+### Add new method
+
+If you are going to add new user authentication method to the project you need to do next steps:
+
+1. Click button "![](../../../.gitbook/assets/plus_icon.jpeg)**Add**". You will see the new form like this:
+
+![](../../../.gitbook/assets/add_new_auth.png)
+
+Fill the name of your authentication method. For anonymous method - "_anonymous_", for Firebase - "firebase", for custom - _name of your plugin_.
+
+Fill the settings of the authentication method.
+
+   2. Click button "**New auth method**". Like result you can see this authentication method in the table, for example:
+
+![](../../../.gitbook/assets/auth_methods.png)
+
+### Edit method parameters
+
+If you going to change settings of an existed authentication method, you need to do next steps:
+
+1. Select authentication method and click the button "![](../../../.gitbook/assets/edit_icon.png)". You will see the new form like this:
+
+![](../../../.gitbook/assets/edit_auth_settings.png)
+
+  2. Edit setting JSON and click the button "**Edit auth method**". 
+
+### Delete method
+
+If you going to delete an existed authentication method, you need to do next steps:
+
+1. Select authentication method for delete and click the button "![](../../../.gitbook/assets/delete_icon.png)". You will see the new form like this:
+
+![](../../../.gitbook/assets/delete_auth_method.png)
+
+   2. Click the button "**Delete auth method**". 
+
+
 
