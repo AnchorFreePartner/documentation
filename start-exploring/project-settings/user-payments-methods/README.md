@@ -148,3 +148,43 @@ Requirements for the Plugin of a custom service in your side you can see:
 
 Please contact us for any questions about Plugin.
 
+## Actions
+
+### Add new method
+
+If you are going to add new user payment method to the project you need to do next steps:
+
+1. Click button "![](../../../.gitbook/assets/plus_icon.jpeg)**Add**". You will see the new form like this:  
+
+![](../../../.gitbook/assets/new_payment_method.png)
+
+Fill the name and settings of your payment method.
+
+   2. Click button "**New payments method**". Like result you can see this method in the table, for example:  
+
+![](../../../.gitbook/assets/payment_methods.png)
+
+### Edit method parameters
+
+If you going to change settings of an existed payment method, you need to do next steps:
+
+1. Select payment method and click the button "![](../../../.gitbook/assets/edit_icon.png)". You will see the new form like this:  
+
+![](../../../.gitbook/assets/edit_payment_settings.png)
+
+  2. Edit setting JSON and click the button "**Edit payments method**". 
+
+### Delete method
+
+If you going to delete an existed payment method, you need to do next steps:
+
+1. Select payment method for delete and click the button "![](../../../.gitbook/assets/delete_icon.png)". You will see the new form like this:  
+
+![](../../../.gitbook/assets/delete_payment_method.png)
+
+   2. Click the button "**Delete payments method**". 
+
+
+
+.
+
