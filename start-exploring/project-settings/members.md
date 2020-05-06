@@ -40,5 +40,21 @@ our SDK provides this member-email to an application \(per OS\). Your applicatio
 
 ### Editing a member
 
+If you going to change settings of an existed member, you need to do next steps:
+
+1. Select a member and click the button "![](../../.gitbook/assets/edit_icon.png)". You will see the new form like this:  
+
+![](../../.gitbook/assets/edite_member.png)
+
+  2. Edit setting and click the button "**Save changes**". 
+
 ### Deleting a member
+
+If you going to delete an existed member, you need to do next steps:
+
+1. Select a member for delete and click the button "![](../../.gitbook/assets/delete_icon.png)". You will see the new form like this:  
+
+![](../../.gitbook/assets/delete_member.png)
+
+   2. Click the button "**Delete member**". 
 
