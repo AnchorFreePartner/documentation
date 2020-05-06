@@ -1,18 +1,44 @@
 # Member
 
-Log into the Console.
+The Project Member is a person who has access to the Platform Console. There are 3 roles of the members with different access:
 
-Click the Settings tab.
+| Role | Access  | Description |
+| :--- | :--- | :--- |
+| Owner | full access | who made the project |
+| Admin |  |  |
+| Support |  |  |
 
-Now select the Member tab.
+## Actions
 
-Pick the "  Add" Member.
+### Adding a new member
 
-Enter the email address of the user.
+If you are going to add new member to the project you need to do next steps:
 
-For role, users can either be Project admin or Project support.  The difference between the two is that Project support cannot add new portal members or add or remove networks.
+1. Click button "![](../../.gitbook/assets/plus_icon.jpeg)**Add member**". You will see the new form like this:
 
-**Client Support of applications**
+![](../../.gitbook/assets/new_member.png)
 
-If this portal administrator will respond to questions from other users concerning issues with the client, select the clients that the user will receive emails from.
+  2. Enter the email address of the user.
+
+{% hint style="info" %}
+If this user has access to the Platform Console, he will see this project in his list of projects. If this user is new, the Platform will send the invite.
+{% endhint %}
+
+  3. Select a member role. 
+
+{% hint style="info" %}
+A member can't add a new member with a role above himself.
+{% endhint %}
+
+  4. If this new member will respond to questions from other users concerning issues with the client, select the clients that the user will receive emails from.
+
+{% hint style="info" %}
+our SDK provides this member-email to an application \(per OS\). Your application can use this email for support contact.
+{% endhint %}
+
+  5. Click button "**Add member**".
+
+### Editing a member
+
+### Deleting a member
 
