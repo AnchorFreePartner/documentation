@@ -18,7 +18,7 @@ description: >-
 
 If you want to know if Pango Platform matches your needs :
 
-{% page-ref page="resources/use-cases.md" %}
+{% page-ref page="resources/use-cases/" %}
 
 The best way to discover Platform services is to try it out**:**
 
