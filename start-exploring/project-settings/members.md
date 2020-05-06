@@ -2,11 +2,11 @@
 
 The Project Member is a person who has access to the Platform Console. There are 3 roles of the members with different access:
 
-| Role | Access  | Description |
-| :--- | :--- | :--- |
-| Owner | full access | who made the project |
-| Admin |  |  |
-| Support |  |  |
+| Role | Access  |
+| :--- | :--- |
+| Owner | full access |
+| Admin | can't delete project |
+| Support | can't change the project settings |
 
 ## Actions
 
