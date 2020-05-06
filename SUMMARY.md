@@ -61,4 +61,6 @@
   * [How can I get Shared Secret key from iTunes Connect for In-App Purchase](resources/how-to/untitled.md)
 * [FAQ](resources/faq/README.md)
   * [VPN Platform Flow](resources/faq/vpn-platform-flow.md)
+  * [What data collect the Platform?](resources/faq/what-data-collect-the-platform.md)
+  * [What analytic data collect your SDK?](resources/faq/what-analytic-data-collect-your-sdk.md)
 
