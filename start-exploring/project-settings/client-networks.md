@@ -28,15 +28,15 @@ If you are going to add new network rule to the project you need to do next step
 
 ### **Download list of rules**
 
-Selecting this option will cause the list of networks to be downloaded as a JSON file onto your device.
+Selecting this action \(![](../../.gitbook/assets/download_icon.webp)Download\) will cause the list of networks to be downloaded as a JSON file onto your device.
 
 ### **Editing a rule**
 
-Just select the ![](../../.gitbook/assets/image%20%289%29.png) pencil to the right of the name of the network that you want to modify. Make sure to click on save after any changes.
+Just select the ![](../../.gitbook/assets/edit_icon.png) pencil to the right of the name of the network that you want to modify. Make sure to click on save after any changes.
 
 ### **Deleting a rule**
 
-Click on the  trash can  that is right of the network that needs to be deleted.
+Click on the ![](../../.gitbook/assets/delete_icon.png) trash can  that is right of the network that needs to be deleted.
 
 ### **Priority of rules**
 
@@ -44,7 +44,7 @@ In the picture below, the BobsNetwork is on the first line as well as the second
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
-**Changing order of the Network**
+#### **Changing order of the Network**
 
 The order of these networks can be easily changed.  Just select the number of the network on the far left and drag it to the new location.
 
