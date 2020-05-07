@@ -51,7 +51,7 @@ This graph displays the number of devices that are using actively using the appl
 
 In the bottom right of the graphic shows the number of devices that are currently using the application.
 
-### Daily, Weekly, Monthly Connected Users
+### Connected Users
 
 This graph displays connected users on three lines, daily, weekly and monthly.
 
@@ -67,7 +67,7 @@ The Legend:
 
 It updates every 24 hours.
 
-### Daily, Weekly, Monthly Connected Devices
+### Connected Devices
 
 This graph displays connected devices on three lines, daily, weekly and monthly.
 
