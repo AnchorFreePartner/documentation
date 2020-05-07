@@ -19,5 +19,7 @@ If you hover over "_Changes_" data, you can see detailed information like this s
 
 ## Actions
 
+### Filters
 
+### Download
 
