@@ -66,7 +66,7 @@ You can use any available sign-in method available in Firebase Authentication.
 
 see details:
 
-{% page-ref page="../../start-exploring/project-settings/user-authentification-methods/" %}
+{% page-ref page="../../console-details/project-settings/user-authentification-methods/" %}
 
 **Step 11:** add the Firebase Authentication to your application. See official documentation:
 

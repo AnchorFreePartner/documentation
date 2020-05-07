@@ -37,11 +37,11 @@ As a result, you can find your created project \(project cards view\):
 
 1. Add a list of locations:
 
-{% page-ref page="network-locations/locations.md" %}
+{% page-ref page="../console-details/network-locations/locations.md" %}
 
     2. Add a list of project users:
 
-{% page-ref page="project-settings/members.md" %}
+{% page-ref page="../console-details/project-settings/members.md" %}
 
 
 
