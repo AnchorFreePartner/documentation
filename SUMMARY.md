@@ -16,6 +16,7 @@
   * [Locations](console-details/network-locations/locations.md)
   * [Pools](console-details/network-locations/pools.md)
 * [Users](console-details/users.md)
+* [Active sessions](console-details/active-sessions.md)
 * [Project Settings](console-details/project-settings/README.md)
   * [General](console-details/project-settings/general/README.md)
     * [Project config description \(JSON format\)](console-details/project-settings/general/project-config-description-json-format.md)
