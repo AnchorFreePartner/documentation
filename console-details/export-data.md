@@ -1,7 +1,5 @@
 # Export Data
 
-Select the Export Data tab.  
-
 Click on  Add
 
 Now pick either Export User, Export Device, Export Session.  A job will be created to complete the task and it will be displayed in the list as "In progress".  When the task is completed and was successful, the job will be displayed as Done and can be downloaded.
