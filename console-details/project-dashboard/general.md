@@ -24,17 +24,37 @@ The graph show us amount realtime sessions per virtual location and we can see a
 
 #### Details
 
-Here we can see all  virtual location for all active users including anonymous users and users having a subscription. To look up a detailed list just click on the graph line and you can see pop up menu.To distinguish of any particular line  just click on the country code. The list of Virtual locations is scrollable.
+Here we can see all  virtual location for all active users including anonymous users and users having a subscription. To look up a detailed list just click on the graph line and you can see pop up menu.To distinguish of any particular line  just click on the country code. The list of Virtual locations is scrollable.  It updates every 30 secs.
 
 We are using ALPHA-2 codes for countries.
 
 ### Users
 
+
+
 ### Devices
 
 ### Daily, Weekly, Monthly Connected Users
 
+This graph displays connected users on three lines, daily, weekly and monthly.
+
+![](../../.gitbook/assets/connected_users.png)
+
+#### Details
+
+The Legend:
+
+* **DCU** = Daily Connected Users
+* **WCU** = Weekly Connected Users
+* **MCU** = Monthly Connected Users
+
+It updates every 24 hours.
+
 ### Daily, Weekly, Monthly Connected Devices
+
+
+
+![](../../.gitbook/assets/connected_devices.png)
 
 ### Inactive Users
 
