@@ -52,9 +52,19 @@ It updates every 24 hours.
 
 ### Daily, Weekly, Monthly Connected Devices
 
-
+This graph displays connected devices on three lines, daily, weekly and monthly.
 
 ![](../../.gitbook/assets/connected_devices.png)
+
+#### Details
+
+The Legend:
+
+* **DCD** = Daily Connected Devices
+* **WCD** = Weekly Connected Devices
+* **MCD** = Monthly Connected Devices
+
+It updates every 24 hours.
 
 ### Inactive Users
 
