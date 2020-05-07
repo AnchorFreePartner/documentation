@@ -56,6 +56,8 @@
 * [Use cases](resources/use-cases/README.md)
   * [Public VPN](resources/use-cases/public-vpn.md)
   * [Business VPN](resources/use-cases/business-vpn.md)
+  * [Fireshield](resources/use-cases/fireshield.md)
+  * [Application anti-blocking](resources/use-cases/application-anti-blocking.md)
 * [How-to](resources/how-to/README.md)
   * [Create the Firebase project for User Authentication](resources/how-to/create-the-firebase-project-for-user-authentication.md)
   * [AWS CloudFront Distribution of the Platform URL](resources/how-to/aws-cloudfront-distribution.md)
