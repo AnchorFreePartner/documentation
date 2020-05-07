@@ -35,10 +35,10 @@
 ## SDK
 
 * [VPN SDK for Android](sdk/untitled.md)
-* [IPSEC VPN SDK for iOS/macOS](sdk/ipsec-vpn-sdk-for-ios-macos.md)
-* [Hydra SDK for Windows](sdk/hydra-sdk-for-windows.md)
 * [Hydra VPN SDK for iOS/macOS](sdk/hydra-vpn-sdk-for-ios/README.md)
   * [Changelog](sdk/hydra-vpn-sdk-for-ios/changelog.md)
+* [IPSEC VPN SDK for iOS/macOS](sdk/ipsec-vpn-sdk-for-ios-macos.md)
+* [Hydra SDK for Windows](sdk/hydra-sdk-for-windows.md)
 
 ## REST API
 
