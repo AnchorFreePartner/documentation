@@ -1,10 +1,8 @@
 ---
-description: The Project data
+description: This page included graphs of your project.
 ---
 
 # General
-
-This page included graphs of your project.
 
 ## Graphs
 
