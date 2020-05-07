@@ -26,6 +26,8 @@ The graph show us amount realtime sessions per virtual location and we can see a
 
 Here we can see all  virtual location for all active users including anonymous users and users having a subscription. To look up a detailed list just click on the graph line and you can see pop up menu.To distinguish of any particular line  just click on the country code. The list of Virtual locations is scrollable.
 
+We are using ALPHA-2 codes for countries.
+
 ### Users
 
 ### Devices
