@@ -18,6 +18,14 @@ We can see the active sessions per protocol just clicking the particular colored
 
 ### Active Sessions by Locations
 
+The graph show us amount realtime sessions per virtual location and we can see a very popular virtual location selected by users. For anonymous users that graph shows an Optimal server location.  
+
+![](../../.gitbook/assets/active_session_location.png)
+
+#### Details
+
+Here we can see all  virtual location for all active users including anonymous users and users having a subscription. To look up a detailed list just click on the graph line and you can see pop up menu.To distinguish of any particular line  just click on the country code. The list of Virtual locations is scrollable.
+
 ### Users
 
 ### Devices
