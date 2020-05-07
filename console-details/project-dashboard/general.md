@@ -30,9 +30,26 @@ We are using ALPHA-2 codes for countries.
 
 ### Users
 
+This graph will display active, invited and blocked users.  
 
+![](../../.gitbook/assets/users_graph.png)
+
+#### Details
+
+* **Active users** - Authorized in the project users.
+* **Blocked users** - Users who have been disabled from the project.
+* **Invited users** - Users who have been added to the project but have not logged into the application \(not authorized\).
+* **Deleted users** - Users who have been deleted from the project.
 
 ### Devices
+
+This graph displays the number of devices that are using actively using the application.  
+
+![](../../.gitbook/assets/devices_graph.png)
+
+#### Details
+
+In the bottom right of the graphic shows the number of devices that are currently using the application.
 
 ### Daily, Weekly, Monthly Connected Users
 
@@ -68,7 +85,23 @@ It updates every 24 hours.
 
 ### Inactive Users
 
+This graph displays all the inactive users for the day as well as the week and month.  
+
+![](../../.gitbook/assets/inactive_users_graph.png)
+
+#### Details
+
+It updates every 24 hours.
+
 ### Inactive Devices
+
+This graph displays all the inactive devices for the day as well as the week and month.  
+
+![](../../.gitbook/assets/inactive_devices_graph.png)
+
+#### Details
+
+It updates every 24 hours.
 
 ## Actions
 
