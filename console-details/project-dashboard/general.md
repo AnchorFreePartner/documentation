@@ -107,5 +107,13 @@ It updates every 24 hours.
 
 ### Filters
 
+In the top right corner, there is the filter option ![](../../.gitbook/assets/filtr_icon.jpg). You can click this button and change the time period of graphs data - 1 day \(default\), 7 days, 14 days, 30 days, or Custom.
+
 ### Export data
+
+if you want to export data of the graphs, you have to option ![](../../.gitbook/assets/export_icon.png) Export in the top right corner or move to tab ![](../../.gitbook/assets/export_icon.png) "Export data" \(left menu\). Export data you can see in next document:
+
+{% page-ref page="../export-data.md" %}
+
+
 
