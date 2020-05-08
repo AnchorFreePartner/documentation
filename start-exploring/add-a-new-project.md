@@ -10,7 +10,11 @@ description: Learn how to create your first project on Developer Portal
 2. Click Sign in button
 3. Enter your valid creds and click ‘Sign in’ button:
 
+![](../.gitbook/assets/filled_sign_in_form.png)
+
 As a result, you redirect to ‘Create first project’ page:
+
+![](../.gitbook/assets/empty_create_first_project_form.png)
 
 4. Fill out all available fields:
 
@@ -22,16 +26,24 @@ As a result, you redirect to ‘Create first project’ page:
 * Private VPN option is for SMB and Enterprise customers.
 * Proxy option - It is test functionality \(under development\).
 
+![](../.gitbook/assets/project_type_dropdown.png)
+
 * **Admin email field.** The owner is the person who creates the project. The admin role has access to the project.
 * **Upload image button.** It is a project icon that displays close to the project name and the project ID. It is an optional option.
 
 As a result, you get completed ‘Create first project’ form:
 
+![](../.gitbook/assets/filled_first_project_form.png)
+
 5. Click ‘Add project’ button
 
 As a result, you can find your created project \(the projects list view\) or project cards:
 
+![](../.gitbook/assets/project_list_view.png)
+
 As a result, you can find your created project \(project cards view\):
+
+![](../.gitbook/assets/project_card_view.png)
 
 **How to configure recently added project to Developer Portal**
 
