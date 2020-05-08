@@ -1,38 +1,43 @@
 # What analytic data collect your SDK?
 
-SDK sends 1 event for authorization attempts and 4 events related to the connection.
+The main purpose of the reporting is to improve the connection quality
+of the SDK. SDK collects anonymous data about device and about
+connection start and stop attempts.
 
-## Common \(super\) properties
+SDK performs Network Availability Test for better understanding what's  
+happening on connection error. It includes diagnostics of the current
+network connection such a check a Captive Portal,  
+ping a popular public web resource and etc.
 
-All Android events include following parameters:
+## Common properties
 
-| **Property Name** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| af\_platform | String | android |
-| uid | String | Application uuid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
-| app\_name | String | Application package name |
-| app\_build | String | Id based on app signature. Helpful to figure out if app is cracked. |
-| app\_version | String | Application version name |
-| app\_release | String | Application version code |
-| carrier | String | Telephony carrier |
-| has\_telephone | Boolean | If device is a phone |
-| memory\_remains | String | Remaining RAM |
-| memory\_total | String | Total RAM |
-| model | String | android.os.Build.MODEL |
-| device\_manufacturer | String | android.os.Build.MANUFACTURER |
-| locale | String | Current device locale |
-| device\_language | String | Current device language |
-| hydra\_base\_url | String | Base api url |
-| android\_sdk\_int | String | Build.VERSION.SDK\_INT |
-| android\_version\_name | String | Build.VERSION.RELEASE |
-| connection\_type | String | Type name of current active network |
-| time\_zone | String | Device time zone in format like "-0800" |
-| af\_hash | String | Device id generated on first app install |
-| sdk\_version | String | SDK version name |
-| sdk\_version\_code | Integer | SDK version code |
+### Common Android device related properties:
+| **Property Name**      | **Type** | **Description**                                                                                                                                                       |
+|:-----------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| af\_platform           | String   | android                                                                                                                                                               |
+| uid                    | String   | Application uuid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
+| app\_name              | String   | Application package name                                                                                                                                              |
+| app\_build             | String   | Id based on app signature. Helpful to figure out if app is cracked.                                                                                                   |
+| app\_version           | String   | Application version name                                                                                                                                              |
+| app\_release           | String   | Application version code                                                                                                                                              |
+| carrier                | String   | Telephony carrier                                                                                                                                                     |
+| has\_telephone         | Boolean  | If device is a phone                                                                                                                                                  |
+| memory\_remains        | String   | Remaining RAM                                                                                                                                                         |
+| memory\_total          | String   | Total RAM                                                                                                                                                             |
+| model                  | String   | android.os.Build.MODEL                                                                                                                                                |
+| device\_manufacturer   | String   | android.os.Build.MANUFACTURER                                                                                                                                         |
+| locale                 | String   | Current device locale                                                                                                                                                 |
+| device\_language       | String   | Current device language                                                                                                                                               |
+| hydra\_base\_url       | String   | Base api url                                                                                                                                                          |
+| android\_sdk\_int      | String   | Build.VERSION.SDK\_INT                                                                                                                                                |
+| android\_version\_name | String   | Build.VERSION.RELEASE                                                                                                                                                 |
+| connection\_type       | String   | Type name of current active network                                                                                                                                   |
+| time\_zone             | String   | Device time zone in format like "-0800"                                                                                                                               |
+| af\_hash               | String   | Device id generated on first app install                                                                                                                              |
+| sdk\_version           | String   | SDK version name                                                                                                                                                      |
+| sdk\_version\_code     | Integer  | SDK version code                                                                                                                                                      |
 
-All iOS and macOS events include following parameters:
-
+### Common iOS and macOS device related properties
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | af\_platform | String | “ios” |
@@ -55,70 +60,7 @@ All iOS and macOS events include following parameters:
 | wifi | Bool | Indicates if device is on Wi-Fi network |
 | time | Integer | The current time on device in unix format |
 
-## Properties for _app\_start_ event \(iOS\) ???
-
-| **Property Name** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| first | Bool | Indicates the first launch of the app. |
-
-## Properties for _sdk\_auth_ event
-
-| **Property Name** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| error | String | error description. |
-| caid | String | Auth attemption id |
-| catime | String | Auth attemption time |
-| error\_code | String | numerical code referring to an error category \(0 = success\) |
-
-Sample:
-
-```text
-{
-  "event": "sdk_auth",
-  "id": "1",
-  "properties": {
-    "af_platform": "android",
-    "app_version": "3.2.0",
-    "locale": "US",
-    "device_manufacturer": "Google",
-    "uid": 10115,
-    "sdk_version": "3.2.0",
-    "hydra_base_url": "https://api-prod-partner-us-west-2.northghost.com/",
-    "model": "Android SDK built for x86",
-    "memory_total": 1567338496,
-    "memory_remains": 770957312,
-    "hydra_carrier": "afdemo",
-    "seq_no": 0,
-    "app_release": 403219,
-    "connection_type": "WIFI",
-    "android_version_name": "8.1.0",
-    "has_telephone": true,
-    "time_zone": "-0700",
-    "app_name": "com.northghost.hydraclient.kotlin",
-    "carrier": "Android",
-    "sdk_version_code": "403219",
-    "app_build": 444722979,
-    "android_sdk_int": 27,
-    "error_code": "0",
-    "time": 1585091096189,
-    "device_language": "en"
-  }
-}
-```
-
-## Connection events
-
-There are 4 connection events: 
-
-* **connection\_start,** 
-* **connections\_start\_detailed,** 
-* **connection\_end,** 
-* **connection\_end\_detailed**. 
-
-We are using **\*\_detailed** events mostly for diagnostic if a connection really works and what the possible reason if a connection could not be established.
-
-### Common properties for _сonnection\_&lt;name&gt;_ events
-
+### Common connection properties for all platforms
 <table>
   <thead>
     <tr>
@@ -228,11 +170,30 @@ We are using **\*\_detailed** events mostly for diagnostic if a connection reall
         no). Should be defined by the client.</td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
-\(\*\) Do not send these fields if the protocol does not support it.
-{% endhint %}
+</table>
+
+
+
+## Properties for _app\_start_ event \(iOS\) ???
+
+| **Property Name** | **Type** | **Description** |
+| :--- | :--- | :--- |
+| first | Bool | Indicates the first launch of the app. |
+
+## Connection events
+
+There are 4 connection events: 
+
+* **connection\_start,** 
+* **connections\_start\_detailed,** 
+* **connection\_end,** 
+* **connection\_end\_detailed**. 
+
+We are using **\*\_detailed** events mostly for diagnostic if a connection really works and what the possible reason if a connection could not be established.
 
 ### Event: _connection\_start_
+
+Event reports every connection attempt.
 
 Properties specific for event _connection\_start_:
 
@@ -380,7 +341,9 @@ Properties specific for event _connection\_end\_detailed_:
       <td style="text-align:left">Request has succeeded, but have had an error result code</td>
     </tr>
   </tbody>
-</table>## Reasons
+</table>
+
+## Reasons
 
 ### connection\_start
 
@@ -471,7 +434,9 @@ Properties specific for event _connection\_end\_detailed_:
       </td>
     </tr>
   </tbody>
-</table>### connection\_end
+</table>
+
+### connection\_end
 
 <table>
   <thead>
@@ -548,7 +513,9 @@ Properties specific for event _connection\_end\_detailed_:
       </td>
     </tr>
   </tbody>
-</table>## Network Availability Test
+</table>
+
+## Network Availability Test
 
 There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a.  problem with the network that can’t be fixed in principle.
 
@@ -749,6 +716,54 @@ This test includes: check captive portal, current network type, availability to 
     "time": 1585089620336,
     "device_language": "en",
     "server_protocol": "hydra"
+  }
+}
+```
+
+## Properties for _sdk\_auth_ event (*Deprecated in 3.3.0*)
+SDK sends this event on authentication attempt with data about errors
+plus common parameters.
+This event will be removed in versions newer 3.3.0.
+
+| **Property Name** | **Type** | **Description**                                               |
+|:------------------|:---------|:--------------------------------------------------------------|
+| error             | String   | error description.                                            |
+| caid              | String   | Auth attemption id                                            |
+| catime            | String   | Auth attemption time                                          |
+| error\_code       | String   | numerical code referring to an error category \(0 = success\) |
+
+Sample:
+
+```text
+{
+  "event": "sdk_auth",
+  "id": "1",
+  "properties": {
+    "af_platform": "android",
+    "app_version": "3.2.0",
+    "locale": "US",
+    "device_manufacturer": "Google",
+    "uid": 10115,
+    "sdk_version": "3.2.0",
+    "hydra_base_url": "https://api-prod-partner-us-west-2.northghost.com/",
+    "model": "Android SDK built for x86",
+    "memory_total": 1567338496,
+    "memory_remains": 770957312,
+    "hydra_carrier": "afdemo",
+    "seq_no": 0,
+    "app_release": 403219,
+    "connection_type": "WIFI",
+    "android_version_name": "8.1.0",
+    "has_telephone": true,
+    "time_zone": "-0700",
+    "app_name": "com.northghost.hydraclient.kotlin",
+    "carrier": "Android",
+    "sdk_version_code": "403219",
+    "app_build": 444722979,
+    "android_sdk_int": 27,
+    "error_code": "0",
+    "time": 1585091096189,
+    "device_language": "en"
   }
 }
 ```
