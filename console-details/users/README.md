@@ -1,5 +1,5 @@
 ---
-description: This page helps you to manage project users.
+description: This page helps you to manage your project users.
 ---
 
 # Users
