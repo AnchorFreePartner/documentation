@@ -1,43 +1,42 @@
 # What analytic data collect your SDK?
 
-The main purpose of the reporting is to improve the connection quality
-of the SDK. SDK collects anonymous data about device and about
-connection start and stop attempts.
+The main purpose of the reporting is to improve the connection quality of the SDK. SDK collects anonymous data about device and about connection start and stop attempts.
 
 SDK performs Network Availability Test for better understanding what's  
-happening on connection error. It includes diagnostics of the current
-network connection such a check a Captive Portal,  
+happening on connection error. It includes diagnostics of the current network connection such a check a Captive Portal,  
 ping a popular public web resource and etc.
 
 ## Common properties
 
 ### Common Android device related properties:
-| **Property Name**      | **Type** | **Description**                                                                                                                                                       |
-|:-----------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| af\_platform           | String   | android                                                                                                                                                               |
-| uid                    | String   | Application uuid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
-| app\_name              | String   | Application package name                                                                                                                                              |
-| app\_build             | String   | Id based on app signature. Helpful to figure out if app is cracked.                                                                                                   |
-| app\_version           | String   | Application version name                                                                                                                                              |
-| app\_release           | String   | Application version code                                                                                                                                              |
-| carrier                | String   | Telephony carrier                                                                                                                                                     |
-| has\_telephone         | Boolean  | If device is a phone                                                                                                                                                  |
-| memory\_remains        | String   | Remaining RAM                                                                                                                                                         |
-| memory\_total          | String   | Total RAM                                                                                                                                                             |
-| model                  | String   | android.os.Build.MODEL                                                                                                                                                |
-| device\_manufacturer   | String   | android.os.Build.MANUFACTURER                                                                                                                                         |
-| locale                 | String   | Current device locale                                                                                                                                                 |
-| device\_language       | String   | Current device language                                                                                                                                               |
-| hydra\_base\_url       | String   | Base api url                                                                                                                                                          |
-| android\_sdk\_int      | String   | Build.VERSION.SDK\_INT                                                                                                                                                |
-| android\_version\_name | String   | Build.VERSION.RELEASE                                                                                                                                                 |
-| connection\_type       | String   | Type name of current active network                                                                                                                                   |
-| time\_zone             | String   | Device time zone in format like "-0800"                                                                                                                               |
-| af\_hash               | String   | Device id generated on first app install                                                                                                                              |
-| sdk\_version           | String   | SDK version name                                                                                                                                                      |
-| sdk\_version\_code     | Integer  | SDK version code                                                                                                                                                      |
+
+| **Property Name** | **Type** | **Description** |
+| :--- | :--- | :--- |
+| af\_platform | String | android |
+| uid | String | Application uuid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
+| app\_name | String | Application package name |
+| app\_build | String | Id based on app signature. Helpful to figure out if app is cracked. |
+| app\_version | String | Application version name |
+| app\_release | String | Application version code |
+| carrier | String | Telephony carrier |
+| has\_telephone | Boolean | If device is a phone |
+| memory\_remains | String | Remaining RAM |
+| memory\_total | String | Total RAM |
+| model | String | android.os.Build.MODEL |
+| device\_manufacturer | String | android.os.Build.MANUFACTURER |
+| locale | String | Current device locale |
+| device\_language | String | Current device language |
+| hydra\_base\_url | String | Base api url |
+| android\_sdk\_int | String | Build.VERSION.SDK\_INT |
+| android\_version\_name | String | Build.VERSION.RELEASE |
+| connection\_type | String | Type name of current active network |
+| time\_zone | String | Device time zone in format like "-0800" |
+| af\_hash | String | Device id generated on first app install |
+| sdk\_version | String | SDK version name |
+| sdk\_version\_code | Integer | SDK version code |
 
 ### Common iOS and macOS device related properties
+
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | af\_platform | String | “ios” |
@@ -61,6 +60,7 @@ ping a popular public web resource and etc.
 | time | Integer | The current time on device in unix format |
 
 ### Common connection properties for all platforms
+
 <table>
   <thead>
     <tr>
@@ -134,19 +134,19 @@ ping a popular public web resource and etc.
           <li>detailed info about <em>network_availabilty</em> test if one was conducted</li>
           <li>sd_tag - json passed by hydra. Example:</li>
         </ul>
-        <p><code>{ </code>
+        <p><code>{</code>
         </p>
-        <p><code>  &quot;sd_tag&quot;: {</code>
+        <p> <code>&quot;sd_tag&quot;: {</code>
         </p>
-        <p><code>    &quot;region_id&quot;: 38, </code>
+        <p> <code>&quot;region_id&quot;: 38,</code>
         </p>
-        <p><code>    &quot;isp_name&quot;: &quot;Zayo Bandwidth&quot;, </code>
+        <p> <code>&quot;isp_name&quot;: &quot;Zayo Bandwidth&quot;,</code>
         </p>
-        <p><code>    &quot;coursera_on&quot;: 0, </code>
+        <p> <code>&quot;coursera_on&quot;: 0,</code>
         </p>
-        <p><code>    &quot;isp_org&quot;: &quot;Zayo Bandwidth&quot; </code>
+        <p> <code>&quot;isp_org&quot;: &quot;Zayo Bandwidth&quot;</code>
         </p>
-        <p><code>   } </code>
+        <p> <code>}</code>
         </p>
         <p><code>}</code>
         </p>
@@ -170,11 +170,7 @@ ping a popular public web resource and etc.
         no). Should be defined by the client.</td>
     </tr>
   </tbody>
-</table>
-
-
-
-## Properties for _app\_start_ event \(iOS\) ???
+</table>## Properties for _app\_start_ event \(iOS\) ???
 
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -182,7 +178,7 @@ ping a popular public web resource and etc.
 
 ## Connection events
 
-There are 4 connection events: 
+There are 4 connection events:
 
 * **connection\_start,** 
 * **connections\_start\_detailed,** 
@@ -249,44 +245,10 @@ Properties specific for event _connection\_end_:
         <p>&quot;bytes_in&quot;: 100,</p>
         <p>&quot;bytes_out&quot;: 100</p>
         <p>}</p>
-        <p></p>
       </td>
     </tr>
   </tbody>
-</table>### Event: _connection\_end\_detailed_
-
-When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.
-
-Properties specific for event _connection\_end\_detailed_:
-
-| **Property Name** | **Type** | **Notes** |
-| :--- | :--- | :--- |
-| network\_availability | Float | Share of passed Network Availability tests rounded to 2 digits after decimal point. |
-| notes | JSON | detailed results of the Network Availability Test. |
-
-## Property for “_error\_code_” 
-
-### connection\_start
-
-| **error\_code** | **Description** |
-| :--- | :--- |
-| 0 \(success\) | No error \(connection has established successfully\) |
-| 1 \(internal error\) | Internal problems during initialization or establishing communication \(e.g. Failed to open TUN, VPN permissions are not given, Hydra "Bad Configuration" error, etc.\) or any other unclassified errors |
-| 2 \(connection error\) | Failed to establish a connection due to networking issues \(e.g. host is unreachable, can't send data, timeout on receiving data, etc.\) |
-| 4 \("no network" error\) | Network has been lost during the connection \(e.g. WiFi lost or changed\) or network is up, but unavailable \(e.g. due to walled garden or as mobile data is disabled\) |
-| 6 \(canceled\) | The connection establishment has been terminated in the middle of the process. No connection has been established. |
-| 7 \(app level error\) | Application denied to start establishing the VPN connection \(i.e. user tried to use some elite features from the free app, PC adapter is not ready to connect\) |
-
-### connection\_end
-
-| **error\_code** | **Description** |
-| :--- | :--- |
-| 0 \(success\) | No error \(connection has ended as expected and successfully\) |
-| 1 \(internal error\) | Internal problem that broke established connection \(e.g. OpenVPN or Hydra quit unexpectedly, etc.\) |
-| 2 \(connection error\) | Connection has broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
-| 3 \(connection stuck\) | Connection is established, but no exchange happening \("KeepAlive problem"\) |
-
-### Property for “error” 
+</table>\#\#\# Event: \_connection\\_end\\_detailed\_ When a connection is terminated unexpectedly \\(no user intention to terminate the session\\), network availability tests should be performed and \_connection\\_end\\_detailed\_ event should be reported. If user has canceled, no need to send the event. Properties specific for event \_connection\\_end\\_detailed\_: \| \*\*Property Name\*\* \| \*\*Type\*\* \| \*\*Notes\*\* \| \| :--- \| :--- \| :--- \| \| network\\_availability \| Float \| Share of passed Network Availability tests rounded to 2 digits after decimal point. \| \| notes \| JSON \| detailed results of the Network Availability Test. \| \#\# Property for “\_error\\_code\_” \#\#\# connection\\_start \| \*\*error\\_code\*\* \| \*\*Description\*\* \| \| :--- \| :--- \| \| 0 \\(success\\) \| No error \\(connection has established successfully\\) \| \| 1 \\(internal error\\) \| Internal problems during initialization or establishing communication \\(e.g. Failed to open TUN, VPN permissions are not given, Hydra "Bad Configuration" error, etc.\\) or any other unclassified errors \| \| 2 \\(connection error\\) \| Failed to establish a connection due to networking issues \\(e.g. host is unreachable, can't send data, timeout on receiving data, etc.\\) \| \| 4 \\("no network" error\\) \| Network has been lost during the connection \\(e.g. WiFi lost or changed\\) or network is up, but unavailable \\(e.g. due to walled garden or as mobile data is disabled\\) \| \| 6 \\(canceled\\) \| The connection establishment has been terminated in the middle of the process. No connection has been established. \| \| 7 \\(app level error\\) \| Application denied to start establishing the VPN connection \\(i.e. user tried to use some elite features from the free app, PC adapter is not ready to connect\\) \| \#\#\# connection\\_end \| \*\*error\\_code\*\* \| \*\*Description\*\* \| \| :--- \| :--- \| \| 0 \\(success\\) \| No error \\(connection has ended as expected and successfully\\) \| \| 1 \\(internal error\\) \| Internal problem that broke established connection \\(e.g. OpenVPN or Hydra quit unexpectedly, etc.\\) \| \| 2 \\(connection error\\) \| Connection has broken due to connection problems \\(e.g. Hydra or OpenVPN detected communication problem, etc.\\) \| \| 3 \\(connection stuck\\) \| Connection is established, but no exchange happening \\("KeepAlive problem"\\) \| \#\#\# Property for “error”
 
 <table>
   <thead>
@@ -341,9 +303,7 @@ Properties specific for event _connection\_end\_detailed_:
       <td style="text-align:left">Request has succeeded, but have had an error result code</td>
     </tr>
   </tbody>
-</table>
-
-## Reasons
+</table>## Reasons
 
 ### connection\_start
 
@@ -434,9 +394,7 @@ Properties specific for event _connection\_end\_detailed_:
       </td>
     </tr>
   </tbody>
-</table>
-
-### connection\_end
+</table>### connection\_end
 
 <table>
   <thead>
@@ -513,11 +471,9 @@ Properties specific for event _connection\_end\_detailed_:
       </td>
     </tr>
   </tbody>
-</table>
+</table>## Network Availability Test
 
-## Network Availability Test
-
-There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a.  problem with the network that can’t be fixed in principle.
+There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
 
 In order to distinguish these cases, a **network availability test** will be performed on every unsuccessful connect or unintended disconnect that will report whether the network in available or not.
 
@@ -720,17 +676,16 @@ This test includes: check captive portal, current network type, availability to 
 }
 ```
 
-## Properties for _sdk\_auth_ event (*Deprecated in 3.3.0*)
-SDK sends this event on authentication attempt with data about errors
-plus common parameters.
-This event will be removed in versions newer 3.3.0.
+## Properties for _sdk\_auth_ event \(_Deprecated in 3.3.0_\)
 
-| **Property Name** | **Type** | **Description**                                               |
-|:------------------|:---------|:--------------------------------------------------------------|
-| error             | String   | error description.                                            |
-| caid              | String   | Auth attemption id                                            |
-| catime            | String   | Auth attemption time                                          |
-| error\_code       | String   | numerical code referring to an error category \(0 = success\) |
+SDK sends this event on authentication attempt with data about errors plus common parameters. This event will be removed in versions newer 3.3.0.
+
+| **Property Name** | **Type** | **Description** |
+| :--- | :--- | :--- |
+| error | String | error description. |
+| caid | String | Auth attemption id |
+| catime | String | Auth attemption time |
+| error\_code | String | numerical code referring to an error category \(0 = success\) |
 
 Sample:
 

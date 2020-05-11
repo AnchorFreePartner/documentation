@@ -20,8 +20,8 @@ This tab show you users list of the project. Sample:
       <td style="text-align:left">
         <img src="../../.gitbook/assets/checkbox.webp" alt/>Checkbox</td>
       <td style="text-align:left">Checkbox for <em>Update</em> and <em>Mass update</em> actions. See these actions
-        at the bottom. This parameter not exist for &quot;Public VPN&quot; and
-        &quot;Proxy&quot; projects.</td>
+        at the bottom. This parameter not exist for &quot;<em>Public VPN</em>&quot;
+        and &quot;<em>Proxy</em>&quot; projects.</td>
     </tr>
     <tr>
       <td style="text-align:left">ID</td>
@@ -74,7 +74,48 @@ This tab show you users list of the project. Sample:
 
 ### User search
 
+In the top right corner, there is the _Search_ _Users_ option![](../../.gitbook/assets/search_icon.png). You can click this button and change filter options.
+
+If your project type is "_Public VPN_", you can see next search field in the top right corner 
+
+![](../../.gitbook/assets/user_search_pvpn.png)
+
+Click to "_User ID_" and select search parameter. There are next users search parameters:
+
+* _User ID_,
+* _User Name_,
+* _User Token_,
+* _Device ID_.
+
+You can use only one search parameter at the moment.
+
+If your project type is "_Private VPN_", you can see next search field in the top right corner  
+
+![](../../.gitbook/assets/user_search_bvpn.png)
+
+Search option work for any data included to the next fields:
+
+* User ID,
+* User Name,
+* User Description,
+* User Token,
+* Device ID. 
+
+At the same time if you click ![](../../.gitbook/assets/filtr_icon.jpg) you can set additional options   
+
+![](../../.gitbook/assets/user_search_filter.png)
+
 ### Update
+
+Update option available for project type "Private VPN" only. You can change few users parameters if select  users \(checkbox![](../../.gitbook/assets/checkbox.webp)\) and click in the top right corner _Update_ option![](../../.gitbook/assets/edit_icon.png). 
+
+![](../../.gitbook/assets/users_update.png)
+
+You can update fields user _Status_ and _Description._ Select __field, set parameter and click button "_Update"._
+
+{% hint style="info" %}
+If you need to change other parameters of the user, you need to open user detailed data and change parameters there.
+{% endhint %}
 
 ### Mass update
 
