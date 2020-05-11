@@ -119,6 +119,19 @@ If you need to change other parameters of the user, you need to open user detail
 
 ### Mass update
 
+Mass update option available for project type "Private VPN" only. This option similar "_Update_" option but   
+used CSV \(Comma Separated Value\)  file with data. To ****complete a mass update, a CSV file with the updates in it must be uploaded to finish the task. Notice that only the description and status field can be modified.  Below is the format of the CSV file: 
+
+| User name | Description | Status |
+| :--- | :--- | :--- |
+
+
+Click in the top right corner _Mass update_ option ![](../../.gitbook/assets/upload_icon.png) .  
+
+![](../../.gitbook/assets/users_massupdate.png)
+
+Upload the file by clicking on the Add file button and selecting the file. Click the "_Update_" button to users update.
+
 ### Add user
 
 ### Add multiply users
