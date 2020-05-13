@@ -88,7 +88,19 @@ All sessions of the user you can found in this page. This page include the list 
 
 You can sort the list data by any column.
 
+{% hint style="info" %}
+Active sessions you will see on top the session list.
+{% endhint %}
 
+In the top, there is the filter option. You can filter the session list by user device or session time.
+
+![Devices Filter](../../.gitbook/assets/filter_devices.png)
+
+![Session time filter](../../.gitbook/assets/filter_date.png)
+
+{% hint style="info" %}
+Filter time period for sessions can be up to 30 days.
+{% endhint %}
 
 ## Devices
 
