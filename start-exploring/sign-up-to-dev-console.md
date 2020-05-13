@@ -6,9 +6,9 @@ description: >-
 
 # Sign Up to Developer console
 
-**How to create a new Developer account on Pango Platform \(AnchorFree\)**
+**How to create a new Developer account on Management Console \(AnchorFree\)**
 
-1. Open [https://developer.anchorfree.com/\#](https://developer.anchorfree.com/#) web page
+1. Open [https://developer.anchorfree.com](https://developer.anchorfree.com/#) web page
 2. Click the ‘Sign up’ button in the right side of the website:
 
 ![](../.gitbook/assets/sign_up_button.png)

@@ -45,7 +45,7 @@ As a result, you can find your created project \(project cards view\):
 
 ![](../.gitbook/assets/project_card_view.png)
 
-**How to configure recently added project to Developer Portal**
+**How to configure recently added project to Management Console** 
 
 1. Add a list of locations:
 
