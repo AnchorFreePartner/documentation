@@ -21,7 +21,7 @@ If you hover over "_Changes_" data, you can see detailed information like this s
 
 ### Filters
 
-In the top right corner, there is the filter option ![](../.gitbook/assets/filtr_icon.jpg). You can click this button and change filter options.
+In the top right corner, there is the filter option ![](../.gitbook/assets/filtr_icon.jpg) . You can click this button and change filter options.
 
 ![](../.gitbook/assets/logs_filtr.png)
 
