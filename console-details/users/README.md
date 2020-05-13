@@ -184,5 +184,5 @@ You can download the result and close this form.
 
 ### User details
 
-
+All user data you can see if click to a user line on the list of users. See the next document about user data.
 
