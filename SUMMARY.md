@@ -67,4 +67,5 @@
   * [VPN Platform Flow](resources/faq/vpn-platform-flow.md)
   * [What data collect the Platform?](resources/faq/what-data-collect-the-platform.md)
   * [What analytic data collect your SDK?](resources/faq/what-analytic-data-collect-your-sdk.md)
+  * [How the Platform restrict access to our data?](resources/faq/how-the-platform-restrict-access-to-our-data.md)
 
