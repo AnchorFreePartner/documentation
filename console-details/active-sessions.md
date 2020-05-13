@@ -22,3 +22,9 @@ The list includes next information:
 
 ### User details
 
+All user data you can see if click to a session line on the list of active sessions. See the next document about user data.
+
+{% page-ref page="users/user-page.md" %}
+
+
+
