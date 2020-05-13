@@ -134,7 +134,53 @@ Upload the file by clicking on the Add file button and selecting the file. Click
 
 ### Add user
 
+This option available only for projects type "_Private VPN_". 
+
+You can add a user to your project. Steps to add a user:
+
+1. Click "![](../../.gitbook/assets/plus_icon.jpeg)Add" button and select "_Add user_"
+
+![](../../.gitbook/assets/add_user_option.png)
+
+  2. Fill the form:
+
+![](../../.gitbook/assets/add_user.png)
+
+* Email - user email.
+* Password - user password \(optional\). 
+* Description - any user details \(optional\), for example - full name.
+
+  3. Click button "_Add user_".
+
+As a result, you can see a new user in the list of users. The user's status will be "_Invited_". When the user made the first login to the project his status will be changed to "_Active_".
+
+If the password field was empty, the Platform will send to the user email with a link to reset the password. This link will be expired after a few hours. If the link expired user can go to [https://developer.anchorfree.com/\#auth/signin](https://developer.anchorfree.com/#auth/signin) and reset password again. As a result, he gets new email with a new link.
+
 ### Add multiply users
+
+This option available only for projects type "_Private VPN_". 
+
+You can add multiple users to your project. Steps to add users:
+
+1. Click "![](../../.gitbook/assets/plus_icon.jpeg)Add" button and select "_Add multiple users_"
+
+![](../../.gitbook/assets/add_user_option.png)
+
+  2. Fill the form:
+
+![](../../.gitbook/assets/add_users.png)
+
+  3. Click on "_Add file_" and select the CSV file with the users in it.
+
+{% hint style="info" %}
+Click on "_Download example_" to get a sample CSV file.
+{% endhint %}
+
+  4. Click the button "_Add_". The Platform try to add users to this project and give you result
+
+![](../../.gitbook/assets/add_users_result.png)
+
+You can download the result and close this form.
 
 ### User details
 
