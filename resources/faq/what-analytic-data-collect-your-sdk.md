@@ -1,4 +1,4 @@
-# What analytic data does the SDK collect?
+# What analytic data collect your SDK?
 
 The main purpose of the reporting is to improve the connection quality of the SDK. SDK collects anonymous data about device and about connection start and stop attempts.
 
@@ -8,30 +8,31 @@ happening on connection error. It includes diagnostics of the current network co
 ## Common properties
 
 ### Common Android device related properties:
-| **Property Name**      | **Type** | **Description**                                                                                                                                                       |
-|:-----------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| af\_platform           | String   | android                                                                                                                                                               |
-| uid                    | String   | Application uuid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
-| app\_name              | String   | Application package name                                                                                                                                              |
-| app\_build             | String   | Id based on app signature. Helpful to figure out if app is cracked.                                                                                                   |
-| app\_version           | String   | Application version name                                                                                                                                              |
-| app\_release           | String   | Application version code                                                                                                                                              |
-| carrier                | String   | Telephony carrier                                                                                                                                                     |
-| has\_telephone         | Boolean  | If device is a phone                                                                                                                                                  |
-| memory\_remains        | String   | Remaining RAM                                                                                                                                                         |
-| memory\_total          | String   | Total RAM                                                                                                                                                             |
-| model                  | String   | android.os.Build.MODEL                                                                                                                                                |
-| device\_manufacturer   | String   | android.os.Build.MANUFACTURER                                                                                                                                         |
-| locale                 | String   | Current device locale                                                                                                                                                 |
-| device\_language       | String   | Current device language                                                                                                                                               |
-| hydra\_base\_url       | String   | Base api url                                                                                                                                                          |
-| android\_sdk\_int      | String   | Build.VERSION.SDK\_INT                                                                                                                                                |
-| android\_version\_name | String   | Build.VERSION.RELEASE                                                                                                                                                 |
-| connection\_type       | String   | Type name of current active network                                                                                                                                   |
-| time\_zone             | String   | Device time zone in format like "-0800"                                                                                                                               |
-| af\_hash               | String   | Device id generated on first app install                                                                                                                              |
-| sdk\_version           | String   | SDK version name                                                                                                                                                      |
-| sdk\_version\_code     | Integer  | SDK version code                                                                                                                                                      |
+
+| **Property Name** | **Type** | **Description** |
+| :--- | :--- | :--- |
+| af\_platform | String | android |
+| uid | String | Application uuid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
+| app\_name | String | Application package name |
+| app\_build | String | Id based on app signature. Helpful to figure out if app is cracked. |
+| app\_version | String | Application version name |
+| app\_release | String | Application version code |
+| carrier | String | Telephony carrier |
+| has\_telephone | Boolean | If device is a phone |
+| memory\_remains | String | Remaining RAM |
+| memory\_total | String | Total RAM |
+| model | String | android.os.Build.MODEL |
+| device\_manufacturer | String | android.os.Build.MANUFACTURER |
+| locale | String | Current device locale |
+| device\_language | String | Current device language |
+| hydra\_base\_url | String | Base api url |
+| android\_sdk\_int | String | Build.VERSION.SDK\_INT |
+| android\_version\_name | String | Build.VERSION.RELEASE |
+| connection\_type | String | Type name of current active network |
+| time\_zone | String | Device time zone in format like "-0800" |
+| af\_hash | String | Device id generated on first app install |
+| sdk\_version | String | SDK version name |
+| sdk\_version\_code | Integer | SDK version code |
 
 ### Common iOS and macOS device related properties
 
@@ -168,9 +169,7 @@ happening on connection error. It includes diagnostics of the current network co
         no). Should be defined by the client.</td>
     </tr>
   </tbody>
-</table>
-
-## Properties for _app\_start_ event \(iOS\) ???
+</table>## Properties for _app\_start_ event \(iOS\) ???
 
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -178,7 +177,7 @@ happening on connection error. It includes diagnostics of the current network co
 
 ## Connection events
 
-There are 4 connection events: 
+There are 4 connection events:
 
 * **connection\_start,** 
 * **connections\_start\_detailed,** 
@@ -248,9 +247,7 @@ Properties specific for event _connection\_end_:
       </td>
     </tr>
   </tbody>
-</table>
-
-### Event: _connection\_end\_detailed_
+</table>### Event: _connection\_end\_detailed_
 
 When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.  
 Properties specific for event _connection\_end\_detailed:_
@@ -264,7 +261,7 @@ Properties specific for event _connection\_end\_detailed:_
 
 #### _connection\_start_
 
-| **error\_code**  | **Description** |
+| **error\_code** | **Description** |
 | :--- | :--- |
 | 0 \(success\) | No error \(connection has established successfully\) |
 | 1 \(internal error\) | Internal problems during initialization or establishing communication \(e.g. Failed to open TUN, VPN permissions are not given, Hydra "Bad Configuration" error, etc.\) or any other unclassified errors |
@@ -275,7 +272,7 @@ Properties specific for event _connection\_end\_detailed:_
 
 #### _connection\_end_
 
-| **error\_code**  | **Description** |
+| **error\_code** | **Description** |
 | :--- | :--- |
 | 0 \(success\) | No error \(connection has ended as expected and successfully\) |
 | 1 \(internal error\) | Internal problem that broke established connection \(e.g. OpenVPN or Hydra quit unexpectedly, etc.\) |
@@ -337,9 +334,7 @@ Properties specific for event _connection\_end\_detailed:_
       <td style="text-align:left">Request has succeeded, but have had an error result code</td>
     </tr>
   </tbody>
-</table>
-
-## Reasons
+</table>## Reasons
 
 ### connection\_start
 
@@ -430,9 +425,7 @@ Properties specific for event _connection\_end\_detailed:_
       </td>
     </tr>
   </tbody>
-</table>
-
-### connection\_end
+</table>### connection\_end
 
 <table>
   <thead>
@@ -509,9 +502,7 @@ Properties specific for event _connection\_end\_detailed:_
       </td>
     </tr>
   </tbody>
-</table>
-
-## Network Availability Test
+</table>## Network Availability Test
 
 There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
 
