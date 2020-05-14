@@ -211,9 +211,13 @@ This page available only in "_Public VPN_" projects.
 
 ### Change the license
 
-### Change Description&Extref
+### Change Description&Extref&Country
 
-### Change the user country
+For change parameters "_Description_", "_Extref_" or "_User country_" you need to 
+
+1. Open User General tab 
+2. Click to ![](../../.gitbook/assets/edit_icon.png) edit icon near the field.
+3. Change field and click the "_Save_" button.
 
 ### Delete device
 
