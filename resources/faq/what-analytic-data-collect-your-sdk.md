@@ -3,8 +3,7 @@
 The main purpose of the reporting is to improve the connection quality of the SDK. SDK collects anonymous data about device and about connection start and stop attempts.
 
 SDK performs Network Availability Test for better understanding what's  
-happening on connection error. It includes diagnostics of the current network connection such a check a Captive Portal,  
-ping a popular public web resource and etc.
+happening on connection error. It includes diagnostics of the current network connection such a check a Captive Portal, ping a popular public web resource and etc.
 
 ## Common properties
 
@@ -248,14 +247,46 @@ Properties specific for event _connection\_end_:
       </td>
     </tr>
   </tbody>
-</table>\#\#\# Event: \_connection\\_end\\_detailed\_ When a connection is terminated unexpectedly \\(no user intention to terminate the session\\), network availability tests should be performed and \_connection\\_end\\_detailed\_ event should be reported. If user has canceled, no need to send the event. Properties specific for event \_connection\\_end\\_detailed\_: \| \*\*Property Name\*\* \| \*\*Type\*\* \| \*\*Notes\*\* \| \| :--- \| :--- \| :--- \| \| network\\_availability \| Float \| Share of passed Network Availability tests rounded to 2 digits after decimal point. \| \| notes \| JSON \| detailed results of the Network Availability Test. \| \#\# Property for “\_error\\_code\_” \#\#\# connection\\_start \| \*\*error\\_code\*\* \| \*\*Description\*\* \| \| :--- \| :--- \| \| 0 \\(success\\) \| No error \\(connection has established successfully\\) \| \| 1 \\(internal error\\) \| Internal problems during initialization or establishing communication \\(e.g. Failed to open TUN, VPN permissions are not given, Hydra "Bad Configuration" error, etc.\\) or any other unclassified errors \| \| 2 \\(connection error\\) \| Failed to establish a connection due to networking issues \\(e.g. host is unreachable, can't send data, timeout on receiving data, etc.\\) \| \| 4 \\("no network" error\\) \| Network has been lost during the connection \\(e.g. WiFi lost or changed\\) or network is up, but unavailable \\(e.g. due to walled garden or as mobile data is disabled\\) \| \| 6 \\(canceled\\) \| The connection establishment has been terminated in the middle of the process. No connection has been established. \| \| 7 \\(app level error\\) \| Application denied to start establishing the VPN connection \\(i.e. user tried to use some elite features from the free app, PC adapter is not ready to connect\\) \| \#\#\# connection\\_end \| \*\*error\\_code\*\* \| \*\*Description\*\* \| \| :--- \| :--- \| \| 0 \\(success\\) \| No error \\(connection has ended as expected and successfully\\) \| \| 1 \\(internal error\\) \| Internal problem that broke established connection \\(e.g. OpenVPN or Hydra quit unexpectedly, etc.\\) \| \| 2 \\(connection error\\) \| Connection has broken due to connection problems \\(e.g. Hydra or OpenVPN detected communication problem, etc.\\) \| \| 3 \\(connection stuck\\) \| Connection is established, but no exchange happening \\("KeepAlive problem"\\) \| \#\#\# Property for “error”
+</table>### Event: _connection\_end\_detailed_
+
+When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.   
+Properties specific for event _connection\_end\_detailed:_
+
+| **Property Name** | **Type** | **Notes** |
+| :--- | :--- | :--- |
+| network\_availability | Float | Share of passed Network Availability tests rounded to 2 digits after the decimal point. |
+| notes | JSON | detailed results of the Network Availability Test. |
+
+### Property for “_error\_code_” 
+
+#### _connection\_start_
+
+| **error\_code**  | **Description** |
+| :--- | :--- |
+| 0 \(success\) | No error \(connection has established successfully\) |
+| 1 \(internal error\) | Internal problems during initialization or establishing communication \(e.g. Failed to open TUN, VPN permissions are not given, Hydra "Bad Configuration" error, etc.\) or any other unclassified errors |
+| 2 \(connection error\) | Failed to establish a connection due to networking issues \(e.g. host is unreachable, can't send data, timeout on receiving data, etc.\) |
+| 4 \("no network" error\) | Network has been lost during the connection \(e.g. WiFi lost or changed\) or network is up, but unavailable \(e.g. due to walled garden or as mobile data is disabled\) |
+| 6 \(canceled\) | The connection establishment has been terminated in the middle of the process. No connection has been established. |
+| 7 \(app level error\) | Application denied to start establishing the VPN connection \(i.e. user tried to use some elite features from the free app, PC adapter is not ready to connect\) |
+
+#### _connection\_end_ 
+
+| **error\_code**  | **Description** |
+| :--- | :--- |
+| 0 \(success\) | No error \(connection has ended as expected and successfully\) |
+| 1 \(internal error\) | Internal problem that broke established connection \(e.g. OpenVPN or Hydra quit unexpectedly, etc.\) |
+| 2 \(connection error\) | Connection has broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
+| 3 \(connection stuck\) | Connection is established, but no exchange happening \("KeepAlive problem"\) |
+
+### Property for “_error_”
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>&quot;error_code&quot;</b>
+      <th style="text-align:left"><b>error_code</b>
       </th>
-      <th style="text-align:left"><b>&quot;error&quot;</b>
+      <th style="text-align:left"><b>error</b>
       </th>
       <th style="text-align:left"><b>Description</b>
       </th>
@@ -305,7 +336,7 @@ Properties specific for event _connection\_end_:
   </tbody>
 </table>## Reasons
 
-### connection\_start
+### _connection\_start_
 
 <table>
   <thead>
@@ -394,7 +425,7 @@ Properties specific for event _connection\_end_:
       </td>
     </tr>
   </tbody>
-</table>### connection\_end
+</table>### _connection\_end_
 
 <table>
   <thead>
