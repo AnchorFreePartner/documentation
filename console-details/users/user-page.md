@@ -242,6 +242,13 @@ For change parameters "_Description_", "_Extref_" or "_User country_" you need t
 2. Click to ![](../../.gitbook/assets/edit_icon.png) edit icon near the field.
 3. Change the field and click the "_Save_" button for update.
 
+### Change user status
+
+For activate or deactivate user you need to 
+
+1. Open User _General_ tab 
+2. Click to ![](../../.gitbook/assets/checkbox.webp) checkbox of the "Status". Checkbox ON - User active, checkbox OFF - user disabled.
+
 ### Delete device
 
 ### Activate/deactivate purchase
