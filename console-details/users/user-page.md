@@ -210,7 +210,17 @@ This page available only in "_Public VPN_" projects.
 For change parameters "_Traffic_" you need to 
 
 1. Open User _General_ tab 
-2. Click to ![](../../.gitbook/assets/edit_icon.png) edit icon near the field.
+2. Click to ![](../../.gitbook/assets/settings_icon.webp) edit icon near the field.
+
+![](../../.gitbook/assets/set_limit.png)
+
+3. In this form you can 
+
+* set any daily limit \(bites\),
+* set checkbox "_Traffic reset_". Actual daily limit will reset to 0 after the limit update.
+* set the user unlimited.
+
+  4. Click the "_Set limit_" button for update.
 
 ### Change the license
 
@@ -219,17 +229,8 @@ For change parameters "_Traffic_" you need to
 For change parameters "_Description_", "_Extref_" or "_User country_" you need to 
 
 1. Open User _General_ tab 
-2. Click to ![](../../.gitbook/assets/settings_icon.webp) edit icon near the field.
-
-![](../../.gitbook/assets/set_limit.png)
-
-  3. In this form you can 
-
-* set any daily limit \(bites\),
-* set checkbox "_Traffic reset_". Actual daily limit will reset to 0 after the limit update.
-* set the user unlimited.
-
-  4. Click the "_Set limit_" button for update.
+2. Click to ![](../../.gitbook/assets/edit_icon.png) edit icon near the field.
+3. Change the field and click the "_Save_" button for update.
 
 ### Delete device
 
