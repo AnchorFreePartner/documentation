@@ -508,7 +508,49 @@ There are several reasons for a connection attempt to fail or an established con
 
 In order to distinguish these cases, a **network availability test** will be performed on every unsuccessful connect or unintended disconnect that will report whether the network in available or not.
 
-This test includes: check captive portal, current network type, availability to ping some popular websites.
+This test includes: check captive portal, current network type, ping test and certificate test.
+
+### Captive Portal test
+This test is to check if there is a Captive portal. It usually means that  
+all requests are redirected by network provider to their own login page.
+
+To detect this case SDK sends a request to one of urls from the list and expects response code 204:  
+ https://google.com/generate_204,  
+ https://gstatic.com/generate_204,  
+ https://maps.google.com/generate_204,  
+ https://www.google.com/generate_204,  
+ https://clients3.google.com/generate_204
+
+### Ping test
+TODO
+
+### Network type test
+
+SDK calls system api to check if any type of network interface is
+established.
+For example on older versions of Android SDK uses api  
+https://developer.android.com/reference/android/net/ConnectivityManager#getNetworkInfo(android.net.Network)
+
+### Certificate test
+In some particular cases there can be more significant issues with your connection like
+issues with web certificates.
+To test this case SDK sends a request to one of the following url and checks that certificate
+is valid:
+
+https://google.com/,  
+https://apple.com,  
+https://microsoft.com,  
+https://yahoo.com,  
+https://baidu.com,  
+https://amazon.com,  
+https://instagram.com,  
+https://linkedin.com,  
+https://ebay.com,  
+https://bing.com,  
+https://goo.gl,  
+https://outlook.live.com,  
+https://wikipedia.org,  
+https://office.com
 
 ## Event samples
 
