@@ -251,6 +251,21 @@ For activate or deactivate user you need to
 
 ### Delete device
 
+If a user doesn't have free devices slots \(reach the limit of devices\), you can delete his old registered devices. 
+
+{% hint style="info" %}
+Sessions with deleted devices will available in user sessions story.
+{% endhint %}
+
+For delete user device you need to 
+
+1. Open User _Devices_ tab 
+2. Select device to delete and click icon ![](../../.gitbook/assets/delete_icon.png).
+
+![](../../.gitbook/assets/delete_device.png)
+
+   3. Click the "_Delete device_" button to finish.
+
 ### Activate/deactivate purchase
 
 ### Delete user
