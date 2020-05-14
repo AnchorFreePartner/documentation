@@ -42,7 +42,7 @@ Click on the ![](../../.gitbook/assets/delete_icon.png) trash can  that is right
 
 In the picture below, the BobsNetwork is on the first line as well as the second.  The way the system works, the higher on this list the higher the priority the rules of the network are given.  In this situation, BobsNetwork will have the VPN enabled and will ignore the second line where it disables the VPN.
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 #### **Changing order of the Network**
 
