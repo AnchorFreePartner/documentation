@@ -147,6 +147,62 @@ All user devices you can found in this page. This page include the list of devic
 
 ## Purchases
 
+All user subscription you can found in this page. This page include the list of subscriptions.
+
+{% hint style="info" %}
+This page available only in "_Public VPN_" projects.
+{% endhint %}
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Parameter</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Transaction ID</td>
+      <td style="text-align:left">Purchase transaction ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Product ID</td>
+      <td style="text-align:left">Purchase product ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Type</td>
+      <td style="text-align:left">
+        <p>Purchase type:</p>
+        <ul>
+          <li>apple</li>
+          <li>google</li>
+          <li>...</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Transaction Time</td>
+      <td style="text-align:left">Purchase transaction time</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Expiration Time</td>
+      <td style="text-align:left">Purchase expiration time</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Active</td>
+      <td style="text-align:left">Active purchase or not</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Trial</td>
+      <td style="text-align:left">Trial period active or not</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Raw Data</td>
+      <td style="text-align:left">Raw purchase data in JSON format</td>
+    </tr>
+  </tbody>
+</table>You can deactivate active purchase and try to activate no-active purchase \(see actions on this page\).
+
 ## Actions
 
 ### Change the user bandwidth limit
@@ -160,6 +216,8 @@ All user devices you can found in this page. This page include the list of devic
 ### Change the user country
 
 ### Delete device
+
+### Activate/deactivate purchase
 
 ### Delete user
 
