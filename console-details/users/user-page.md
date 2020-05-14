@@ -268,6 +268,38 @@ For delete user device you need to
 
 ### Activate/deactivate purchase
 
+You can try to activate a purchase or deactivate the active purchase. 
+
+#### Deactivate purchase
+
+For deactivate a purchase you need to 
+
+1. Open User _Purchases_ tab 
+2. Select active purchase in the purchases list and click to ![](../../.gitbook/assets/delete_icon.png) icon in the right side this line. 
+
+![](../../.gitbook/assets/purchas_deactivate.png)
+
+   3. Click the "_Disable purchase_" button for deactivation.
+
+{% hint style="info" %}
+Usually, application logic tries to recover purchase if they have a valid purchase receipt.
+{% endhint %}
+
+#### Activate purchase
+
+For activate a purchase you need to 
+
+1. Open User _Purchases_ tab 
+2. Select inactive purchase in the purchases list and click to ![](../../.gitbook/assets/play_icon.webp) icon in the right side this line. 
+
+![](../../.gitbook/assets/purchase_activation.png)
+
+   3. Click the "_Activate purchase_" button for activation.
+
+{% hint style="info" %}
+The Platform verifies active purchases every 24 hours. If this purchase verification will fail, the platform automatically deactivates this purchase again.
+{% endhint %}
+
 ### Delete user
 
 You can delete user and all user data \(user info, user devices, session story\). For delete user you need to
