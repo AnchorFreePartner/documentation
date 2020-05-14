@@ -270,3 +270,17 @@ For delete user device you need to
 
 ### Delete user
 
+You can delete user and all user data \(user info, user devices, session story\). For delete user you need to
+
+1. Click the icon ![](../../.gitbook/assets/delete_icon.png)on top right cornel.
+
+![](../../.gitbook/assets/user_delete.png)
+
+   2. Set the user ID. This need for additional verification of your action. 
+
+   3. Click the "_Delete user data_" button to finish.
+
+{% hint style="info" %}
+This action is irreversible.
+{% endhint %}
+
