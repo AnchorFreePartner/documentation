@@ -224,6 +224,16 @@ For change parameters "_Traffic_" you need to
 
 ### Change the license
 
+For change parameters "_License_" you need to 
+
+1. Open User _General_ tab 
+2. Click to ![](../../.gitbook/assets/edit_icon.png) edit icon near the field.
+3. Select new license from list of available licenses and click the "_Save_" button for update.
+
+{% hint style="info" %}
+The license name usually includes 2 numbers. The first number is the limit of devices.
+{% endhint %}
+
 ### Change Description&Extref&Country
 
 For change parameters "_Description_", "_Extref_" or "_User country_" you need to 
