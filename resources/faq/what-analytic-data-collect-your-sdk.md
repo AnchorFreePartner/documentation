@@ -60,74 +60,52 @@ happening on connection error. It includes diagnostics of the current network co
 
 ### Common connection properties for all platforms
 
+| **Property Name** | **Type** | **Description** |
+| :--- | :--- | :--- |
+
+
+| catime | Integer | Unix millisecond timestamp \(milliseconds since Epoch\) on the client when connection attempt was initiated |
+| :--- | :--- | :--- |
+
+
+| caid | String | Connection Attempt ID assigned by the client when an attempt to establish a connection starts \(regardless of the result\) |
+| :--- | :--- | :--- |
+
+
+| reason | String | Describes why the session was initiated or terminated \(user click, reconnect, etc\). |
+| :--- | :--- | :--- |
+
+
+| error\_code | Integer | numerical code referring to an error category \(0 = success\). See section “error\_code” Property below. |
+| :--- | :--- | :--- |
+
+
+| error | String | error description. See “error” property section below. |
+| :--- | :--- | :--- |
+
+
+| protocol | String | the protocol used for the connection attempt |
+| :--- | :--- | :--- |
+
+
+| server\_ip \(\*\) | String | the server IP address used to establish a VPN connection \(absent in the case of unsuccessful result\) |
+| :--- | :--- | :--- |
+
+
+| session\_id \(\*\) | String | session ID assigned by the server or VPN in case of successful connection attempt, should match server side session\_id \(could be absent for some protocols\) |
+| :--- | :--- | :--- |
+
+
+| hydra\_version \(\*\) | String | version of Hydra used to establish a connection |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Property Name</b>
-      </th>
-      <th style="text-align:left"><b>Type</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">catime</td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">Unix millisecond timestamp (milliseconds since Epoch) on the client when
-        connection attempt was initiated</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">caid</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Connection Attempt ID assigned by the client when an attempt to establish
-        a connection starts (regardless of the result)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">reason</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Describes why the session was initiated or terminated (user click, reconnect,
-        etc).</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">error_code</td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">numerical code referring to an error category (0 = success). See section
-        &#x201C;error_code&#x201D; Property below.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">error</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">error description. See &#x201C;error&#x201D; property section below.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">protocol</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">the protocol used for the connection attempt</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">server_ip (*)</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">the server IP address used to establish a VPN connection (absent in the
-        case of unsuccessful result)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">session_id (*)</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">session ID assigned by the server or VPN in case of successful connection
-        attempt, should match server side session_id (could be absent for some
-        protocols)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">hydra_version (*)</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">version of Hydra used to establish a connection</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">notes</td>
-      <td style="text-align:left">JSON</td>
-      <td style="text-align:left">
+      <th style="text-align:left">notes</th>
+      <th style="text-align:left">JSON</th>
+      <th style="text-align:left">
         <p>Additional information. For now it holds:</p>
         <ul>
           <li>detailed info about <em>network_availabilty</em> test if one was conducted</li>
@@ -149,27 +127,28 @@ happening on connection error. It includes diagnostics of the current network co
         </p>
         <p><code>}</code>
         </p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">parent_caid</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
+      <th style="text-align:left">parent_caid</th>
+      <th style="text-align:left">String</th>
+      <th style="text-align:left">
         <p>If previous attempt failed and technical reconnect happened (e.g. in case
           of network change or 3 attempts during button click)</p>
         <p>We log here parent caid.</p>
         <p><em>Parent_caid</em> - caid of original connection attempt initiated by
           user.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">is_ipv6_only</td>
-      <td style="text-align:left">Integer (0 or 1)</td>
-      <td style="text-align:left">Flag that shows if the ISP supports only IPv6 protocol (1 if yes, 0 if
-        no). Should be defined by the client.</td>
-    </tr>
-  </tbody>
-</table>## Properties for _app\_start_ event \(iOS\) ???
+  </thead>
+  <tbody></tbody>
+</table>| is\_ipv6\_only | Integer \(0 or 1\) | Flag that shows if the ISP supports only IPv6 protocol \(1 if yes, 0 if no\). Should be defined by the client. |
+| :--- | :--- | :--- |
+
 
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -217,39 +196,30 @@ The event should be reported when a Connection is terminated. All properties spe
 
 Properties specific for event _connection\_end_:
 
+| **Property Name** | **Type** | **Notes** |
+| :--- | :--- | :--- |
+
+
+| duration | Integer | the session's duration, in **milliseconds** |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Property Name</b>
-      </th>
-      <th style="text-align:left"><b>Type</b>
-      </th>
-      <th style="text-align:left"><b>Notes</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">duration</td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">the session&apos;s duration, in <b>milliseconds</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">traffic</td>
-      <td style="text-align:left">JSON</td>
-      <td style="text-align:left">
+      <th style="text-align:left">traffic</th>
+      <th style="text-align:left">JSON</th>
+      <th style="text-align:left">
         <p>JSON with consumed traffic stats (in bytes), e.g.:</p>
         <p>{</p>
         <p>&quot;bytes_in&quot;: 100,</p>
         <p>&quot;bytes_out&quot;: 100</p>
         <p>}</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### Event: _connection\_end\_detailed_
-
-When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.  
+  </thead>
+  <tbody></tbody>
+</table>When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.  
 Properties specific for event _connection\_end\_detailed:_
 
 | **Property Name** | **Type** | **Notes** |
@@ -281,99 +251,76 @@ Properties specific for event _connection\_end\_detailed:_
 
 ### Property for “_error_”
 
+| **error\_code** | **error** | **Description** |
+| :--- | :--- | :--- |
+
+
+| 0 \(success\) | Empty | No error |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>error_code</b>
-      </th>
-      <th style="text-align:left"><b>error</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">0 (success)</td>
-      <td style="text-align:left">Empty</td>
-      <td style="text-align:left">No error</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">1 (internal error)</td>
-      <td style="text-align:left">Platform specific details</td>
-      <td style="text-align:left">
+      <th style="text-align:left">1 (internal error)</th>
+      <th style="text-align:left">Platform specific details</th>
+      <th style="text-align:left">
         <p>Internal problems during initialization, establishing communication or
           operation (e.g. Failed to open TUN, Hydra &quot;Bad Configuration&quot;
           error, VPN permissions are not given, etc.)</p>
         <p>Also, this class should be used for any unclassified errors. It is expected
           that the details will be clear from the &quot;error&quot; value.</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">2 (connection error)</td>
-      <td style="text-align:left">HTTP error code or a VPN/Hydra error code</td>
-      <td style="text-align:left">Connection has not been established or broken due to connection problems
-        (e.g. Hydra or OpenVPN detected communication problem, etc.)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3 (connection stuck)</td>
-      <td style="text-align:left">Platform specific details</td>
-      <td style="text-align:left">Connection is established, but no exchange happening (&quot;KeepAlive
-        problem&quot;)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">4 (&quot;no network&quot; error)</td>
-      <td style="text-align:left">Platform specific details</td>
-      <td style="text-align:left">Network has been lost during the connection (e.g. WiFi lost or changed)
-        or network is up, but unavailable (e.g. due to walled garden or as mobile
-        data is disabled)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">5 (failed)</td>
-      <td style="text-align:left">Error code returned by backend (e.g. 40301)</td>
-      <td style="text-align:left">Request has succeeded, but have had an error result code</td>
-    </tr>
-  </tbody>
-</table>## Reasons
+  </thead>
+  <tbody></tbody>
+</table>| 2 \(connection error\) | HTTP error code or a VPN/Hydra error code | Connection has not been established or broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
+| :--- | :--- | :--- |
+
+
+| 3 \(connection stuck\) | Platform specific details | Connection is established, but no exchange happening \("KeepAlive problem"\) |
+| :--- | :--- | :--- |
+
+
+| 4 \("no network" error\) | Platform specific details | Network has been lost during the connection \(e.g. WiFi lost or changed\) or network is up, but unavailable \(e.g. due to walled garden or as mobile data is disabled\) |
+| :--- | :--- | :--- |
+
+
+| 5 \(failed\) | Error code returned by backend \(e.g. 40301\) | Request has succeeded, but have had an error result code |
+| :--- | :--- | :--- |
+
 
 ### connection\_start
+
+| **Name** | **Description** |
+| :--- | :--- |
+
+
+| m\_ui | Connection is initiated by a user clicking in application UI button, widget, notification window, etc. |
+| :--- | :--- |
+
+
+| m\_system | Connection is initiated via user's click/action from a system menu. |
+| :--- | :--- |
+
+
+| m\_tray | Connection is initiated by a user clicking on ongoing notification or tile services |
+| :--- | :--- |
+
+
+| m\_other | Connection is initiated via some other user's actions. |
+| :--- | :--- |
+
+
+| a\_app\_run | Connection is initiated automatically as the result of an app launch that is configured to trigger it. |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Name</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">m_ui</td>
-      <td style="text-align:left">Connection is initiated by a user clicking in application UI button, widget,
-        notification window, etc.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">m_system</td>
-      <td style="text-align:left">Connection is initiated via user&apos;s click/action from a system menu.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">m_tray</td>
-      <td style="text-align:left">Connection is initiated by a user clicking on ongoing notification or
-        tile services</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">m_other</td>
-      <td style="text-align:left">Connection is initiated via some other user&apos;s actions.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">a_app_run</td>
-      <td style="text-align:left">Connection is initiated automatically as the result of an app launch that
-        is configured to trigger it.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">a_reconnect</td>
-      <td style="text-align:left">
+      <th style="text-align:left">a_reconnect</th>
+      <th style="text-align:left">
         <p>Connection is initiated after intended (without an error) previous session
           termination. This can be result of:</p>
         <ul>
@@ -385,25 +332,32 @@ Properties specific for event _connection\_end\_detailed:_
         </ul>
         <p><em>Note that this reason should only be used if the connection is initiated right after the previous connection termination and as long as we are trying to initiate connection. That is, if while reconnecting network become unavailable, the reason for the first session initiation after the network become available shall be a_network (not a_reconnect). However, in case the session initiation failed, for the next attempt to initiate the session, the same reason (a_network) shall be used.</em>
         </p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">a_error</td>
-      <td style="text-align:left">
+      <th style="text-align:left">a_error</th>
+      <th style="text-align:left">
         <p>Connection is initiated as a result of retry from the previous session
           termination due to an error.</p>
         <p><em>Note that this reason should only be used if connection is initiated right after the previous connection termination and as long as we are trying to initiate connection. That is, if the error has happened due to the network lost, the reason for the first session initiated after the network become available shall be a_network (not a_error). However, in case the session initiation failed, for the next attempt to initiate the session, the same reason (a_error) shall be used.</em>
         </p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| a\_sleep | Connection is initiated due to device returned from the sleep mode \(resume\), hibernation mode, etc. |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">a_sleep</td>
-      <td style="text-align:left">Connection is initiated due to device returned from the sleep mode (resume),
-        hibernation mode, etc.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">a_network</td>
-      <td style="text-align:left">
+      <th style="text-align:left">a_network</th>
+      <th style="text-align:left">
         <p>Connection is initiated due to the status of the network has changed (network
           become available). In this case, we shall reconnect in of the following
           cases:</p>
@@ -414,71 +368,79 @@ Properties specific for event _connection\_end\_detailed:_
         </ul>
         <p><em>Note the reconnect due to network switch is covered by this reason (not a_reconnect).</em>
         </p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">a_other</td>
-      <td style="text-align:left">
+      <th style="text-align:left">a_other</th>
+      <th style="text-align:left">
         <p>Connection is initiated automatically due to any other reason.</p>
         <p><em>Note the share of a_other reason should be few percent. In case it is not so, extra reasons shall be introduced.</em>
         </p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### connection\_end
+  </thead>
+  <tbody></tbody>
+</table>| **Name** | **Description** |
+| :--- | :--- |
+
+
+| m\_ui | Connection is terminated by a user clicking in application UI button, widget, notification window, etc. |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Name</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">m_ui</td>
-      <td style="text-align:left">Connection is terminated by a user clicking in application UI button,
-        widget, notification window, etc.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">m_system</td>
-      <td style="text-align:left">
+      <th style="text-align:left">m_system</th>
+      <th style="text-align:left">
         <p>Connection is terminated via user&apos;s click/action from a system menu.</p>
         <p>For iOS, turn off inside device&apos;s setting.</p>
         <p>For Android, turn off from system&apos;s VPN notification (aka <b>revoke</b>).</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| m\_tray | Connection is terminated by user clicking on ongoing notification or tile services |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">m_tray</td>
-      <td style="text-align:left">Connection is terminated by user clicking on ongoing notification or tile
-        services</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">m_other</td>
-      <td style="text-align:left">
+      <th style="text-align:left">m_other</th>
+      <th style="text-align:left">
         <p>Connection is terminated via some other user&apos;s actions.</p>
         <p><em>Note the share of m_other reason should be few percent. In case it is not so, extra reasons shall be introduced.</em>
         </p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">a_error</td>
-      <td style="text-align:left">
+      <th style="text-align:left">a_error</th>
+      <th style="text-align:left">
         <p>Connection is terminated due to an error (including unavailability of
           the network).</p>
         <p>Error description shall be provided in error_code and error properties.</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| a\_sleep | Connection is terminated due to device goes to sleep, suspend, shut down, etc. |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">a_sleep</td>
-      <td style="text-align:left">Connection is terminated due to device goes to sleep, suspend, shut down,
-        etc.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">a_reconnect</td>
-      <td style="text-align:left">
+      <th style="text-align:left">a_reconnect</th>
+      <th style="text-align:left">
         <p>Connection is terminated intentionally in order to immediately reconnect.
           This can be result of:</p>
         <ul>
@@ -487,70 +449,71 @@ Properties specific for event _connection\_end\_detailed:_
           <li>Client version updating</li>
           <li>etc.</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| a\_network | Connection is terminated due to the network has changed |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">a_network</td>
-      <td style="text-align:left">Connection is terminated due to the network has changed</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">a_other</td>
-      <td style="text-align:left">
+      <th style="text-align:left">a_other</th>
+      <th style="text-align:left">
         <p>Connection is terminated automatically due to any other reason.</p>
         <p><em>Note the share of a_other reason should be few percent. In case it is not so, extra reasons shall be introduced.</em>
         </p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>## Network Availability Test
-
-There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
+  </thead>
+  <tbody></tbody>
+</table>There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
 
 In order to distinguish these cases, a **network availability test** will be performed on every unsuccessful connect or unintended disconnect that will report whether the network in available or not.
 
 This test includes: check captive portal, current network type, ping test and certificate test.
 
 ### Captive Portal test
+
 This test is to check if there is a Captive portal. It usually means that  
 all requests are redirected by network provider to their own login page.
 
 To detect this case SDK sends a request to one of urls from the list and expects response code 204:  
- https://google.com/generate_204,  
- https://gstatic.com/generate_204,  
- https://maps.google.com/generate_204,  
- https://www.google.com/generate_204,  
- https://clients3.google.com/generate_204
+[https://google.com/generate\_204](https://google.com/generate_204),  
+[https://gstatic.com/generate\_204](https://gstatic.com/generate_204),  
+[https://maps.google.com/generate\_204](https://maps.google.com/generate_204),  
+[https://www.google.com/generate\_204](https://www.google.com/generate_204),  
+[https://clients3.google.com/generate\_204](https://clients3.google.com/generate_204)
 
 ### Ping test
+
 TODO
 
 ### Network type test
 
-SDK calls system api to check if any type of network interface is
-established.
-For example on older versions of Android SDK uses api  
-https://developer.android.com/reference/android/net/ConnectivityManager#getNetworkInfo(android.net.Network)
+SDK calls system api to check if any type of network interface is established. For example on older versions of Android SDK uses api  
+[https://developer.android.com/reference/android/net/ConnectivityManager\#getNetworkInfo\(android.net.Network](https://developer.android.com/reference/android/net/ConnectivityManager#getNetworkInfo%28android.net.Network)\)
 
 ### Certificate test
-In some particular cases there can be more significant issues with your connection like
-issues with web certificates.
-To test this case SDK sends a request to one of the following url and checks that certificate
-is valid:
 
-https://google.com/,  
-https://apple.com,  
-https://microsoft.com,  
-https://yahoo.com,  
-https://baidu.com,  
-https://amazon.com,  
-https://instagram.com,  
-https://linkedin.com,  
-https://ebay.com,  
-https://bing.com,  
-https://goo.gl,  
-https://outlook.live.com,  
-https://wikipedia.org,  
-https://office.com
+In some particular cases there can be more significant issues with your connection like issues with web certificates. To test this case SDK sends a request to one of the following url and checks that certificate is valid:
+
+[https://google.com/](https://google.com/),  
+[https://apple.com](https://apple.com),  
+[https://microsoft.com](https://microsoft.com),  
+[https://yahoo.com](https://yahoo.com),  
+[https://baidu.com](https://baidu.com),  
+[https://amazon.com](https://amazon.com),  
+[https://instagram.com](https://instagram.com),  
+[https://linkedin.com](https://linkedin.com),  
+[https://ebay.com](https://ebay.com),  
+[https://bing.com](https://bing.com),  
+[https://goo.gl](https://goo.gl),  
+[https://outlook.live.com](https://outlook.live.com),  
+[https://wikipedia.org](https://wikipedia.org),  
+[https://office.com](https://office.com)
 
 ## Event samples
 
