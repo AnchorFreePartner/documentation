@@ -57,6 +57,7 @@
   * [Public VPN](resources/use-cases/public-vpn.md)
   * [Business VPN](resources/use-cases/business-vpn/README.md)
     * [Creating a Business VPN Project](resources/use-cases/business-vpn/creating-business-vpn.md)
+    * [Wifi Security for Business](resources/use-cases/business-vpn/wifi-security-for-business.md)
   * [Fireshield](resources/use-cases/fireshield.md)
   * [Application anti-blocking](resources/use-cases/application-anti-blocking.md)
 * [How-to](resources/how-to/README.md)
