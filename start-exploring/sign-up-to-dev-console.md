@@ -59,7 +59,7 @@ As a result, you see a message:
 
 ![](../.gitbook/assets/email_body.png)
 
-And you receive a notification that your email has been verified:
+Then, you should receive a notification that your email has been verified:
 
 ![](../.gitbook/assets/email_verified_popup.png)
 
