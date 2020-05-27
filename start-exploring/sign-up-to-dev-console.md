@@ -6,7 +6,7 @@ description: >-
 
 # Sign Up to Management Console
 
-**How to create a new Developer account on Management Console \(AnchorFree\)**
+**How to create a new Developer account on Management Console**
 
 1. Open [https://developer.anchorfree.com](https://developer.anchorfree.com/#)
 2. Click the ‘Sign up’ button in the top-right corner:
