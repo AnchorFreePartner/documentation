@@ -4,7 +4,7 @@
 
 ## Start Exploring
 
-* [Sign Up to Developer console](start-exploring/sign-up-to-dev-console.md)
+* [Sign Up to Management Console](start-exploring/sign-up-to-dev-console.md)
 * [Create the new Project](start-exploring/add-a-new-project.md)
 
 ## Console details
