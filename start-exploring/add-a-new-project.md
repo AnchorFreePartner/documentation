@@ -2,11 +2,11 @@
 description: Learn how to create your first project on Developer Portal
 ---
 
-# Create the new Project
+# Create a new Project
 
-**How to add the new project to Developer Portal**
+**Adding a new project to Management Console**
 
-1. Open [https://developer.anchorfree.com/](https://developer.anchorfree.com/#) web page
+1. Open [https://developer.anchorfree.com/](https://developer.anchorfree.com/#)
 2. Click Sign in button
 3. Enter your valid creds and click ‘Sign in’ button:
 

@@ -5,7 +5,7 @@
 ## Start Exploring
 
 * [Sign Up to Management Console](start-exploring/sign-up-to-dev-console.md)
-* [Create the new Project](start-exploring/add-a-new-project.md)
+* [Create a new Project](start-exploring/add-a-new-project.md)
 
 ## Console details
 
