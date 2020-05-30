@@ -71,7 +71,9 @@ General user data includes next information:
       <td style="text-align:left">Name of the Authentication method for this user.</td>
     </tr>
   </tbody>
-</table>## Sessions
+</table>
+
+## Sessions
 
 All sessions of the user you can found in this page. This page include the list of sessions and the search filter.
 
@@ -143,7 +145,9 @@ All user devices you can found in this page. This page include the list of devic
       <td style="text-align:left">Device registration time</td>
     </tr>
   </tbody>
-</table>You can delete a user device  \(see actions on this page\).
+</table>
+
+You can delete a user device  \(see actions on this page\).
 
 ## Purchases
 
@@ -201,7 +205,9 @@ This page available only in "_Public VPN_" projects.
       <td style="text-align:left">Raw purchase data in JSON format</td>
     </tr>
   </tbody>
-</table>You can deactivate active purchase and try to activate no-active purchase \(see actions on this page\).
+</table>
+
+You can deactivate active purchase and try to activate no-active purchase \(see actions on this page\).
 
 ## Actions
 

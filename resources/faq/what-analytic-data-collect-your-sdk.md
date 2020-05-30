@@ -131,7 +131,9 @@ happening on connection error. It includes diagnostics of the current network co
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">parent_caid</th>
@@ -146,7 +148,9 @@ happening on connection error. It includes diagnostics of the current network co
     </tr>
   </thead>
   <tbody></tbody>
-</table>| is\_ipv6\_only | Integer \(0 or 1\) | Flag that shows if the ISP supports only IPv6 protocol \(1 if yes, 0 if no\). Should be defined by the client. |
+</table>
+
+| is\_ipv6\_only | Integer \(0 or 1\) | Flag that shows if the ISP supports only IPv6 protocol \(1 if yes, 0 if no\). Should be defined by the client. |
 | :--- | :--- | :--- |
 
 
@@ -219,7 +223,9 @@ Properties specific for event _connection\_end_:
     </tr>
   </thead>
   <tbody></tbody>
-</table>When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.  
+</table>
+
+When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.  
 Properties specific for event _connection\_end\_detailed:_
 
 | **Property Name** | **Type** | **Notes** |
@@ -274,7 +280,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 2 \(connection error\) | HTTP error code or a VPN/Hydra error code | Connection has not been established or broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
+</table>
+
+| 2 \(connection error\) | HTTP error code or a VPN/Hydra error code | Connection has not been established or broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
 | :--- | :--- | :--- |
 
 
@@ -336,7 +344,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">a_error</th>
@@ -349,7 +359,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table>| a\_sleep | Connection is initiated due to device returned from the sleep mode \(resume\), hibernation mode, etc. |
+</table>
+
+| a\_sleep | Connection is initiated due to device returned from the sleep mode \(resume\), hibernation mode, etc. |
 | :--- | :--- |
 
 
@@ -372,7 +384,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">a_other</th>
@@ -384,7 +398,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table>| **Name** | **Description** |
+</table>
+
+| **Name** | **Description** |
 | :--- | :--- |
 
 
@@ -404,7 +420,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table>| m\_tray | Connection is terminated by user clicking on ongoing notification or tile services |
+</table>
+
+| m\_tray | Connection is terminated by user clicking on ongoing notification or tile services |
 | :--- | :--- |
 
 
@@ -420,7 +438,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">a_error</th>
@@ -432,7 +452,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table>| a\_sleep | Connection is terminated due to device goes to sleep, suspend, shut down, etc. |
+</table>
+
+| a\_sleep | Connection is terminated due to device goes to sleep, suspend, shut down, etc. |
 | :--- | :--- |
 
 
@@ -453,7 +475,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table>| a\_network | Connection is terminated due to the network has changed |
+</table>
+
+| a\_network | Connection is terminated due to the network has changed |
 | :--- | :--- |
 
 
@@ -469,7 +493,9 @@ Properties specific for event _connection\_end\_detailed:_
     </tr>
   </thead>
   <tbody></tbody>
-</table>There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
+</table>
+
+There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
 
 In order to distinguish these cases, a **network availability test** will be performed on every unsuccessful connect or unintended disconnect that will report whether the network in available or not.
 

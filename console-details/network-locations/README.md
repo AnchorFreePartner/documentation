@@ -37,7 +37,9 @@ This tab show you the locations list of the project. Same list you see if call A
       </td>
     </tr>
   </tbody>
-</table>## Actions
+</table>
+
+## Actions
 
 ### Add location
 

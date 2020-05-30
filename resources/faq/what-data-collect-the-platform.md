@@ -106,7 +106,9 @@ User data include following parameters:
       <td style="text-align:left">Amount of activated devices</td>
     </tr>
   </tbody>
-</table>Device data include following parameters:
+</table>
+
+Device data include following parameters:
 
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |

@@ -129,7 +129,9 @@ purchase\_info “_receipt_” detail
       <td style="text-align:left">Payment Plugin name</td>
     </tr>
   </tbody>
-</table>## Server side: Delete purchase
+</table>
+
+## Server side: Delete purchase
 
 For delete a purchase you need to call API method DELETE [`/partner/subscribers/{user_id}/purchase`](https://backend.northghost.com/doc/all/index.html#!/partner-controller/deletePurchaseByPartner)\`\`
 

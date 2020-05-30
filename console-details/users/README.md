@@ -70,7 +70,9 @@ This tab show you users list of the project. Sample:
         projects.</td>
     </tr>
   </tbody>
-</table>## Actions
+</table>
+
+## Actions
 
 ### User search
 
