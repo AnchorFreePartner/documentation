@@ -18,7 +18,15 @@ Please note that even if you are the owner of the project, you have to add a use
 
 After a successful authentication, you will be directed to the main screen of the application and connected to the most suitable vpn server \(diplayed in the top-right portion of the screen\):
 
+{% tabs %}
+{% tab title="Connected" %}
 ![](../../../.gitbook/assets/wifi-security-protected.png)
+{% endtab %}
+
+{% tab title="Disconnected" %}
+![](../../../.gitbook/assets/wifi-security-unprotected.png)
+{% endtab %}
+{% endtabs %}
 
 On this screen, you can:
 
