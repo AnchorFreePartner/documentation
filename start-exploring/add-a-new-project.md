@@ -1,5 +1,5 @@
 ---
-description: Learn how to create your first project on Developer Portal
+description: Learn how to create your first project in Management Console
 ---
 
 # Create a new Project
@@ -12,36 +12,36 @@ description: Learn how to create your first project on Developer Portal
 
 ![](../.gitbook/assets/filled_sign_in_form.png)
 
-As a result, you redirect to ‘Create first project’ page:
+As a result, you will be redirected to the ‘Create first project’ page:
 
 ![](../.gitbook/assets/empty_create_first_project_form.png)
 
-4. Fill out all available fields:
+4. Fill all available fields:
 
-* **Project name field**. It should be a unique name for the project that can contain Latin characters and numbers. It is a mandatory field.
-* **Project ID field.** It should be a unique ID for the project that can contain Latin characters and numbers, another name for Project ID is a carrier. It is a mandatory field.
-* **Description field.** It is a field that describes information about the project, for example purposes of the project, the target audience. It is an optional field.
-* **Project type drop-down menu.** It is a mandatory field.
-* Public VPN option is for consumer apps \(B2C apps\).
+* **Project name**. It should be a unique name; it can contain Latin characters and numbers. This field is mandatory.
+* **Project ID.** The ID should be unique; it can contain Latin characters and numbers. Project ID is also called a carrier. This field is mandatory.
+* **Description.** It is a description of the project, e.g. its purpose or target audience. This field is mandatory.
+* **Project type** drop-down menu**.** This field is mandatory.
+* Public VPN option is for consumer apps \(B2C\).
 * Private VPN option is for SMB and Enterprise customers.
-* Proxy option - It is test functionality \(under development\).
+* Proxy option - It is a test functionality \(in development\).
 
 ![](../.gitbook/assets/project_type_dropdown.png)
 
-* **Admin email field.** The owner is the person who creates the project. The admin role has access to the project.
-* **Upload image button.** It is a project icon that displays close to the project name and the project ID. It is an optional option.
+* **Admin email.** The admin \(i.e. the person who creates the project\) is the project owner. He has full access to the project.
+* **Upload image** button**.** Using this button, you can upload a project icon that will be displayed near the project name. This is optional.
 
-As a result, you get completed ‘Create first project’ form:
+Here is an example of a filled ‘Create first project’ form:
 
 ![](../.gitbook/assets/filled_first_project_form.png)
 
-5. Click ‘Add project’ button
+5. Click **Add project** button
 
-As a result, you can find your created project \(the projects list view\) or project cards:
+Next, you will see your created project in projects list view:
 
 ![](../.gitbook/assets/project_list_view.png)
 
-As a result, you can find your created project \(project cards view\):
+Or in project cards view:
 
 ![](../.gitbook/assets/project_card_view.png)
 
