@@ -4,12 +4,12 @@
 
 ### Location loading
 
-This graph displays the location of highest usage. 
+This graph displays locations with their traffic loads. 
 
 ![](../../.gitbook/assets/location_loading.png)
 
 #### Details
 
-The list of usage can be sorted by country or percentage by clicking on the title of the column.  
-Red color \(100+\) shows us a problem with location. It means the bandwidth all servers of the location overloaded and need to add more new VPN-nodes to this location.
+The list can be sorted by country or load percentage by clicking on the title of the column.  
+Red color \(100+\) shows there is a problem with a location. It means that the bandwidth of all servers in a certain location is overloaded and this issue should be addressed.
 
