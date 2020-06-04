@@ -8,110 +8,98 @@ description: This page included graphs of your project.
 
 ### Active Sessions by Protocol
 
-The graph “**Active Sessions by Protocol**” shows a realtime number of active sessions per VPN protocol. We use the most popular VPN protocols for iOS, Android, macOS, and Windows platforms like OpenVPN, IPSec, and also designed and patented by Pango HYDRA protocol which is more advanced and has higher performance benchmarks for now.
+The graph “**Active Sessions by Protocol**” shows a realtime number of active sessions per VPN protocol. We use the most popular VPN protocols for iOS, Android, macOS, and Windows platforms like OpenVPN, IPSec, and also the HYDRA protocol, designed and patented by Pango, that is more advanced and has higher performance benchmarksin this day and age.
 
 ![](../../.gitbook/assets/active_session_protocol.png)
 
 #### Details
 
-We can see the active sessions per protocol just clicking the particular colored line on the graph and  check out how many sessions were active in particular time frame or even in an every single minute. It updates every 30 secs.
+We can see active sessions per protocol just by clicking particular colored lines in the graph and check how many sessions were active in a certain time frame or even in a certain minute. The graph updates every 30 secs.
 
 ### Active Sessions by Locations
 
-The graph show us amount realtime sessions per virtual location and we can see a very popular virtual location selected by users. For anonymous users that graph shows an Optimal server location.  
+The graph show us the amount of real-time sessions per virtual location and you can see the more popular virtual locations chosen by users. For anonymous users, this graph shows optimal server location.  
 
 ![](../../.gitbook/assets/active_session_location.png)
 
 #### Details
 
-Here we can see all  virtual location for all active users including anonymous users and users having a subscription. To look up a detailed list just click on the graph line and you can see pop up menu.To distinguish of any particular line  just click on the country code. The list of Virtual locations is scrollable.  It updates every 30 secs.
+There, we can see all virtual locations for all active users, including anonymous and paid users. To look up a detailed list, just click on the graph line and open a pop-up menu.To select a certain country, click the country code. The list of virtual locations is scrollable. It updates every 30 secs.
 
-We are using ALPHA-2 codes for countries.
+For countries, the ALPHA-2 codes are used.
 
 ### Users
 
-This graph will display active, invited and blocked users.  
+This graph displays active, invited, blocked and deleted users.  
 
 ![](../../.gitbook/assets/users_graph.png)
 
 #### Details
 
-* **Active users** - Authorized in the project users.
-* **Blocked users** - Users who have been disabled from the project.
+* **Active users** - Users who are authorized in the project.
+* **Blocked users** - Users who have been blocked from the project.
 * **Invited users** - Users who have been added to the project but have not logged into the application \(not authorized\).
 * **Deleted users** - Users who have been deleted from the project.
 
 ### Devices
 
-This graph displays the number of devices that are using actively using the application.  
+This graph displays how many devices were actively using the application at a given moment.  
 
 ![](../../.gitbook/assets/devices_graph.png)
 
 #### Details
 
-In the bottom right of the graphic shows the number of devices that are currently using the application.
+In the bottom right is a number of devices that are currently using the application.
 
 ### Connected Users
 
-This graph displays connected users on three lines, daily, weekly and monthly.
+This graph displays the number of connected users daily, weekly and monthly.
 
 ![](../../.gitbook/assets/connected_users.png)
-
-#### Details
-
-The Legend:
 
 * **DCU** = Daily Connected Users
 * **WCU** = Weekly Connected Users
 * **MCU** = Monthly Connected Users
 
-It updates every 24 hours.
+The graph updates every 24 hours.
 
 ### Connected Devices
 
-This graph displays connected devices on three lines, daily, weekly and monthly.
+This graph displays connected devices daily, weekly and monthly.
 
 ![](../../.gitbook/assets/connected_devices.png)
-
-#### Details
-
-The Legend:
 
 * **DCD** = Daily Connected Devices
 * **WCD** = Weekly Connected Devices
 * **MCD** = Monthly Connected Devices
 
-It updates every 24 hours.
+The graph updates every 24 hours.
 
 ### Inactive Users
 
-This graph displays all the inactive users for the day as well as the week and month.  
+This graph displays inactive users in the current day, last week and last month.  
 
 ![](../../.gitbook/assets/inactive_users_graph.png)
 
-#### Details
-
-It updates every 24 hours.
+The graph updates every 24 hours.
 
 ### Inactive Devices
 
-This graph displays all the inactive devices for the day as well as the week and month.  
+This graph displays all inactive devices in the current day, last week and last month.
 
 ![](../../.gitbook/assets/inactive_devices_graph.png)
 
-#### Details
-
-It updates every 24 hours.
+This graph updates every 24 hours.
 
 ## Actions
 
 ### Filters
 
-In the top right corner, there is the filter option ![](../../.gitbook/assets/filtr_icon.jpg). You can click this button and change the time period of graphs data - 1 day \(default\), 7 days, 14 days, 30 days, or Custom.
+In the top right corner, there is the Filter button ![](../../.gitbook/assets/filtr_icon.jpg). You can click this button and change the time period of graphs' data - 1 day \(default\), 7 days, 14 days, 30 days, or Custom.
 
 ### Export data
 
-if you want to export data of the graphs, you have to option ![](../../.gitbook/assets/export_icon.png) Export in the top right corner or move to tab ![](../../.gitbook/assets/export_icon.png) "Export data" \(left menu\). Export data you can see in next document:
+If you want to export the data from the graphs, you can use the Export button ![](../../.gitbook/assets/export_icon.png) in the top-right corner or move to  the 'Export Data' tab ![](../../.gitbook/assets/export_icon.png) in the left menu. You can see it in the next document:
 
 {% page-ref page="../export-data.md" %}
 
