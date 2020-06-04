@@ -1,12 +1,12 @@
 ---
-description: The list of available for the project VPN locations.
+description: The list of available VPN locations of the project.
 ---
 
 # Network locations
 
 ## Locations
 
-This tab show you the locations list of the project. Same list you see if call API `GET`[`/user/countries`](https://backend.northghost.com/doc/all/index.html#!/user-controller/countryList) in your applications. Sample:  
+This tab shows the list of project locations. You can access the same list if you call the API `GET`[`/user/countries`](https://backend.northghost.com/doc/all/index.html#!/user-controller/countryList) method in your applications.  
 
 ![](../../.gitbook/assets/net_locations_list.png)
 
@@ -31,8 +31,8 @@ This tab show you the locations list of the project. Same list you see if call A
       <td style="text-align:left">
         <p>Location type:</p>
         <ul>
-          <li>Public - VPN nodes, located in the current country</li>
-          <li>Private - special for the project locations. Ask us for any details.</li>
+          <li>Public - VPN nodes located in the chosen country</li>
+          <li>Private - specifically for project locations. For details, contact us.</li>
         </ul>
       </td>
     </tr>
@@ -43,15 +43,15 @@ This tab show you the locations list of the project. Same list you see if call A
 
 ### Add location
 
-You can add a location to your project. Steps to add a location:
+You can add a location to your project:
 
-1. Click "![](../../.gitbook/assets/plus_icon.jpeg)**Add location**" button. You will see the new line on the top list.
-2. Click to the location field and select a country from the opened list of available new countries.
+1. Click the "![](../../.gitbook/assets/plus_icon.jpeg)**Add location**" button. You will see the new line at the top of the list.
+2. Click the location field and select a country from the list of available new countries.
 
 ### Delete location
 
-You can delete a location from your project. Steps to delete a location:
+You can delete a location from your project:
 
-1. Select a location from the list for deleting.
-2. Click " ![](../../.gitbook/assets/delete_icon.png) " icon in the same line. 
+1. Select a location you want to delete from the list.
+2. Click the " ![](../../.gitbook/assets/delete_icon.png) " icon in the same line. 
 

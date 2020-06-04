@@ -1,4 +1,4 @@
 # Pools
 
-Documentation in progress
+Documentation is in development.
 
