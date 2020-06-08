@@ -8,15 +8,15 @@ description: >-
 
 'Wi-Fi Security for Business' is a versatile application designed for the needs of clients who want to provide VPN to a specific number of users. All the users have to do is log in using either their emails or user IDs, depending on the authorisation type in your specific project. If a user was added to your project, they will be able to access it through this application and connect to any of the available virtual locations.
 
-To download the 'Wi-Fi Security for Business' application for different platforms, follow the corresponding links.
+To download the 'Wi-Fi Security for Business' application for different platforms, follow the corresponding links:
 
-Windows: [https://firebasestorage.googleapis.com/v0/b/oauth-default-4d635.appspot.com/o/Windows%2FWi-Fi\_Security\_for\_Business\_1.3.2.127.msi?alt=media&token=b9dabb98-0031-4fba-a728-372b5322877a](wifi-security-for-business.md)
+[Windows](https://firebasestorage.googleapis.com/v0/b/oauth-default-4d635.appspot.com/o/Windows%2FWi-Fi_Security_for_Business_1.3.2.127.msi?alt=media&token=b9dabb98-0031-4fba-a728-372b5322877a)
 
-Android: [https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness&hl=en\_US](https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness&hl=en_US)
+[Android](https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness&hl=en_US)
 
-iOS: [https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544)
+[iOS](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544)
 
-macOS: the app is not available for general public, but you can acquire it if you contact us
+macOS - the app is not available for general public, but you can acquire it if you contact us
 
 Below, we will explore user interface of the Windows application, but it is quite similar to the applications on other platforms, so it is a decent representation of all the 'Wi-Fi Security for Business' applications we offer. 
 
