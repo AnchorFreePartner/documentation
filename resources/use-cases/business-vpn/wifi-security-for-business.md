@@ -16,7 +16,7 @@ To download the 'Wi-Fi Security for Business' application for different platform
 
 [iOS](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544)
 
-macOS - the app is not available for general public, but you can acquire it if you contact us
+macOS — the app is not available for general public, but you can acquire it if you contact us
 
 Below, we will explore user interface of the Windows application, but it is quite similar to the applications on other platforms, so it is a decent representation of all the 'Wi-Fi Security for Business' applications we offer. 
 
