@@ -85,8 +85,8 @@ All sessions of the user you can found in this page. This page include the list 
 | Start time | Session start time. |
 | End time | Session end time. If the session is active, this field will be empty. |
 | Internal IP | Internal IP address this session \(VPN node assigns the IP for this session\). This IP is not a real user's IP or user external IP. |
-| Download | Receive bites |
-| Upload | Transmit bites |
+| Download | Receive bytes |
+| Upload | Transmit bytes |
 
 You can sort the list data by any column.
 
