@@ -19,7 +19,7 @@ Below, we will explore user interface of the Windows application, but it is quit
 
 The first thing you see after installing and launching the _Wi-Fi Security for Business_ application is a log-in screen:
 
-![](../../../.gitbook/assets/wifi-security-login.png)
+![](../../../.gitbook/assets/wifi-security-login-tom-briantic.png)
 
 There, you \(or a user you have added to the project\) have to enter credentials to access the project. 
 
@@ -49,7 +49,7 @@ If you are added to multiple projects as a user, you will be able to choose betw
 
 ![](../../../.gitbook/assets/wifi-security-multiple-projects.png)
 
-Also, if there are private servers added to the project, you will be able to see them in the list.
+Also, if there are private servers added to the project, you will be able to see them in the list. A private server can be located within your own cloud or on-site infrastructure and it can function as a VPN gateway. Thus, users will be able to access your corporate services. For details, please contact us.
 
 ![](../../../.gitbook/assets/wifi-security-private-servers.png)
 
@@ -70,7 +70,7 @@ On the 'Networks' page you can change how the application acts when connected to
 
 If you encounter any sort of trouble while using the application, consult the FAQ page. It contains the troubleshooting tips for the most frequent problems.
 
-![](../../../.gitbook/assets/wifi-security-settings.png)
+![](../../../.gitbook/assets/wifi-security-settings-tom-briantic.png)
 
 On the 'Settings' page, you can change global setting of the application, as well as contact us, sign out of the account and view both terms of service and privacy policy. The version of the application is also situated on this page.
 
