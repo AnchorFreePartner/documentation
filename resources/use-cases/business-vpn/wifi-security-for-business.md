@@ -6,7 +6,7 @@ description: >-
 
 # Wi-Fi Security for Business
 
-_Wi-Fi Security for Business_ is a versatile application designed for the needs of clients who want to provide VPN to a specific number of users. All the users have to do is log in using either their emails or user IDs, depending on the authorisation type in a specific project. If a user was added to your project, they will be able to access it through this application and connect to any of the available virtual locations.
+_Wi-Fi Security for Business_ is a versatile application designed for the needs of clients who want to provide VPN to a specific number of users. All the users have to do is log in using either their emails or user IDs, depending on the authorisation type in a specific project. If a user was added to your project, they will be able to access it through this application, connect to any of the available virtual locations and enjoy unlimited VPN access!
 
 To download the _Wi-Fi Security for Business_ application for different platforms, follow the corresponding links:
 
