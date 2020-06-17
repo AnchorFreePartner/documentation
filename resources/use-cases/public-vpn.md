@@ -7,7 +7,7 @@ description: >-
 
 # Public VPN
 
-The main features of VPN are:
+The main features of Public VPN are:
 
 * Your real IP address is replaced with a virtual IP, so all the services you access think you are situated elsewhere;
 * Whatever node you choose, thousands of people are using it day and night, thus it is much harder for other people to trace what websites you have accessed;
