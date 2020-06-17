@@ -13,7 +13,7 @@ To download the _Wi-Fi Security for Business_ application for different platform
 * [**Wi-Fi Security for Business** for Windows](https://firebasestorage.googleapis.com/v0/b/oauth-default-4d635.appspot.com/o/Windows%2FWi-Fi_Security_for_Business_1.3.2.127.msi?alt=media&token=b9dabb98-0031-4fba-a728-372b5322877a) ****![](../../../.gitbook/assets/ms-store-black-n-white.png) 
 * [**Wi-Fi Security for Business** for Android](https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness&hl=en_US) ****![](../../../.gitbook/assets/metronome-playstore-logo-png-clipart-thumbnail.jpg) 
 * [**Wi-Fi Security for Business** for iOS](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544) ****![](../../../.gitbook/assets/appstore-black-n-white.png) 
-* **Wi-Fi Security for Business** for macOS ****![](../../../.gitbook/assets/apple-logo-computer-icons-png-favpng-wbktizskbkzbdeyzujybp9ke7.jpg) — the app is not available for general public, but you can acquire it if you contact us
+* **Wi-Fi Security for Business** for macOS ****![](../../../.gitbook/assets/apple-logo-computer-icons-png-favpng-wbktizskbkzbdeyzujybp9ke7.jpg) — the app is not available for general public, but you can acquire it if you [**contact us**](mailto:r.mukherji@anchorfree.com)\*\*\*\*
 
 Below, we will explore user interface of the Windows application, but it is quite similar to the applications on other platforms, so it is a decent representation of all the _Wi-Fi Security for Business_ applications we offer. 
 
