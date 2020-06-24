@@ -23,6 +23,8 @@ Public VPN is the product we developed so you can let anyone use fast, secure an
 
 ![](../../.gitbook/assets/vpn-client.jpg)
 
+![](../../.gitbook/assets/vpn-client-2.png)
+
 The main features of Public VPN are:
 
 * Your real IP address is concealed, so it allows you to maintain your online privacy and search the web anonymously;
