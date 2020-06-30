@@ -9,6 +9,8 @@ description: >-
 
 VPN stands for Virtual Private Network. A VPN connects your device to the Internet through another computer. You’re connecting to the Internet through another computer’s Internet connection, rather than directly through your own. Aside from that, the VPN also encrypts the data you send, so that it’s kept secure.
 
+![](../../.gitbook/assets/vpn-general-hires.png)
+
 A simple analogy would be sending a postcard with and without an envelope \(via VPN and without it, respectively\). If you send your postcard without an envelope, somebody \(an Internet Service Provider or even a hacker\) can easily read its contents. On the other hand, if you use an envelope, the postcards contents will remain much harder to read, thus preserving your privacy. It is as simple as that!
 
 VPN protocols determine exactly how data is routed through a connection. These protocols have different specifications based on the benefits and desired circumstances; for example, some VPN protocols prioritize data throughput speed while others focus on masking or [encrypting](https://www.netmotionsoftware.com/blog/security/data-encryption-101/) data packets for privacy and security. We offer SDKs using 3 different VPN protocols: IPSEC, OpenVPN and proprietary Hydra protocol.
@@ -18,6 +20,8 @@ VPN protocols determine exactly how data is routed through a connection. These p
 * Hydra: to learn about this protocol, please refer to the [FAQ](https://support.hotspotshield.com/hc/en-us/articles/360000374343-What-s-the-protocol-used-by-Hotspot-Shield-).
 
 Public VPN is the product we developed so you can let anyone use fast, secure and safe VPN with access to 30+ locations with 1000+ servers. You can either use a sample designed/developed application or build your own app from scratch using provided SDKs and publish it on a corresponding platform. A user just presses 'Connect' and receives all the benefits of a secure network. The application creates a VPN tunnel that connects the user to the Internet.
+
+![](../../.gitbook/assets/vpn-tunnel-hires.png)
 
 The main features of Public VPN are:
 
