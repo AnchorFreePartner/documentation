@@ -17,7 +17,7 @@ VPN protocols determine exactly how data is routed through a connection. These p
 * OpenVPN: OpenVPN is an open source protocol that allows developers access to its underlying code. This protocol has grown in popularity due to its use of \(virtually unbreakable\) AES-256 bit key encryption with 2048-bit RSA authentication and a 160-bit SHA1 hash algorithm. Keywords: open source, strongest encryption, slower speeds.
 * Hydra: to learn about this protocol, please refer to the [FAQ](https://support.hotspotshield.com/hc/en-us/articles/360000374343-What-s-the-protocol-used-by-Hotspot-Shield-).
 
-Public VPN is the product we developed so you can let anyone use fast, secure and safe VPN with access to 30+ locations with 1000+ servers. You can either use a sample application or build your own app from scratch using provided SDKs and publish it on a corresponding platform. A user just presses 'Connect' and receives all the benefits of a secure network. The application creates a VPN tunnel that connects the user to the Internet.
+Public VPN is the product we developed so you can let anyone use fast, secure and safe VPN with access to 30+ locations with 1000+ servers. You can either use a sample designed/developed application or build your own app from scratch using provided SDKs and publish it on a corresponding platform. A user just presses 'Connect' and receives all the benefits of a secure network. The application creates a VPN tunnel that connects the user to the Internet.
 
 The main features of Public VPN are:
 
