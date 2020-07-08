@@ -21,7 +21,7 @@ VPN protocols determine exactly how data is routed through a connection. These p
 
 Public VPN is the product we developed so you can let anyone use fast, secure and safe VPN with access to 30+ locations with 1000+ servers. You can either use a sample designed/developed application or build your own app from scratch using provided SDKs and publish it on a corresponding platform. A user just presses 'Connect' and receives all the benefits of a secure network. The application creates a VPN tunnel that connects the user to the Internet.
 
-![](../../.gitbook/assets/vpn-tunnel-hires.png)
+![](../../.gitbook/assets/tunnel-final-version.png)
 
 The main features of Public VPN are:
 
