@@ -25,11 +25,9 @@ Public VPN is the product we developed so you can let anyone use fast, secure an
 
 The main features of Public VPN are:
 
-* Your real IP address is concealed, so it allows you to maintain your online privacy and search the web anonymously;
-* Whatever node you choose, thousands of people are using it day and night, thus it is much harder for other people to access your search history;
-* All the traffic from your computer to the node is encrypted, even if you are using a public network, so a potential hacker is much less likely to intercept it;
-* Access any website in countries that have restricted connection to those sites;
-* By connecting to a server in a different country, you can conceal your geographical location \(or change it to acquire offers for certain countries by online shops\).
+* Security. All the traffic from your computer to the node is encrypted, even if you are using a public network, so a potential hacker is much less likely to intercept it. Also, the government, corporations and your Internet Service Provider \(ISP\) cannot collect and process your traffic, making your browsing history more private \(see figure above\);
+* Anonimity. Your real IP address is concealed, so it allows you to maintain your online privacy and search the web anonymously. Whatever node you choose, thousands of people are using it day and night, thus it is much harder for other people to access your search history;
+* Content unblocking. By connecting to a server in a different country, you can change your geographical location. Access any website in countries that have restricted connection to those sites. 
 
 To create an application for users, we provide SDKs for different platforms and with different VPN protocols: 
 
