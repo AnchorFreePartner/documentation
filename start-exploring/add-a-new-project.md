@@ -10,7 +10,7 @@ description: Learn how to create your first project in Management Console
 2. Click Sign in button
 3. Enter your valid creds and click ‘Sign in’ button:
 
-![](../.gitbook/assets/filled_sign_in_form.png)
+![](../.gitbook/assets/signin.png)
 
 As a result, you will be redirected to the ‘Create first project’ page:
 
