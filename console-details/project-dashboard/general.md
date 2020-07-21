@@ -8,9 +8,9 @@ description: This page included graphs of your project.
 
 ### Active Sessions by Protocol
 
-The graph “**Active Sessions by Protocol**” shows a realtime number of active sessions per VPN protocol. We use the most popular VPN protocols for iOS, Android, macOS, and Windows platforms like OpenVPN, IPSec, and also the HYDRA protocol, designed and patented by Pango, that is more advanced and has higher performance benchmarksin this day and age.
+The graph “**Active Sessions by Protocol**” shows a realtime number of active sessions per VPN protocol. We use the most popular VPN protocols for iOS, Android, macOS, and Windows platforms like OpenVPN, IPSec, and also the HYDRA protocol, designed and patented by Pango, that is more advanced and has higher performance benchmarks in this day and age.  
 
-![](../../.gitbook/assets/active_session_protocol.png)
+![](../../.gitbook/assets/active_session_protocol%20%281%29.png)
 
 #### Details
 
@@ -18,21 +18,21 @@ We can see active sessions per protocol just by clicking particular colored line
 
 ### Active Sessions by Locations
 
-The graph show us the amount of real-time sessions per virtual location and you can see the more popular virtual locations chosen by users. For anonymous users, this graph shows optimal server location.  
+The graph shows us the amount of real-time sessions per virtual location and you can see the more popular virtual locations chosen by users. For anonymous users, this graph shows an optimal server location.  
 
-![](../../.gitbook/assets/active_session_location.png)
+![](../../.gitbook/assets/active_session_locations.png)
 
 #### Details
 
-There, we can see all virtual locations for all active users, including anonymous and paid users. To look up a detailed list, just click on the graph line and open a pop-up menu.To select a certain country, click the country code. The list of virtual locations is scrollable. It updates every 30 secs.
+There, we can see all virtual locations for all active users, including anonymous and paid users. To look up a detailed list, just click on the graph line and open a pop-up menu. To select a certain country, click the country code. The list of virtual locations is scrollable. It updates every 30 secs.
 
 For countries, the ALPHA-2 codes are used.
 
 ### Users
 
-This graph displays active, invited, blocked and deleted users.  
+This graph displays active, invited, blocked, and deleted users.  
 
-![](../../.gitbook/assets/users_graph.png)
+![](../../.gitbook/assets/users_graph%20%281%29.png)
 
 #### Details
 
@@ -45,7 +45,7 @@ This graph displays active, invited, blocked and deleted users.
 
 This graph displays how many devices were actively using the application at a given moment.  
 
-![](../../.gitbook/assets/devices_graph.png)
+![](../../.gitbook/assets/devices_graph%20%281%29.png)
 
 #### Details
 
@@ -53,9 +53,9 @@ In the bottom right is a number of devices that are currently using the applicat
 
 ### Connected Users
 
-This graph displays the number of connected users daily, weekly and monthly.
+This graph displays the number of connected users daily, weekly, and monthly.
 
-![](../../.gitbook/assets/connected_users.png)
+![](../../.gitbook/assets/mcu%20%281%29.png)
 
 * **DCU** = Daily Connected Users
 * **WCU** = Weekly Connected Users
@@ -65,9 +65,9 @@ The graph updates every 24 hours.
 
 ### Connected Devices
 
-This graph displays connected devices daily, weekly and monthly.
+This graph displays connected devices daily, weekly, and monthly.
 
-![](../../.gitbook/assets/connected_devices.png)
+![](../../.gitbook/assets/mcd.png)
 
 * **DCD** = Daily Connected Devices
 * **WCD** = Weekly Connected Devices
@@ -77,17 +77,17 @@ The graph updates every 24 hours.
 
 ### Inactive Users
 
-This graph displays inactive users in the current day, last week and last month.  
+This graph displays inactive users in the current day, last week, and last month.  
 
-![](../../.gitbook/assets/inactive_users_graph.png)
+![](../../.gitbook/assets/inactive_users_graph%20%281%29.png)
 
 The graph updates every 24 hours.
 
 ### Inactive Devices
 
-This graph displays all inactive devices in the current day, last week and last month.
+This graph displays all inactive devices in the current day, last week, and last month.
 
-![](../../.gitbook/assets/inactive_devices_graph.png)
+![](../../.gitbook/assets/inactive_devices_graph%20%281%29.png)
 
 This graph updates every 24 hours.
 
@@ -99,7 +99,7 @@ In the top right corner, there is the Filter button ![](../../.gitbook/assets/fi
 
 ### Export data
 
-If you want to export the data from the graphs, you can use the Export button ![](../../.gitbook/assets/export_icon.png) in the top-right corner or move to  the 'Export Data' tab ![](../../.gitbook/assets/export_icon.png) in the left menu. You can see it in the next document:
+If you want to export the data from the graphs, you can use the Export button ![](../../.gitbook/assets/export_icon.png) in the top-right corner or move to the 'Export Data' tab ![](../../.gitbook/assets/export_icon.png) in the left menu. You can see it in the next document:
 
 {% page-ref page="../export-data.md" %}
 
