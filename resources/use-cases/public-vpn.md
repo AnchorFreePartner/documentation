@@ -31,19 +31,19 @@ The main features of Public VPN are:
 
 To create an application for users, we provide SDKs for different platforms and with different VPN protocols: 
 
-* [VPN SDK for Android](https://pango.gitbook.io/pango-platform/sdk/untitled) ![](../../.gitbook/assets/metronome-playstore-logo-png-clipart-thumbnail.jpg) \(supports Hydra and OpenVPN protocols\)
-* [Hydra VPN SDK for iOS/macOS](https://pango.gitbook.io/pango-platform/sdk/hydra-vpn-sdk-for-ios) ![](../../.gitbook/assets/appstore-black-n-white.png)![](../../.gitbook/assets/apple-logo-computer-icons-png-favpng-wbktizskbkzbdeyzujybp9ke7.jpg) 
-* [IPSEC VPN SDK for iOS/macOS](https://pango.gitbook.io/pango-platform/sdk/ipsec-vpn-sdk-for-ios-macos) ![](../../.gitbook/assets/appstore-black-n-white.png)![](../../.gitbook/assets/apple-logo-computer-icons-png-favpng-wbktizskbkzbdeyzujybp9ke7.jpg) 
-* [Hydra SDK for Windows](https://pango.gitbook.io/pango-platform/sdk/hydra-sdk-for-windows) ![](../../.gitbook/assets/ms-store-black-n-white.png) 
+* [VPN SDK for Android](https://pango.gitbook.io/pango-platform/sdk/untitled) ![](../../.gitbook/assets/play-store-logo-small.jpg) \(supports Hydra and OpenVPN protocols\)
+* [Hydra VPN SDK for iOS/macOS](https://pango.gitbook.io/pango-platform/sdk/hydra-vpn-sdk-for-ios) ![](../../.gitbook/assets/appstore-logo-small.png)![](../../.gitbook/assets/ios-logo-small.jpg) 
+* [IPSEC VPN SDK for iOS/macOS](https://pango.gitbook.io/pango-platform/sdk/ipsec-vpn-sdk-for-ios-macos) ![](../../.gitbook/assets/appstore-logo-small.png)![](../../.gitbook/assets/ios-logo-small.jpg) 
+* [Hydra SDK for Windows](https://pango.gitbook.io/pango-platform/sdk/hydra-sdk-for-windows) ![](../../.gitbook/assets/ms-store-small.png) 
 * [HydraVPN SDK for Routers](https://pango.gitbook.io/pango-platform/sdk/hydravpn-sdk-for-routers)
 
 If you are looking for a sample application, you do not have to go elsewhere, we got them right here:
 
-* [Hydra VPN SDK demo for iOS](https://pango.gitbook.io/pango-platform/demo-applications/untitled) ![](../../.gitbook/assets/appstore-black-n-white.png) 
-* [IPSEC VPN SDK demo for iOS](https://pango.gitbook.io/pango-platform/demo-applications/ipsec-vpn-sdk-demo-for-ios) ![](../../.gitbook/assets/appstore-black-n-white.png) 
-* [Hydra VPN SDK demo for Android](https://pango.gitbook.io/pango-platform/demo-applications/anchorfree-hydra-vpn-sdk-demo-for-android) ![](../../.gitbook/assets/metronome-playstore-logo-png-clipart-thumbnail.jpg) 
-* [Hydra VPN SDK demo for Windows](https://pango.gitbook.io/pango-platform/demo-applications/hydra-vpn-sdk-demo-for-windows) ![](../../.gitbook/assets/ms-store-black-n-white.png) 
-* [OpenVPN SDK for Windows](https://pango.gitbook.io/pango-platform/demo-applications/openvpn-sdk-for-windows) ![](../../.gitbook/assets/ms-store-black-n-white.png) 
+* [Hydra VPN SDK demo for iOS](https://pango.gitbook.io/pango-platform/demo-applications/untitled) ![](../../.gitbook/assets/appstore-logo-small.png) 
+* [IPSEC VPN SDK demo for iOS](https://pango.gitbook.io/pango-platform/demo-applications/ipsec-vpn-sdk-demo-for-ios) ![](../../.gitbook/assets/appstore-logo-small.png) 
+* [Hydra VPN SDK demo for Android](https://pango.gitbook.io/pango-platform/demo-applications/anchorfree-hydra-vpn-sdk-demo-for-android) ![](../../.gitbook/assets/play-store-logo-small.jpg) 
+* [Hydra VPN SDK demo for Windows](https://pango.gitbook.io/pango-platform/demo-applications/hydra-vpn-sdk-demo-for-windows) ![](../../.gitbook/assets/ms-store-small.png) 
+* [OpenVPN SDK for Windows](https://pango.gitbook.io/pango-platform/demo-applications/openvpn-sdk-for-windows) ![](../../.gitbook/assets/ms-store-small.png) 
 
 When using a sample application, you just have to set a server to connect to and you are good to go.
 
