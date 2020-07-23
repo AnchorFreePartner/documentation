@@ -120,11 +120,11 @@ Device data include following parameters:
 | User Name | string | User ID for this device |
 | Status | Boolean | Device status: 0 - active, 1 - blocked |
 
-Data Retention Period \(how long we save this\) - **always**. Project members can delete a user data in the Platform Console.
+Data Retention Period \(how long we save this\) - **3-year inactive time**. Project members can delete a user data in the Platform Console.
 
 ## VPN session statistic
 
-For each user session we fix end collect next data:
+For each user session, we fix end collect next data:
 
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
