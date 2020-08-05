@@ -1,13 +1,13 @@
 # Project Settings
 
-This Page includes settings of your project. All settings divided to next tabs:
+This Page includes the settings of your project. All settings divided into the following categories:
 
-* **General** - base settings of the project. 
-* **Auth method** - settings of users authentication to this project. 
+* **General** - basic settings of the project. 
+* **Auth method** - user authentication settings. 
 * **Payments method** - settings of your paid subscription methods. 
-* **VPN Bypass list** - list of URLs excluded from VPN traffic \(bypass\). 
-* **Client Networks** - list of network rules for on/off VPN automatically.
-* **Member** - list users who have access to the Management console.
+* **VPN Bypass list** - a list of URLs excluded from VPN traffic \(bypass\). 
+* **Client Networks** - a list of network rules for turning the VPN on/off automatically.
+* **Member** - a list of users who have access to the Management console.
 
 
 
