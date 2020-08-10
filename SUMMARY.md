@@ -11,7 +11,7 @@
 
 * [Project Dashboard](console-details/project-dashboard/README.md)
   * [General](console-details/project-dashboard/general.md)
-  * [Location Loading](console-details/project-dashboard/untitled.md)
+  * [Location Loading](console-details/project-dashboard/location-loading.md)
 * [Network locations](console-details/network-locations/README.md)
   * [Pools](console-details/network-locations/pools.md)
 * [Users](console-details/users/README.md)
