@@ -1,10 +1,10 @@
 ---
 description: >-
-  We need to be assured that Platform can restrict access to our data, and only
-  used by our users. How will they accomplish?
+  We need to be assured that Platform can restrict access to our data, and is
+  only used by our users. How will this be accomplished?
 ---
 
-# How the Platform restrict access to our data?
+# How the Platform restricts access to our data?
 
 Our Platform is a multi-tenant system. Each project data isolated and need access to work with project data. There are 2 API for work with users data of a project:
 

@@ -1,9 +1,8 @@
-# What analytic data collect your SDK?
+# What analytic data is collected by your SDK?
 
-The main purpose of the reporting is to improve the connection quality of the SDK. SDK collects anonymous data about device and about connection start and stop attempts.
+The main purpose for this is to improve the connection quality of the SDK. SDK collects anonymous data about a device and connection start and stop attempts.
 
-SDK performs Network Availability Test for better understanding what's  
-happening on connection error. It includes diagnostics of the current network connection such a check a Captive Portal, ping a popular public web resource and etc.
+SDK performs Network Availability Test for better understanding what's happening when a connection error is received. It includes diagnostics of the current network connection such as a Captive Portal check, pinging of a popular public web resource etc.
 
 ## Common properties
 
@@ -12,13 +11,13 @@ happening on connection error. It includes diagnostics of the current network co
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | af\_platform | String | android |
-| uid | String | Application uuid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
+| uid | String | Application uid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
 | app\_name | String | Application package name |
-| app\_build | String | Id based on app signature. Helpful to figure out if app is cracked. |
+| app\_build | String | Id based on app signature. Helpful to figure out if app was cracked. |
 | app\_version | String | Application version name |
 | app\_release | String | Application version code |
 | carrier | String | Telephony carrier |
-| has\_telephone | Boolean | If device is a phone |
+| has\_telephone | Boolean | Shows if device is a phone |
 | memory\_remains | String | Remaining RAM |
 | memory\_total | String | Total RAM |
 | model | String | android.os.Build.MODEL |
@@ -28,9 +27,9 @@ happening on connection error. It includes diagnostics of the current network co
 | hydra\_base\_url | String | Base api url |
 | android\_sdk\_int | String | Build.VERSION.SDK\_INT |
 | android\_version\_name | String | Build.VERSION.RELEASE |
-| connection\_type | String | Type name of current active network |
-| time\_zone | String | Device time zone in format like "-0800" |
-| af\_hash | String | Device id generated on first app install |
+| connection\_type | String | Type of current active network |
+| time\_zone | String | Device time zone in "-0800" format |
+| af\_hash | String | Device id generated on the first app install |
 | sdk\_version | String | SDK version name |
 | sdk\_version\_code | Integer | SDK version code |
 
@@ -41,7 +40,7 @@ happening on connection error. It includes diagnostics of the current network co
 | af\_platform | String | “ios” |
 | app\_name | String | Application package name |
 | app\_release | String | Application version code |
-| distinct\_id | String | Unique id generated on first app install |
+| distinct\_id | String | Unique id generated on the first app install |
 | epoch | Integer | Time of generated event in unix format |
 | carrier | String | Telephony carrier name |
 | model | String | iPhone model, eg. iPhone8,2 |
@@ -50,12 +49,12 @@ happening on connection error. It includes diagnostics of the current network co
 | sdk\_version | String | SDK version name |
 | lib\_version | String | Analytics SDK version |
 | os | String | Device OS \(iOS\) |
-| os\_version | String | OS version, eg. 13.1.2 |
+| os\_version | String | OS version, e.g., 13.1.2 |
 | screen\_height | Integer | Device screen height |
 | screen\_width | Integer | Device screen width |
-| server\_protocol | String | SDK server protocol eg. hydra |
+| server\_protocol | String | SDK server protocol e.g., hydra |
 | sim\_country | String | Country of carrier |
-| wifi | Bool | Indicates if device is on Wi-Fi network |
+| wifi | Bool | Indicates if a device is on Wi-Fi network |
 | time | Integer | The current time on device in unix format |
 
 ### Common connection properties for all platforms
