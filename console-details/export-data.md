@@ -1,18 +1,16 @@
 # Export Data
 
-You can export the next data:
+You can export the following data:
 
 * Project users \(all users\) 
-* Users devices \(all devices\) 
-* Users sessions \(period 1-30 days\)
+* User's devices \(all devices\) 
+* User's sessions \(period of 1-30 days\)
 
 ## Export story
 
-On the "Export data" tab you can see the table with a story your exports. See sample:  
+On the "Export data" tab you can see the table with the story of your exports:  
 
 ![](../.gitbook/assets/export_list.png)
-
-Where:
 
 <table>
   <thead>
@@ -24,7 +22,7 @@ Where:
   <tbody>
     <tr>
       <td style="text-align:left">Created</td>
-      <td style="text-align:left">Date of export data</td>
+      <td style="text-align:left">Date of a data export</td>
     </tr>
     <tr>
       <td style="text-align:left">Type</td>
@@ -50,10 +48,10 @@ Where:
       <td style="text-align:left">
         <p>Export status:</p>
         <ul>
-          <li><b>In progress</b> - Process of export data,</li>
-          <li><b>Done</b> - Export data done,</li>
-          <li><b>No data</b> - The Platform can&apos;t found data,</li>
-          <li><b>Failed</b> - technical issue, contact with us for investigation.</li>
+          <li><b>In progress</b> - In process of data export,</li>
+          <li><b>Done</b> - Data export is done,</li>
+          <li><b>No data</b> - The Platform can&apos;t find the necessary data,</li>
+          <li><b>Failed</b> - technical issue, contact us for details.</li>
         </ul>
       </td>
     </tr>
@@ -66,19 +64,19 @@ Where:
 
 ## Actions
 
-If you wan to order actual data for export, you need to order data. Steps to order data:
+First, you need to select what data you want exported:
 
-1. Click "![](../.gitbook/assets/plus_icon.jpeg)Add" button and select data to export
+1. Click "![](../.gitbook/assets/plus_icon.jpeg)Add"
 
 ![](../.gitbook/assets/select_type_data_export.png)
 
-  2. Now pick either _Export User_, _Export Device_, _Export Session_.  A job will be created to complete the task and it will be displayed in the list as "_In progress_".  When the task is completed and was successful, the job will be displayed as "_Done"_ and can be downloaded.
+  2. Now pick either _Export Users_, _Export Devices_, _Export Sessions_.  The export will start, and it will be displayed as _In progress_ in the list. When the task is completed successfully, the status will change to _Done_ and the file can be downloaded.
 
-If the task shows failed under status, the export task will need to run again.
+If the task is failed, it can be restarted.
 
-#### **For Export Session** 
+#### **Exporting Sessions**
 
-To export session data, a date range must be first selected. It can be completed by selecting the preset This week, This month, Yesterday, Last week, Last month or manually selecting the dates.  
+To export session data, a date range must be selected. You can choose the range manually or choose a preset \(Today, This week, This month, Yesterday, Last week or Last month\).  
 
 ![](../.gitbook/assets/export_sessions.png)
 

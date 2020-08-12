@@ -1,60 +1,60 @@
 # Member
 
-The Project Member is a person who has access to the Platform Console. There are 3 roles of the members with different access:
+The Project Member is a person who has access to the Platform Console. There are 3 roles with different privileges:
 
 | Role | Access  |
 | :--- | :--- |
 | Owner | full access |
-| Admin | can't delete project |
-| Support | can't change the project settings |
+| Admin | can't delete a project |
+| Support | can't change project settings |
 
 ## Actions
 
 ### Adding a new member
 
-If you are going to add new member to the project you need to do next steps:
+If you want to add a new member to the project, do the following:
 
-1. Click button "![](../../.gitbook/assets/plus_icon.jpeg)**Add member**". You will see the new form like this:
+1. Click "![](../../.gitbook/assets/plus_icon.jpeg)**Add member**". You will see a form that looks like this:
 
 ![](../../.gitbook/assets/new_member.png)
 
   2. Enter the email address of the user.
 
 {% hint style="info" %}
-If this user has access to the Platform Console, he will see this project in his list of projects. If this user is new, the Platform will send the invite.
+If this user has access to the Platform Console, he will see this project in his list of projects. If this user is new, the Platform will send an invitation.
 {% endhint %}
 
-  3. Select a member role. 
+  3. Select a member's role. 
 
 {% hint style="info" %}
-A member can't add a new member with a role above himself.
+A member can't add a new member with a role higher than his own role.
 {% endhint %}
 
-  4. If this new member will respond to questions from other users concerning issues with the client, select the clients that the user will receive emails from.
+  4. If you want this new member to help other users with technical issues, select clients that the user will receive emails from.
 
 {% hint style="info" %}
-our SDK provides this member-email to an application \(per OS\). Your application can use this email for support contact.
+Our SDK provides this member's email to an application \(per OS\). Your application can use this email to contact support.
 {% endhint %}
 
-  5. Click button "**Add member**".
+  5. Click **Add member**.
 
 ### Editing a member
 
-If you going to change settings of an existed member, you need to do next steps:
+If you want to change settings of an existing member, do the following:
 
-1. Select a member and click the button "![](../../.gitbook/assets/edit_icon.png)". You will see the new form like this:  
+1. Select a member and click ![](../../.gitbook/assets/edit_icon.png). You will see a form that looks like this:  
 
 ![](../../.gitbook/assets/edite_member.png)
 
-  2. Edit setting and click the button "**Save changes**". 
+  2. Edit settings and click **Save changes**. 
 
 ### Deleting a member
 
-If you going to delete an existed member, you need to do next steps:
+If you want to delete an existing member, do the following:
 
-1. Select a member for delete and click the button "![](../../.gitbook/assets/delete_icon.png)". You will see the new form like this:  
+1. Select a member to delete and click ![](../../.gitbook/assets/delete_icon.png). You will see a form that looks like this:
 
 ![](../../.gitbook/assets/delete_member.png)
 
-   2. Click the button "**Delete member**". 
+   2. Click **Delete member**. 
 
