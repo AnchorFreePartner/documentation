@@ -2,7 +2,7 @@
 
 ## Introduction to Firebase
 
-Firebase was developed in 2011 to create and provide support for mobile and web applications. Later on, in 2014, it was acquired by Google. It gives you a number of facilities that can be used for the fast development of your applications. So, all you need to do is build applications fastly without thinking of managing infrastructure. There are few products of Firebase that can be used in any applications but we will talk about _**Authentication**_ \(It is used to authenticate the users of your applications\).
+Firebase was developed in 2011 to create and provide support for mobile and web applications. Later on, in 2014, it was acquired by Google. It gives you a number of facilities that can be used for the fast development of your applications. So, all you need to do is build applications quickly without thinking of managing infrastructure. There are a few products of Firebase that can be used in any applications but we will talk about _**Authentication**_ \(It is used to authenticate the users of your applications\).
 
 ## **Login and Authentication in Firebase**
 
