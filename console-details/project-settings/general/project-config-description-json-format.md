@@ -4,7 +4,7 @@ description: JSON config includes the full list of the project parameters.
 
 # Project config description \(JSON format\)
 
-The example of JSON config is:
+An example of JSON config is:
 
 ```text
 {
