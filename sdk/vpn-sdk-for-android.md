@@ -8,13 +8,13 @@ Current version:[![](https://camo.githubusercontent.com/96e035b772594b98ab503a86
 
 ## General
 
-Android SDK is a part of Anchorfree Partner SDK which contains of client-side libraries and server-side applications needed to implement custom VPN infrastructure.
+Android SDK is a part of Anchorfree Partner SDK which contains client-side libraries and server-side applications needed to implement custom VPN infrastructure.
 
 ### Versioning convention
 
-Android SDK versioning is in format MAJOR.MINOR.PATCH and should be associated with version in Jira. [See convensioning rules](https://semver.org/)
+Android SDK versioning is in format MAJOR.MINOR.PATCH and should be associated with version in Jira. [See conventioning rules](https://semver.org/)
 
-The Android SDK provides API containing
+The Android SDK provides API containing:
 
 * Classes and methods to authorize client users
 * Ability to connect to backend VPN service
@@ -25,7 +25,7 @@ Android min sdk version 15
 
 ### Prerequisites
 
-In order to be able to use the SDK the following steps have to be done:
+In order to be able to use the SDK, the following steps have to be done:
 
 1. Register an account at [developer.anchorfree.com](https://developer.anchorfree.com/)
 2. Create a project and use a name for your project as a Public key. Private key is optional.
@@ -33,7 +33,7 @@ In order to be able to use the SDK the following steps have to be done:
 
 ## Installing
 
-To use this library you should add **jitpack** repository.
+To use this library, you should add **jitpack** repository.
 
 Add this to root `build.gradle`
 
@@ -132,11 +132,11 @@ compileOptions {
 }
 ```
 
-If you cannot enable java 8 support in your project please contact us for further details
+If you cannot enable java 8 support in your project, please contact us for further details
 
 ### Notifications
 
-To configure sdk notification use **NotificationConfig.Builder** class
+To configure sdk notification, use **NotificationConfig.Builder** class
 
 **Disable notifications**
 
@@ -162,19 +162,19 @@ builder.inCnl("Title","Message");
 
 **Notification message and title fallback**
 
-By default sdk displays notification for state CONNECTED and PAUSED.
+By default, sdk displays notification for state CONNECTED and PAUSED.
 
-If **inConnected** was not called it tries to use value set with **title** message
+If **inConnected** was not called, it tries to use value set with **title** message
 
 If `NotificationConfig.Builder`.`title` was not set, it will use App name as in launcher
 
-If **inConnected** was not called it will try to use string resource **default\_notification\_connected\_message**
+If **inConnected** was not called, it will try to use string resource **default\_notification\_connected\_message**
 
-If **inPause** was not called it will try to use string resource **default\_notification\_paused\_message**
+If **inPause** was not called, it will try to use string resource **default\_notification\_paused\_message**
 
 #### Notification click intent
 
-To configure action when user click's on notification use **clickAction** method. You must have Activity responds to specified action. Action will be used to create Intent. If **clickAction** not specified, sdk will open application launch activity on notification click.
+To configure action when a user clicks on a notification, use **clickAction** method. You must have Activity responds to a specified action. Action will be used to create an Intent. If **clickAction is** not specified, sdk will open application launch activity on notification click.
 
 In intent extras sdk will set boolean value **UnifiedSDKNotificationManager.EXTRA\_NOTIFICATION** as **true**
 
@@ -199,7 +199,7 @@ Notification config can be updated calling sdk method
 
 ### Set Up
 
-To set up sdk you should call getInstance method with your specific details
+To set up sdk, you should call getInstance method with your specific details
 
 ```text
 public class MyApplication extends Application {
@@ -829,7 +829,7 @@ You can find source code of sample app with integrated sdk on [GitHub](https://g
 
 ## Contact US
 
-Have problems integrating the sdk or found any issue, feel free to submit bug to [GitHub](https://github.com/AnchorFreePartner/hydrasdk-demo-android/issues/new)
+If you have problems integrating the sdk or found an issue, feel free to submit a bug to [GitHub](https://github.com/AnchorFreePartner/hydrasdk-demo-android/issues/new).
 
 ## API changes history
 
