@@ -14,7 +14,7 @@ Router SDK provides a shared library \(with C header file\) and can be integrate
 
 ## Core features
 
-Router SDK can intercept traffic for individual devices \(src IP based routing\) and route it to specific VPN server \(multi-server, multi-country\). SDK notifies Application about important events using a callback mechanism.
+Router SDK can intercept traffic for individual devices \(src IP based routing\) and route it to a specific VPN server \(multi-server, multi-country\). SDK notifies the Application about important events using a callback mechanism.
 
 ![](../.gitbook/assets/1.jpeg)
 

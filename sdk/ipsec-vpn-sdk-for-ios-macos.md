@@ -22,9 +22,9 @@ The SDK provides API to authorize client users and gives them an ability to conn
 
 ### Creating application
 
-To start application development, you need to create a XCode application project.
+To start application development, you need to create an XCode application project.
 
-At the end of this step you will have a new target:
+At the end of this step, you will have a new target:
 
 * **Application** target
 
@@ -64,7 +64,7 @@ For both, **Application** and **Network Extension** targets, go to _Project &gt;
 
 To start using the SDK, you need to import `import CakeTubeSDK` for iOS or `import CakeTubeSDKmacOS` to your file under the application target.
 
-To initialize SDK do the following:
+To initialize SDK, do the following:
 
 ```text
 import CakeTubeSDK // or CakeTubeSDKmacOS :)
@@ -76,7 +76,7 @@ CakeTube.instance().configure(CTConfig.create { (c) in
 })
 ```
 
-The best place to put initialization code is you AppDelegate's `application:didFinishLaunchingWithOptions:`.
+The best place to put initialization code is your AppDelegate's `application:didFinishLaunchingWithOptions:`.
 
 After SDK is initialized, you need to login to be able to start VPN. If you are using OAuth authentication, provide your own OAuth dialogs UI and receive OAuth access token. Login example with OAuth token:
 
