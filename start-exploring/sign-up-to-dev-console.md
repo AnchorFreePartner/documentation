@@ -31,7 +31,7 @@ If the address is not unique, the following error message will be displayed: **T
 
 4. Click the **Next Step** button.
 
-5. You will see the next screen with Terms of Service. Reed the Terms of Service and accept it by "_I agree with Terms of Service_".
+5. You will see the next screen with Terms of Service. Read the Terms of Service and accept it by clicking "_I agree with Terms of Service_".
 
 ![](../.gitbook/assets/signup_tos.png)
 
