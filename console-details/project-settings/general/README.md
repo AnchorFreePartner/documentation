@@ -14,12 +14,8 @@ To log in, you should use the Project ID. You can see the Project ID in the top 
 
 * **Company name** - the name of a project owner's company.
 * **Type** - the project type. 
-* **URL** - URL of the Platform. Often this URL is blocked by governments. We recommend to cover this URL, see instruction:
-
-{% page-ref page="../../../resources/how-to/aws-cloudfront-distribution.md" %}
-
 * **Bandwidth type** - The type of bandwidth limitation. By default, the type is "_By user_". It means the Platform will calculate the bandwidth amount like the sum of all the traffic user's devices used. Another Bandwidth type is "_By device_". The Platform will calculate the bandwidth amount separately per each user device. For details, contact us.
-* **Default Bandwidth limit \(MB\)** -  you can use this parameter to set the daily bandwidth limit for newly registered users. For example, if you set it to 100, newly registered users will have a 100MB daily limit. If this parameter will empty, newly registered users will have an unlimited daily limit.
+* **Default Bandwidth limit \(MB\)** -  the daily bandwidth limit for newly registered users. For example, if you see it to 100, newly registered users will have a 100MB daily limit. If this parameter will empty, newly registered users will have an unlimited daily limit.
 * **Default License** - you can select the default license for newly registered users. Below is the list of licenses:  
 
 ![](../../../.gitbook/assets/list_licenses.png)
