@@ -12,7 +12,6 @@ Download [the last version SDK](https://firebasestorage.googleapis.com/v0/b/web-
 
 * Windows 7 or later
 * .NET Framework 4.5
-* Visual Studio 2015 \(2017 for WPF sample project\)
 
 ## Components
 
