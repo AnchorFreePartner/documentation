@@ -1,7 +1,7 @@
 ---
 description: >-
   Your application can include paid functions. Usually, free users can only have
-  a 100MB per day, while paid users usually have no traffic limit.
+  a 50MB per day, while paid users usually have no traffic limit.
 ---
 
 # User Payment methods
