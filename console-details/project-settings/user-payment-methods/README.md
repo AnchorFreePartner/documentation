@@ -106,9 +106,8 @@ _huawei_ - this method supports Huawei In-App subscription. It is the standard m
 
 {% page-ref page="./" %}
 
-   2. Open the`agconnect-services.json` file. You need to find `client_id` and `client_secret` for the next step.
-
-   3. Add the "_huawei_" method to your project settings. Example of payment method settings:
+1. Open the`agconnect-services.json` file. You need to find `client_id` and `client_secret` for the next step.
+2. Add the "_huawei_" method to your project settings. Example of payment method settings:
 
 ```text
 {
@@ -124,13 +123,13 @@ _huawei_ - this method supports Huawei In-App subscription. It is the standard m
 
 "client\_secret" - client secret, can be found in `agconnect-services.json`
 
-   4. Send a purchase request
+1. Send a purchase request
 
-   4.1. Make purchase as it is described in the doc: 
+   4.1. Make purchase as it is described in the doc:
 
 {% page-ref page="./" %}
 
-  4.2. Parse the result and send the purchase to the server 
+4.2. Parse the result and send the purchase to the server
 
 ```text
 val purchaseResultInfo: PurchaseResultInfo = Iap.getIapClient(activity).parsePurchaseResultInfoFromIntent(data)
@@ -159,7 +158,7 @@ If you are going to add a new user payment method to the project, do the followi
 
 Fill the name and settings of your payment method.
 
-   2. Click "**New payments method**". The result can be seen in the table, for example:  
+1. Click "**New payments method**". The result can be seen in the table, for example:  
 
 ![](../../../.gitbook/assets/payment_methods.png)
 
@@ -171,7 +170,7 @@ If you are going to change settings of an existing payment method, do the follow
 
 ![](../../../.gitbook/assets/edit_payment_settings.png)
 
-  2. Edit the JSON and click "**Edit payments method**". 
+1. Edit the JSON and click "**Edit payments method**". 
 
 ### Delete a method
 
@@ -181,5 +180,5 @@ If you are going to delete an existing payment method, do the following:
 
 ![](../../../.gitbook/assets/delete_payment_method.png)
 
-   2. Click "**Delete payments method**". 
+1. Click "**Delete payments method**". 
 
