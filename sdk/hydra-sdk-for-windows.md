@@ -6,7 +6,7 @@ description: >-
 
 # Hydra SDK for Windows
 
-Download [the last version SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_Win_version_1.2.2.83_partnerapi_1.0.2.43_with_TAP_signed.zip?alt=media&token=7859fd0f-4502-40ef-a3b8-632080935f14)
+Download [the last version SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_Win_version_1.4.0.262_partnerapi_1.0.3.56_with_TAP_signed.zip?alt=media&token=518f7daa-d498-40ac-a4b6-21af862b8be5)
 
 ## Requirements
 
