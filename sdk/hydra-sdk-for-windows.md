@@ -13,36 +13,62 @@ Download [the last version SDK](https://firebasestorage.googleapis.com/v0/b/web-
 * Windows 7 or later
 * .NET Framework 4.5
 
-## Components
+## Files
 
-1. **Core**
+* HydraExecutable\x32bit\afvpn.dll
+* HydraExecutable\x32bit\hydra.exe 
+* HydraExecutable\x64bit\afvpn.dll
+* HydraExecutable\x64bit\hydra.exe
+* TapDriver\x32\AFTap.inf
+* TapDriver\x32\aftap0901.cat
+* TapDriver\x32\aftap0901.sys
+* TapDriver\x32\OemVista.inf
+* TapDriver\x32\tap0901.cat
+* TapDriver\x32\tap0901.sys
+* TapDriver\x32\tapinstall.exe
+* TapDriver\x64\AFTap.inf
+* TapDriver\x64\aftap0901.cat
+* TapDriver\x64\aftap0901.sys
+* TapDriver\x64\OemVista.inf
+* TapDriver\x64\tap0901.cat
+* TapDriver\x64\tap0901.sys
+* TapDriver\x64\tapinstall.exe
+* afvpn.manifest
+* afvpn.tlb
+* Foundation.ExtProc.Hydra.ComTypes.dll
+* Hydra.Sdk.Windows.dll
+* Hydra.Sdk.Windows.Service.exe
+* Microsoft.Practices.ServiceLocation.dll
+* Microsoft.Practices.Unity.Configuration.dll
+* Microsoft.Practices.Unity.dll
+* Microsoft.Practices.Unity.RegistrationByConvention.dll
+* Newtonsoft.Json.dll
+* PartnerApi.dll
+* SimpleWifi.dll
+* System.Buffers.dll
+* System.Collections.Immutable.dll
+* System.Memory.dll
+* System.Runtime.CompilerServices.Unsafe.dll
+* System.Threading.Tasks.Extensions.dll
+* System.ValueTuple.dll
 
-* **`Hydra.Sdk.Common`** - contains common IoC and logging components
-* **`Hydra.Sdk.Backend`** - contains backend related logic \(interfaces and implementation of backend service\)
-* **`Hydra.Sdk.Vpn`** - contains VPN related logic \(interfaces and default implementation of VPN service\), vpn executable and related binary files
+## Preconditions
 
-1. **Windows**
+### TAP driver installation
 
-* **`Hydra.Sdk.Windows`** - contains VPN service implementation which is dependent on Windows service below
-* **`Hydra.Sdk.Windows.Service`** - Windows hydra management service which is used to avoid elevation issues
+TAP driver installation requires administrator permissions. For windows 7, 8 and 8.1 execute the following command:
 
-1. **Sample**
+```text
+tapinstall.exe install AFTap.inf aftap0901
+```
 
-* **`Hydra.Sdk.Wpf`** - example of how to work with backend and vpn
+and for Windows 10:
 
-1. **Test**
+```text
+tapinstall.exe install OemVista.inf tap0901
+```
 
-* **`Hydra.Sdk.Backend.Test`** - tests for backend service
-* **`Hydra.Sdk.Vpn.Test`** - tests for vpn service
-* **`Hydra.Sdk.Windows.Test`** - tests for Hydra Windows SDK implementation
-
-1. **tap** - TAP driver
-
-## TAP driver installation
-
-To install TAP driver go to the `tap` folder and execute `install-tap.bat` from `32bit` folder for Windows x86 or from `64bit` folder for Windows x64 as Administrator.
-
-## Windows service installation
+### Windows service installation
 
 To be able to use the hydra service you need to install it into the system once. It could be done by the following command:
 
@@ -52,54 +78,66 @@ Hydra.Sdk.Windows.Service.exe -install <serviceName>
 
 where `serviceName` is the name of your service.
 
-## Bootstrapping
+## Working with Hydra SDK
 
-To be able to work with hydra sdk, you need to bootstrap hydra by providing valid backend server configuration and hydra configuration. This could be done by using following code snippet \(you need to reference `Hydra.Sdk.Windows`, `Hydra.Sdk.Common` and `Hydra.Sdk.Backend` assemblies\):
+### References
 
-```text
-var bootstrapper = new HydraWindowsBootstrapper();
+Your project have to reference next libraries:
 
-var backendConfiguration = new BackendServerConfiguration(CarrierId, VpnServerUrl, DeviceId);
-var hydraConfiguration = new HydraWindowsConfiguration(ServiceName);
+* Hydra.Sdk.Windows.dll
+* PartnerApi.dll
 
-bootstrapper.Bootstrap(backendConfiguration, hydraConfiguration);
+There is no need to reference other files, but they should be located in the same directory keeping file structure for a sub-folder named `HydraExecutable`.
+
+### Initialization
+
+Before you can use Hydra SDK in your application you have to initialize it:
+
+```csharp
+var backendConfiguration = new BackendServerConfiguration(CarrierId, BackendAddress, DeviceId);
+var hydraConfiguration = new HydraWindowsConfiguration(ServiceName, new Dictionary<int, IConnectionRule>());
+var hydraBootstrapper = new HydraWindowsBootstrapper();
+hydraBootstrapper.Bootstrap(backendConfiguration, hydraConfiguration);
 ```
 
-To specify bypass domains or disable automatic reconnection after coming back from sleep mode, you need to set corresponding hydra configuration properties before bootstrapping:
+`CarrierId` is your project id from the developer
 
-```text
-var hydraConfiguration = new HydraWindowsConfiguration(ServiceName)
-    .AddBypassDomains(BypassDomainsList)
-    .SetReconnectOnWakeUp(ReconnectOnWakeUp);
+`BackendAddress` is URL address to work with our backend.
+
+`DeviceId` is a unique identifier of an application installation. **NOTE:** you can use anything as an ID, but it must be unique for your carrier.
+
+### Authentication
+
+There two ways how you can login. The first one is anonymous:
+
+```csharp
+var hydraSdk = HydraIoc.Container.Resolve<IHydraSdk>();
+var loginResponse = await hydraSdk.Login(CarrierId, AuthMethod.Anonymous()).ConfigureAwait(false);
 ```
 
-## Authentication
+The second one is OAuth2. If you have your custom OAuth2 service:
 
-Anchorfree Partner VPN Backend supports OAuth authentication with a partner's OAuth server. This is a primary authentication method. Follow next steps for implementing OAuth:
-
-1. Deploy and configure OAuth service. Service should be publicly available in Internet
-2. Configure Partner Backend to use OAuth service
-3. Implement client OAuth for your application
-4. Retrieve access token in client app. This token will be used to initialize and sign in to Android Partner
-
-There are some auth method types:
-
-```text
-AuthMethod.Anonymous();
-AuthMethod.Firebase(token);
-AuthMethod.GitHub(token);
-AuthMethod.OAuth(token); // Custom OAuth
+```csharp
+var hydraSdk = HydraIoc.Container.Resolve<IHydraSdk>();
+varloginResponse = await hydraSdk.Login(CarrierId, AuthMethod.Custom("OAuth2-token", "your_method")).ConfigureAwait(false);
 ```
 
-For more AuthMethod types, see API reference.
+Also, the SDK supports 3d-party token providers:
+
+```csharp
+AuthMethod.Facebook("OAuth2-token");
+AuthMethod.Firebase("OAuth2-token");
+AuthMethod.GitHub("OAuth2-token");
+AuthMethod.Google("OAuth2-token");
+```
 
 An example of login implementation:
 
-```text
+```csharp
 var hydraSdk = HydraIoc.Container.Resolve<IHydraSdk>();
 
 var authMethod = AuthMethod.Firebase(token);
-var result = await hydraSdk.Login(authMethod);
+var result = await hydraSdk.Login(authMethod).ConfigureAwait(false);
 
 if (!loginResponse.IsSuccess)
 {
@@ -111,341 +149,45 @@ else
 }
 ```
 
-## Connection
+### Connection
 
-To be able to successfully connect to the VPN server, you need to execute next three steps:
-
-1. Bootstrap hydra SDK
-2. Perform login
-3. Call `StartVpn` method
-
-An example of connect implementation:
+After a successful login, you can start a VPN connection, but first you have to get available VPN nodes. An example of connect implementation:
 
 ```text
-var bootstrapper = new HydraWindowsBootstrapper();
-
-var backendConfiguration = new BackendServerConfiguration(CarrierId, VpnServerUrl, DeviceId);
-var hydraConfiguration = new HydraWindowsConfiguration(ServiceName);
-
-bootstrapper.Bootstrap(backendConfiguration, hydraConfiguration);
-
-var hydraSdk = HydraIoc.Container.Resolve<IHydraSdk>()
-
-var authMethod = AuthMethod.Firebase(token);
-var result = await hydraSdk.Login(authMethod);
-
-if (!loginResponse.IsSuccess)
-{
-    // Handle login error
-}
-else
-{
-    hydraSdk.ConnectedChanged += (sender, args) => Console.WriteLine($"Connected: {args.Connected}");
-    hydraSdk.StartVpn();
-}
+var loginResponse = await hydraSdk.Login(CarrierId, AuthMethod.Anonymous()).ConfigureAwait(false);
+var carrier = new Carrier(CarrierId, CarrierId, loginResponse.AccessToken);
+var nodes = await hydraSdk.GetNodes(carrier).ConfigureAwait(false);
+var firstOrDefault = nodes.VpnCountries.FirstOrDefault(x => x.CountryCode == "us");
+await hydraSdk.StartVpn(firstOrDefault).ConfigureAwait(false);
 ```
 
-## SDK API
+To stop the connection:
 
-### Interface IHydraSdk
+```text
+await hydraSdk.StopVpn().ConfigureAwait(false);
+```
 
-This is core interface to work with user account and to control vpn connection.
+### Events
 
-**Methods**
+#### `VpnConnectionStateChanged`
 
-| Method | Description |
-| :--- | :--- |
-| Task Login\(AuthMethod authMethod\) | Login user using supplied AuthMethod |
-| Task Logout\(\) | Logout current user |
-| Task GetCountries\(\) | Get list of countries |
-| Task GetCurrentUser\(\) | Get current logged in user information |
-| Task GetTrafficCounters\(string countryCode = null\) | Get traffic counters for current user |
-| Task GetRemainingTraffic\(\) | Gets remaining traffic for current user |
-| Task Purchase\(string type, string token\) | Post purchase to the backend server |
-| Task StartVpn\(string countryCode = null\) | Start VPN connection |
-| Task StopVpn\(\) | Stop VPN connection |
+Occurs when the SDK changes its state. `ConnectionStateChangedEventArgs` contains two properties:
 
-**Properties**
+`VpnConnectionState State` is the current state of the SDK. Possible values are:
 
-| Property | Description |
-| :--- | :--- |
-| bool IsLoggedIn { get; } | "User is logged in" flag |
-| bool IsConnected { get; } | VPN connected flag |
-| VpnStatistics Statistics { get; } | Statistics of the VPN connection |
+* `Disconnected`
+* `Connected`
+* `Connecting`
+* `Disconnecting`
 
-**Events**
+`bool IsError` is a flag that shows if the state was changed because of an error. Can be `true` only for `Disconnected` state.
 
-| Event | Description |
-| :--- | :--- |
-| event EventHandler ConnectedChanged | VPN connected changed event |
-| event EventHandler StatisticsChanged | VPN statistics changed event |
+#### `StatisticsChanged`
 
-### Class AuthMethod
+Occurs when the SDK detects traffic counter changes on the client side. `VpnStatisticsChangedEventArgs` contains one property `VpnStatistics Data` with two metrics:
 
-Data class for OAuth token and provider name. There is no public constructor, you can use factory methods instead. For anonymous login use Anonymous\(\). For popular OAuth providers like Facebook, Twitter and other use named factories Facebook\(token\), Twitter\(token\) etc. For other providers use OAuth\(token\) or Custom\(customMethodName, token\).
-
-**Static methods**
-
-| Method | Description |
-| :--- | :--- |
-| AuthMethod Anonymous\(\) | Creates new instance of the "Anonymous" authentication method |
-| AuthMethod OAuth\(string token\) | Creates new instance of the "Custom OAuth" authentication method |
-| AuthMethod Live\(string token\) | Creates new instance of the "Live" authentication method |
-| AuthMethod Google\(string token\) | Creates new instance of the "Google" authentication method |
-| AuthMethod Twitter\(string token\) | Creates new instance of the "Twitter" authentication method |
-| AuthMethod Facebook\(string token\) | Creates new instance of the "Facebook" authentication method |
-| AuthMethod Firebase\(string token\) | Creates new instance of the "Firebase" authentication method |
-| AuthMethod GitHub\(string token\) | Creates new instance of the "GitHub" authentication method |
-| AuthMethod Custom\(string token, string customMethodName\) | Creates new instance of your custom authentication method |
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| AuthenticationMethod Method { get; } | Concrete authentication method |
-| string Token { get; } | Authentication token if necessary \(most likely OAuth token\) |
-
-### Enum ResponseResult
-
-Enumeration for backend API response results.
-
-**Values**
-
-| Value | Description |
-| :--- | :--- |
-| None | Default response result |
-| Ok | Successful response result |
-| NotAuthorized | Request could not complete because authorization is required |
-| DevicesExceeded | Available devices count exceeded |
-| SessionsExceeded | Available sessions count exceeded |
-| NotResponding | Backend API server is not responding |
-| ServerUnavailable | Backend API server is unavailable |
-| UserSuspended | User was deleted during active session |
-| TrafficExceeded | Available traffic limit exceeded |
-| InternalServerError | Internal server error occured while processing request |
-| OAuthError | Authentication error occurred through OAuth-server |
-| Invalid | Password and username doesn’t match records |
-
-### Class BaseApiResult
-
-Base abstract class for all backend API responses.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| bool IsSuccess { get; private set; } | Successful request completion flag |
-| string Error { get; private set; } | Request error \(if present\) |
-| string RawResult { get; set; } | Raw request result |
-| ResponseResult Result { get; set; } | One of predefined response results enum |
-
-### Class PostLoginResponse
-
-Data class for `Login` method response, `BaseApiResult` derivative.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| string AccessToken { get; set; } | Access token for other API methods |
-| string Name { get; set; } | Logged in user name |
-| string DevicesLimit { get; set; } | Available devices limit |
-| string ActivatedDevices { get; set; } | Activated devices count |
-| string ActiveSessions { get; set; } | Active sessions count |
-| string SessionsLimit { get; set; } | Available sessions limit |
-| string UserId { get; set; } | Logged in user id |
-
-### Class GetLogoutResponse
-
-Data class for `Logout` method response, `BaseApiResult` derivative. Does not define any properties or methods.
-
-### Class GetCountriesResponse
-
-Data class for `GetCountries` method response, `BaseApiResult` derivative.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| List VpnCountries { get; set; } | Available server of countries list |
-
-### Class GetCurrentUserResponse
-
-Data class for `GetCurrentUser` method response, `BaseApiResult` derivative.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| Subscriber Subscriber { get; set; } | Subscriber information |
-
-### Class GetCountersResponse
-
-Data class for `GetTrafficCounters` method response, `BaseApiResult` derivative.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| long Rx { get; set; } | Received bytes count |
-| long Tx { get; set; } | Transmitted bytes count |
-
-### Class GetRemainingTrafficResponse
-
-Data class for `GetRemainingTraffic` method response, `BaseApiResult` derivative.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| bool IsUnlimited { get; set; } | Unlimited traffic flag |
-| long TrafficStart { get; set; } | Beginning session time |
-| long TrafficLimit { get; set; } | Current traffic limit \(bytes\) |
-| long TrafficUsed { get; set; } | Used traffic value \(bytes\) |
-| long TrafficRemaining { get; set; } | Remaining traffic value \(bytes\) |
-
-### Class PostPurchaseResponse
-
-Data class for `Purchase` method response, `BaseApiResult` derivative.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| bool IsPurchased { get; set; } | Successful purchase flag |
-
-### Class VpnStatistics
-
-Data class for `Purchase` method response, `BaseApiResult` derivative.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| bool IsPurchased { get; set; } | Successful purchase flag |
-
-### Class VpnServerCountry
-
-Data class to store information about available country and servers.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| string Country { get; set; } | Server country |
-| int Servers { get; set; } | Servers count |
-
-### Class Subscriber
-
-Data class to store information about subscriber.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| long Id { get; } | User Id |
-| string Name { get; } | User name |
-| Bundle Bundle { get; } | License information |
-| int ActivatedDevices { get; } | Number of activated devices |
-| int ActiveSessions { get; } | Number of active sessions |
-| string Locale { get; } | Code of system's language \(can be null\) |
-| string CarrierId { get; } | Hardcoded value of carrier that is used by device |
-| int Condition { get; } | Represent value 0/1 which enable/disable subscriber |
-| DateTime RegistrationTime { get; } | Registration time |
-| DateTime ConnectionTime { get; } | Connection time |
-| Extra Extra { get; } | Extra information |
-| Social Social { get; } | Information about social profile |
-| string ExtRef { get; } | External reference |
-
-### Class Bundle
-
-Data class to store information about license.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| long Id { get; } | Bundle Id |
-| string Name { get; } | Bundle name |
-| int DevicesLimit { get; } | Bundle devices limit |
-| int SessionsLimit { get; } | Bundle sessions limit |
-
-### Class Extra
-
-Data class to store extra information about subscriber. Reserved for future use.
-
-### Class Social
-
-Data class to store information about subscriber's social profile.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| string Email { get; } | Email of the subscriber |
-
-### Class VpnStatistics
-
-Data class to store information about VPN connection statistics.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| long BytesReceived { get; set; } | Received bytes count |
-| long BytesSent { get; set; } | Sent bytes count |
-
-### Class VpnStatisticsChangedEventArgs
-
-Data class to store information about VPN connection statistics changed event.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| VpnStatistics Data { get; } | Current VPN connection statistics |
-
-### Class VpnConnectedChangedEventArgs
-
-Data class to store information about VPN connection state changed event.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| bool Connected { get; } | VPN connected flag |
-
-### Handling Errors
-
-There are several types of exceptions which may be generated during API methods request. `HydraException` is a base class for other sdk exceptions:
-
-| Type | Description |
-| :--- | :--- |
-| AuthorizationRequiredException | "User must be logged in to proceed" exception |
-| BackendApiException | Backend API related exception |
-| NotConnectedException | "Not connected to the VPN" exception |
-
-### Class HydraException
-
-Base exception class of SDK
-
-### Class AuthorizationRequiredException
-
-Exception is thrown while executing operation when user is required to be logged in, e.g., while executing `GetCountries` method before `Login` or after `Logout`.
-
-### Class BackendApiException
-
-Exception is thrown when backend API returns response result that differs from `ResponseResult.Ok`.
-
-**Properties**
-
-| Property | Description |
-| :--- | :--- |
-| ResponseResult ResponseResult { get; } | Backend API response result |
-
-### Class NotConnectedException
-
-Exception is thrown while executing `StopVpn` method when VPN is not connected \(i.e., `StartVpn` method was not called\).
+* `long BytesSent`
+* `long BytesReceived`
 
 ## Setting up logging
 
@@ -472,4 +214,56 @@ HydraLogger.AddHandler(new MyLoggerListener());
 ```
 
 That's all. You will get log output of your logger.
+
+## Console application example
+
+```text
+namespace ConsoleVPN
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Hydra.Sdk.Windows;
+    using Hydra.Sdk.Windows.IoC;
+    using Hydra.Sdk.Windows.Misc;
+    using Hydra.Sdk.Windows.Network.Rules;
+    using PartnerApi.Model.Nodes;
+
+    internal class Program
+    {
+        private const string CarrierId = "afdemo";
+        private const string ServiceName = "Cool VPN Service";
+        private const string BackendAddress = "	https://backend.northghost.com/";
+        private const string DeviceId = "7B5E3123-C7AD-4EC8-8F81-6D46005DABA7";
+
+        private static IHydraSdk hydraSdk;
+
+        private static async Task Main(string[] args)
+        {
+            var backendConfiguration = new BackendServerConfiguration(CarrierId, BackendAddress, DeviceId);
+            var hydraConfiguration = new HydraWindowsConfiguration(ServiceName, new Dictionary<int, IConnectionRule>());
+            var hydraBootstrapper = new HydraWindowsBootstrapper();
+            hydraBootstrapper.Bootstrap(backendConfiguration, hydraConfiguration);
+            hydraSdk = HydraIoc.Container.Resolve<IHydraSdk>();
+
+            var loginResponse = await hydraSdk.Login(CarrierId, AuthMethod.Anonymous()).ConfigureAwait(false);
+            var carrier = new Carrier(CarrierId, CarrierId, loginResponse.AccessToken);
+            var nodes = await hydraSdk.GetNodes(carrier).ConfigureAwait(false);
+            var firstOrDefault = nodes.VpnCountries.FirstOrDefault(x => x.CountryCode == "us");
+            await hydraSdk.StartVpn(firstOrDefault).ConfigureAwait(false);
+
+            hydraSdk.VpnConnectionStateChanged += (s, e) => { Console.WriteLine(e.State); };
+            hydraSdk.StatisticsChanged += (s, e) => { Console.WriteLine($"Received: {e.Data.BytesReceived} | Sent: {e.Data.BytesSent}"); };
+
+            var key = Console.ReadKey();
+
+            if (key.Key == ConsoleKey.Escape)
+            {
+                await hydraSdk.StopVpn().ConfigureAwait(false);
+            }
+        }
+    }
+}
+```
 
