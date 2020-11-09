@@ -6,7 +6,7 @@ description: >-
 
 # Hydra SDK for Windows
 
-Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_Win_version_1.4.0.277_partnerapi_1.0.3.56_with_TAP_signed.zip?alt=media&token=b2d70e60-79ba-4321-89fc-c4874fbcfd3f)
+Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_Win_version_1.4.1.285_partnerapi_1.0.3.56_with_TAP_signed.zip?alt=media&token=73debe41-b872-4355-948d-b27f7a830ba1)
 
 ## Requirements
 
@@ -38,13 +38,8 @@ Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0
 * Foundation.ExtProc.Hydra.ComTypes.dll
 * Hydra.Sdk.Windows.dll
 * Hydra.Sdk.Windows.Service.exe
-* Microsoft.Practices.ServiceLocation.dll
-* Microsoft.Practices.Unity.Configuration.dll
-* Microsoft.Practices.Unity.dll
-* Microsoft.Practices.Unity.RegistrationByConvention.dll
 * Newtonsoft.Json.dll
 * PartnerApi.dll
-* SimpleWifi.dll
 * System.Buffers.dll
 * System.Collections.Immutable.dll
 * System.Memory.dll
@@ -266,4 +261,12 @@ namespace ConsoleVPN
     }
 }
 ```
+
+## Release notes
+
+### 1.4.0.277 -&gt; 1.4.1.285
+
+* the connecting state occurs faster
+* next libraries were removed: Microsoft.Practices.ServiceLocation.dll, Microsoft.Practices.Unity.Configuration.dll, Microsoft.Practices.Unity.dll, Microsoft.Practices.Unity.RegistrationByConvention.dll, SimpleWifi.dll
+* general bug fixes and improvements
 
