@@ -12,8 +12,8 @@ HydraSDK for iOS and macOS provides client API to authorize users and connect th
 
 ## Download latest SDK:
 
-1. [HydraSDK for iOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%20iOS%203.1.5.zip?alt=media&token=2358aa3a-ef7d-486f-b729-8530540e05f6)
-2. [HydraSDK for macOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%20macOS%203.1.4.zip?alt=media&token=e629e86a-1c7c-426a-b0bd-aa820f95d42c)
+1. [HydraSDK for iOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%20iOS%203.1.6.zip?alt=media&token=6fafe33d-4aba-4dd2-b28e-8cd921159c45)
+2. [HydraSDK for macOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%20macOS%203.1.6.zip?alt=media&token=e629e86a-1c7c-426a-b0bd-aa820f95d42c)
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ The SDK consists of two frameworks:
 
 To integrate VPNSDSK into your project, do the following:
 
-1. Add \*\* VPNSDK.framework\*\* \(or **VPNApplicationSDKmacOS.framework** for macOS\) to the Xcode project, and add this framework to your **Application** target.
+1. Add **VPNApplicationSDK.framework** \(or **VPNApplicationSDKmacOS.framework** for macOS\) to the Xcode project, and add this framework to your **Application** target.
 2. Add **VPNTunnelProviderSDK.framework** \(or **VPNTunnelProviderSDKmacOS.framework** for macOS\) to your project and then add this framework to your **Network Extension** target.
 3. Make sure both of these frameworks are properly added by going to _Project &gt; General_, and double-checking that frameworks are in place under _Embedded Binaries_ and _Linked Frameworks and Libraries_ section of respective targets.
 
