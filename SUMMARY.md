@@ -32,7 +32,17 @@
 
 ## SDK
 
-* [VPN SDK for Android](sdk/vpn-sdk-for-android.md)
+* [Unified VPN SDK for Android](sdk/vpn-sdk-for-android/README.md)
+  * [Configuration](sdk/vpn-sdk-for-android/configuration.md)
+  * [Usage](sdk/vpn-sdk-for-android/usage.md)
+  * [CNL List](sdk/vpn-sdk-for-android/cnl-list.md)
+  * [Fireshield\(Hydra transport\)](sdk/vpn-sdk-for-android/fireshield-hydra-transport.md)
+  * [Traffic rules](sdk/vpn-sdk-for-android/traffic-rules.md)
+  * [OpenVPN transport](sdk/vpn-sdk-for-android/openvpn-transport.md)
+  * [Reconnection strategy](sdk/vpn-sdk-for-android/reconnection-strategy.md)
+  * [Exceptions](sdk/vpn-sdk-for-android/exceptions.md)
+  * [Version migration](sdk/vpn-sdk-for-android/version-migration.md)
+  * [Changelog](sdk/vpn-sdk-for-android/changelog.md)
 * [Hydra VPN SDK for iOS/macOS](sdk/hydra-vpn-sdk-for-ios/README.md)
   * [Changelog](sdk/hydra-vpn-sdk-for-ios/changelog.md)
 * [IPSEC VPN SDK for iOS/macOS](sdk/ipsec-vpn-sdk-for-ios-macos.md)
