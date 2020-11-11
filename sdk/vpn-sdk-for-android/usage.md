@@ -101,27 +101,11 @@ Available `Builder` methods
 * `withVirtualLocation` - define virtual location for session \(country\)
 * `withPrivateGroup` - define private server for session
 * `withVpnParams` - define vpn tunnel params. Like dns servers, additional routes.
-* `addDnsRule` - add dns rule for session. _For Hydra transport only_
-  * `TrafficRule.block` - to block dns calls
-  * `TrafficRule.vpn` - to pass dns calls through vpn
-  * `TrafficRule.proxy` - to pass dns calls through vpn proxy
-  * `TrafficRule.bypass` - to bypass dns calls over vpn tunnel \(direct\)
-  * `TrafficRule.Builder.fromAssets` - specify domains with newline separated file in assets
-  * `TrafficRule.Builder.fromFile` - specify domains with newline separated file on storage
-  * `TrafficRule.Builder.fromDomains` - specify domains with list
-  * `TrafficRule.Builder.fromResource` - specify domains with newline separated file in resources
-  * `TrafficRule.Builder.fromIp` - specify ip and mask
-* `addProxyRule` - add proxy rule for session. _For Hydra transport only_
-  * `TrafficRule.block` - to block requests
-  * `TrafficRule.vpn` - to pass requests through vpn
-  * `TrafficRule.proxy` - to pass requests through vpn proxy
-  * `TrafficRule.bypass` - to bypass requests over vpn tunnel \(direct\)
-  * `TrafficRule.Builder.fromAssets` - specify domains with newline separated file in assets
-  * `TrafficRule.Builder.fromFile` - specify domains with newline separated file on storage
-  * `TrafficRule.Builder.fromDomains` - specify domains with list
-  * `TrafficRule.Builder.fromResource` - specify domains with newline separated file in resources
-  * `TrafficRule.Builder.fromIp` - specify ip and mask
-* `withFireshieldConfig` - define categorization service rules \(more information on Fireshield section below\). _For Hydra transport only_
+* `addDnsRule` - add dns rule for session. More on [Traffic rules](traffic-rules.md) page. _For Hydra transport only._ 
+* `addProxyRule` - add proxy rule for session. More on [Traffic rules](traffic-rules.md) page. _For Hydra transport only._
+* `withFireshieldConfig` - define categorisation service rules \(more on [Fireshield](fireshield-hydra-transport.md) resource page\). _For Hydra transport only_
+* `withTransportFallback` - define the order of transports to fallback when some error happen. 
+* `keepVpnOnReconnect` - enables the kill switch - no traffic will be allowed while sdk is in connection process or handling the connection error.
 
 Examples:
 

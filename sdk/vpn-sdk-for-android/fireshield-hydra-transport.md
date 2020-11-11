@@ -41,11 +41,11 @@ To create category rules\(which domains gets to specified category\) you can use
 * **FireshieldCategoryRule.Builder.fromDomains** - create category rules from list of domains
 * **FireshieldCategoryRule.Builder.fromFile** - create category rules from file on sdcard/internal storage
 
-To addition to category file configuration its possible to use online categorization services
+To addition to category file configuration its possible to use online categorisation services
 
 Possible values defined as constants in **FireshieldConfig.Services**
 
-Alert page configuration
+### Alert page configuration
 
 **AlertPage** static method create accepts two parameters: domain and path, on categorization action user will be redirected to \[https://domain/page?url=&lt;blocked\_url&gt;\]
 
@@ -56,7 +56,7 @@ FireshieldConfig createFireshieldConfig(){
         builder.enabled(true);
         builder.alertPage(AlertPage.create("connect.bitdefender.net", "safe_zone"))
         builder.addService(FireshieldConfig.Services.IP);
-        builder.addService(FireshieldConfig.Services.SOPHOS);
+        builder.addService(FireshieldConfig.Services.BITDEFENDER);
         builder.addCategory(FireshieldCategory.Builder.vpn(FireshieldConfig.Categories.SAFE));//need to add safe category to allow safe traffic
         builder.addCategory(FireshieldCategory.Builder.block(FireshieldConfig.Categories.MALWARE));
         builder.addCategoryRule(FireshieldCategoryRule.Builder.fromAssets(FireshieldConfig.Categories.MALWARE,"malware-domains.txt"));
@@ -79,7 +79,7 @@ UnifiedSDK.addVpnCallListener(new VpnCallback() {
 });
 ```
 
-SDK provides access to some categorization stats
+SDK provides access to some categorisation stats
 
 ```text
 final FireshieldStats stats = new FireshieldStatus();
