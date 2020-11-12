@@ -4,6 +4,10 @@
 
 ### SDK version migration
 
+#### 3.3.3 - 3.4.0
+
+* No changes required
+
 #### 3.3.2 - 3.3.3
 
 * No changes required
