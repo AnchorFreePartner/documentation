@@ -2,6 +2,18 @@
 
 
 
+### 3.4.0
+
+* Hydra transport updated
+* Various bug fixes 
+* Added
+  * TrafficRule\#blockDns
+  * TrafficRule\#blockPkt
+  * TrafficRule\#udp
+  * TrafficRule\#tcp 
+* Deprecated
+  * TrafficRule\#block 
+
 ### 3.3.3
 
 * analytics improvements
