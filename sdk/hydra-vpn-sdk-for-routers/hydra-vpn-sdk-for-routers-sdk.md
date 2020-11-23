@@ -301,7 +301,7 @@ Chain afwrt_chain (1 references)
     1    76 MARK       all  --  any    any     192.168.50.139       anywhere             MARK set 0x8
 ```
 
-It doesn't matter in which order rules will appeared. All routing priority logic done by SDK internally \(see below\).
+It doesn't matter in which order rules will appeared. All routing priority logic done by SDK internally \(see [below](hydra-vpn-sdk-for-routers-sdk.md#routing-rules-priority)\).
 
 ## VPN Core level Routing
 
