@@ -305,7 +305,7 @@ It doesn't matter in which order rules will appeared. All routing priority logic
 
 ## VPN Core level routing
 
-Regardless of OS level Routing mechanism, core is always ready to do selective routing based on IP, MAC and interface rules if any. If no rules specified, traffic will go to `"vl_default"` route as described [above](hydra-vpn-sdk-for-routers-sdk.md#all-configuration-parameters).
+Regardless of OS level routing mechanism, core is always ready to do selective routing based on IP, MAC and interface rules if any. If no rules specified, traffic will go to `"vl_default"` route as described [above](hydra-vpn-sdk-for-routers-sdk.md#all-configuration-parameters).
 
 ## Routing rules priority
 
