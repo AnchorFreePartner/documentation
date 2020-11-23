@@ -245,7 +245,7 @@ _Default:_ `""`\(empty, no interface to protect\).
 
 _Example:_ `"protected_ifaces": [ { "iface": "eth1", "country_code": "us" }, { "iface": "br0", "country_code": "de" } ]`
 
-## OS level Routing
+## OS level routing
 
 To protect traffic, SDK creates TUN device and routes all packets or packets with specific source IP, MAC or interface to it. To achieve this, SDK creates a set of routing and/or firewall\(iptables\) rules.
 
@@ -303,7 +303,7 @@ Chain afwrt_chain (1 references)
 
 It doesn't matter in which order rules will appeared. All routing priority logic done by SDK internally \(see [below](hydra-vpn-sdk-for-routers-sdk.md#routing-rules-priority)\).
 
-## VPN Core level Routing
+## VPN Core level routing
 
 Regardless of OS level Routing mechanism, core is always ready to do selective routing based on IP, MAC and interface rules if any. If no rules specified, traffic will go to `"vl_default"` route as described [above](hydra-vpn-sdk-for-routers-sdk.md#all-configuration-parameters).
 
