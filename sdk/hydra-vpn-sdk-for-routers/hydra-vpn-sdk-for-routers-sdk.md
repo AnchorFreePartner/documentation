@@ -1,6 +1,6 @@
 # SDK. Shared library.
 
-Router SDK provides a [shared library](hydra-vpn-sdk-for-routers-sdk.md) \(with C header file\) which can be integrated with Application using C calls.
+Router SDK provides a shared library \(with C header file\) which can be integrated with Application using C calls.
 
 ## SDK C API
 
