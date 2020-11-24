@@ -173,7 +173,7 @@ _Example:_ `"us"`
 
 Backend server address. 
 
-_Default:_ `"`[`https://`](https://backend.northghost.com)`default-backend.net"`
+_Default:_ `"https://default-backend.net"`
 
 ```text
 "data_report_interval"
