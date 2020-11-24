@@ -118,7 +118,7 @@ Response is a json string with `"status"` field and set of optional fileds, such
 * `1` - configuration error. Error changing internal configuration structures. 
 * `2` - bad request. Request is not recognized. 
 * `3` - bad format. Required request parameters are missing. 
-* `4` - VPN error. Error sending response to VPN core.
+* `4` - VPN error. Error sending request to VPN core.
 
 `"message"` filed contains specific information about error if any.
 
