@@ -47,7 +47,6 @@
   * [Changelog](sdk/hydra-vpn-sdk-for-ios/changelog.md)
 * [IPSEC VPN SDK for iOS/macOS](sdk/ipsec-vpn-sdk-for-ios-macos.md)
 * [Hydra SDK for Windows](sdk/hydra-sdk-for-windows.md)
-* [HydraVPN SDK for Routers](sdk/hydravpn-sdk-for-routers.md)
 * [Hydra VPN SDK for Routers](sdk/hydra-vpn-sdk-for-routers/README.md)
   * [SDK. Shared library.](sdk/hydra-vpn-sdk-for-routers/hydra-vpn-sdk-for-routers-sdk.md)
   * [Configuration Interface \(CI\)](sdk/hydra-vpn-sdk-for-routers/hydra-vpn-sdk-for-routers-ci/README.md)
