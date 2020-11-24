@@ -326,7 +326,18 @@ SDK maintains mapping from MAC or Interface to IP addresses internally.
 
 It subscribes to changes in neighbors table using netlink, asking for ones with the following states: `NUD_REACHABLE`, `NUD_DELAY`, `NUD_PROBE`, `NUD_PERMANENT`, `NUD_STALE`.
 
-## Dependencies
+## OpenWRT
+
+### Firewall
+
+Depends on your firmware version, you may need to insert additional iptables rules manually or via OpenWRT CI. Such rules may look like:
+
+```text
+# iptables -I FORWARD -i bridge_iface -o tun_iface -j ACCEPT
+# iptables -I FORWARD -i tun_iface -o bridge_iface -j ACCEPT
+```
+
+### Dependencies
 
 `libc` `kmod-tun` `ca-bundle` `libnetfilter-conntrack`
 
