@@ -23,7 +23,7 @@ Dynamic Configuration Interface based on Unix Domain sockets.
 "sock"
 ```
 
-Path to unix domain socket file created by CI. Socket acts like a bi-directional channel, which means one file is used for recieving requests from and sending responses to your app. `SOCK_SEQPACKET` socket type is used. 
+Path to unix domain socket file created by CI. Socket acts like a bi-directional channel, which means one file is used for receiving requests from and sending responses to your app. `SOCK_SEQPACKET` socket type is used. 
 
 _Default:_ `"/var/run/afwrt-ci.sock"`
 
@@ -85,7 +85,7 @@ _Default:_ `0`
 
 ### Dump config file
 
-`{ "request" : "dump_config", "config_path" : "/var/run/afwrt-ci.sock" }`
+`{ "request" : "dump_config", "config_path" : "/etc/afwrt/afwrt-ci.conf" }`
 
 ### Get available countries
 

@@ -140,7 +140,7 @@ _Body:_ `{ "token" : "your_secret_token", "iface" : "eth2" }`
 
 _Type:_ `POST`
 
-_Body:_ `{ "token" : "your_secret_token", "config_path" : "/var/run/afwrt-ci.sock" }`
+_Body:_ `{ "token" : "your_secret_token", "config_path" : "/etc/afwrt/afwrt-ci.conf" }`
 
 ### Get available countries
 
