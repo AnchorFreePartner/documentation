@@ -247,13 +247,13 @@ _Example:_ `"protected_ifaces": [ { "iface": "eth1", "country_code": "us" }, { "
 
 ## OS level routing
 
-To protect traffic, SDK creates TUN device and routes all packets or packets with specific source IP, MAC or interface to it. To achieve this, SDK creates a set of routing and/or firewall\(iptables\) rules.
+To protect traffic, SDK creates TUN device and routes all packets or packets with specific source IP, MAC or interface to it. To achieve this, SDK creates a set of routing and/or firewall \(iptables\) rules.
 
 ### Simple scenario. `"default_gateway"` option enabled.
 
 Redirect just all traffic including router's to TUN device. 
 
-To be smarter, SDK not changing default route of router's "main" table, but adding two big subnets with high metric. "0.0.0.0/1" and "128.0.0.0/1" for IPv4, for example.
+To be smarter, SDK not changing default route of router's "main" table, but adding two big subnets with high metric. `0.0.0.0/1` and `128.0.0.0/1` for IPv4, for example.
 
 ```text
 # ip route show table main
@@ -288,7 +288,7 @@ target     prot opt source               destination
 afwrt_chain  all  --  anywhere             anywhere 
 ```
 
-Such rules can be loaded from config on initialization phase or changed dynamically using protection methods above. Each rule marks specified IP, MAC or interface with 0x8 mark. 
+Such rules can be loaded from config on initialization phase or changed dynamically using protection methods [above](hydra-vpn-sdk-for-routers-sdk.md#sdk-c-api). Each rule marks specified IP, MAC or interface with 0x8 mark. 
 
 Example of interface, MAC and IP rules:
 
