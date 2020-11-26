@@ -3,7 +3,7 @@
 Dynamic Configuration Interface based on Unix Domain sockets.
 
 * Easy to implement, no external dependencies needed
-* Supports synchronous requests and asynchronous events both
+* Supports both synchronous requests and asynchronous events
 * Local machine only
 
 ## Configuration

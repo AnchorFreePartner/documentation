@@ -113,7 +113,7 @@ Response is a json string with `"status"` field and set of optional fileds, such
 
 `"status"` is one of the following codes: 
 
-* `-1` - inernal error. Allocation errors, internal exceptions. 
+* `-1` - internal error. Allocation errors, internal exceptions. 
 * `0` - success. 
 * `1` - configuration error. Error changing internal configuration structures. 
 * `2` - bad request. Request is not recognized. 

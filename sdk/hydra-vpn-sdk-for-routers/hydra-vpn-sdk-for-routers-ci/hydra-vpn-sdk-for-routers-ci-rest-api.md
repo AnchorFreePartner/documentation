@@ -38,7 +38,7 @@ _Default:_ `"127.0.0.1"`
 "port"
 ```
 
-Port listen to. 
+Port to listen on to. 
 
 _Default:_ `61438`
 
