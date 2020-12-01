@@ -12,7 +12,7 @@ HydraSDK for iOS and macOS provides client API to authorize users and connect th
 
 ## Download latest SDK:
 
-1. [HydraSDK for iOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%20iOS%203.1.6.zip?alt=media&token=6fafe33d-4aba-4dd2-b28e-8cd921159c45)
+1. [HydraSDK for iOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%20iOS%203.1.7.zip?alt=media&token=ebc59adb-6f6f-4464-b55c-b9b85c3fa03c)
 2. [HydraSDK for macOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%20macOS%203.1.6.zip?alt=media&token=e629e86a-1c7c-426a-b0bd-aa820f95d42c)
 
 ## Prerequisites
