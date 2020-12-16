@@ -4,11 +4,11 @@ description: Learn how to create your first project in Management Console
 
 # Create a new Project
 
-**Adding a new project to Management Console**
+**Adding a new project to the Management Console**
 
 1. Open [https://developer.anchorfree.com/](https://developer.anchorfree.com/#)
 2. Click Sign in button
-3. Enter your valid creds and click ‘Sign In’ button:
+3. Enter your valid creds and click ‘Sign In’ button: 
 
 ![](../.gitbook/assets/signin.png)
 
