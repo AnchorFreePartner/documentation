@@ -84,4 +84,5 @@
   * [What data is collected by the Platform?](resources/faq/what-data-collect-the-platform.md)
   * [What analytic data is collected by your SDK?](resources/faq/what-analytic-data-collect-your-sdk.md)
   * [How the Platform restricts access to our data?](resources/faq/how-the-platform-restrict-access-to-our-data.md)
+  * [Why DNS Leak tests often indicate that there is DNS Leak?](resources/faq/why-dns-leak-tests-often-indicate-that-there-is-dns-leak.md)
 
