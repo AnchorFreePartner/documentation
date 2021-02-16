@@ -4,7 +4,7 @@ description: This page helps you to manage users of your project.
 
 # Users
 
-This tab show you the list of users in the project, e.g.:  
+This tab shows you the list of users in the project, e.g.:  
 
 ![](../../.gitbook/assets/users_list.png)
 

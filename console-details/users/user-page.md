@@ -1,5 +1,5 @@
 ---
-description: This Page outlines all information about the user.
+description: This page outlines all information about the user.
 ---
 
 # User page
@@ -94,7 +94,7 @@ You can sort the list data by any column.
 You will see active sessions on top of the session list.
 {% endhint %}
 
-At the top, there is the filter. You can filter the session list by user device or session time.
+At the top, there is a filter. You can filter the session list by user device or session time.
 
 ![Devices Filter](../../.gitbook/assets/filter_devices.png)
 
@@ -285,7 +285,7 @@ To deactivate a purchase, you need to:
 
 ![](../../.gitbook/assets/purchas_deactivate.png)
 
-   3. Click the "_Disable purchase_" button.
+   3. Click the _"Disable purchase"_ button.
 
 {% hint style="info" %}
 Usually, the application logic tries to recover a purchase if it has a valid receipt.

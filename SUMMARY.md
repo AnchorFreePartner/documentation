@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is Pango Platform](README.md)
+* [What is Aura Developer Platform](README.md)
 
 ## Start Exploring
 

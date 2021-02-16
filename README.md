@@ -1,15 +1,15 @@
 ---
 description: >-
-  Dig into our Pango Platform documentation and quickstart guides. You're
-  covered with everything from SDKs to sample apps for Windows, macOS, iOS, and
-  Android.
+  Dig into our Aura Developer Platform documentation and quickstart guides.
+  You're covered with everything from SDKs to sample apps for Windows, macOS,
+  iOS, and Android.
 ---
 
-# What is Pango Platform
+# What is Aura Developer Platform
 
-**The Pango Platform mission is to protect everyone’s freedom on the internet and provide the highest level of cyber security as a service.**
+**The Aura Developer Platform's mission is to protect everyone’s freedom on the internet and provide the highest level of cyber security as a service.**
 
-## With Pango Console you can:
+## With Aura Developer Console you can:
 
 1. Create projects with unique parameters for your applications. 
 2. Manage users. 
@@ -17,7 +17,7 @@ description: >-
 
 ## What's more?
 
-If you want to know if Pango Platform matches your needs :
+If you want to know if Aura Developer Platform matches your needs :
 
 {% page-ref page="resources/use-cases/" %}
 

@@ -17,7 +17,7 @@ The Platform supports the following Authentication methods.
 _anonymous_ - anonymous authentication method. A user device will be registered as an anonymous user without any additional details. 
 
 {% hint style="info" %}
-The anonymous user can be free or paid but additional devices cannot be added to this user account.
+An anonymous user can be free or paid but additional devices cannot be added to this user account.
 {% endhint %}
 
 Auth Settings:
