@@ -1,5 +1,5 @@
 ---
-description: Support Hydra and OpenVPN protocols
+description: Supports Hydra and OpenVPN protocols
 ---
 
 # Unified VPN SDK for Android
@@ -8,7 +8,7 @@ Current version:[![](https://camo.githubusercontent.com/96e035b772594b98ab503a86
 
 ## General
 
-Android SDK is a part of Anchorfree Partner SDK which contains client-side libraries and server-side applications needed to implement custom VPN infrastructure.
+Android SDK is a part of Aura Partner SDK which contains client-side libraries and server-side applications needed to implement custom VPN infrastructure.
 
 ### Versioning convention
 
@@ -29,15 +29,15 @@ SDK versions list is [**here**](changelog.md)\*\*\*\*
 
 ### Version Migration
 
-For migration between versions check [**this**](version-migration.md)\*\*\*\*
+For migration between versions, check [**this**](version-migration.md)\*\*\*\*
 
 ### Prerequisites
 
 In order to be able to use the SDK, the following steps have to be done:
 
-1. Register an account at [developer.anchorfree.com](https://developer.anchorfree.com/)
+1. Register an account at [developer.aura.com](https://developer.aura.com/)
 2. Create a project and use a name for your project as a Public key. Private key is optional.
-3. Use SDK with a `carrierId` equals to the given _Public Key_ and `baseUrl` equals to _URL_ from the project details.
+3. Use SDK where `carrierId` equals given _Public Key_ and `baseUrl` equals _URL_ from the project details.
 
 ## Installing
 
@@ -56,7 +56,7 @@ allprojects {
 }
 ```
 
-And then add dependencies in `build.gradle` of your app module. Version name is available on top of this document.
+And then  add dependencies in `build.gradle` of your app module. Version name is available at the top of this document.
 
 ```text
 dependencies {
