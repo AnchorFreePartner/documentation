@@ -42,7 +42,7 @@
 
 #### 2.4.1 - 3.0.0
 
-* Use UnifiedSDK.getInstance\(ClientInfo\) to get sdk instance
+* Use UnifiedSDK.getInstance\(ClientInfo\) to get SDK instance
 * HydraSdk.countries - UnifiedSDK.getInstance\(\).getBackend\(\).countries
 * HydraSdk.addTrafficListener - UnifiedSDK.addTrafficListener
 * HydraSdk.addVpnListener - UnifiedSDK.addVpnStateListener

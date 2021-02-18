@@ -8,11 +8,11 @@ HydraSDK for iOS and macOS provides client API to authorize users and connect th
 
 ## Changelog:
 
-* VPNSDK[ ](https://raw.githubusercontent.com/AnchorFreePartner/hydrasdk-demo-ios/master/CHANGELOG.md)Changelog
+* [VPN SDK Changelog](https://pango.gitbook.io/pango-platform/sdk/hydra-vpn-sdk-for-ios/changelog)
 
 ## Download latest SDK:
 
-[VPNSDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%203.1.9.zip?alt=media&token=38ae2be7-51dd-46b2-b8b3-a0061685d527)
+[VPN SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%203.1.9.zip?alt=media&token=38ae2be7-51dd-46b2-b8b3-a0061685d527)
 
 ## Prerequisites
 
@@ -23,11 +23,11 @@ HydraSDK for iOS and macOS provides client API to authorize users and connect th
 
 #### Creating Network Extension
 
-To start application development, you need to create a Xcode iOS/macOS application project.
+To start application development, you need to create an Xcode iOS/macOS application project.
 
-Once the application is created, go to _Project &gt; Targets_, and in menu bar select _Editor &gt; Add Target_. Choose _Network Extension_, provide the name and bundle ID for this [**Network Extension**](https://developer.apple.com/reference/networkextension) target.
+Once the application is created, go to _Project &gt; Targets_, and select _Editor &gt; Add Target_ in menu bar. Choose _Network Extension_, provide the name and bundle ID for this [**Network Extension**](https://developer.apple.com/reference/networkextension) target.
 
-Set `NSExtensionPrincipalClass` in `NSExtension` dictionary of `Info.plist` to `AFHydraTunnelProvider`, also add new key to a plist root: `AFNetworkExtensionDelegate` with a value that is your VPN Delegate class. For example, if your delegate named VPNDelegate, then the value would be `(PRODUCT_MODULE_NAME).VPNDelegate`
+Set `NSExtensionPrincipalClass` in `NSExtension` dictionary of `Info.plist` to `AFHydraTunnelProvider`, also add a new key to a plist root: `AFNetworkExtensionDelegate` with a value that is your VPN Delegate class. For example, if your delegate named VPNDelegate, then the value would be `(PRODUCT_MODULE_NAME).VPNDelegate`
 
 At the end of this step, you have to have at least two targets:
 
@@ -36,9 +36,9 @@ At the end of this step, you have to have at least two targets:
 
 Read more about [Creating a Packet Tunnel Provider Extension](https://developer.apple.com/reference/networkextension/nepackettunnelprovider#2110153) from Apple docs.
 
-#### Configure Build Settings
+#### Configuring Build Settings
 
-For both, the **Application** and the **Network Extension** targets, do the following
+For both **Application** and **Network Extension** targets, do the following:
 
 1. Add _NetworkExtension_ system framework to your project dependencies
 2. In your project: _Project &gt; Build Settings_:
@@ -52,7 +52,7 @@ The SDK consists of two frameworks:
 * **VPNApplicationSDK.framework** \(_iOS_\) or **VPNApplicationSDKmacOS.framework** \(_macOS_\) for **Application** target
 * **VPNTunnelProviderSDK.framework** \(_iOS_\) or **VPNTunnelProviderSDKmacOS.framework** \(_macOS_\) for **Network Extension** target
 
-To integrate VPNSDSK into your project, do the following:
+To integrate VPN SDK into your project, do the following:
 
 1. Add **VPNApplicationSDK.framework** \(or **VPNApplicationSDKmacOS.framework** for macOS\) to the Xcode project, and add this framework to your **Application** target.
 2. Add **VPNTunnelProviderSDK.framework** \(or **VPNTunnelProviderSDKmacOS.framework** for macOS\) to your project and then add this framework to your **Network Extension** target.

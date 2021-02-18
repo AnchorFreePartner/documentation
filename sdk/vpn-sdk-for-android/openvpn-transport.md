@@ -2,23 +2,23 @@
 
 ## OpenVPN transport support
 
-If your project targetSdk is 29 and you use Google App Bundle for application distribution. Add
+If your project TargetSDK is 29 and you use Google App Bundle for application distribution, add
 
 ```text
 android.bundle.enableUncompressedNativeLibs=false
 ```
 
-to your **gradle.properties** to make OpenVPN transport work on Android Q. If you are not using Google App Bundle this step is not required
+to your **gradle.properties** to make OpenVPN transport work on Android Q. If you are not using Google App Bundle, this step is not required.
 
-To add openvpn transport support:
+To add OpenVPN transport support:
 
-1. Add openvpn depencency to `build.gradle`
+1. Add OpenVPN depencency to `build.gradle`:
 
 ```text
 com.github.AnchorFreePartner.hydra-sdk-android:openvpn:{VERSION_NAME}
 ```
 
-1. Register both or one transport with sdk config
+    2. Register both or one transport with SDK config:
 
 ```text
 List<TransportConfig> transports = new ArrayList<>();
@@ -27,7 +27,7 @@ transports.add(OpenVpnTransportConfig.tcp());
 UnifiedSDK.update(transportConfigs, callback);
 ```
 
-1. Specify transport on vpn start
+    3. Specify transport on VPN start:
 
 ```text
 final SessionInfo session = new SessionConfig.Builder()
