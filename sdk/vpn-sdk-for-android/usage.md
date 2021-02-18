@@ -4,7 +4,7 @@
 
 ### Set Up
 
-To set up sdk, you should call getInstance method with your specific details
+To set up sdk, you should call **getInstance** method with your specific details
 
 ```text
 public class MyApplication extends Application {
@@ -37,14 +37,14 @@ pm.setComponentEnabledSetting(new ComponentName(context, AFVpnService.class), Pa
 
 ### Authentication
 
-Anchorfree Partner VPN Backend supports OAuth authentication with a partner's OAuth server, this is a primary authentication method.
+Aura Partner VPN Backend supports OAuth authentication with a partner's OAuth server, this is a primary authentication method.
 
 Steps to implement OAuth:
 
-* Deploy and configure OAuth service. Service should be publicly available in Internet.
+* Deploy and configure OAuth service. Service should be publicly available on the Internet.
 * Configure Partner Backend to use OAuth service.
 * Implement client OAuth for your application
-* Retrieve access token in client app, this token will be used to initialize and sign in Android Partner
+* Retrieve access token in client app, this token will be used to initialize and sign in to Android Partner
 
 There are some auth method types:
 
@@ -109,7 +109,7 @@ Available `Builder` methods
 
 Examples:
 
-#### Start VPN with optimal server
+#### Start VPN with an optimal server
 
 ```text
 final SessionConfig session = new SessionConfig.Builder()
@@ -134,7 +134,7 @@ final SessionConfig session = new SessionConfig.Builder()
 
 * `M_UI` - manually from ui
 * `M_SYSTEM` - manually from system
-* `M_OTHER` - manually from other place
+* `M_OTHER` - manually from another place
 * `A_APP_RUN` - auto on app run
 * `A_RECONNECT` - auto on reconnect
 * `A_ERROR` - auto after error

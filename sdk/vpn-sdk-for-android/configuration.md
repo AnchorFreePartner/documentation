@@ -72,7 +72,7 @@ compileOptions {
 }
 ```
 
-If you cannot enable java 8 support in your project, please contact us for further details
+If you cannot enable java 8 support in your project, please contact us for further details.
 
 ### Notifications
 
@@ -106,7 +106,7 @@ By default, sdk displays notification for state CONNECTED and PAUSED.
 
 If **inConnected** was not called, it tries to use value set with **title** message
 
-If `NotificationConfig.Builder`.`title` was not set, it will use App name as in launcher
+If `NotificationConfig.Builder.title` was not set, it will use App name as in launcher
 
 If **inConnected** was not called, it will try to use string resource **default\_notification\_connected\_message**
 
@@ -114,9 +114,9 @@ If **inPause** was not called, it will try to use string resource **default\_not
 
 #### Notification click intent
 
-To configure action when a user clicks on a notification, use **clickAction** method. You must have Activity responds to a specified action. Action will be used to create an Intent. If **clickAction is** not specified, sdk will open application launch activity on notification click.
+To configure action when a user clicks a notification, use **clickAction** method. You must have Activity responding to the specified action. Action will be used to create an Intent. If **clickAction** is not specified, sdk will open application launch activity on notification click.
 
-In intent extras sdk will set boolean value **UnifiedSDKNotificationManager.EXTRA\_NOTIFICATION** as **true**
+In intent extras sdk will set a boolean value **UnifiedSDKNotificationManager.EXTRA\_NOTIFICATION** as **true**.
 
 To handle click action, register `intent-filter` with your activity
 
@@ -129,7 +129,7 @@ To handle click action, register `intent-filter` with your activity
 
 #### Update notification preferences
 
-Notification config can be updated calling sdk method
+Notification config can be updated calling the sdk method
 
 ```text
     UnifiedSDK.update(createNotificationConfig());
