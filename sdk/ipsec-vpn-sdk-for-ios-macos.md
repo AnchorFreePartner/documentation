@@ -52,7 +52,7 @@ Also, enable following services for both IDs:
 
 ### Enabling Capabilities
 
-For both, **Application** and **Network Extension** targets, go to _Project &gt; Capabilities_ and Enable the following capabilities:
+For both **Application** and **Network Extension** targets, go to _Project &gt; Capabilities_ and Enable the following capabilities:
 
 * Personal VPN
 
