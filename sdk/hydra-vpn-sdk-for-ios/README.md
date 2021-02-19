@@ -216,39 +216,39 @@ Hydra SDK can be configured for On Demand mode with `HydraConfiguration` via `on
 
 If your service provides limited traffic or a transport error occurs \(e.g. credentials to VPN nodes are expired\), current session will be killed with `AFHydraErrorCode` code \(for instance, `AFHydraErrorCodeTrafficExceed` or `AFHydraErrorCodeTokenInvalid`\). If On Demand mode conditions are met, the System will try to restart Network Extension process, until it is up and running. Due to NetworkExtension framework's limitation, it is not possible to disable On Demand mode from Custom Tunnel Provider extension upon receiving these errors. This makes System trying endlessly reconnect to VPN, while Network Extension is unable to provide VPN service due to the error.
 
-In order to overcome this issue, Hydra SDK dissables real tunneling, leaving Network Extension running in Bypass mode. By doing this, iOS can meet On Demand mode conditions while the traffic is routed locally, without VPN server. It means that user will have their real IP address and there will be no traffic protection.
+In order to overcome this issue, Hydra SDK disables real tunneling, leaving Network Extension running in Bypass mode. By doing this, iOS can meet On Demand mode conditions while the traffic is routed locally, without VPN server. It means that user will have their real IP address and there will be no traffic protection.
 
-Whenever app starts, it's highly recommended to check if VPN is connected and if user is out of traffic limit. In this case, it's necessary to disconnect current VPN session and optionally show user a message. To check if current VPN connection is running in Bypass mode read `HydraSDSK`'s' `isBypassEnabled` property.
+Whenever app starts, it's highly recommended to check if VPN is connected and if user is out of traffic. In this case, it's necessary to disconnect current VPN session and optionally show user a message. To check if current VPN connection is running in Bypass mode, read `HydraSDSK`'s `isBypassEnabled` property.
 
 In order to catch situation when user is out of traffic without main App running, see `AFNetworkExtensionDelegate` documentation.
 
 #### Categorization service \(aka Fireshield\)
 
-Additionally to VPN services, Hydra SDK provides a content categorization service, namely Fireshield. When the SDK is configured to work with Fireshield enabled, the websites' URLs that user visits are checked agains a blacklist. If a website's URL is listed in the blacklist, the traffic to/from it is blocked, otherwise it is passed through. Hydra SDK provides API to configure Fireshield and monitor its work.
+In addition to VPN services, Hydra SDK provides a content categorization service, namely Fireshield. When the SDK is configured to work with Fireshield, the websites' URLs that user visits are checked against a blacklist. If a website's URL is listed in the blacklist, the traffic to/from it is blocked, otherwise it is passed through. Hydra SDK provides API to configure Fireshield and monitor its work.
 
 **Create fireshield config**
 
-Categorization configuration based on specification of categories and rules for categories
+Categorization configuration based on specification of categories and rules for categories.
 
-To create categories you can use one of factory methods of `FireshieldCategory` class
+To create categories, you can use one of factory methods of `FireshieldCategory` class
 
-* `FireshieldCategory.block(category: CategoryType) -> FireshieldCategory` - will create category, with action block\(traffic gets blocked\)
-* `FireshieldCategory.proxy(category: CategoryType) -> FireshieldCategory` - will create category, with action proxy\(traffic \(encrypted\) goes through the tunnel just as payload \(for TCP only\)\)
-* `FireshieldCategory.bypasss(category: CategoryType) -> FireshieldCategory` - will create category, with action bypass\(traffic goes directly to its destination, without vpn tunnel\)
-* `FireshieldCategory.alert(category: CategoryType) -> FireshieldCategory` - will create category, with action block\(traffic gets blocked\) and redirection to Alert Page specified\(works for http only\)
+* `FireshieldCategory.block(category: CategoryType) -> FireshieldCategory` - will create category, with a 'Block' action \(traffic gets blocked\)
+* `FireshieldCategory.proxy(category: CategoryType) -> FireshieldCategory` - will create category, with a 'Proxy' action \(traffic \(encrypted\) goes through the tunnel just as payload \(for TCP only\)\)
+* `FireshieldCategory.bypasss(category: CategoryType) -> FireshieldCategory` - will create category, with a 'Bypass' action \(traffic goes directly to its destination, without vpn tunnel\)
+* `FireshieldCategory.alert(category: CategoryType) -> FireshieldCategory` - will create category, with a 'Block' action \(traffic gets blocked\) and redirection to a specified Alert Page \(works for HTTP only\)
 
-To create category rules\(which domains gets to specified category\) you can use factory method of `FireshieldRule` class
+To create category rules \(which domains get to a specified category\), you can use factory method of `FireshieldRule` class
 
 * `FireshieldRule.rule(withFileName: String, category: CategoryType)` - create category rules from file in the application bundle
 * `FireshieldRule.rule(withDomains: [String], category: CategoryType)` - create category rules from list of domains
 
-To addition to category file configuration its possible to use online categorization services
+To add to category configuration file, it is possible to use online categorization services.
 
-Possible values defined as constants in `FireshieldConfig` header file
+Possible values are defined as constants in `FireshieldConfig` header file.
 
 **Fireshield configuration**
 
-Fireshield can be either disabled or enabled with particular mode. The mode is set with `fireshieldMode` property of `FireshieldConfig` instance. Initialize `HydraSDSK` instance with respective config \(e.g. during the application launch\):
+Fireshield can be either disabled or enabled in a  particular mode. The mode is set with `fireshieldMode` property of `FireshieldConfig` instance. Initialize `HydraSDSK` instance with a respective config \(e.g. during the application launch\):
 
 ```text
 // ...
@@ -280,31 +280,31 @@ Fireshield can work in various modes, adding flexibility to your application. Fo
 * `disabled` — Fireshield is disabled.
 * `enabled` — Fireshield is enabled. The VPN icon in Status Bar is displayed, however, the traffic does not go through VPN.
 * `silent` — Fireshield is enabled but VPN icon in Status Bar is hidden. The traffic does not go through VPN.
-* `vpn` — Blend Fireshield and VPN together. All traffic goes through VPN, while Fireshield blocks access to websites in the blacklist. The VPN icon is Status Bar is displayed. **Default value.**
+* `vpn` — Blend Fireshield and VPN together. All traffic goes through VPN, while Fireshield blocks access to websites in the blacklist. The VPN icon in Status Bar is displayed. **Default value.**
 
 **Important note: Fireshield config settings may be overwritten by remote config.**
 
 **Monitoring**
 
-Hydra SDK reports its content categorization service's work through `HydraSDK`'s `requestScannedConnections(completion: @escaping (Error?, UInt?) -> ())` and `lastCategorization` variable \(available from Application part of the SDK\) and `resourceBlocked(_ categorization: AFHydraCategorization!)` of `AFNetworkExtensionDelegate` \(available from Network Extension part of the SDK\).
+Hydra SDK reports its content categorization services work through `HydraSDK`'s `requestScannedConnections(completion: @escaping (Error?, UInt?) -> ())` and `lastCategorization` variables \(available from Application part of the SDK\) and `resourceBlocked(_ categorization: AFHydraCategorization!)` of `AFNetworkExtensionDelegate` \(available from Network Extension part of the SDK\).
 
-Call `requestScannedConnections(completion: @escaping (Error?, UInt?)` to receive number of network connection that have been scanned.
+Call `requestScannedConnections(completion: @escaping (Error?, UInt?)` to receive a number of network connection that have been scanned.
 
 Subscribe to `.HydraCategorizationDidChange` notification. The notification will be sent on every categorization done by the SDK. Check `lastCategorization` variable to get the latest result of categorization upon receiving `.HydraCategorizationDidChange` notification. Alternativelly, ready the notification's `userInfo` under `categorization` key.
 
 Implement `resourceBlocked(_ categorization: AFHydraCategorization!)` delegate method in your `AFNetworkExtensionDelegate` to get the categorization result of latest connection. Hydra SDK will automatically call back on every new categorization being processed.
 
-> _NOTE:_ Because Network Extension process is running, when Fireshield is enabled, while an application may be suspended by user and subsequently terminated by iOS, `resourceBlocked(_ categorization: AFHydraCategorization!)` is a good place to schedule User Notificaions. By doing this, users can be notified when particular resource is blocked by Fireshield. Remember, that User Notification permissions have to be obtained via the application before they can be scheduled by Network Extension. For mo information, see [Local and Remote Notifications Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
+> _NOTE:_ Because Network Extension process is running, when Fireshield is enabled, while an application may be suspended by user and subsequently terminated by iOS, `resourceBlocked(_ categorization: AFHydraCategorization!)` is a good place to schedule User Notificaions. By doing this, users can be notified when a particular resource is blocked by Fireshield. Remember that User Notification permissions have to be obtained via the application before they can be scheduled by Network Extension. For more information, see [Local and Remote Notifications Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
 #### Error Handling
 
 Most of the `HydraSDK` calls are accepting completion blocks with errors. If an error occurs, you will receive non-nil `Error` object with an explanation. Errors could be handled by code, that is defined in `APIError`.
 
-If you are just disconnected from VPN session, you could also check `lastError` property, if there was an error during initialization or session management system disconnected VPN remotely, there will be `Error` object here. You must handle such errors and report if appropriate.
+If you are just disconnected from VPN session, you could also check `lastError` property. If there was an error during initialization or session management system disconnected VPN remotely, there will be an `Error` object here. You must handle such errors and report if appropriate.
 
 #### Crash Reporting
 
-Some project might consider crash reporting integration \(such as, [Crashlytics](https://try.crashlytics.com/)\) for Network Extension side. If your crash reporting framework supports Application Extensions and requires additional code to setup it, put the configuration code inside `AFNetworkExtensionDelegate`'s `-init` override:
+Some project might consider crash reporting integration \(such as, [Crashlytics](https://try.crashlytics.com/)\) for Network Extension side. If your crash reporting framework supports Application Extensions and requires additional code to set it up, put the configuration code inside `AFNetworkExtensionDelegate`'s `-init` override:
 
 ```text
 import VPNTunnelProviderSDK
@@ -335,7 +335,7 @@ State of VPN connection
 DeviceID representation
 
 `public var isBypassEnabled: Bool`  
-Indicates if bypass is enabled or not
+Indicates if bypass is enabled
 
 `public static func sdkVersion() -> String`  
 Version of SDK
@@ -343,26 +343,26 @@ Version of SDK
 `public var lastError: Error?`  
 Obtain last error that occured in current/last session.
 
-`public init(configuration: HydraConfiguration)`
-
-Main constructor and factory. HydraSDK instance should be a singleton instance. Use HydraConfiguration object instance to initialize HydraSDK.
+`public init(configuration: HydraConfiguration)`  
+Main constructor and factory. HydraSDK instance should be a singleton instance. Use `HydraConfiguration` object instance to initialize HydraSDK.
 
 `public func login(method: AuthMethod, completion: @escaping UserCompletion)`  
-Login and obtain User object that describes Hydra VPN user.
+Log in and obtain User object that describes Hydra VPN user.
 
 `public func logout(completion: @escaping LogoutCompletion)`  
-Log out.
+Log out
 
 `public func virtualLocations(completion: @escaping VirtualLocationsCompletion)`  
 Retrieve a list of available countries to connect to. Returns `[VirtualLocation]`
 
 `public func remainingTraffic(completion: @escaping RemainingTrafficCompletion)`  
-Retrieve current traffic limits.
+Retrieve current traffic limits
 
-`public func installProfile(completion: @escaping ProfileCompletion)` Triggers iOS VPN subsystem to create/update VPN profile, showing user permission "Allow / Don't Allow" dialog. Calling this method is not required. Useful for custom tutorial implementation. **NOTE**: If you're using onDemand VPN feature, this installed profile **WILL** be triggered by system and VPN will be enabled.
+`public func installProfile(completion: @escaping ProfileCompletion)`   
+Triggers iOS VPN subsystem to create/update VPN profile, showing user permission "Allow / Don't Allow" dialog. Calling this method is not required. Useful for custom tutorial implementation. **NOTE**: If you're using On-Demand VPN feature, this installed profile **WILL** be triggered by system and VPN will be enabled.
 
 `public func start(location: VirtualLocation?, completion: @escaping StateCompletion)`  
-Start VPN to automagically chosen server. On first VPN connection, SDK will ask user to Allow or Deny VPN connection. Use your VirtualLocation object from `virtualLocations` function to specify which server country to use or use `nil` to use optimal virtual location.
+Start VPN to automatically connect to a chosen server. On the first VPN connection, SDK will ask user to Allow or Deny VPN connection. Use your VirtualLocation object from `virtualLocations` function to specify which server country to use or use `nil` to use optimal virtual location.
 
 `public func stop(completion: @escaping StateCompletion)`  
 Stop VPN.
@@ -370,14 +370,14 @@ Stop VPN.
 `public func purchase(purchaseToken: String?, type: String, completion: @escaping PurchaseCompletion)`  
 Validates purchase with current backend.
 
-`public func update(configuration: HydraConfiguration) throws` Update Hydra configuration without creating a new instance of HydraDSK. **NOTE** Configuration can't be updated if the connection is started, you need to call `stopVPN` function before updating configuration, otherwise `VPNSDKError.notPermitted` exception will be thrown. Please note if you want to change the main parameters of configuration \(`hostURL`, `carrierID`, `extensionBundleID`, `groupID`\), you need to create new instance `HydraSDK` with this configuration, otherwise `VPNSDKError.configurationMismatch` the exception will be thrown.
+`public func update(configuration: HydraConfiguration) throws` Update Hydra configuration without creating a new instance of HydraDSK. **NOTE:** Configuration can't be updated if the connection is started, you need to call `stopVPN` function before updating configuration, otherwise `VPNSDKError.notPermitted` exception will be thrown. Please note if you want to change the main parameters of configuration \(`hostURL`, `carrierID`, `extensionBundleID`, `groupID`\), you need to create new instance `HydraSDK` with this configuration, otherwise a`VPNSDKError.configurationMismatch` exception will be thrown.
 
 #### AuthMethod
 
 `public static func anonymous() -> AuthMethod`  
 Default auth method that does not require any authentication.
 
-Use `public init(type: AuthMethodType, token: String?)` initializator if you wish to use different auth method.
+Use `public init(type: AuthMethodType, token: String?)` initializator if you wish to use a different auth method.
 
 #### AuthMethodType
 
@@ -401,7 +401,7 @@ Custom auth. If you are using custom authentication scheme, use this case.
 
 #### HydraConfiguration
 
-`HydraConfiguration` is a struct that configures `HydraDSK` instance.
+`HydraConfiguration` is a structure that configures `HydraDSK` instance.
 
 `public let hostURL: String`  
 This is a Host URL of the primary server. Provided by Aura Inc.
@@ -410,7 +410,7 @@ This is a Host URL of the primary server. Provided by Aura Inc.
 This is your unique service identifier. Provided by Aura Inc.
 
 `public let extensionBundleID: String`  
-Network Extension target's Bundle Identifier. See Project &gt; \[YOUR\_TARGET\] &gt; Bundle Identifier for more info.
+Network Extension target's Bundle Identifier. See\* Project &gt; \[YOUR\_TARGET\] &gt; Bundle Identifier for more info.
 
 `public let groupID: String`  
 App Group ID that is created for the current application.
@@ -418,19 +418,19 @@ App Group ID that is created for the current application.
 `public let isBypassEnabled: Bool`  
 Enable bypass mode. See Appendix for more information about the bypass.
 
-`public let profileName: String` Sets the name for VPN profile that is visible in Settings &gt; General &gt; VPN \(Title of profile, subtitle will always be the application name\).
+`public let profileName: String` Sets the name for VPN profile that is listed in Settings &gt; General &gt; VPN \(Title of profile, subtitle will always be the application name\).
 
 `public let debugLoggingEnabled: Bool`  
 Enable or disable debug logging. **Don't forget to disable for release build!**
 
-`public let serverAddressDisplayName: String?` Sets the name for VPN server address that is visible in Settings &gt; General &gt; VPN \(Server field\).
+`public let serverAddressDisplayName: String?` Sets the name for VPN server address that is listed in Settings &gt; General &gt; VPN \(Server field\).
 
 `public let dnsAddress: String?`  
 Your preferred DNS server to use. If not set, a default one will be used.
 
-`public let bypassDomains: [String]?` A list of domains to bypass VPN. Wildcards accepted. Example: `["*google.com"]` // Google domain and it's subdomains will be accessed directly, without VPN.
+`public let bypassDomains: [String]?` A list of domains to bypass VPN. Wildcards accepted. Example: `["*google.com"]` // Google domain and its subdomains will be accessed directly, without VPN.
 
-`public let isOnDemandEnabled: Bool` Enables On Demand VPN feature. VPN will be triggered automatically by the System after `startVPN` is triggered. Calling `stop` from application is required to disable On Demand VPN. If VPN connection could not be established because of network environment or interrupted by out of traffic error code, then VPN will switch to bypass mode automatically until user reconnects VPN from main application, VPN icon will not be visible in the status bar.
+`public let isOnDemandEnabled: Bool` Enables On-Demand VPN feature. VPN will be triggered automatically by the System after `startVPN` is triggered. Calling `stop` from application is required to disable On-Demand VPN. If VPN connection could not be established because of network environment or interrupted by out-of-traffic error code, then VPN will switch to bypass mode automatically until user reconnects VPN from main application, VPN icon will not be visible in the status bar.
 
 #### User
 
@@ -447,22 +447,22 @@ Subscription information.
 Describes User's subscription information.
 
 `public let subscriberID: Int`  
-Subscriber identifier.
+Subscriber's identifier.
 
 `public let activatedDevices: Int`  
-Subscriber activated devices.
+Subscriber's activated devices.
 
 `public let activeSessions: Int`  
-Subscriber active sessions.
+Subscriber's active sessions.
 
 `public let name: String`  
-Subscriber name.
+Subscriber's name.
 
 `public let carrierID: String`  
-Subscriber carrier ID.
+Subscriber's carrier ID.
 
 `public let socialProfiles: [String : String]`  
-Subscriber hash of social profiles with information.
+Subscriber's hash of social profiles with information.
 
 `public let bundle: Bundle`  
 Subscription bundle.
@@ -507,16 +507,16 @@ Bytes transmitted in current session
 #### RemainingTraffic
 
 `public let sessionStartTime: UInt64`  
-UNIX timestamp when current session was started.
+UNIX timestamp of when the current session was started.
 
 `public let trafficUsageLimit: UInt64`  
-Amount of bytes available to current User
+Amount of bytes available to the current User
 
 `public let trafficUsed: UInt64`  
-Amount of bytes User utilized.
+Amount of bytes a User utilized.
 
 `public let trafficRemaining: UInt64`  
-Amount of bytes that is available to User.
+Amount of bytes that is available to a User.
 
 ### AFNetworkExtensionDelegate
 
@@ -525,9 +525,9 @@ Your app's Network Extension provider must implement this protocol. In order to 
 `- (void)vpnWillStartWithOptions:;` // Called right before VPN start attempt  
 `- (void)vpnDidStart;` // Called after successful VPN start  
 `- (void)vpnError:(NSError *)error;` // Called when VPN error occured. Do not call long-running async operations here as the process will shut down  
-`- (void)resourceBlocked:(AFHydraCategorization *)categorization;` // Caled when resource is blocked by Fireshield  
+`- (void)resourceBlocked:(AFHydraCategorization *)categorization;` // Called when a resource is blocked by Fireshield  
 `- (void)vpnDataCounterDidUpdate:(AFHydraDataCounter *)dataCounter;` // Called when VPN traffic counters did update  
-`- (void)vpnWillStopWith:(nonnull void(^)(BOOL restart))completion;` // Called when an error has occurred during the VPN connection until the completion callback will be called Hydra will run in the killswitch mode.
+`- (void)vpnWillStopWith:(nonnull void(^)(BOOL restart))completion;` // Called when an error has occurred during the VPN connection until the completion callback will be called, Hydra will run in the killswitch mode.
 
 ### Error codes
 
@@ -536,32 +536,34 @@ Your app's Network Extension provider must implement this protocol. In order to 
 `undefined` This is a generic unknown error, please report such errors to developers.  
 `sessionExceed` Amount of allowed sessions for this user is exceed.  
 `trafficExceed` Amount of allowed traffic for this user is exceed.  
-`unauthorized` This user is unauthorized or login operation is still pending. `userSuspended` This user is suspended.  
+`unauthorized` This user is unauthorized or login operation is still pending.   
+`userSuspended` This user is suspended.  
 `vpnServerUnavailable` Selected server or country code is not available.  
 `internalServerError` Server was unable to fetch credentials for this country code.  
 `deviceExceed` The amount of allowed devices for this user is exceed.  
-`networkError` The Internets are not available or network request has failed. Feel free to try again.  
-`invalidPurchase` The purchase could be validated.  
-`unknownServerResponse` This response could mean you don't have latest HydraSDK. Please report to developers.  
+`networkError` The Internet is not available or a network request has failed. Feel free to try again.  
+`invalidPurchase` The purchase could not be validated.  
+`unknownServerResponse` This response could mean you don't have the latest HydraSDK. Please report to the developers.  
 `notAuthorized` The token of user is expired.
 
 #### AFNetworkExtensionDelegate
 
 Error domain: `AFHydraDomain`
 
-`AFHydraErrorCodeTimeout` VPN timeout `AFHydraErrorCodeIllegalState` VPN is not established due to application error `AFHydraErrorCodeConnectionDisrupted` VPN connection disrupted by broken network connection `AFHydraErrorCodeConnectionNotEstablished` VPN client can't connect to VPN node `AFHydraErrorCodeTrafficExceed` VPN connection disrupted because the user is out of traffic. NOTE: If `ondemand` feature is used, VPN will be switched to `bypass` mode until user disconnects VPN connection from the application.
+`AFHydraErrorCodeTimeout` VPN timeout   
+`AFHydraErrorCodeIllegalState` VPN is not established due to an application error `AFHydraErrorCodeConnectionDisrupted` VPN connection disrupted by a broken network connection `AFHydraErrorCodeConnectionNotEstablished` VPN client can't connect to a VPN node `AFHydraErrorCodeTrafficExceed` VPN connection disrupted because the user is out of traffic. NOTE: If `ondemand` feature is used, VPN will be switched to `bypass` mode until user disconnects VPN connection from the application.
 
 ## Appendix
 
 ## Integration Checklist & Troubleshooting
 
-The configuration of iOS application with HydraSDK could be quite complex since there is a lot to configure. That's why we've created following checklist that should help you to verify correct integration.
+The configuration of iOS application with HydraSDK could be quite complex since there is a lot to configure. That's why we've created following checklist that should help you verify correct integration.
 
 * Make sure that you've created Network extension
 * **VPNApplicationSDK.framework** is added to the Application target, **VPNTunnelProviderSDK.framework** is added to the Extension target
 * **libz.tbd** is added to the Extension target
-* _Enable Bitcode_ is set to "No" and `-ObjC` is present in "Other linker flags" for both targets
-* You have created and enabled App Groups \(General &gt; Capabilities\) for both targets, active App Group is set to "builder.groupId" \(App Groups is enabled for both bundle ids \(Application and Extension\) in Apple Developer Portal\)
+* _Enable Bitcode_ is set to "NO" and `-ObjC` is present in "Other linker flags" for both targets
+* You have created and enabled App Groups \(General &gt; Capabilities\) for both targets, active App Group is set to "builder.groupId" \(App Groups is enabled for both bundle IDs \(Application and Extension\) in Apple Developer Portal\)
 * Personal VPN \(General &gt; Capabilities\) is enabled for both targets \(Personal VPN is enabled for both bundle ids \(Application and Extension\) in Apple Developer Portal\)
 * You have added Network Extension \(iOS\) entitlement for both Application and Extension provisioning profiles
 * `HydraSDK` instance is configured with correct `groupID`, `extensionBundleID`
