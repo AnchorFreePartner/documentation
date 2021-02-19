@@ -10,13 +10,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Implemented
 
-* Implemented the KillSwitch feature. When Hydra has occurred error and if the delegate method `vpnWillStopWith:(nonnull void(^)(BOOL restart))completion` is implemented, then until completion callback is called Hydra will run in the killswitch mode, please refer to the documentation about the restart parameter.
+* Implemented the KillSwitch feature. When Hydra has encountered an error and if the delegate method `vpnWillStopWith:(nonnull void(^)(BOOL restart))completion` is implemented, then until completion callback is called, Hydra will run in the killswitch mode, please refer to the documentation about the restart parameter.
 * Implemented providing of the `VirtualLocation` in the callback of `startVPN` function.
 
 ### Fixed
 
 * Fixed the receiving of Hydra state from proper `VPNManger` object.
-* Fixed issue with Fireshield when users unble to use netowkr messengers \(stuck in the Connecting state\).
+* Fixed issue with Fireshield when users unable to use network messengers \(stuck in the 'Connecting' state\).
 
 ### \[3.1.2\] - 2020-11-03
 
@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Updated
 
-* Updated Hydra library with added battery saving mode, which enables Fireshield is DNS-only mode, this option can be found in `FireshieldConfig`.
+* Updated Hydra library with added battery saving mode, which enables Fireshield in DNS-only mode, this option can be found in `FireshieldConfig`.
 
 ### \[3.1.0\] - 2019-19-12
 
@@ -50,32 +50,32 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Updated
 
-* Updated logic to update credentials during sleep to resolve issue with 196 error.
+* Updated logic to update credentials during sleep to resolve issue with the 196 error.
 * Disabled silentMode in Fireshield configuration, setting the Fireshield mode to .silent will not affect on the configuration.
 
 ### \[3.0.8\] - 2019-09-09
 
 ### Updated
 
-* Updated remote-config logic to resolve issue with alert-page.
+* Updated remote-config logic to resolve issue with alert page.
 
 ### \[3.0.7\] - 2019-09-09
 
 ### Fixed
 
-* Fixed token migrating from previous version of SDK.
+* Fixed token migration from previous version of SDK.
 
 ### \[3.0.6\] - 2019-09-09
 
 ### Updated
 
-* Updated logic in storing failed errors in network extension target.
+* Updated logic of error storage in network extension target.
 
 ### \[3.0.5\] - 2019-05-09
 
 ### Fixed
 
-* Fixed issue remote configuration mapping.
+* Fixed issue with remote configuration mapping.
 
 ### \[3.0.4\] - 2019-19-08
 
