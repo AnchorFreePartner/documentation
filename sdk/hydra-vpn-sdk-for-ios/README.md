@@ -564,7 +564,7 @@ The configuration of iOS application with HydraSDK could be quite complex since 
 * **libz.tbd** is added to the Extension target
 * _Enable Bitcode_ is set to "NO" and `-ObjC` is present in "Other linker flags" for both targets
 * You have created and enabled App Groups \(General &gt; Capabilities\) for both targets, active App Group is set to "builder.groupId" \(App Groups is enabled for both bundle IDs \(Application and Extension\) in Apple Developer Portal\)
-* Personal VPN \(General &gt; Capabilities\) is enabled for both targets \(Personal VPN is enabled for both bundle ids \(Application and Extension\) in Apple Developer Portal\)
+* Personal VPN \(General &gt; Capabilities\) is enabled for both targets \(Personal VPN is enabled for both bundle IDs \(Application and Extension\) in Apple Developer Portal\)
 * You have added Network Extension \(iOS\) entitlement for both Application and Extension provisioning profiles
 * `HydraSDK` instance is configured with correct `groupID`, `extensionBundleID`
 
