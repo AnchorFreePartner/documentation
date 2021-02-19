@@ -25,16 +25,16 @@ HydraSDK for iOS and macOS provides client API to authorize users and connect th
 
 To start application development, you need to create an Xcode iOS/macOS application project.
 
-Once the application is created, go to _Project &gt; Targets_, and select _Editor &gt; Add Target_ in menu bar. Choose _Network Extension_, provide the name and bundle ID for this [**Network Extension**](https://developer.apple.com/reference/networkextension) target.
+Once the application is created, go to _Project &gt; Targets_, and select _Editor &gt; Add Target_ in menu bar. Choose _Network Extension_, provide a name and bundle ID for this [**Network Extension**](https://developer.apple.com/reference/networkextension) target.
 
-Set `NSExtensionPrincipalClass` in `NSExtension` dictionary of `Info.plist` to `AFHydraTunnelProvider`, also add a new key to a plist root: `AFNetworkExtensionDelegate` with a value that is your VPN Delegate class. For example, if your delegate named VPNDelegate, then the value would be `(PRODUCT_MODULE_NAME).VPNDelegate`
+Set `NSExtensionPrincipalClass` in `NSExtension` dictionary of `Info.plist` to `AFHydraTunnelProvider`, also add a new key to a plist root `AFNetworkExtensionDelegate` with a value that is your VPN Delegate class. For example, if your delegate is named VPNDelegate, then the value would be `(PRODUCT_MODULE_NAME).VPNDelegate`
 
 At the end of this step, you have to have at least two targets:
 
 * **Application** target
 * **Network Extension** target
 
-Read more about [Creating a Packet Tunnel Provider Extension](https://developer.apple.com/reference/networkextension/nepackettunnelprovider#2110153) from Apple docs.
+Read more about [**Creating a Packet Tunnel Provider Extension**](https://developer.apple.com/reference/networkextension/nepackettunnelprovider#2110153) from Apple docs.
 
 #### Configuring Build Settings
 
@@ -404,10 +404,10 @@ Custom auth. If you are using custom authentication scheme, use this case.
 `HydraConfiguration` is a struct that configures `HydraDSK` instance.
 
 `public let hostURL: String`  
-This is a Host URL of the primary server. Provided by Anchorfree Inc.
+This is a Host URL of the primary server. Provided by Aura Inc.
 
 `public let carrierID: String`  
-This is your unique service identifier. Provided by Anchorfree Inc.
+This is your unique service identifier. Provided by Aura Inc.
 
 `public let extensionBundleID: String`  
 Network Extension target's Bundle Identifier. See Project &gt; \[YOUR\_TARGET\] &gt; Bundle Identifier for more info.
