@@ -112,5 +112,5 @@ hydraClient.startVpn(with: self.someCountry, completion: { (country, e) in
 })
 ```
 
-For more detailed information refer to Hydra SDK documentation: [https://developer.aura.com/?\#/docs/hydrasdkforiososx](https://developer.aura.com/?#/docs/hydrasdkforiososx)
+For more detailed information refer to [Hydra SDK documentation](https://pango.gitbook.io/pango-platform/sdk/hydra-vpn-sdk-for-ios).
 
