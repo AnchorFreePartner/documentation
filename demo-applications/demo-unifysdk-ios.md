@@ -53,7 +53,7 @@ import HydraTunnelProviderSDK
 class PacketTunnelProvider: AFPacketTunnelProvider {}
 ```
 
-In your AppDelegate or other shared Singleton object initialize Hydra SDK:
+In your AppDelegate or other shared Singleton object, initialize Hydra SDK:
 
 ```text
 // AppDelegate.swift or your own Hydra holding singleton

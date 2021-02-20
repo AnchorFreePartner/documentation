@@ -6,7 +6,7 @@ description: >-
 
 # IPSEC VPN SDK demo for iOS
 
-GitHub project: [https://github.com/AnchorFreePartner/caketubesdk-demo-ios](https://github.com/AnchorFreePartner/caketubesdk-demo-ios)
+[GitHub project link](https://github.com/AnchorFreePartner/caketubesdk-demo-ios)
 
 ## Compatibility
 
@@ -79,5 +79,5 @@ CakeTube.instance().availableServers { [weak self] (locations, e) in
 }
 ```
 
-For more detailed information refer to CakeTube SDK documentation: [https://developer.anchorfree.com/?\#/docs/ipsecsdkforiosmacos](https://developer.anchorfree.com/?#/docs/ipsecsdkforiosmacos)
+For more detailed information refer to [CakeTube SDK documentation](https://pango.gitbook.io/pango-platform/sdk/ipsec-vpn-sdk-for-ios-macos)
 
