@@ -57,7 +57,7 @@ CakeTube.Initialize("CakeTube Demo Vpn Service", "afdemo", "https://backend.nort
 
 ## Authentication
 
-Anchorfree Partner VPN Backend use OAuth authentication as a primary authentication method.
+Aura Partner VPN Backend uses OAuth authentication as a primary authentication method.
 
 Steps to implement OAuth:
 
