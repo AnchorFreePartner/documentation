@@ -62,7 +62,7 @@ To provide detailed information `"status"` field is also available in [response 
 
 ## Requests examples
 
-### Ping. 
+### Ping
 
 ```text
 <host>:<port>/api/ping

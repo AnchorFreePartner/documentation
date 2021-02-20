@@ -2,7 +2,7 @@
 
 ## Overview
 
-Router SDK is a part of Pango Platform which contains client-side libraries and server-side applications needed to implement custom VPN infrastructure.
+Router SDK is a part of Pango Platform that contains client-side libraries and server-side applications needed to implement custom VPN infrastructure.
 
 ![](../../.gitbook/assets/0.jpeg)
 

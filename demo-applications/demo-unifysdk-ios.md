@@ -4,7 +4,7 @@ description: This is a demo application for iOS with basic usage of Hydra VPN SD
 
 # Hydra VPN SDK demo for iOS
 
-GitHub project: [https://github.com/AnchorFreePartner/hydrasdk-demo-ios](https://github.com/AnchorFreePartner/hydrasdk-demo-ios)
+[GitHub project link](https://github.com/AnchorFreePartner/hydrasdk-demo-ios)
 
 ## Compatibility
 
@@ -24,7 +24,7 @@ Create iOS application and additional Network Extension target, so you'll have:
 * **Application** target
 * **Network Extension** target
 
-For both, the **Application** and the **Network Extension** targets, do the following
+For both, the **Application** and the **Network Extension** targets, do the following:
 
 1. Add following system frameworks to your project dependencies:
 
@@ -32,12 +32,12 @@ For both, the **Application** and the **Network Extension** targets, do the foll
 * Security
 * libz.tbd
 
-1. In your project: _Project &gt; Build Settings_:
+    2. In your project: _Project &gt; Build Settings_:
 
 * Set _Enable Bitcode_ to "NO"
 * Set _Other Linker Flags_ to `-ObjC`.
 
-1. Enable Network Extension and Personal VPN entitlements for both application and network extension targets, create App Group that will be used on both targets.
+    3. Enable Network Extension and Personal VPN entitlements for both application and network   extension targets, create App Group that will be used on both targets.
 
 ### Install Hydra SDK
 
@@ -112,5 +112,5 @@ hydraClient.startVpn(with: self.someCountry, completion: { (country, e) in
 })
 ```
 
-For more detailed information refer to Hydra SDK documentation: [https://developer.anchorfree.com/?\#/docs/hydrasdkforiososx](https://developer.anchorfree.com/?#/docs/hydrasdkforiososx)
+For more detailed information refer to Hydra SDK documentation: [https://developer.aura.com/?\#/docs/hydrasdkforiososx](https://developer.aura.com/?#/docs/hydrasdkforiososx)
 
