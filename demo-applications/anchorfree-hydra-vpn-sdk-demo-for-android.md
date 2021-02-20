@@ -33,7 +33,5 @@ Minimum Android SDK version 15
 
 ## Documentation
 
-Full SDK documentation available here:
-
-{% page-ref page="anchorfree-hydra-vpn-sdk-demo-for-android.md" %}
+For more detailed information refer to [SDK documentation](https://pango.gitbook.io/pango-platform/sdk/vpn-sdk-for-android).
 
