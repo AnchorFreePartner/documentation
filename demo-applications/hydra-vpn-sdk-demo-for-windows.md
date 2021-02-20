@@ -19,7 +19,7 @@ Now you're all set.
 
 ## TAP driver installation
 
-To install TAP driver you need to go to the `tap` folder and execute `install-tap.bat` from `32bit` folder for Windows x86 or from `64bit` folder for Windows x64 as Administrator.
+To install TAP driver, you need to go to the `tap` folder and execute `install-tap.bat` from `32bit` folder for Windows x86 or from `64bit` folder for Windows x64 as Administrator.
 
 ## Windows service installation
 
