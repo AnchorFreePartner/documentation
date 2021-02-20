@@ -9,7 +9,7 @@ Download latest SDK:
 * [CakeTubeSDK for iOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FCakeTubeSDK%20iOS.zip?alt=media)
 * [CakeTubeSDK for macOS](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FCakeTubeSDK-macOS.zip?alt=media)
 
-CakeTube for iOS & macOS \(The SDK\) is a part of AnchorFree SDK. It contains client-side libraries and server-side applications needed to implement custom VPN infrastructure.
+CakeTube for iOS & macOS \(The SDK\) is a part of Aura SDK. It contains client-side libraries and server-side applications needed to implement custom VPN infrastructure.
 
 The SDK provides API to authorize client users and gives them an ability to connect to backend VPN services.
 
@@ -177,10 +177,10 @@ CakeTube class is a singleton. Use CTConfig object instance to initialize CakeTu
 `CTConfig` is a class that configures `CakeTube` instance. Created by `AFConfigBuilder`
 
 `@property (strong, nonatomic) NSString *baseUrl;`  
- This is a Host URL of the primary server. Provided by Anchorfree Inc.
+ This is a Host URL of the primary server. Provided by Aura Inc.
 
 `@property (strong, nonatomic) NSString *carrierId;`  
- This is your unique service identifier. Provided by Anchorfree Inc.
+ This is your unique service identifier. Provided by Aura Inc.
 
 `@property (nonnull, strong, nonatomic) NSString *vpnProfileName;` The name of your VPN profile, visible in iOS Settings &gt; VPN section.
 
@@ -255,7 +255,7 @@ Describes VPN server location information
 
 ## Error codes
 
-`CTCakeTubeApiErrorCodeUnknown` General error code. Please report such errors to Anchorfree Inc. team.
+`CTCakeTubeApiErrorCodeUnknown` General error code. Please report such errors to Aura Inc. team.
 
 `CTCakeTubeApiErrorCodeSerializationError` Object serialization error.
 
@@ -285,7 +285,7 @@ Describes VPN server location information
 
 `CTCakeTubeApiErrorCodeClientError` Some client error,
 
-`CTCakeTubeVPNErrorCodeUndefined` Unknown VPN error. Please report such errors to Anchorfree Inc. team.
+`CTCakeTubeVPNErrorCodeUndefined` Unknown VPN error. Please report such errors to Aura Inc. team.
 
 `CTCakeTubeVPNErrorCodeTimeout` Timeout during VPN connection.
 

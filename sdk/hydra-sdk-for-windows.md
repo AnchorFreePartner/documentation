@@ -65,7 +65,7 @@ tapinstall.exe install OemVista.inf tap0901
 
 ### Windows service installation
 
-To be able to use the hydra service you need to install it into the system once. It could be done by the following command:
+To be able to use the Hydra service, you need to install it into the system once. It could be done by the following command:
 
 ```text
 Hydra.Sdk.Windows.Service.exe -install <serviceName>
@@ -95,7 +95,7 @@ var hydraBootstrapper = new HydraWindowsBootstrapper();
 hydraBootstrapper.Bootstrap(backendConfiguration, hydraConfiguration);
 ```
 
-`CarrierId` is your project id from the developer
+`CarrierId` is your project ID from the developer
 
 `BackendAddress` is URL address to work with our backend.
 
@@ -266,7 +266,7 @@ namespace ConsoleVPN
 
 ### 1.4.0.277 -&gt; 1.4.1.285
 
-* the connecting state occurs faster
-* next libraries were removed: Microsoft.Practices.ServiceLocation.dll, Microsoft.Practices.Unity.Configuration.dll, Microsoft.Practices.Unity.dll, Microsoft.Practices.Unity.RegistrationByConvention.dll, SimpleWifi.dll
-* general bug fixes and improvements
+* 'Connecting' state occurs faster
+* The following libraries were removed: Microsoft.Practices.ServiceLocation.dll, Microsoft.Practices.Unity.Configuration.dll, Microsoft.Practices.Unity.dll, Microsoft.Practices.Unity.RegistrationByConvention.dll, SimpleWifi.dll
+* General bug fixes and improvements
 
