@@ -1,4 +1,4 @@
-# Create the Firebase project for User Authentication
+# Create a Firebase project for User Authentication
 
 ## Introduction to Firebase
 
