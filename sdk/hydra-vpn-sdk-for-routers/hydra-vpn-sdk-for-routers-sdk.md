@@ -5,7 +5,7 @@ Router SDK provides a shared library \(with C header file\) which can be integra
 ## SDK C API
 
 ```text
-int afwrt_init(const char params_json, void (event_callback)(const char *event_str));
+int afwrt_init(const char *params_json, void (event_callback)(const char *event_str));
 ```
 
 Initialize library. Must be called once before using the library. 
