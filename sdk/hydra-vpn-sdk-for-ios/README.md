@@ -16,7 +16,7 @@ HydraSDK for iOS and macOS provides client API to authorize users and connect th
 
 ## Prerequisites
 
-* Requires iOS 10+ or macOS 10.12+
+* Requires iOS 11+ or macOS 10.12+
 * Xcode 10.2.1
 
 ## Setup
@@ -44,6 +44,8 @@ For both **Application** and **Network Extension** targets, do the following:
 2. In your project: _Project &gt; Build Settings_:
 3. Set _Enable Bitcode_ to "NO"
 4. [Set](https://developer.apple.com/library/content/qa/qa1490/_index.html) _Other Linker Flags_ to `$(OTHER_LDFLAGS) -ObjC`.
+5. _Set Import Paths_ for **Application** target `$(SWIFT_INCLUDE_PATHS) ${PROJECT_DIR}/path_to_frameworks/VPNApplicationSDK.xcframework/AdditionalModules/**platform**` where platform is `ios`, `ios-simulator` or `macos`
+6. Set _Import Paths_ for **Network Extension** target to `$(SWIFT_INCLUDE_PATHS) ${PROJECT_DIR}/path_to_frameworks/VPNTunnelProviderSDK.xcframework/AdditionalModules/**platform**` where platform is `ios`, `ios-simulator` or `macos`
 
 #### Add HydraSDK
 
