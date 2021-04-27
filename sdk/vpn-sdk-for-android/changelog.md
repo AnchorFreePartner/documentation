@@ -1,6 +1,36 @@
 # Changelog
 
+## 3.4.10
 
+- Bug fixes
+
+## 3.4.9
+
+- Bug fixes
+
+## 3.4.7
+
+- Bug fixes
+
+## 3.4.6
+
+- Bug fixes
+
+## 3.4.5
+
+- Bug fixes
+
+## 3.4.4
+
+- Bug fixes
+
+## 3.4.2
+
+- Bug fixes
+
+## 3.4.1
+
+- Bug fixes
 
 ### 3.4.0
 
