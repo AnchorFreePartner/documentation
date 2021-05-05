@@ -6,17 +6,75 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## \[Unreleased\]
 
+### \[3.2.0\] - 2021-23-03
+
+### Updated
+
+* Added macOS arm64 architecture.
+* Subscription extref field set as optional.
+
+### Fixed
+
+* Fixed bypassing issue when domains set to bypass as bypassDomains config value.
+
+### \[3.1.9\] - 2021-18-01
+
+### Fixed
+
+* Fixed crash issue with handling state notification from NEVPNProtocolIPSec. 
+
+### Updated
+
+* Expanded VPNSDKError for better Objective-C compatibility.
+* Removed platform prefix from framework name. \(example fro macOS platform "import VPNApplicationSDK" \)
+
+### \[3.1.8\] - 2020-24-12
+
+### Implemented
+
+* Added support of host fallback, now setting host in the configuration is optional, fallback hosts could be configured via the dashboard, by default if none of the hosts are specified in HydraConfiguration, hardcoded hosts will be used.  
+
+### Fixed
+
+* Fixed reconnecting issue which could occur right after calling start function from stop callback \(POSIX error\).
+
+### \[3.1.7\] - 2020-01-12
+
+### Fixed
+
+* Fixed merging policy issue between local and remote Fireshield config.
+
+### \[3.1.6\] - 2020-30-10
+
+### Fixed
+
+* Fixed issue with second DNS request added in iOS 14, which causes blocked sites to open.
+
+### \[3.1.5\] - 2020-25-09
+
+### Implemented
+
+* Using system DNS server if it not set in HydraConfiguration.
+* Added support of newer remote fierdshield config.
+* Added detailed logging system for the tunnel provider.
+
+### \[3.1.4\] - 2020-04-05
+
+### Fixed
+
+* Fixed the `Connecting` state issue which can occur right after updating from the older SDK \(3.0.x\) if the VPN connection was established.
+
 ### \[3.1.3\] - 2020-08-04
 
 ### Implemented
 
-* Implemented the KillSwitch feature. When Hydra has encountered an error and if the delegate method `vpnWillStopWith:(nonnull void(^)(BOOL restart))completion` is implemented, then until completion callback is called, Hydra will run in the killswitch mode, please refer to the documentation about the restart parameter.
+* Implemented the KillSwitch feature. When Hydra has occurred error and if the delegate method `vpnWillStopWith:(nonnull void(^)(BOOL restart))completion` is implemented, then until completion callback is called Hydra will run in the killswitch mode, please refer to the documentation about the restart parameter.
 * Implemented providing of the `VirtualLocation` in the callback of `startVPN` function.
 
 ### Fixed
 
 * Fixed the receiving of Hydra state from proper `VPNManger` object.
-* Fixed issue with Fireshield when users unable to use network messengers \(stuck in the 'Connecting' state\).
+* Fixed issue with Fireshield when users unble to use netowkr messengers \(stuck in the Connecting state\).
 
 ### \[3.1.2\] - 2020-11-03
 
@@ -34,7 +92,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Updated
 
-* Updated Hydra library with added battery saving mode, which enables Fireshield in DNS-only mode, this option can be found in `FireshieldConfig`.
+* Updated Hydra library with added battery saving mode, which enables Fireshield is DNS-only mode, this option can be found in `FireshieldConfig`.
 
 ### \[3.1.0\] - 2019-19-12
 
@@ -50,32 +108,32 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Updated
 
-* Updated logic to update credentials during sleep to resolve issue with the 196 error.
+* Updated logic to update credentials during sleep to resolve issue with 196 error.
 * Disabled silentMode in Fireshield configuration, setting the Fireshield mode to .silent will not affect on the configuration.
 
 ### \[3.0.8\] - 2019-09-09
 
 ### Updated
 
-* Updated remote-config logic to resolve issue with alert page.
+* Updated remote-config logic to resolve issue with alert-page.
 
 ### \[3.0.7\] - 2019-09-09
 
 ### Fixed
 
-* Fixed token migration from previous version of SDK.
+* Fixed token migrating from previous version of SDK.
 
 ### \[3.0.6\] - 2019-09-09
 
 ### Updated
 
-* Updated logic of error storage in network extension target.
+* Updated logic in storing failed errors in network extension target.
 
 ### \[3.0.5\] - 2019-05-09
 
 ### Fixed
 
-* Fixed issue with remote configuration mapping.
+* Fixed issue remote configuration mapping.
 
 ### \[3.0.4\] - 2019-19-08
 
@@ -140,7 +198,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 * Improved dynamic whitelist feature
 
-#### Added
+  **Added**
 
 * Added support of remote bypass list feature
 
@@ -189,7 +247,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 #### Updated
 
-* `trafficCounters` is now a read-only property
+* `trafficCounters` is now a read-only property 
 * `AFVPNCategorizationDidChangeNotification` notification's user info now contains `AFHydraCategorization` object
 
 ### \[0.4.7\] - 2018-08-09
@@ -308,13 +366,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 * Add `-shouldStartVPN` method
 * Add `AFNEErrorCodeCancelled` error
 
-#### Fixed
+  **Fixed**
 
 * Fix correctly handle token expired \(196\) error
 
-#### Updated
+  **Updated**
 
-* Change `-vpnDidStart` to `-vpnDidStartWithOptions:`
+* Change `-vpnDidStart` to `-vpnDidStartWithOptions:` 
 
 ### \[0.3.9.10\] - 2018-06-01
 
@@ -378,7 +436,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 * Added support for code 186
 
-#### Fixed
+  **Fixed**
 
 * Updated libhydra to the latest patch version fixing upload issue
 
@@ -402,11 +460,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 * VPN protocol library versioning
 
-#### Removed
+  **Removed**
 
 * IDFA usage is removed from both UCR and HydraSDK
 
-#### Updated
+  **Updated**
 
 * UCR library updated
 
@@ -428,11 +486,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 * On-demand is now configured with NetworkExtension API
 
-#### Fixed
+  **Fixed**
 
 * String config parameters are now copied by default
 
-#### Removed
+  **Removed**
 
 * Removed AFOnDemandRules
 
@@ -486,7 +544,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 #### Fixed
 
-- Fixed issue when VPN couldn't disconnect automatically on WiFi change
-
+* Fixed issue when VPN couldn't disconnect automatically on WiFi change
 * Improved Swift compatibility
 
