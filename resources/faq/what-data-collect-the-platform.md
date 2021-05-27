@@ -119,7 +119,7 @@ Device data includes the following parameters:
 | User Name | string | User ID for this device |
 | Status | boolean | Device status: 0 - active, 1 - blocked |
 
-Data is preserved for **3 years,** if not delete by project managers through the platform management console.
+Data is preserved for **3 years,** if not deleted by project managers through the platform management console.
 
 ## VPN session statistic
 
