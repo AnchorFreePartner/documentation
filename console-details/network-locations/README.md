@@ -20,7 +20,7 @@ This tab shows the list of project locations. You can access the same list if yo
   <tbody>
     <tr>
       <td style="text-align:left">Location</td>
-      <td style="text-align:left">Country code ISO ALPHA-2</td>
+      <td style="text-align:left">Country code in <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO ALPHA-2</a> format</td>
     </tr>
     <tr>
       <td style="text-align:left">Country</td>
