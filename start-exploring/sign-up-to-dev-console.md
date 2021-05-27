@@ -57,6 +57,6 @@ If the email address provided is not unique, the following error message will be
 ![Successful email address verification](../.gitbook/assets/email-verified.png)
 
 {% hint style="info" %}
-Now you are ready to log in to the Management Console and create your first project. Please, follow to the next article on how to create a new project.
+Now you are ready to log in to the Management Console and create your first project. Please, proceed to the next article on how to create a new project.
 {% endhint %}
 

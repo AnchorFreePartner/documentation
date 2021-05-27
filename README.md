@@ -1,8 +1,8 @@
 ---
 description: >-
-  Dig into our Aura Developer Platform documentation and quickstart guides.
-  You're covered with everything from SDKs to sample apps for Windows, macOS,
-  iOS, and Android.
+  Dig into Aura Developer Platform documentation and quick-start guides. You're
+  covered with everything from SDKs to sample apps for Windows, macOS, iOS, and
+  Android.
 ---
 
 # What is Aura Developer Platform
@@ -11,17 +11,17 @@ description: >-
 
 ## With Aura Developer Console you can:
 
-1. Create projects with unique parameters for your applications. 
-2. Manage users. 
-3. Explore Dashboard with real-time data.
+1. Create and control projects with unique parameters for your applications
+2. Manage application and project users
+3. Explore real-time data dashboards
 
 ## What's more?
 
-If you want to know if Aura Developer Platform matches your needs :
+Take a look on this use cases list in order to decide if Aura Developer Platform matches your needs:
 
 {% page-ref page="resources/use-cases/" %}
 
-The best way to discover Platform services is to try them out**:**
+Try out Platform services - it is the best way to discover its capabilities:
 
 Check out our Frequently Asked Questions:
 
