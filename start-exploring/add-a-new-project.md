@@ -33,8 +33,10 @@ Next, you will see your project's dashboard:
 ![](../.gitbook/assets/first-project-dashboard.png)
 
 {% hint style="info" %}
-Since your new project is still unconfigured, there will not be much information in the dashboard.
+Since your new project is still unconfigured, there will be not much information in the dashboard.
 {% endhint %}
+
+
 
 **Configuring a recently added project**
 
