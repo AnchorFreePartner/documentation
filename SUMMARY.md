@@ -9,7 +9,7 @@
 
 ## Console details
 
-* [Project Dashboard](console-details/project-dashboard/README.md)
+* [Dashboard](console-details/project-dashboard/README.md)
   * [General](console-details/project-dashboard/general.md)
   * [Location Loading](console-details/project-dashboard/location-loading.md)
 * [Network locations](console-details/network-locations/README.md)
