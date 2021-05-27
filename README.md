@@ -7,7 +7,7 @@ description: >-
 
 # What is Aura Developer Platform
 
-**The Aura Developer Platform's mission is to protect everyone’s freedom on the internet and provide the highest level of cyber security as a service.**
+**The Aura Developer Platform's mission is to protect everyone’s freedom on the internet and provide the highest level of cybersecurity as a service.**
 
 ## With Aura Developer Console you can:
 

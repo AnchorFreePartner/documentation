@@ -1,13 +1,13 @@
 ---
 description: >-
-  The Flow shows the interaction of the participants in the VPN channel
-  establishment process between the user application and the platform's VPN
-  node.
+  The diagram shows all stages of interaction between a client application and
+  the platform; from acquiring an authorization token to the creation of a VPN
+  session with a particular node.
 ---
 
 # VPN Platform Flow
 
-   
+  
 
 ![](../../.gitbook/assets/flow-1-1.jpg)
 
