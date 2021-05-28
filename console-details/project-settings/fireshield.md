@@ -20,7 +20,7 @@ Fireshield is a network security service; turned on, it will check all project u
 * **Services** - a list of database sources used to determine if resource is safe / unsafe
   * **securityzones** - synchronized every 5 minutes
   * **bbss** - merged to own database once a day
-  * **bitdefender** - requested real-time \(supplemented with 30 minutes life time cache if the number of cached domains is less than 20000\)
+  * **bitdefender** - requested in real time and supplemented with 30 minutes life time cache \(can be cleared earlier if the number of records is more than 20 000\)
 * **Categories** - a list of pre-determined web-resource categories with general **safe** / **unsafe** and more specific:
   * **unsafe:malware** - a list of web-sites which will try to setup a malicious
 
