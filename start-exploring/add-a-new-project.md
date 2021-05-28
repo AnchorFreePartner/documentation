@@ -2,7 +2,7 @@
 description: Learn how to create your first project in Management Console
 ---
 
-# Create a new Project
+# Create a new project
 
 **Adding a new project to the Management Console**
 

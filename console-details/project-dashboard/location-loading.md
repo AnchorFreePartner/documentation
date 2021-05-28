@@ -1,4 +1,4 @@
-# Location Loading
+# Location loading
 
 ## Graphs
 

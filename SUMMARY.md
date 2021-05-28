@@ -4,31 +4,39 @@
 
 ## Start Exploring
 
-* [Sign Up to Management Console](start-exploring/sign-up-to-dev-console.md)
-* [Create a new Project](start-exploring/add-a-new-project.md)
+* [Sign up to Management Console](start-exploring/sign-up-to-dev-console.md)
+* [Create a new project](start-exploring/add-a-new-project.md)
+* [Switch projects](start-exploring/switch-projects.md)
+* [Change console settings](start-exploring/change-console-settings.md)
+* [Edit your profile](start-exploring/edit-your-profile.md)
 
 ## Console details
 
 * [Dashboard](console-details/project-dashboard/README.md)
   * [General](console-details/project-dashboard/general.md)
-  * [Location Loading](console-details/project-dashboard/location-loading.md)
-* [Network locations](console-details/network-locations/README.md)
-  * [Pools](console-details/network-locations/pools.md)
+  * [Location loading](console-details/project-dashboard/location-loading.md)
 * [Users](console-details/users/README.md)
   * [User page](console-details/users/user-page.md)
 * [Active sessions](console-details/active-sessions.md)
-* [Project Settings](console-details/project-settings/README.md)
+* [Network](console-details/network-locations/README.md)
+  * [Locations](console-details/network-locations/locations.md)
+  * [Pools](console-details/network-locations/pools.md)
+* [Settings](console-details/project-settings/README.md)
   * [General](console-details/project-settings/general/README.md)
     * [Project config description \(JSON format\)](console-details/project-settings/general/project-config-description-json-format.md)
-  * [User Authentication methods](console-details/project-settings/user-authentification-methods/README.md)
+  * [Authentication methods](console-details/project-settings/user-authentification-methods/README.md)
     * [Auth Plugin requirements](console-details/project-settings/user-authentification-methods/auth-plugin-requirements.md)
-  * [User Payment methods](console-details/project-settings/user-payment-methods/README.md)
+  * [Payment methods](console-details/project-settings/user-payment-methods/README.md)
     * [Payments Plugin requirements](console-details/project-settings/user-payment-methods/custom-payments-plugin-requirements.md)
-  * [VPN Bypass list](console-details/project-settings/vpn-bypass-list.md)
-  * [Client Networks](console-details/project-settings/client-networks.md)
+  * [VPN](console-details/project-settings/vpn/README.md)
+    * [General](console-details/project-settings/vpn/general.md)
+    * [VPN Bypass list](console-details/project-settings/vpn/vpn-bypass-list.md)
+    * [Client Networks](console-details/project-settings/vpn/client-networks.md)
+  * [Fireshield](console-details/project-settings/fireshield.md)
   * [Member](console-details/project-settings/members.md)
 * [Export Data](console-details/export-data.md)
-* [Logs](console-details/logs.md)
+* [Log](console-details/logs.md)
+* [Billing](console-details/billing.md)
 
 ## SDK
 

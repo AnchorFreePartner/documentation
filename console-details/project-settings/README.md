@@ -1,4 +1,4 @@
-# Project Settings
+# Settings
 
 This Page includes the settings of your project. All settings divided into the following categories:
 

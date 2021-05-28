@@ -2,7 +2,7 @@
 description: >-
   Dig into Aura Developer Platform documentation and quick-start guides. You're
   covered with everything from SDKs to sample apps for Windows, macOS, iOS, and
-  Android.
+  Android
 ---
 
 # What is Aura Developer Platform

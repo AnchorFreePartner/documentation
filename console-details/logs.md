@@ -1,4 +1,4 @@
-# Logs
+# Log
 
 All project changes are logged on this page.  
 

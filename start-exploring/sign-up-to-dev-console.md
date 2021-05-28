@@ -2,10 +2,10 @@
 description: >-
   In order to create and manage your projects, you need to sign-up for
   Management Console. Check out this short tutorial describing all the necessary
-  steps.
+  steps
 ---
 
-# Sign Up to Management Console
+# Sign up to Management Console
 
 ### **How to create a new account on Management Console**
 

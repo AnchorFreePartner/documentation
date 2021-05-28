@@ -4,7 +4,7 @@ description: >-
   a 50MB per day, while paid users usually have no traffic limit.
 ---
 
-# User Payment methods
+# Payment methods
 
 ## Purchase flow overview
 
