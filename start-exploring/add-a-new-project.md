@@ -10,11 +10,11 @@ description: Learn how to create your first project in Management Console
 2. Follow the 'Sign In' link in the upper right corner
 3. Enter your credentials and click on the 'Sign In' button: 
 
-![](../.gitbook/assets/sign-in-form.png)
+![Sign in form](../.gitbook/assets/sign-in-form.png)
 
 Provided credentials will be checked; if successful, you will be redirected to the ‘Create first project’ page. Otherwise, a detailed error message will appear.
 
-![](../.gitbook/assets/first-project.png)
+![Project creation form](../.gitbook/assets/first-project.png)
 
 4. Fill all available fields:
 
@@ -30,7 +30,7 @@ Using **Upload image** button, you can upload a project icon that will be displa
 
 Next, you will see your project's dashboard:
 
-![](../.gitbook/assets/first-project-dashboard.png)
+![Dashboard overview](../.gitbook/assets/first-project-dashboard.png)
 
 {% hint style="info" %}
 Since your new project is still unconfigured, there will be not much information in the dashboard.

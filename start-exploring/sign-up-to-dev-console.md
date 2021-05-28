@@ -16,7 +16,7 @@ description: >-
 
 The 'Sign up' form will appear on the screen:
 
-![Sign-up form screen](../.gitbook/assets/sign-up-form.png)
+![Sign-up form page](../.gitbook/assets/sign-up-form.png)
 
 {% hint style="info" %}
 Before you fill the form, please take a minute to read and agree \(if applicable\) with our cookies usage policies. It is necessary for our platform to use cookies in order to provide better user experience.
@@ -42,7 +42,7 @@ If the email address provided is not unique, the following error message will be
 
 5. Next screen will appear after a successful processing of the form:
 
-![Confirmation screen](../.gitbook/assets/email-sign-up-confirmation.png)
+![Confirmation page](../.gitbook/assets/email-sign-up-confirmation.png)
 
 6. Click on the **OK** button.
 
