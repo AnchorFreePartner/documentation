@@ -7,12 +7,16 @@ description: Learn how to create your first project in Management Console
 **Adding a new project to the Management Console**
 
 1. Open [https://developer.aura.com/](https://developer.aura.com/)
-2. Follow the 'Sign In' link in the upper right corner
-3. Enter your credentials and click on the 'Sign In' button: 
+2. Follow the "Sign In" link in the upper right corner
+3. Enter your credentials and click on the "Sign In" button: 
 
 ![Sign in form](../.gitbook/assets/sign-in-form.png)
 
-Provided credentials will be checked; if successful, you will be redirected to the ‘Create first project’ page. Otherwise, a detailed error message will appear.
+{% hint style="info" %}
+If you are already signed in, there will be "Dashboard" button instead of "Sign In" link
+{% endhint %}
+
+Provided credentials will be checked; if successful, you will be redirected to the "Create first project" page. Otherwise, a detailed error message will appear.
 
 ![Project creation form](../.gitbook/assets/first-project.png)
 
@@ -33,7 +37,7 @@ Next, you will see your project's dashboard:
 ![Dashboard overview](../.gitbook/assets/first-project-dashboard.png)
 
 {% hint style="info" %}
-Since your new project is still unconfigured, there will be not much information in the dashboard.
+Since your new project is not configured yet, there will be not much information in the dashboard.
 {% endhint %}
 
 
