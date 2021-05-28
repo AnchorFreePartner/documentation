@@ -28,7 +28,7 @@ Fireshield is a network security service; turned on, it will check all project u
 
   * **unsafe:untrusted** - a list of suspicious and not trustworthy sites
   * **unsafe:trackers** - a list of sites which mark a browser in order to gather information about user's activity over the Internet
-  * **unsafe:phishing** - a list of sites suspected of cybercrime in which a target or targets are contacted by email, telephone or text message by someone posing as a legitimate institution to lure individuals into providing sensitive data such as personally identifiable information, banking and credit card details, and passwords
+  * **unsafe:phishing** - a list of sites suspected of cybercrime in which a target or targets are contacted by someone posing as a legitimate institution to lure individuals into providing sensitive data such as personally identifiable information, banking and credit card details, and passwords
   * **custom** - an extra category of user-defined purpose
 
 {% hint style="info" %}
