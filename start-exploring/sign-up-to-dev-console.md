@@ -1,20 +1,20 @@
 ---
 description: >-
-  In order to create and manage your projects, you need to sign-up for
+  In order to create and manage your projects, you need to sign up for
   Management Console. Check out this short tutorial describing all the necessary
   steps
 ---
 
 # Sign up to Management Console
 
-### **How to create a new account on Management Console**
+### **How to create a new account**
 
 1. Open [https://developer.aura.com/](https://developer.aura.com/)
-2. Click the 'Sign up' button in the top-right corner:
+2. Click the "**Sign up**" button in the top-right corner:
 
 ![](../.gitbook/assets/sign-up-button-landing.png)
 
-The 'Sign up' form will appear on the screen:
+The sign up form will appear on the screen:
 
 ![Sign-up form page](../.gitbook/assets/sign-up-form.png)
 
@@ -33,20 +33,20 @@ If the email address provided is not unique, the following error message will be
 {% endhint %}
 
 * **Password -** a ****reliable password for your account; it can contain Latin characters, special symbols, and numbers.
-* **First name -** your first name for the account; it can contain Latin characters and numbers.
-* **Last name -** your last name for the account; it can contain Latin characters and numbers. 
-* **Company name -** your company name; it can contain Latin characters, special symbols and numbers \(e.g. _Planet Global_\).
-* Check the **Terms of Service/Privacy Policy box**.
+* **First name -** your first name for the account; it can only contain Latin characters and numbers.
+* **Last name -** your last name for the account; it can only contain Latin characters and numbers
+* **Company name -** your company name; it can contain Latin characters, special symbols and numbers \(e.g. _Planet\_Global100%_\)
+* **Terms of Service/Privacy Policy -** an agreement checkbox
 
-4. Click on the **SIGN UP** button bellow the form.
+4. Click on the "**Sign up**" button bellow the form.
 
 5. Next screen will appear after a successful processing of the form:
 
 ![Confirmation page](../.gitbook/assets/email-sign-up-confirmation.png)
 
-6. Click on the **OK** button.
+6. Click on the "**OK"** button.
 
-7. Check your email box, a sign-up confirmation letter with the subject 'Verify your email for Pango PaaS' should arrive shortly:
+7. Check your email box; a sign-up confirmation letter with the subject "Verify your email for Aura PaaS" should arrive shortly:
 
 ![Email adress verification request](../.gitbook/assets/email-confirmation.png)
 
