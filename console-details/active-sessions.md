@@ -3,7 +3,7 @@
 This tab shows you the list of sessions that are active in the current project.
 
 {% hint style="warning" %}
-The list can include up to 5,000 active sessions.
+The list can include up to **5 000** active sessions.
 {% endhint %}
 
 The list includes the following information:
