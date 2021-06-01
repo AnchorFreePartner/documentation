@@ -1,6 +1,16 @@
 ---
-description: This article describes the VPN screen of the Management Console
+description: Take a look on general and fine tune of virtual private network
 ---
 
 # VPN
+
+VPN settings in Management Console are divided into three sections:
+
+{% page-ref page="general.md" %}
+
+{% page-ref page="vpn-bypass-list.md" %}
+
+{% page-ref page="client-networks.md" %}
+
+
 

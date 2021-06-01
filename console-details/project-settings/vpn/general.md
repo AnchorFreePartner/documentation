@@ -10,7 +10,7 @@ General VPN settings allow to configure:
 
 ![General VPN settings](../../../.gitbook/assets/screenshot-2021-06-01-at-17.54.00.png)
 
-| Option | Description |
+| Parameter | Description |
 | :--- | :--- |
 | Default bandwidth limit | To specify a maximum data transfer rate \(in megabytes\) |
 | Bandwidth type | To choose how bandwidth limit should be to applied \(currently  restricted to only "by user"\) |
