@@ -1,13 +1,22 @@
+---
+description: Get an idea of what settings a project has and how to manage them
+---
+
 # Settings
 
-This Page includes the settings of your project. All settings divided into the following categories:
+Settings section of the Management Console is divided into the following categories:
 
-* **General** - basic settings of the project. 
-* **Auth method** - user authentication settings. 
-* **Payments method** - settings of your paid subscription methods. 
-* **VPN Bypass list** - a list of URLs excluded from VPN traffic \(bypass\). 
-* **Client Networks** - a list of network rules for turning the VPN on/off automatically.
-* **Member** - a list of users who have access to the Management console.
+{% page-ref page="general/" %}
+
+{% page-ref page="user-authentification-methods/" %}
+
+{% page-ref page="user-payment-methods/" %}
+
+{% page-ref page="vpn/vpn-bypass-list.md" %}
+
+{% page-ref page="vpn/client-networks.md" %}
+
+{% page-ref page="members.md" %}
 
 
 

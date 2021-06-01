@@ -4,7 +4,7 @@ description: Take a look on general and fine tune of virtual private network
 
 # VPN
 
-VPN settings in Management Console are divided into three sections:
+VPN settings of the project are divided into three sections:
 
 {% page-ref page="general.md" %}
 
