@@ -1,5 +1,5 @@
 ---
-description: The list of User Authentication methods of the project.
+description: Find out how to manage authentication methods of your project
 ---
 
 # Authentication methods
@@ -66,7 +66,7 @@ If you are going to add new user authentication method to the project you need t
 
 1. Click the "![](../../../.gitbook/assets/plus_icon.jpeg)**Add**" button. You will see a form that looks like this:
 
-![](../../../.gitbook/assets/add_new_auth.png)
+![Create authentication method dialog](../../../.gitbook/assets/add_new_auth.png)
 
 Fill in the name of your authentication method. For anonymous method - "_anonymous_", for Firebase - "firebase", for custom -  _the name of your plugin_.
 
@@ -74,7 +74,7 @@ Then, you have to input the settings of the authentication method.
 
    2. Click "**New auth method**". As a result, this new authentication method should show up in the table, for example:
 
-![](../../../.gitbook/assets/auth_methods.png)
+![Authentication methods settings overview](../../../.gitbook/assets/auth_methods.png)
 
 ### Editing method parameters
 
@@ -82,7 +82,7 @@ If you are going to change settings of an existing authentication method, you ne
 
 1. Select an authentication method and click the "![](../../../.gitbook/assets/edit_icon.png)" button. You will see a form that looks like this:
 
-![](../../../.gitbook/assets/edit_auth_settings.png)
+![Edit authentication method dialog](../../../.gitbook/assets/edit_auth_settings.png)
 
   2. Edit the JSON and click "**Edit auth method**". 
 
@@ -92,7 +92,7 @@ If you are going to delete an existing authentication method, you need to do the
 
 1. Select an authentication method you want to delete and click the "![](../../../.gitbook/assets/delete_icon.png)" button. You will see a form that looks like this:
 
-![](../../../.gitbook/assets/delete_auth_method.png)
+![Delete authentication method dialog](../../../.gitbook/assets/delete_auth_method.png)
 
    2. Click "**Delete auth method**". 
 

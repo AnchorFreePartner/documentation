@@ -1,14 +1,14 @@
 ---
-description: Shows the project settings.
+description: Learn about general project settings configuration
 ---
 
 # General
 
 ### General parameters
 
-To log into your project, you should use the Project ID. You can see the Project ID in the top left under the project name \(_"bla\_test123"_ in this example\):
+To log into your project, you should use the Project ID. You can see the Project ID in the top left under the project name \(_"sbe\_tranquility"_ in this example\):
 
-![](../../../.gitbook/assets/project-id.png)
+![Project ID example](../../../.gitbook/assets/screenshot-2021-06-01-at-19.00.13.png)
 
 Then, go to the _"Settings"_ menu item and choose the _"General"_ tab. The parameters are as follows:
 
@@ -19,7 +19,7 @@ Then, go to the _"Settings"_ menu item and choose the _"General"_ tab. The param
 * **Default Bandwidth limit \(MB\)** -  the daily bandwidth limit for newly registered users. For example, if you see it to 100, newly registered users will have a 100MB daily limit. If this parameter will empty, newly registered users will have an unlimited daily limit.
 * **Default License** - you can select the default license for newly registered users. Below is the list of licenses:  
 
-![](../../../.gitbook/assets/list_licenses.png)
+![Default license dropdown](../../../.gitbook/assets/list_licenses.png)
 
 Each license has 2 parameters. The first parameter is the devices limit, the second parameter - the concurrent sessions limit \(not used anymore\). For example, the license "20-100" sets the following limits to a user: 20 devices and 100 concurrent sessions. The "_default_" license sets no limit on the number of devices and concurrent sessions.
 
@@ -38,9 +38,9 @@ Each license has 2 parameters. The first parameter is the devices limit, the sec
 * **Save changes** - click the button to save all changes on the General screen.
 * **Delete project** - click the button to delete the project. For the approval of this action you should manually input the Private Key \(see parameter "Private Key"\) and click the "Delete project" button:
 
-![](../../../.gitbook/assets/delete-project.png)
+![Delete project dialog](../../../.gitbook/assets/delete-project.png)
 
 {% hint style="warning" %}
-This action is irreversible.
+**Caution**: this action is **irreversible**
 {% endhint %}
 
