@@ -1,16 +1,22 @@
+---
+description: >-
+  Learn how to get project data in CSV format for further processing or
+  reporting
+---
+
 # Export Data
 
-You can export the following data:
+You can export 3 types of data:
 
 * Project users \(all users\) 
 * User's devices \(all devices\) 
 * User's sessions \(period of 1-30 days\)
 
-## Export story
+## Export history
 
-On the "Export data" tab you can see the table with the story of your exports:  
+The history of project data export is represented on the "Export data" page:
 
-![](../.gitbook/assets/export_list.png)
+![Export data page](../.gitbook/assets/export_list.png)
 
 <table>
   <thead>
@@ -22,7 +28,7 @@ On the "Export data" tab you can see the table with the story of your exports:
   <tbody>
     <tr>
       <td style="text-align:left">Created</td>
-      <td style="text-align:left">Date of a data export</td>
+      <td style="text-align:left">Export task creation date</td>
     </tr>
     <tr>
       <td style="text-align:left">Type</td>
@@ -37,46 +43,47 @@ On the "Export data" tab you can see the table with the story of your exports:
     </tr>
     <tr>
       <td style="text-align:left">From</td>
-      <td style="text-align:left">Start time period</td>
+      <td style="text-align:left">Start date of the export period</td>
     </tr>
     <tr>
       <td style="text-align:left">Till</td>
-      <td style="text-align:left">End time period</td>
+      <td style="text-align:left">End date of the export period</td>
     </tr>
     <tr>
       <td style="text-align:left">Status</td>
       <td style="text-align:left">
         <p>Export status:</p>
         <ul>
-          <li><b>In progress</b> - In process of data export,</li>
-          <li><b>Done</b> - Data export is done,</li>
-          <li><b>No data</b> - The Platform can&apos;t find the necessary data,</li>
-          <li><b>Failed</b> - technical issue, contact us for details.</li>
+          <li><b>In progress</b> - a data export task in awaiting completion</li>
+          <li><b>Done</b> - the process of data export is finished</li>
+          <li><b>No data</b> - the Platform cannot find any data corresponding to the
+            filter parameters</li>
+          <li><b>Failed</b> - technical issue, contact us for details</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">Download</td>
-      <td style="text-align:left">Links to download CSV files.</td>
+      <td style="text-align:left">Link on CSV file to download</td>
     </tr>
   </tbody>
 </table>
 
 ## Actions
 
-First, you need to select what data you want exported:
+Select what type of data is going to be exported by clicking on "**Add**" button and choosing one option at a time.
 
-1. Click "![](../.gitbook/assets/plus_icon.jpeg)Add"
+![Export data types selection menu](../.gitbook/assets/select_type_data_export.png)
 
-![](../.gitbook/assets/select_type_data_export.png)
+A new export task will be created with "**In** _****_**progress**" status and displayed in the list. When processing of the task is complete, the status will change to either "**Done**", "**Failed**" or "**No Data**". In case of success, the link to the export file will appear in the "**Download**" column.
 
-  2. Now pick either _Export Users_, _Export Devices_, _Export Sessions_.  The export will start, and it will be displayed as _In progress_ in the list. When the task is completed successfully, the status will change to _Done_ and the file can be downloaded.
-
-If the task is failed, it can be restarted.
+{% hint style="info" %}
+Failed tasks can be restarted
+{% endhint %}
 
 #### **Exporting Sessions**
 
-To export session data, a date range must be selected. You can choose the range manually or choose a preset \(Today, This week, This month, Yesterday, Last week or Last month\).  
+To export session data, a date range must be selected. You can choose the range manually or use a preset \(Today, This week, This month, Yesterday, Last week or Last month\).  
 
-![](../.gitbook/assets/export_sessions.png)
+![Sessions data export date picker](../.gitbook/assets/export_sessions.png)
 

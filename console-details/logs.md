@@ -10,7 +10,7 @@ Logging interface contains a history of all project changes and represents it a 
 
 ## Log history
 
-![](../.gitbook/assets/logs.png)
+![Log page](../.gitbook/assets/logs.png)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -21,7 +21,7 @@ Logging interface contains a history of all project changes and represents it a 
 
 If you hover the cursor over _Changes_ cell, you can see detailed information, e.g.:
 
-![](../.gitbook/assets/log_sample.png)
+![Example of log entry](../.gitbook/assets/log_sample.png)
 
 ## Actions
 
@@ -29,7 +29,7 @@ If you hover the cursor over _Changes_ cell, you can see detailed information, e
 
 In the top-right corner, there is the filter option ![](../.gitbook/assets/filtr_icon.jpg) . You can click it and change filter options.
 
-![](../.gitbook/assets/logs_filtr.png)
+![Log page filters](../.gitbook/assets/logs_filtr.png)
 
 | Filter Parameter | Description |
 | :--- | :--- |
