@@ -1,7 +1,7 @@
 ---
 description: >-
-  Your application can include paid functions. Usually, free users can only have
-  a 50MB per day, while paid users usually have no traffic limit.
+  Explore how to include paid functions (like no traffic limit) into your
+  application
 ---
 
 # Payment methods
@@ -144,7 +144,7 @@ Requirements for the Plugin of a custom service on your side:
 
 {% page-ref page="custom-payments-plugin-requirements.md" %}
 
-Please contact us for any questions about Plugin.
+Please contact us for any questions about Payment plugin.
 
 ## Actions
 
@@ -154,13 +154,13 @@ If you are going to add a new user payment method to the project, do the followi
 
 1. Click the "![](../../../.gitbook/assets/plus_icon.jpeg)**Add**" button. You will see a form that looks like this:  
 
-![](../../../.gitbook/assets/new_payment_method.png)
+![New payment method](../../../.gitbook/assets/new_payment_method.png)
 
 Fill the name and settings of your payment method.
 
 1. Click "**New payments method**". The result can be seen in the table, for example:  
 
-![](../../../.gitbook/assets/payment_methods.png)
+![Payment methods overview](../../../.gitbook/assets/payment_methods.png)
 
 ### Edit method parameters
 
@@ -168,7 +168,7 @@ If you are going to change settings of an existing payment method, do the follow
 
 1. Select a payment method and click the "![](../../../.gitbook/assets/edit_icon.png)" button. You will see a form that looks like this:  
 
-![](../../../.gitbook/assets/edit_payment_settings.png)
+![Edit payment method dialog](../../../.gitbook/assets/edit_payment_settings.png)
 
 1. Edit the JSON and click "**Edit payments method**". 
 
@@ -178,7 +178,7 @@ If you are going to delete an existing payment method, do the following:
 
 1. Select a payment method and click the "![](../../../.gitbook/assets/delete_icon.png)" button. You will see a form that looks like this:  
 
-![](../../../.gitbook/assets/delete_payment_method.png)
+![Delete payment method dialog](../../../.gitbook/assets/delete_payment_method.png)
 
 1. Click "**Delete payments method**". 
 
