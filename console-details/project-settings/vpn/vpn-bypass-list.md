@@ -1,16 +1,20 @@
+---
+description: Configure domains available directly (without using VPN) by project users
+---
+
 # VPN Bypass list
 
 Some traffic \(by domain\) can avoid the VPN tunnel and go to the Internet directly. To access the feature, add domains to this Bypass list.
 
 ## Actions
 
-### Manually adding a single Domain
+### Manually adding a single domain
 
 If you are going to add one domain to the Bypass list of your project, do the following:
 
 1. Click "![](../../../.gitbook/assets/plus_icon.jpeg)**Add**". A new line without a domain will be created in the list of domains.
 
-![](../../../.gitbook/assets/add_url_bypasslist.png)
+![VPN Bypass list overview](../../../.gitbook/assets/add_url_bypasslist.png)
 
   2. Enter the domain and then click **Add**. The domain will then be moved to the bottom of the list.
 
@@ -29,11 +33,11 @@ if your domain is incorrect, you will get the error message "**Domain is not val
 
   4. Click **Save** so that the changes are saved. As a result, you will see the form for approval of a new Bypass list.  
 
-![](../../../.gitbook/assets/save_bypasslist.png)
+![Save domain list dialog](../../../.gitbook/assets/save_bypasslist.png)
 
   5. Click **Save** to save all changes to your new VPN Bypass list, and then you will see the following window:  
 
-![](../../../.gitbook/assets/bypasslist_changes.png)
+![Successful domain list save dialog](../../../.gitbook/assets/bypasslist_changes.png)
 
   6. You can close it \(click **Close**\) or download this log \(click **Download**\).
 
@@ -51,7 +55,7 @@ fhgk.com
 
   2. Click ![](../../../.gitbook/assets/upload_icon.png) **Upload** and select the text file. You will see all domains in your Bypass list:
 
-![](../../../.gitbook/assets/upload_bypasslist.png)
+![Multiple domains bypass list](../../../.gitbook/assets/upload_bypasslist.png)
 
 {% hint style="warning" %}
 If a domain is incorrect, you will see the error message "**Domain is not valid**" \(see domain _!@\#.fg_ in the screenshot above\).
@@ -59,11 +63,11 @@ If a domain is incorrect, you will see the error message "**Domain is not valid*
 
   3. Click **Save** to save the changes. As a result, you will see a form of approval:  
 
-![](../../../.gitbook/assets/save_bypasslist.png)
+![Save domain list dialog](../../../.gitbook/assets/save_bypasslist.png)
 
   5. Click **Save** to save all changes to you new VPN Bypass list. As a result, you will see a form with the changes, for example:   
 
-![](../../../.gitbook/assets/log_vith_error_bypasslist.png)
+![Successful domain list save dialog](../../../.gitbook/assets/log_vith_error_bypasslist.png)
 
 {% hint style="info" %}
 The incorrect domain will not be included in the new Bypass list \(see screenshot above\).
@@ -77,11 +81,11 @@ The incorrect domain will not be included in the new Bypass list \(see screensho
 
   2. Click **Save**. As a result, you will see a form of approval:  
 
-![](../../../.gitbook/assets/save_bypasslist.png)
+![Save domain list dialog](../../../.gitbook/assets/save_bypasslist.png)
 
   5. Click **Save** again. You will receive a verification form:   
 
-![](../../../.gitbook/assets/save2_bypasslist.png)
+![Successful domain list save dialog](../../../.gitbook/assets/save2_bypasslist.png)
 
   6. Click **Close**.
 
