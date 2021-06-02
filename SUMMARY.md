@@ -4,11 +4,12 @@
 
 ## Getting started
 
-* [Sign up to Management Console](getting-started/sign-up-to-dev-console.md)
+* [Sign up to the Management Console](getting-started/sign-up-to-dev-console.md)
 * [Create a new project](getting-started/add-a-new-project.md)
 * [Switch projects](getting-started/switch-projects.md)
 * [Change console settings](getting-started/change-console-settings.md)
 * [Edit your profile](getting-started/edit-your-profile.md)
+* [Try out the demo app](getting-started/try-out-the-demo-app.md)
 * [Keep exploring](getting-started/keep-exploring.md)
 
 ## Console details

@@ -5,7 +5,7 @@ description: >-
   steps
 ---
 
-# Sign up to Management Console
+# Sign up to the Management Console
 
 ### **How to create a new account**
 
