@@ -17,7 +17,7 @@ This interface provides functionality for viewing and managing server location s
 | Priority | lower value is processed first |
 | Request selector | client location condition |
 | Server selector | selected server location value |
-| Description | extra information on the rule |
+| Description | extra information on the rule \(optional\) |
 
 {% hint style="info" %}
 You can have a JSON representation of request selector by hovering a field in the "**Request selector**" column and copy the text inside the tooltip
@@ -38,6 +38,14 @@ You can get a JSON representation of server selector by hovering a field in the 
 You can add a rule to the pool by clicking the "**Add**" button in the upper right corner; the corresponding dialog box will appear:
 
 ![](../../../.gitbook/assets/screenshot-2021-06-02-at-20.25.58.png)
+
+| Parameter | Description |
+| :--- | :--- |
+| Rule name |  |
+| Rule selector |  |
+| Server selector |  |
+| Description |  |
+| Priority |  |
 
 ### Edit
 
