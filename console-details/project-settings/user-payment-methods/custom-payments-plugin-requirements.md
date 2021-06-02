@@ -1,5 +1,5 @@
 ---
-description: Description and requirements of a user payment plugin.
+description: Learn the description and requirements of the user payment plugin
 ---
 
 # Payments Plugin requirements

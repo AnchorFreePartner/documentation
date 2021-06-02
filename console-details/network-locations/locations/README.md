@@ -1,8 +1,12 @@
+---
+description: Learn how to manage locations available for your project
+---
+
 # Locations
 
-This tab shows the list of project locations. You can access the same list if you call the API `GET`[`/user/countries`](https://backend.northghost.com/doc/all/index.html#!/user-controller/countryList) method in your applications.  
+This tab shows the list of project VPN-node locations. You can access the same list if you call the API `GET`[`/user/countries`](https://backend.northghost.com/doc/all/index.html#!/user-controller/countryList) method in your applications.  
 
-![](../../../.gitbook/assets/net_locations_list.png)
+![Locations tab overview](../../../.gitbook/assets/net_locations_list.png)
 
 <table>
   <thead>
@@ -48,4 +52,12 @@ You can delete a location from your project:
 
 1. Select a location you want to delete from the list.
 2. Click the " ![](../../../.gitbook/assets/delete_icon.png) " icon in the same line. 
+
+### View location details
+
+You can see detailed information on each location in the list by clicking on the entry
+
+{% page-ref page="location-details.md" %}
+
+
 
