@@ -4,7 +4,7 @@
 
 ## Getting started
 
-* [Sign up to the Management Console](getting-started/sign-up-to-dev-console.md)
+* [Sign up on the Management Console](getting-started/sign-up-to-dev-console.md)
 * [Create a new project](getting-started/add-a-new-project.md)
 * [Switch projects](getting-started/switch-projects.md)
 * [Change console settings](getting-started/change-console-settings.md)
