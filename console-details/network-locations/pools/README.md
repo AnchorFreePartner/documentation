@@ -22,7 +22,7 @@ You can have a JSON representation of pool settings by hovering the "**Permissio
 
 ![JSON representation of pool permissions](../../../.gitbook/assets/screenshot-2021-06-02-at-15.57.23.png)
 
-You can see the composition of the pool by clicking on the row.
+You can see the rule composition of the pool by clicking on the row.
 
 {% page-ref page="groups-of-pool.md" %}
 
