@@ -57,7 +57,7 @@ This tab shows you the list of users in the project, e.g.:
     </tr>
     <tr>
       <td style="text-align:left">Status</td>
-      <td style="text-align:left">User&apos;s status (Active or Blocked)</td>
+      <td style="text-align:left">User&apos;s status (<b>Active</b> or <b>Blocked</b>)</td>
     </tr>
     <tr>
       <td style="text-align:left">Registration time</td>
