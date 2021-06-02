@@ -2,13 +2,14 @@
 
 * [What is Aura Developer Platform](README.md)
 
-## Start Exploring
+## Getting started
 
-* [Sign up to Management Console](start-exploring/sign-up-to-dev-console.md)
-* [Create a new project](start-exploring/add-a-new-project.md)
-* [Switch projects](start-exploring/switch-projects.md)
-* [Change console settings](start-exploring/change-console-settings.md)
-* [Edit your profile](start-exploring/edit-your-profile.md)
+* [Sign up to Management Console](getting-started/sign-up-to-dev-console.md)
+* [Create a new project](getting-started/add-a-new-project.md)
+* [Switch projects](getting-started/switch-projects.md)
+* [Change console settings](getting-started/change-console-settings.md)
+* [Edit your profile](getting-started/edit-your-profile.md)
+* [Keep exploring](getting-started/keep-exploring.md)
 
 ## Console details
 
