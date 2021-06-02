@@ -1,5 +1,5 @@
 ---
-description: Firmly grasp all the capabilities of the Management Console
+description: Learn about all available features of the Management Console
 ---
 
 # Keep exploring
