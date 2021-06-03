@@ -1,5 +1,5 @@
 ---
-description: This page helps you to manage users of your project
+description: Explore how to create and manage your project users
 ---
 
 # Users
@@ -184,5 +184,9 @@ You can download the results and close this form.
 
 ### User details
 
-All user data can be seen if you click the user in the list of users. See the next document about this.
+All user data can be seen if you click the user in the list of users. See the next document about this
+
+{% page-ref page="user-page.md" %}
+
+
 
