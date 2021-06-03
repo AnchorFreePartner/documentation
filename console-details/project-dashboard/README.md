@@ -1,11 +1,18 @@
+---
+description: >-
+  Explore a centralized and interactive tool of monitoring, measuring and
+  analysis of several aspects in a way that is both intuitive and visual
+---
+
 # Dashboard
 
-Data dashboards provide a centralized, interactive means of monitoring, measuring and analysis of several aspects while displaying aggregated information in a way that is both intuitive and visual.
+Dashboard section of the Management Console is divided into the following categories:
 
-Dashboard includes following tabs:
+{% page-ref page="general.md" %}
 
-* **General** - assorted information on sessions, users and devices
-* **Location loading** - current project traffic load by location and node
+{% page-ref page="location-loading.md" %}
+
+
 
 
 
