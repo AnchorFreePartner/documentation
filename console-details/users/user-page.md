@@ -1,5 +1,5 @@
 ---
-description: This page outlines all information about the user.
+description: Find out how to get detailed information on specific user
 ---
 
 # User page
@@ -318,7 +318,7 @@ You can delete a user and all his data \(user info, user devices, session story\
 
    3. Click the _"Delete user data"_ button.
 
-{% hint style="info" %}
-This action is irreversible.
+{% hint style="danger" %}
+**Caution**: this action is **irreversible**.
 {% endhint %}
 

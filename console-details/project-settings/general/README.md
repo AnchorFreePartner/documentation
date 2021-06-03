@@ -40,7 +40,7 @@ Each license has 2 parameters. The first parameter is the devices limit, the sec
 
 ![Delete project dialog](../../../.gitbook/assets/delete-project.png)
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **Caution**: this action is **irreversible**
 {% endhint %}
 

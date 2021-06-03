@@ -1,5 +1,5 @@
 ---
-description: This page included graphs of your project.
+description: Get a quick insight into the operational status of the project
 ---
 
 # General
