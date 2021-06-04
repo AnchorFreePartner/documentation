@@ -8,7 +8,7 @@ There is a lot of additional information about the Management Console. Take a de
 
 {% page-ref page="../resources/how-to/" %}
 
-{% page-ref page="../resources/faq/" %}
+
 
 
 

@@ -12,7 +12,7 @@ We can make a plugin for any authentication service compatible with the followin
 
 This is a piece of the full Flow diagram:
 
-{% page-ref page="../../../resources/faq/vpn-platform-flow.md" %}
+{% page-ref page="../../../faq/general/vpn-platform-flow.md" %}
 
 _**oAuth Server**_ - your User authentication service.
 

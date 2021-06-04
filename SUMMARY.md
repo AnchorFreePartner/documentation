@@ -93,10 +93,15 @@
   * [Create a Firebase project for User Authentication](resources/how-to/create-the-firebase-project-for-user-authentication.md)
   * [AWS CloudFront Distribution of the Platform URL](resources/how-to/aws-cloudfront-distribution.md)
   * [How can I get Shared Secret key from iTunes Connect for In-App Purchase](resources/how-to/untitled.md)
-* [FAQ](resources/faq/README.md)
-  * [VPN Platform Flow](resources/faq/vpn-platform-flow.md)
-  * [What data is collected by the Platform?](resources/faq/what-data-collect-the-platform.md)
-  * [What analytic data is collected by your SDK?](resources/faq/what-analytic-data-collect-your-sdk.md)
-  * [How the Platform restricts access to our data?](resources/faq/how-the-platform-restrict-access-to-our-data.md)
-  * [Why DNS Leak tests often indicate that there is DNS Leak?](resources/faq/why-dns-leak-tests-often-indicate-that-there-is-dns-leak.md)
+
+## FAQ
+
+* [General](faq/general/README.md)
+  * [VPN Platform Flow](faq/general/vpn-platform-flow.md)
+  * [What data is collected by the Platform?](faq/general/what-data-collect-the-platform.md)
+  * [What analytic data is collected by your SDK?](faq/general/what-analytic-data-collect-your-sdk.md)
+  * [How the Platform restricts access to our data?](faq/general/how-the-platform-restrict-access-to-our-data.md)
+  * [Why DNS Leak tests often indicate that there is DNS Leak?](faq/general/why-dns-leak-tests-often-indicate-that-there-is-dns-leak.md)
+* [Fireshield](faq/fireshield/README.md)
+  * [Which is the best way - using Fireshield or setting up a DNS service and force the SDK to use it?](faq/fireshield/which-is-the-best-way-using-fireshield-or-setting-up-a-dns-service-and-force-the-sdk-to-use-it.md)
 

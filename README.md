@@ -25,5 +25,5 @@ Try out Platform services - it is the best way to discover its capabilities:
 
 Check out our Frequently Asked Questions:
 
-{% page-ref page="resources/faq/" %}
+
 
