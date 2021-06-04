@@ -101,7 +101,10 @@
   * [What data is collected by the Platform?](faq/general/what-data-collect-the-platform.md)
   * [What analytic data is collected by your SDK?](faq/general/what-analytic-data-collect-your-sdk.md)
   * [How the Platform restricts access to our data?](faq/general/how-the-platform-restrict-access-to-our-data.md)
-  * [Why DNS Leak tests often indicate that there is DNS Leak?](faq/general/why-dns-leak-tests-often-indicate-that-there-is-dns-leak.md)
+  * [Why DNS Leak tests often indicate positive result?](faq/general/why-dns-leak-tests-often-indicate-that-there-is-dns-leak.md)
 * [Fireshield](faq/fireshield/README.md)
+  * [What type of traffic Pango Protection and Fireshield are able to handle?](faq/fireshield/what-type-of-traffic-pango-protection-and-fireshield-are-able-to-handle.md)
+  * [Will the Fireshield filtering work with non-web related traffic?](faq/fireshield/will-the-fireshield-filtering-work-with-non-web-related-traffic.md)
+  * [Does current version of Fireshield is able of leveraging IP and name server data, subnets blocking?](faq/fireshield/does-current-version-of-fireshield-is-able-of-leveraging-ip-and-name-server-data-subnets-blocking.md)
   * [Which is the best way - using Fireshield or setting up a DNS service and force the SDK to use it?](faq/fireshield/which-is-the-best-way-using-fireshield-or-setting-up-a-dns-service-and-force-the-sdk-to-use-it.md)
 
