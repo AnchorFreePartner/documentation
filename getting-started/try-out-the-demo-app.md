@@ -45,11 +45,13 @@ Try to log in by clicking the respective button and take a look on the **Users**
 
 ![](../.gitbook/assets/screenshot-2021-06-08-at-17.09.35.png)
 
+You can get a detailed information on the test user by clicking on the row:
+
 ![](../.gitbook/assets/screenshot-2021-06-08-at-17.09.45.png)
 
+As you can see, the demo app successfully established connection with the oAuth server and acquired an access token:
+
 ![](../.gitbook/assets/screenshot-2021-06-08-at-17.10.01.png)
-
-
 
 ## Possible issues
 
