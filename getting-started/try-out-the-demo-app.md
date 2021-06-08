@@ -53,15 +53,15 @@ Try to log in by clicking the respective button and take a look on the **Users**
 
 ## Possible issues
 
+* Due to the fact that Xcode and iOS versions are constantly updated, an error may occur:
+
 > Building for iOS Simulator, but the linked and embedded framework was build for iOS + iOS Simulator
 
-
-
->
+This problem can be fixed by setting the following value for the parameter "**Validate Workspace**" in the "**Build settings**" section of the _target_:
 
 ![](../.gitbook/assets/screenshot-2021-06-08-at-14.26.51.png)
 
-If you are building the project on the M1 Apple Silicon, you can also get another error:
+* If you are building the project on the M1 Apple Silicon, you can also get another error:
 
 > Building for iOS Simulator, but linking in dylib built for iOS
 
