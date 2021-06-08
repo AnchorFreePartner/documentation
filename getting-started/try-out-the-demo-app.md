@@ -37,7 +37,7 @@ Build the project and run it in the simulator. The running application should lo
 
 ![](../.gitbook/assets/screenshot-2021-06-08-at-17.26.43.png)
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Be aware that simulation of iOS device does not support opening of the VPN sessions and is limited to log in function
 {% endhint %}
 
