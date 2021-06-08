@@ -6,6 +6,8 @@ description: Get your hands on the real experience with the demo application
 
 ## General
 
+To get a better idea of the system, we suggest setting up and building a test iOS application, and then see the results of its work in the Management Console. 
+
 You can get the latest demo Xcode project from the repository:
 
 {% embed url="https://github.com/AnchorFreePartner/caketubesdk-demo-ios" %}
