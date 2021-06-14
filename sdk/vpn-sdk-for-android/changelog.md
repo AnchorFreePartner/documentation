@@ -2,6 +2,43 @@
 
 
 
+### 3.4.12
+
+* various bug fixes 
+* memory usage improvements
+
+### 3.4.11
+
+* Compatibility with Android S preview
+
+### 3.4.10
+
+* Android 11 timeout fix
+
+### 3.4.9
+
+* various bug fixes 
+
+### 3.4.6 - 3.4.8
+
+* analytics improvements
+
+### 3.4.5
+
+* reconnection loop fix
+
+### 3.4.4
+
+* analytics fix
+
+### 3.4.3
+
+* Remaining traffic fix
+
+### 3.4.1 - 3.4.2
+
+* internal improvements
+
 ### 3.4.0
 
 * Hydra transport updated
