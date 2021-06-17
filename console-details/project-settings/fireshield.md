@@ -19,6 +19,7 @@ Fireshield is a network security service; turned on, it will check all project u
   * **path** - a path to the particular page on the web-site \(e.g. example.html\)
 * **Services** - a list of database sources used to determine if resource is safe / unsafe
   * **securityzones** - synchronized every 5 minutes
+  * **ip** - 
   * **bbss** - merged to own database once a day
   * **bitdefender** - requested in real time and supplemented with 30 minutes life time cache \(can be cleared earlier if the number of records is more than 20 000\)
 * **Categories** - a list of pre-determined web-resource categories with general **safe** / **unsafe** and more specific:
