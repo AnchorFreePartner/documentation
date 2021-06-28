@@ -7,7 +7,7 @@ description: >-
 
 # Hydra VPN SDK demo for OpenWRT
 
-GitHub project link
+[GitHub project link](https://github.com/AnchorFreePartner/hydra-sdk-wrt/tree/ng)
 
 ## Compatibility
 
@@ -32,7 +32,9 @@ If package installation was succeeded, the next files should appear on your WRT 
 * /etc/afwrt/whoami.in   - VPN SDK library configuration template
 * /etc/afwrt-ws.conf        - VPN SDK client configuration
 
-Please take a look at the section below and check /etc/afwrt-ws.conf was configured properly for your setup and execute afwrt-ws binary with root privileges.  
+Please take a look at the section below and check /etc/afwrt-ws.conf was configured properly for your setup and execute afwrt-ws binary with root privileges.
+
+You can download [pre-compiled library and binary files for x86\_64](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_OpenWRT_version_latest.zip?alt=media&token=8ec44727-dc79-4299-b17c-b926840473e3) architecture  
 
 
 ### Configuration

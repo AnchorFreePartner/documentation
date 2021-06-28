@@ -4,7 +4,7 @@ description: >-
   Windows application with required Hydra custom VPN protocol support.
 ---
 
-# Hydra SDK for Windows
+# Hydra VPN SDK for Windows
 
 Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_Win_version_1.4.1.285_partnerapi_1.0.3.56_with_TAP_signed.zip?alt=media&token=73debe41-b872-4355-948d-b27f7a830ba1)
 
