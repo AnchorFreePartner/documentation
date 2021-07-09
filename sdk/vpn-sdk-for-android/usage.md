@@ -1,6 +1,28 @@
 # Usage
 
-## Usage
+### Core classes
+
+**ClientInfo** - Information about the project used to access the sdk
+```text
+carrierId - project id from dashboard
+baseUrl - base url for backend api calls
+```
+
+**AuthMethod** - Authenthication method
+
+**SessionConfig** - configuration class for VPN session
+
+**VPNState** - current state of VPN session
+```text
+- IDLE - no VPN session
+- PAUSED - VPN session was started, and now its in paused state, waiting to reconnect
+- DISCONNECING - session stop in progress
+- CONNECTED - VPN session is up and active
+- CONNECTING_CREDENTIALS - loading vpn session credentials
+- CONNECTING_PERMISSIONS - asking user about the VPN permission
+- CONNECTING_VPN - connecting transport
+```
+
 
 ### Set Up
 
