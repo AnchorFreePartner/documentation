@@ -48,6 +48,7 @@
 
 * [Unified VPN SDK for Android](sdk/vpn-sdk-for-android/README.md)
   * [Configuration](sdk/vpn-sdk-for-android/configuration.md)
+  * [Custom sdk dependencies](sdk/vpn-sdk-for-android/custom-sdk-dependencies.md)
   * [Usage](sdk/vpn-sdk-for-android/usage.md)
   * [CNL List](sdk/vpn-sdk-for-android/cnl-list.md)
   * [Fireshield\(Hydra transport\)](sdk/vpn-sdk-for-android/fireshield-hydra-transport.md)

@@ -69,6 +69,7 @@ dependencies {
 ## Other Resources:
 
 * [Configuration](configuration.md)
+* [Custom sdk dependencies](custom-sdk-dependencies.md)
 * [Usage](usage.md)
 * [Client network list](cnl-list.md)
 * [Fireshield](fireshield-hydra-transport.md)
