@@ -1,6 +1,8 @@
 # Changelog
 
+### 3.4.13
 
+* custom external logger
 
 ### 3.4.12
 
