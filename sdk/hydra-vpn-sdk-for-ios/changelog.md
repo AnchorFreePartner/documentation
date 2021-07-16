@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## \[Unreleased\]
 
+### 
+
+### \[3.2.1\] - 2021-15-07
+
+### Fixed
+
+* Fixed connection issue which can occur between switching networks with enabled killswitch.
+
 ### \[3.2.0\] - 2021-23-03
 
 ### Updated
