@@ -1,12 +1,12 @@
 # What analytic data is collected by your SDK?
 
-The main purpose for this is to improve the connection quality of the SDK. SDK collects anonymous data about a device and connection start and stop attempts.
+The main purpose of this is to improve the connection quality of the SDK. SDK collects anonymous data about a device and connection start and stop attempts.
 
-SDK performs Network Availability Test for better understanding what's happening when a connection error is received. It includes diagnostics of the current network connection such as a Captive Portal check, pinging of a popular public web resource etc.
+SDK performs Network Availability Test for better understanding what's happening when a connection error is received. It includes diagnostics of the current network connection such as a Captive Portal check, pinging of a popular public web resource, etc.
 
 ## Common properties
 
-### Common Android device related properties:
+### Common Android device-related properties:
 
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -17,14 +17,14 @@ SDK performs Network Availability Test for better understanding what's happening
 | app\_version | String | Application version name |
 | app\_release | String | Application version code |
 | carrier | String | Telephony carrier |
-| has\_telephone | Boolean | Shows if device is a phone |
+| has\_telephone | Boolean | Shows if the device is a phone |
 | memory\_remains | String | Remaining RAM |
 | memory\_total | String | Total RAM |
 | model | String | android.os.Build.MODEL |
 | device\_manufacturer | String | android.os.Build.MANUFACTURER |
 | locale | String | Current device locale |
 | device\_language | String | Current device language |
-| hydra\_base\_url | String | Base api url |
+| hydra\_base\_url | String | Base API URL |
 | android\_sdk\_int | String | Build.VERSION.SDK\_INT |
 | android\_version\_name | String | Build.VERSION.RELEASE |
 | connection\_type | String | Type of current active network |
@@ -33,7 +33,7 @@ SDK performs Network Availability Test for better understanding what's happening
 | sdk\_version | String | SDK version name |
 | sdk\_version\_code | Integer | SDK version code |
 
-### Common iOS and macOS device related properties
+### Common iOS and macOS device-related properties
 
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -55,7 +55,7 @@ SDK performs Network Availability Test for better understanding what's happening
 | server\_protocol | String | SDK server protocol e.g., hydra |
 | sim\_country | String | Country of carrier |
 | wifi | Bool | Indicates if a device is on Wi-Fi network |
-| time | Integer | The current time on device in unix format |
+| time | Integer | The current time on device \(in UNIX format\) |
 
 ### Common connection properties for all platforms
 
@@ -105,10 +105,10 @@ SDK performs Network Availability Test for better understanding what's happening
       <th style="text-align:left">notes</th>
       <th style="text-align:left">JSON</th>
       <th style="text-align:left">
-        <p>Additional information. For now it holds:</p>
+        <p>Additional information. For now, it holds:</p>
         <ul>
           <li>detailed info about <em>network_availabilty</em> test if one was conducted</li>
-          <li>sd_tag - json passed by hydra. Example:</li>
+          <li>sd_tag - JSON passed by hydra. Example:</li>
         </ul>
         <p><code>{</code>
         </p>
@@ -138,18 +138,18 @@ SDK performs Network Availability Test for better understanding what's happening
       <th style="text-align:left">parent_caid</th>
       <th style="text-align:left">String</th>
       <th style="text-align:left">
-        <p>If previous attempt failed and technical reconnect happened (e.g. in case
-          of network change or 3 attempts during button click)</p>
+        <p>If the previous attempt failed and technical reconnect happened (e.g.
+          in case of network change or 3 attempts during button click)</p>
         <p>We log here parent caid.</p>
         <p><em>Parent_caid</em> - caid of original connection attempt initiated by
-          user.</p>
+          the user.</p>
       </th>
     </tr>
   </thead>
   <tbody></tbody>
 </table>
 
-| is\_ipv6\_only | Integer \(0 or 1\) | Flag that shows if the ISP supports only IPv6 protocol \(1 if yes, 0 if no\). Should be defined by the client. |
+| is\_ipv6\_only | Integer \(0 or 1\) | the flag that shows if the ISP supports only IPv6 protocol \(1 if yes, 0 if no\). Should be defined by the client. |
 | :--- | :--- | :--- |
 
 
@@ -166,7 +166,7 @@ There are 4 connection events:
 * **connection\_end,** 
 * **connection\_end\_detailed**. 
 
-We are using **\*\_detailed** events mostly for diagnostic if a connection really works and what the possible reason if a connection could not be established.
+We are using **\*\_detailed** events mostly for diagnostic if a connection really works and what the possible reason for a connection could not be established.
 
 ### Event: _connection\_start_
 
@@ -177,19 +177,19 @@ Properties specific for event _connection\_start_:
 | **Property Name** | **Type** | **Notes** |
 | :--- | :--- | :--- |
 | duration | Integer | how long it took to establish a connection or stop trying to connect, in **milliseconds** |
-| notes | JSON | Provides the additional information if any related to the connection process. |
+| notes | JSON | Provides additional information if any related to the connection process. |
 
 ### Event: _connection\_start\_detailed_
 
 Event reports additional details regarding all finished connection attempts to particular IPs \(main, offload\), including successful.
 
-If the connection attempt was unsuccessful, network availability check should be performed and reported in network\_availability and notes properties.
+If the connection attempt was unsuccessful, a network availability check should be performed and reported in network\_availability and notes properties.
 
 Properties specific for event _connection\_start\_detailed_:
 
 | **Property Name** | **Type** | **Notes** |
 | :--- | :--- | :--- |
-| network\_availability | Float | Share of passed Network Availability tests rounded to 2 digits after decimal point. |
+| network\_availability | Float | Share of passed Network Availability tests rounded to 2 digits after the decimal point. |
 | notes | JSON | detailed results of the Network Availability Test. |
 | details | JSON | an array of JSONs with connection results to all low level attempts to connect. |
 
