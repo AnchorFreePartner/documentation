@@ -53,5 +53,3 @@ You can delete a location from your project:
 1. Select a location you want to delete from the list.
 2. Click the " ![](../../.gitbook/assets/delete_icon.png) " icon in the same line. 
 
-
-
