@@ -8,6 +8,8 @@ Network section of the Management Console is divided into the following categori
 
 {% page-ref page="locations.md" %}
 
+{% page-ref page="locations-1.md" %}
+
 {% page-ref page="pools/" %}
 
 
