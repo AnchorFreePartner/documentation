@@ -8,7 +8,7 @@ description: Take a look on available free / pro locations composed from selecte
 
 This screen is used for locations list configuration and view. However, you cannot manually switch flags \(limited/unlimited/private\) for any location in the table. Values of the table are calculated based on the pools selected.
 
-![Locations screen overview](../../.gitbook/assets/locations.png)
+![](../../.gitbook/assets/screenshot-2021-08-09-at-8.46.02-pm.png)
 
 | Parameter | Description |
 | :--- | :--- |
