@@ -70,7 +70,7 @@
 
 ## REST API
 
-* [Partner API](https://backend.northghost.com/doc/partner/index.html)
+* [Partner API](https://anchorfreepartner.github.io/apidocs/partner.html)
 * [User API](https://anchorfreepartner.github.io/apidocs/user.html)
 
 ## Sample applications <a id="demo-applications"></a>
