@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.4.16
+
+* Fix for cash on &gt; 100 calls to registerNetworkCallback
+
+### 3.4.15
+
+* Fix for encryption Initialization race condition
+* Fix stuck on connecting after app update
+
 ### 3.4.13
 
 * custom external logger
