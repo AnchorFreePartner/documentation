@@ -72,7 +72,6 @@
 
 * [Partner API](https://anchorfreepartner.github.io/apidocs/partner.html)
 * [User API](https://anchorfreepartner.github.io/apidocs/user.html)
-* [User API v2](https://anchorfreepartner.github.io/apidocs/user2.html#overview)
 
 ## Sample applications <a id="demo-applications"></a>
 
