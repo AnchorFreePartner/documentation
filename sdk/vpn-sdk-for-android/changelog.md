@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.4.17
+
+* fix for reconnection with kill switch enabled
+
 ### 3.4.16
 
 * Fix for cash on &gt; 100 calls to registerNetworkCallback
