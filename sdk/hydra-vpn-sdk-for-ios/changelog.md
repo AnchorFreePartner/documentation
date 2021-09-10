@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### 
 
+## [3.2.2] - 2021-10-09
+## Implemented
+
+- Implemented city support of virtual location.
+
+
 ### \[3.2.1\] - 2021-15-07
 
 ### Fixed
