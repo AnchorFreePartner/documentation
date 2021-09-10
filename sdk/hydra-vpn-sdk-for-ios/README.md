@@ -12,7 +12,7 @@ HydraSDK for iOS and macOS provides client API to authorize users and connect th
 
 ## Download latest SDK:
 
-[VPN SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%203.2.1.zip?alt=media&token=e558cffb-1ac0-46db-8063-abce9a9e7b8a)
+[VPN SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FVPNSDK%203.2.2.zip?alt=media&token=e558cffb-1ac0-46db-8063-abce9a9e7b8a)
 
 ## Prerequisites
 
