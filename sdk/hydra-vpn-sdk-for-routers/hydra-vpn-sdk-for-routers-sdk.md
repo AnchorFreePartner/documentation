@@ -1,6 +1,6 @@
 # SDK. Shared library.
 
-Router SDK provides a shared library \(with C header file\) which can be integrated with Application using C calls.
+Router SDK provides a shared library \(with a C header file\) that can be integrated with Applications using C calls.
 
 ## SDK C API
 
@@ -10,9 +10,9 @@ int afwrt_init(const char *params_json, void (event_callback)(const char *event_
 
 Initialize library. Must be called once before using the library. 
 
-`params_json` - configuration in json format. See ["Configuration"](hydra-vpn-sdk-for-routers-sdk.md#configuration) section below. Can't be NULL. 
+`params_json` - configuration in JSON format. See the ["Configuration"](hydra-vpn-sdk-for-routers-sdk.md#configuration) section below. Can't be NULL. 
 
-`event_callback` - callback function to receive periodic SDK events. See ["Callback events" ](hydra-vpn-sdk-for-routers-sdk.md#callback-events)section below. Can be NULL.
+`event_callback` - callback function to receive periodic SDK events. See the ["Callback events" ](hydra-vpn-sdk-for-routers-sdk.md#callback-events)section below. Can be NULL.
 
 ```text
 int afwrt_deinit(void); 
@@ -36,7 +36,7 @@ Stop library event loop.
 char* afwrt_get_available_countries(void);
 ```
 
-Returns json string with list of available VPN locations, or NULL on error. String must be free\(\)-ed by the caller. 
+Returns JSON string with a list of available VPN locations, or NULL on error. The string must be free\(\)-ed by the caller. 
 
 Return string example: `[ "br", "ca", "de", "fr", "gb", "it", "jp", "mx", "us" ]`
 
@@ -44,7 +44,7 @@ Return string example: `[ "br", "ca", "de", "fr", "gb", "it", "jp", "mx", "us" ]
 int afwrt_protect_ip_addr(const char *ip_addr, const char *country);
 ```
 
-Add rule to route traffic from specified IP address via specified VPN country. Returns 0 on success, -1 on error. Safe to call multiple times to change country.
+Add a rule to route traffic from a specified IP address via a specified VPN country. Returns 0 on success, -1 on error. Safe to call multiple times to change the country.
 
 `ip_addr` - IP address to protect
 
@@ -62,7 +62,7 @@ Remove rule to route traffic from specified IP address via VPN. Returns 0 on suc
 int afwrt_protect_mac_addr(const char *mac_addr, const char *country);
 ```
 
-Add rule to route traffic from specified MAC address via specified VPN country. Returns 0 on success, -1 on error. Safe to call multiple times to change country.
+Add a rule to route traffic from a specified MAC address via a specified VPN country. Returns 0 on success, -1 on error. Safe to call multiple times to change the country.
 
 `mac_addr` - MAC address to protect
 
@@ -80,7 +80,7 @@ Remove rule to route traffic from specified MAC address via VPN. Returns 0 on su
 int afwrt_protect_iface(const char *iface, const char *country);
 ```
 
-Add rule to route traffic from specified interface via specified VPN country. Returns 0 on success, -1 on error. Safe to call multiple times to change country.
+Add a rule to route traffic from a specified interface via a specified VPN country. Returns 0 on success, -1 on error. Safe to call multiple times to change the country.
 
 `iface` - interface to protect
 
@@ -94,13 +94,37 @@ Remove rule to route traffic from specified interface via VPN. Returns 0 on succ
 
 `iface` - interface to unprotect
 
+```text
+const char *afwrt_register_device(const char *project_id,
+                                  const char *device_id, 
+                                  const char *device_type,
+                                  const char *auth_method, 
+                                  const char *auth_token);
+```
+
+Register a new device and returns an access token, that will also be included in the configuration. A const allocation for the token would be considered a good practice. 
+
+`project_id` - the public key of the project, which is sometimes referred to as project name or carrier ID.
+
+`device_id` - a desirable device identifier, which will be generated if this parameter is empty
+
+`device_type` - any value \(i.e. Android / macOS / Windows / iOS\)
+
+`auth_method` - any supported OAuth provider \(i.e. Firebase\) or anonymous
+
+`auth_token` - OAuth token \(if a relevant OAuth provider is set for the auth method\)
+
+## Typical workflow
+
+
+
 ## Callback events
 
 ```text
 "route_connected"
 ```
 
-This event is sent when link to one of virtual locations became active. 
+This event is sent when a link to one of the virtual locations became active. 
 
 _Example:_ `{ "event": "route_connected", "route_name": "us" }`
 
@@ -108,7 +132,7 @@ _Example:_ `{ "event": "route_connected", "route_name": "us" }`
 "route_disconnected"
 ```
 
-This event is sent when active link to one of virtual locations became inactive due to SDK stop, network condition or for the other external reason. 
+This event is sent when an active link to one of the virtual locations became inactive due to SDK stop, network condition, or for another external reason. 
 
 _Example:_ `{ "event": "route_disconnected", "route_name": "us" }`
 
@@ -116,7 +140,7 @@ _Example:_ `{ "event": "route_disconnected", "route_name": "us" }`
 "route_failed"
 ```
 
-This event is sent when link to one of virtual locations can not be established. 
+This event is sent when a link to one of the virtual locations can not be established. 
 
 _Example:_ `{ "event": "route_failed", "route_name": "fr", "reason_details": "connection failed" }`
 
@@ -124,7 +148,7 @@ _Example:_ `{ "event": "route_failed", "route_name": "fr", "reason_details": "co
 "bandwidth_info"
 ```
 
-Event is sent periodically to client application. 
+An event is sent periodically to the client application. 
 
 _Example:_ `{ "event": "bandwidth_info", "bandwidth_info": [ { "data_interval_ms": 100, "n_points": 100, "points_downstream": 0, "points_upstream": 0, "route_name": "us" }, { "data_interval_ms": 100, "n_points": 100, "points_downstream": 0, "points_upstream": 0, "route_name": "de" } ] }`
 
@@ -161,7 +185,7 @@ _Example:_ `"eth1"`
 "vl_default"
 ```
 
-Default virtual location, country code. By default, all traffic routed to SDK TUN interface goes through this location. If not specified or empty, SDK will try to get optimal location which can be configured on backend side. 
+Default virtual location, country code. By default, all traffic routed to the SDK TUN interface goes through this location. If not specified or empty, SDK will try to get an optimal location that can be configured on the backend side. 
 
 _Default:_ `""`\(empty, see above\)
 
@@ -179,7 +203,7 @@ _Default:_ `"https://default-backend.net"`
 "data_report_interval"
 ```
 
-Event report interval in milliseconds. Time interval between bandwidth events \(see ["Callback events"](hydra-vpn-sdk-for-routers-sdk.md#callback-events) section above\). 
+Event report interval in milliseconds. The time interval between bandwidth events \(see ["Callback events"](hydra-vpn-sdk-for-routers-sdk.md#callback-events) section above\). 
 
 _Default:_ `30000` \(30 seconds\)
 
@@ -187,7 +211,7 @@ _Default:_ `30000` \(30 seconds\)
 "default_gateway"
 ```
 
-Redirect all traffic including router's to SDK TUN interface. Do not create any specific iptables rule for protected IP, MAC or interface\(see ["Routing"](hydra-vpn-sdk-for-routers-sdk.md#routing) section below\), but add a global traffic redirection rule. 
+Redirect all traffic including router to SDK TUN interface. Do not create any specific iptables rule for protected IP, MAC, or interface\(see ["Routing"](hydra-vpn-sdk-for-routers-sdk.md#routing) section below\), but add a global traffic redirection rule. 
 
 _Default:_ `0`
 
@@ -195,7 +219,7 @@ _Default:_ `0`
 "config_dir"
 ```
 
-Location of VPN core temporary files. SDK creates or updates a set of temporary files on each start. There should be already created directory for them. 
+Location of VPN core temporary files. SDK creates or updates a set of temporary files on each start. A directory should be already created for them.
 
 _Default:_ `"/etc/afwrt"`
 
@@ -229,7 +253,7 @@ _Example:_ `"protected_ip_addrs": [ { "ip_addr": "192.168.50.159", "country_code
 "protected_mac_addrs"
 ```
 
- Array of protected MAC addresses with not empty `"mac_addr"` and `"country_code"` fields. 
+ An array of protected MAC addresses with no empty `"mac_addr"` and `"country_code"` fields. 
 
 _Default:_ `""`\(empty, no MAC addresses to protect\). 
 
@@ -239,7 +263,7 @@ _Example:_ `"protected_mac_addrs": [ { "mac_addr": "08:00:27:AA:D7:17", "country
 "protected_ifaces"
 ```
 
-Array of interfaces with not empty `"iface"`and `"country_code"` fields. 
+An array of interfaces with not empty `"iface"`and `"country_code"` fields. 
 
 _Default:_ `""`\(empty, no interface to protect\). 
 
@@ -247,13 +271,13 @@ _Example:_ `"protected_ifaces": [ { "iface": "eth1", "country_code": "us" }, { "
 
 ## OS level routing
 
-To protect traffic, SDK creates TUN device and routes all packets or packets with specific source IP, MAC or interface to it. To achieve this, SDK creates a set of routing and/or firewall \(iptables\) rules.
+To protect traffic, SDK creates a TUN device and routes all packets or packets with specific source IP, MAC, or interface to it. To achieve this, SDK creates a set of routing and/or firewall \(iptables\) rules.
 
 ### Simple scenario. `"default_gateway"` option enabled.
 
-Redirect just all traffic including router's to TUN device. 
+Redirect just all traffic including router to TUN device. 
 
-To be smarter, SDK not changing default route of router's "main" table, but adding two big subnets with high metric. `0.0.0.0/1` and `128.0.0.0/1` for IPv4, for example.
+To be smarter, SDK not changing the default route of the router "main" table, but adding two big subnets with high metrics. `0.0.0.0/1` and `128.0.0.0/1` for IPv4, for example.
 
 ```text
 # ip route show table main
@@ -279,7 +303,7 @@ Second, SDK creates a rule to forward all packets with 0x8 mark to table 47.
 10:	from all fwmark 0x8 lookup 47
 ```
 
-Third, SDK creates custom iptables chain which will contain all specific IP, MAC and interface rules.
+Third, SDK creates a custom iptables chain that will contain all specific IP, MAC, and interface rules.
 
 ```text
 # iptables -L -t mangle
@@ -288,9 +312,9 @@ target     prot opt source               destination
 afwrt_chain  all  --  anywhere             anywhere 
 ```
 
-Such rules can be loaded from config on initialization phase or changed dynamically using protection methods [above](hydra-vpn-sdk-for-routers-sdk.md#sdk-c-api). Each rule marks specified IP, MAC or interface with 0x8 mark. 
+Such rules can be loaded from config on the initialization phase or changed dynamically using the protection methods [above](hydra-vpn-sdk-for-routers-sdk.md#sdk-c-api). Each rule marks specified IP, MAC, or interface with 0x8 mark. 
 
-Example of interface, MAC and IP rules:
+Example of the interface, MAC, and IP rules:
 
 ```text
 # iptables -L -t mangle -v
@@ -301,36 +325,36 @@ Chain afwrt_chain (1 references)
     1    76 MARK       all  --  any    any     192.168.50.139       anywhere             MARK set 0x8
 ```
 
-It doesn't matter in which order rules will appeared. All routing priority logic done by SDK internally \(see [below](hydra-vpn-sdk-for-routers-sdk.md#routing-rules-priority)\).
+It doesn't matter in which order rules will appear. All routing priority logic is done by SDK internally \(see [below](hydra-vpn-sdk-for-routers-sdk.md#routing-rules-priority)\).
 
 ## VPN Core level routing
 
-Regardless of OS level routing mechanism, core is always ready to do selective routing based on IP, MAC and interface rules if any. If no rules specified, traffic will go to `"vl_default"` route as described [above](hydra-vpn-sdk-for-routers-sdk.md#all-configuration-parameters).
+Regardless of the OS-level routing mechanism, the core is always ready to do selective routing based on IP, MAC, and interface rules if any. If no rules are specified, traffic will go to `"vl_default"` route as described [above](hydra-vpn-sdk-for-routers-sdk.md#all-configuration-parameters).
 
 ## Routing rules priority
 
 MAC address rule has higher priority than IP address rule. IP address rule has higher priority than Interface rule.
 
-For example, there are following rules:
+For example, there are the following rules:
 
-* route traffic from device with MAC address `"08:00:27:AA:D7:17"` via `"us"`
-* route traffic from device with IP address `"192.168.50.139"` via `"de"`
+* route traffic from a device with a MAC address `"08:00:27:AA:D7:17"` via `"us"`
+* route traffic from a device with an IP address `"192.168.50.139"` via `"de"`
 
 If both addresses \(MAC and IP\) belongs to the same device, traffic will be routed via `"us"` VPN country.
 
 ## MAC and Interface to IP resolution
 
-To be able to distinguish device traffic on L3 network layer SDK needs it's IP address. 
+To be able to distinguish device traffic on the L3 network layer SDK needs its IP address. 
 
-SDK maintains mapping from MAC or Interface to IP addresses internally. 
+SDK maintains a mapping from MAC or Interface to IP addresses internally. 
 
-It subscribes to changes in neighbors table using netlink, asking for ones with the following states: `NUD_REACHABLE`, `NUD_DELAY`, `NUD_PROBE`, `NUD_PERMANENT`, `NUD_STALE`.
+It subscribes to changes in neighbors table using a netlink, asking for ones with the following states: `NUD_REACHABLE`, `NUD_DELAY`, `NUD_PROBE`, `NUD_PERMANENT`, `NUD_STALE`.
 
 ## OpenWRT
 
 ### Firewall
 
-Depends on your firmware version, you may need to insert additional iptables rules manually or via OpenWRT CI. Such rules may look like:
+Depends on your firmware version, you may need to insert additional iptables rules manually or via OpenWRT CI. Such rules may look like this:
 
 ```text
 # iptables -I FORWARD -i bridge_iface -o tun_iface -j ACCEPT
