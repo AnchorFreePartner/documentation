@@ -117,7 +117,7 @@ Add access token value to the current configuration
 
 You should implement your own OAuth token obtaining mechanism and use it before `afwrt_register_device` call.
 
-![](../../.gitbook/assets/untitled-diagram.png)
+![](../../.gitbook/assets/untitled-diagram-3-.png)
 
 ## Callback events
 
