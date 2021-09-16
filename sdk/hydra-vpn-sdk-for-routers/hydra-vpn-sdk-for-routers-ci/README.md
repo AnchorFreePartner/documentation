@@ -12,10 +12,9 @@ Major options of the configuration:
 | :--- | :--- | :--- |
 | auth\_method | char | Any supported OAuth provider \(i.e. Firebase\) or anonymous |
 | auth\_token | char | OAuth token \(if a relevant OAuth provider is set for the auth method\) |
-| access\_token | char | Platform access token \(is acquired from the successful login response\) |
-| device\_id | char | Desirable device identifier, default value will be used if this parameter is empty |
-| device\_type | char | Any value \(i.e. Android / macOS / Windows / iOS\) |
-| project\_id | char | Public key of the project, which is sometimes referred to as project name or carrier ID. |
+| device\_id | char | Desirable device identifier. The default value "default\_device\_id" will be used if this parameter is empty |
+| device\_type | char | Any value \(i.e. Android / macOS / Windows / iOS\). The default value "wrt" will be used if this parameter is empty |
+| project\_id | char | Public key of the project, which is sometimes referred to as project name or carrier ID. The default value "af\_router\_sdk\_test" will be used if this parameter is empty |
 
 ## Running
 

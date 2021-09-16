@@ -99,7 +99,7 @@ const char *afwrt_register_device(const char *auth_method,
                                   const char *auth_token);
 ```
 
-Register a new device and returns an access token, that will also be included in the configuration. A const allocation for the token would be considered a good practice. 
+Register a new device and returns an access token, that will also be included in the configuration. Saving a received token value would be considered a good practice. 
 
 `auth_method` - any supported OAuth provider \(i.e. Firebase\) or anonymous
 
@@ -115,7 +115,9 @@ Add access token value to the current configuration
 
 ## Typical workflow
 
+You should implement your own OAuth token obtaining mechanism and use it before `afwrt_register_device` call.
 
+![](../../.gitbook/assets/untitled-diagram.png)
 
 ## Callback events
 
