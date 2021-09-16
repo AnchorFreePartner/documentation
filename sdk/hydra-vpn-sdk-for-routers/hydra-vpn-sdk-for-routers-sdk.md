@@ -95,24 +95,23 @@ Remove rule to route traffic from specified interface via VPN. Returns 0 on succ
 `iface` - interface to unprotect
 
 ```text
-const char *afwrt_register_device(const char *project_id,
-                                  const char *device_id, 
-                                  const char *device_type,
-                                  const char *auth_method, 
+const char *afwrt_register_device(const char *auth_method, 
                                   const char *auth_token);
 ```
 
 Register a new device and returns an access token, that will also be included in the configuration. A const allocation for the token would be considered a good practice. 
 
-`project_id` - the public key of the project, which is sometimes referred to as project name or carrier ID.
-
-`device_id` - a desirable device identifier, which will be generated if this parameter is empty
-
-`device_type` - any value \(i.e. Android / macOS / Windows / iOS\)
-
 `auth_method` - any supported OAuth provider \(i.e. Firebase\) or anonymous
 
 `auth_token` - OAuth token \(if a relevant OAuth provider is set for the auth method\)
+
+```text
+int afwrt_set_access_token(const char *access_token)
+```
+
+Add access token value to the current configuration
+
+`access_token` - platform API access token, received from `afwrt_register_device` method
 
 ## Typical workflow
 
