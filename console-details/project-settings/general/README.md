@@ -25,7 +25,7 @@ Each license has 2 parameters. The first parameter is the devices limit, the sec
 
 * **Config** - you can see and change the specific project parameters \(JSON format\). Details:
 
-{% page-ref page="project-config-description-json-format.md" %}
+{% page-ref page="project-config-description-json-format/" %}
 
 * **Optimal location** - this parameter switches the "Optimal location" setting for this project on or off. By default, this parameter is switched on \("_enabled_"\). As a result, your application will ask credentials without the "_Location_" parameter. The Platform will provide the optimal \(nearest\) VPN nodes for connecting. If this parameter is set to "_disabled_", you should set location for any credentials request. A request for credentials without the location parameter will return the error.
 * **Network template** - not used anymore.

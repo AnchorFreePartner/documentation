@@ -18,7 +18,7 @@ description: Find out how to create custom or choose exiting pools for your proj
 
 You can see the rule composition of the pool by clicking on the row.
 
-{% page-ref page="groups-of-pool/" %}
+{% page-ref page="groups-of-pool.md" %}
 
 ## Actions
 

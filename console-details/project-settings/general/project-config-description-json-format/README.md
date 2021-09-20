@@ -49,7 +49,7 @@ An example of JSON config is:
 
 **support** - support emails for the project. You can set email addresses in case users want to contact support in the application. Please set this parameter in the Member tab:
 
-{% page-ref page="../members.md" %}
+{% page-ref page="../../members.md" %}
 
 **sd** - special parameters for Hydra VPN protocol and Firebase service. Please contact us for any changes to this parameter.
 
@@ -57,7 +57,7 @@ An example of JSON config is:
 
 **bpl** - bypass list ID. If you put URLs on the bypass list, the BPL file will be automatically created and added to this JSON config. To learn how to add URLs to BPL, see the "VPN Bypass list" tab:
 
-{% page-ref page="../vpn/vpn-bypass-list.md" %}
+{% page-ref page="../../vpn/vpn-bypass-list.md" %}
 
 The SDK will download the BPL file regularly and use it for the Bypass feature. A URL for downloading the file looks like this: _https://internal.northghost.com/storage/project/**project\_name**/files/bpl/**1a420b6f34466fc14bd88a814e9b31f153856d11**_
 
@@ -65,7 +65,7 @@ where _project\_name_ is your project ID, _1a420b6f34466fc14bd88a814e9b31f153856
 
 **cnl** - the list of client network IDs. If you set networks to the CNL, the CNL file will be automatically created and added to this JSON config. To learn how to add networks to CNL, see the "Client Networks" tab:
 
-{% page-ref page="../vpn/client-networks.md" %}
+{% page-ref page="../../vpn/client-networks.md" %}
 
 The SDK will download the CNL file regularly and use it for the CNL feature. 
 
