@@ -17,7 +17,7 @@ description: >-
 
 ## What's more?
 
-Take a look on this use cases list in order to decide if Aura Developer Platform matches your needs:
+Take a look at this use cases list in order to decide if Aura Developer Platform matches your needs:
 
 {% page-ref page="resources/use-cases/" %}
 
