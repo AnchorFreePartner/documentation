@@ -36,7 +36,11 @@ Stop library event loop.
 char* afwrt_get_locations(void);
 ```
 
-Returns the same JSON response as [/user/locations](https://anchorfreepartner.github.io/apidocs/user.html#get-/user/locations)
+Returns the same JSON response as [/user/locations](https://anchorfreepartner.github.io/apidocs/user.html#get-/user/locations). 
+
+{% hint style="warning" %}
+User is responsible for `free()`ing the string.
+{% endhint %}
 
 ```text
 int afwrt_protect_ip_addr(const char *ip_addr, const char *country);
