@@ -59,103 +59,21 @@ SDK performs Network Availability Test for better understanding what's happening
 
 ### Common connection properties for all platforms
 
-| **Property Name** | **Type** | **Description** |
+| Property Name | Type | Description |
 | :--- | :--- | :--- |
-
-
-| catime | Integer | Unix millisecond timestamp \(milliseconds since Epoch\) on the client when connection attempt was initiated |
-| :--- | :--- | :--- |
-
-
-| caid | String | Connection Attempt ID assigned by the client when an attempt to establish a connection starts \(regardless of the result\) |
-| :--- | :--- | :--- |
-
-
-| reason | String | Describes why the session was initiated or terminated \(user click, reconnect, etc\). |
-| :--- | :--- | :--- |
-
-
-| error\_code | Integer | numerical code referring to an error category \(0 = success\). See section “error\_code” Property below. |
-| :--- | :--- | :--- |
-
-
-| error | String | error description. See “error” property section below. |
-| :--- | :--- | :--- |
-
-
-| protocol | String | the protocol used for the connection attempt |
-| :--- | :--- | :--- |
-
-
-| server\_ip \(\*\) | String | the server IP address used to establish a VPN connection \(absent in the case of unsuccessful result\) |
-| :--- | :--- | :--- |
-
-
-| session\_id \(\*\) | String | session ID assigned by the server or VPN in case of successful connection attempt, should match server side session\_id \(could be absent for some protocols\) |
-| :--- | :--- | :--- |
-
-
-| hydra\_version \(\*\) | String | version of Hydra used to establish a connection |
-| :--- | :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">notes</th>
-      <th style="text-align:left">JSON</th>
-      <th style="text-align:left">
-        <p>Additional information. For now, it holds:</p>
-        <ul>
-          <li>detailed info about <em>network_availabilty</em> test if one was conducted</li>
-          <li>sd_tag - JSON passed by hydra. Example:</li>
-        </ul>
-        <p><code>{</code>
-        </p>
-        <p> <code>&quot;sd_tag&quot;: {</code>
-        </p>
-        <p> <code>&quot;region_id&quot;: 38,</code>
-        </p>
-        <p> <code>&quot;isp_name&quot;: &quot;Zayo Bandwidth&quot;,</code>
-        </p>
-        <p> <code>&quot;coursera_on&quot;: 0,</code>
-        </p>
-        <p> <code>&quot;isp_org&quot;: &quot;Zayo Bandwidth&quot;</code>
-        </p>
-        <p> <code>}</code>
-        </p>
-        <p><code>}</code>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">parent_caid</th>
-      <th style="text-align:left">String</th>
-      <th style="text-align:left">
-        <p>If the previous attempt failed and technical reconnect happened (e.g.
-          in case of network change or 3 attempts during button click)</p>
-        <p>We log here parent caid.</p>
-        <p><em>Parent_caid</em> - caid of original connection attempt initiated by
-          the user.</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-| is\_ipv6\_only | Integer \(0 or 1\) | the flag that shows if the ISP supports only IPv6 protocol \(1 if yes, 0 if no\). Should be defined by the client. |
-| :--- | :--- | :--- |
-
-
-| **Property Name** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| first | Bool | Indicates the first launch of the app. |
+| catime | Integer | Unix millisecond timestamp \(since Epoch\) on the client, when a connection attempt was initiated |
+| caid | String | Connection attempt ID assigned by the client on the actual attempt |
+| reason | String | Describes the source of a VPN session initiation or termination \(user click, reconnect, etc.\) |
+| error\_code | Integer | Numerical code of an error category \(0 = success\). See section "error\_code" below |
+| error | String | Error description. See "error" section below |
+| protocol | String | The protocol used for the connection attempt |
+| server\_ip | String | The server IP address used to establish connection \(empty if the attempt was unsuccessful\) |
+| session\_id | String | An identifier assigned by the VPN node in case of successful connection attempt \(should match with the value on the server\) |
+| hydra\_version | String | The version of Hydra protocol used to establish connection |
+| notes | JSON | Extra information on service delivery configuration \(in case Hydra was used\), region ID, ISP name, and a numerical representation of the network availability test result. |
+| parent\_caid | String | caid of the original connection attempt \(in case the connection was broken\) |
+| is\_ipv6\_only | Integer | This flag shows if the ISP support IPv6 protocol only \(1 - yes, 0 - no\) |
+| first | Boolean | Indicates the first launch on the application |
 
 ## Connection events
 
