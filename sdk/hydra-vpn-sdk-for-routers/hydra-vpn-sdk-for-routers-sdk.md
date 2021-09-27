@@ -33,12 +33,10 @@ int afwrt_stop(void);
 Stop library event loop.
 
 ```text
-char* afwrt_get_available_countries(void);
+char* afwrt_get_locations(void);
 ```
 
-Returns JSON string with a list of available VPN locations, or NULL on error. The string must be free\(\)-ed by the caller. 
-
-Return string example: `[ "br", "ca", "de", "fr", "gb", "it", "jp", "mx", "us" ]`
+Returns the same JSON response as [/user/provide](https://anchorfreepartner.github.io/apidocs/user.html#get-/user/provide)
 
 ```text
 int afwrt_protect_ip_addr(const char *ip_addr, const char *country);
