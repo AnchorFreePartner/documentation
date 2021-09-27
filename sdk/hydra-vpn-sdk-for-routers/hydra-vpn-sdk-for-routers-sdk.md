@@ -242,31 +242,31 @@ _Default:_ `"100.73.0.73"`
 "protected_ip_addrs"
 ```
 
-Array of protected IP addresses with not empty `"ip_addr"` and `"country_code"` fields. 
+Array of protected IP addresses with not empty `"ip_addr"` and `"vl"` fields. 
 
 _Default:_ `""`\(empty, no IP addresses to protect\). 
 
-_Example:_ `"protected_ip_addrs": [ { "ip_addr": "192.168.50.159", "country_code": "us" }, { "ip_addr": "192.168.50.139", "country_code": "de" } ]`
+_Example:_ `"protected_ip_addrs": [ { "ip_addr": "192.168.50.159", "vl": "us-new-york" }, { "ip_addr": "192.168.50.139", "vl": "de-berlin" } ]`
 
 ```text
 "protected_mac_addrs"
 ```
 
- An array of protected MAC addresses with no empty `"mac_addr"` and `"country_code"` fields. 
+ An array of protected MAC addresses with no empty `"mac_addr"` and `"vl"` fields. 
 
 _Default:_ `""`\(empty, no MAC addresses to protect\). 
 
-_Example:_ `"protected_mac_addrs": [ { "mac_addr": "08:00:27:AA:D7:17", "country_code": "us" }, { "mac_addr": "09:01:28:AB:D8:18", "country_code": "de" } ]`
+_Example:_ `"protected_mac_addrs": [ { "mac_addr": "08:00:27:AA:D7:17", "vl": "us-new-york" }, { "mac_addr": "09:01:28:AB:D8:18", "vl": "de-berlin" } ]`
 
 ```text
 "protected_ifaces"
 ```
 
-An array of interfaces with not empty `"iface"`and `"country_code"` fields. 
+An array of interfaces with not empty `"iface"`and `"vl"` fields. 
 
 _Default:_ `""`\(empty, no interface to protect\). 
 
-_Example:_ `"protected_ifaces": [ { "iface": "eth1", "country_code": "us" }, { "iface": "br0", "country_code": "de" } ]`
+_Example:_ `"protected_ifaces": [ { "iface": "eth1", "vl": "us-new-york" }, { "iface": "br0", "vl": "de-berlin" } ]`
 
 ## OS level routing
 
