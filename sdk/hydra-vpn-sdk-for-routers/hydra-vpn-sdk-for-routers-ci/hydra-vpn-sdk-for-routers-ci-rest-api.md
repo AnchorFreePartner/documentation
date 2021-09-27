@@ -80,7 +80,7 @@ _Body:_ `{ "token" : "your_secret_token" }`
 
 _Type:_ `POST` 
 
-_Body:_ `{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149", "country_code" : "ca" }`
+_Body:_ `{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149", "vl" : "ca-ontario-toronto" }`
 
 ### Unprotect IP
 
@@ -100,7 +100,7 @@ _Body:_ `{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149" }`
 
 _Type:_ `POST`
 
-_Body:_ `{ "token" : "your_secret_token", "mac_addr" : "08:00:27:aa:d7:17", "country_code" : "ca" }`
+_Body:_ `{ "token" : "your_secret_token", "mac_addr" : "08:00:27:aa:d7:17", "vl" : "ca-ontario-toronto" }`
 
 ### Unprotect MAC
 
@@ -120,7 +120,7 @@ _Body:_ `{ "token" : "your_secret_token", "mac_addr" : "08:00:27:aa:d7:17" }`
 
 _Type:_ `POST`
 
-_Body:_ `{ "token" : "your_secret_token", "iface" : "eth2", "country_code" : "ca" }`
+_Body:_ `{ "token" : "your_secret_token", "iface" : "eth2", "vl" : "ca-ontario-toronto" }`
 
 ### Unprotect interface
 
