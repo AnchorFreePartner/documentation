@@ -47,7 +47,7 @@ _Value:_ `"protect_ip"`
 _Params:_ 
 
 * `"ip_addr"` - IP address to protect 
-* `"country_code"` - desired VPN country traffic from `"ip_addr"` go to
+* `"vl"` - desired VPN location traffic from `"ip_addr"` go to
 
 ### Unprotect IP 
 
@@ -68,7 +68,7 @@ _Value:_ `"protect_mac"`
 _Params:_ 
 
 * "`mac_addr"` - MAC address to protect
-* `"country_code"` - desired VPN country traffic from "mac\_addr" go to
+* `"vl"` - desired VPN country traffic from "mac\_addr" go to
 
 ### Unprotect MAC
 
@@ -89,7 +89,7 @@ _Value:_ `"protect_iface"`
 _Params:_ 
 
 * `"iface"` - interface to protect
-* `"country_code"` - desired VPN country traffic from "iface" go to
+* `"vl"` - desired VPN country traffic from "iface" go to
 
 ### Unprotect interface
 
