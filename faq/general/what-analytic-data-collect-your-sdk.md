@@ -13,7 +13,7 @@ SDK performs Network Availability Test for better understanding what's happening
 | af\_platform | String | android |
 | uid | String | Application uid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
 | app\_name | String | Application package name |
-| app\_build | String | Id based on app signature. Helpful to figure out if app was cracked. |
+| app\_build | String | Id based on app signature. Helpful to figure out if the app was cracked. |
 | app\_version | String | Application version name |
 | app\_release | String | Application version code |
 | carrier | String | Telephony carrier |
@@ -41,7 +41,7 @@ SDK performs Network Availability Test for better understanding what's happening
 | app\_name | String | Application package name |
 | app\_release | String | Application version code |
 | distinct\_id | String | Unique id generated on the first app install |
-| epoch | Integer | Time of generated event in unix format |
+| epoch | Integer | Time of generated event in UNIX format |
 | carrier | String | Telephony carrier name |
 | model | String | iPhone model, eg. iPhone8,2 |
 | manufacturer | String | “Apple” |
@@ -54,8 +54,8 @@ SDK performs Network Availability Test for better understanding what's happening
 | screen\_width | Integer | Device screen width |
 | server\_protocol | String | SDK server protocol e.g., hydra |
 | sim\_country | String | Country of carrier |
-| wifi | Bool | Indicates if a device is on Wi-Fi network |
-| time | Integer | The current time on device \(in UNIX format\) |
+| wifi | Bool | Indicates if a device is on a Wi-Fi network |
+| time | Integer | The current time on the device \(in UNIX format\) |
 
 ### Common connection properties for all platforms
 
@@ -65,11 +65,11 @@ SDK performs Network Availability Test for better understanding what's happening
 | caid | String | Connection attempt ID assigned by the client on the actual attempt |
 | reason | String | Describes the source of a VPN session initiation or termination \(user click, reconnect, etc.\) |
 | error\_code | Integer | Numerical code of an error category \(0 = success\). See section "error\_code" below |
-| error | String | Error description. See "error" section below |
+| error | String | Error description. See the "error" section below |
 | protocol | String | The protocol used for the connection attempt |
-| server\_ip | String | The server IP address used to establish connection \(empty if the attempt was unsuccessful\) |
-| session\_id | String | An identifier assigned by the VPN node in case of successful connection attempt \(should match with the value on the server\) |
-| hydra\_version | String | The version of Hydra protocol used to establish connection |
+| server\_ip | String | The server IP address used to establish a connection \(empty if the attempt was unsuccessful\) |
+| session\_id | String | An identifier assigned by the VPN node in case of a successful connection attempt \(should match with the value on the server\) |
+| hydra\_version | String | The version of Hydra protocol used to establish a connection |
 | notes | JSON | Extra information on service delivery configuration \(in case Hydra was used\), region ID, ISP name, and a numerical representation of the network availability test result. |
 | parent\_caid | String | caid of the original connection attempt \(in case the connection was broken\) |
 | is\_ipv6\_only | Integer | This flag shows if the ISP support IPv6 protocol only \(1 - yes, 0 - no\) |
@@ -92,7 +92,7 @@ Event reports every connection attempt.
 
 Properties specific for event _connection\_start_:
 
-| **Property Name** | **Type** | **Notes** |
+| **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | duration | Integer | how long it took to establish a connection or stop trying to connect, in **milliseconds** |
 | notes | JSON | Provides additional information if any related to the connection process. |
@@ -105,11 +105,11 @@ If the connection attempt was unsuccessful, a network availability check should 
 
 Properties specific for event _connection\_start\_detailed_:
 
-| **Property Name** | **Type** | **Notes** |
+| **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | network\_availability | Float | Share of passed Network Availability tests rounded to 2 digits after the decimal point. |
 | notes | JSON | detailed results of the Network Availability Test. |
-| details | JSON | an array of JSONs with connection results to all low level attempts to connect. |
+| details | JSON | an array of JSON with connection results of all low -evel attempts to connect. |
 
 ### Event: _connection\_end_
 
@@ -117,32 +117,39 @@ The event should be reported when a Connection is terminated. All properties spe
 
 Properties specific for event _connection\_end_:
 
-| **Property Name** | **Type** | **Notes** |
-| :--- | :--- | :--- |
-
-
-| duration | Integer | the session's duration, in **milliseconds** |
-| :--- | :--- | :--- |
-
-
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">traffic</th>
-      <th style="text-align:left">JSON</th>
-      <th style="text-align:left">
-        <p>JSON with consumed traffic stats (in bytes), e.g.:</p>
-        <p>{</p>
-        <p>&quot;bytes_in&quot;: 100,</p>
-        <p>&quot;bytes_out&quot;: 100</p>
-        <p>}</p>
-      </th>
+      <th style="text-align:left">Property Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
     </tr>
   </thead>
-  <tbody></tbody>
+  <tbody>
+    <tr>
+      <td style="text-align:left">duration</td>
+      <td style="text-align:left">Integer</td>
+      <td style="text-align:left">the duration of the VPN session in milliseconds</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">traffic</td>
+      <td style="text-align:left">JSON</td>
+      <td style="text-align:left">
+        <p>traffic statistics in bytes</p>
+        <p><code>{</code>
+        </p>
+        <p><code>  &quot;bytes_in: 100, </code>
+        </p>
+        <p><code>  &quot;bytes_out&quot;: 100</code>
+        </p>
+        <p><code>}</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
-When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If user has canceled, no need to send the event.  
+When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If a user has canceled, no need to send the event.  
 Properties specific for event _connection\_end\_detailed:_
 
 | **Property Name** | **Type** | **Notes** |
@@ -156,64 +163,32 @@ Properties specific for event _connection\_end\_detailed:_
 
 | **error\_code** | **Description** |
 | :--- | :--- |
-| 0 \(success\) | No error \(connection has established successfully\) |
+| 0 \(success\) | No error \(the connection has been established successfully\) |
 | 1 \(internal error\) | Internal problems during initialization or establishing communication \(e.g. Failed to open TUN, VPN permissions are not given, Hydra "Bad Configuration" error, etc.\) or any other unclassified errors |
 | 2 \(connection error\) | Failed to establish a connection due to networking issues \(e.g. host is unreachable, can't send data, timeout on receiving data, etc.\) |
-| 4 \("no network" error\) | Network has been lost during the connection \(e.g. WiFi lost or changed\) or network is up, but unavailable \(e.g. due to walled garden or as mobile data is disabled\) |
+| 4 \("no network" error\) | The network has been lost during the connection \(e.g. WiFi lost or changed\) or the network is up, but unavailable \(e.g. due to a walled garden or as mobile data is disabled\) |
 | 6 \(canceled\) | The connection establishment has been terminated in the middle of the process. No connection has been established. |
-| 7 \(app level error\) | Application denied to start establishing the VPN connection \(i.e. user tried to use some elite features from the free app, PC adapter is not ready to connect\) |
+| 7 \(app level error\) | Application denied starting establishing the VPN connection \(i.e. user tried to use some elite features from the free app, PC adapter is not ready to connect\) |
 
 #### _connection\_end_
 
 | **error\_code** | **Description** |
 | :--- | :--- |
-| 0 \(success\) | No error \(connection has ended as expected and successfully\) |
-| 1 \(internal error\) | Internal problem that broke established connection \(e.g. OpenVPN or Hydra quit unexpectedly, etc.\) |
-| 2 \(connection error\) | Connection has broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
+| 0 \(success\) | No error \(the connection has ended as expected and successfully\) |
+| 1 \(internal error\) | An internal problem that broke established connection \(e.g. OpenVPN or Hydra quit unexpectedly, etc.\) |
+| 2 \(connection error\) | The connection has broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
 | 3 \(connection stuck\) | Connection is established, but no exchange happening \("KeepAlive problem"\) |
 
 ### Property for “_error_”
 
-| **error\_code** | **error** | **Description** |
+| error\_code | error | Description |
 | :--- | :--- | :--- |
-
-
-| 0 \(success\) | Empty | No error |
-| :--- | :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">1 (internal error)</th>
-      <th style="text-align:left">Platform specific details</th>
-      <th style="text-align:left">
-        <p>Internal problems during initialization, establishing communication or
-          operation (e.g. Failed to open TUN, Hydra &quot;Bad Configuration&quot;
-          error, VPN permissions are not given, etc.)</p>
-        <p>Also, this class should be used for any unclassified errors. It is expected
-          that the details will be clear from the &quot;error&quot; value.</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-| 2 \(connection error\) | HTTP error code or a VPN/Hydra error code | Connection has not been established or broken due to connection problems \(e.g. Hydra or OpenVPN detected communication problem, etc.\) |
-| :--- | :--- | :--- |
-
-
-| 3 \(connection stuck\) | Platform specific details | Connection is established, but no exchange happening \("KeepAlive problem"\) |
-| :--- | :--- | :--- |
-
-
-| 4 \("no network" error\) | Platform specific details | Network has been lost during the connection \(e.g. WiFi lost or changed\) or network is up, but unavailable \(e.g. due to walled garden or as mobile data is disabled\) |
-| :--- | :--- | :--- |
-
-
-| 5 \(failed\) | Error code returned by backend \(e.g. 40301\) | Request has succeeded, but have had an error result code |
-| :--- | :--- | :--- |
-
+| 0 | Success | No error |
+| 1 | Internal error | Platform-specific internal problems during initialization, connection, or operation. \(e.g. Failed to open TUN, Hydra "Bad configuration" error, VPN permissions are not given, etc.\) Also, this code should be used for any unclassified errors \(with a detailed description\). |
+| 2 | Connection error | The error should be supplied with an HTTP code / VPN error code. This code is used for the situation when a connection has not been established or has been broken. |
+| 3 | Connection stuck | The connection has been established, but no data exchange is happening. Should be supplied with a platform-specific description. |
+| 4 | No network | The network connection has been lost during the VPN session |
+| 5 | Failed | The backend has responded with an error. A relevant error should be provided. |
 
 ### connection\_start
 
