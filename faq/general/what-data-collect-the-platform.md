@@ -75,12 +75,12 @@ User data includes the following parameters:
     <tr>
       <td style="text-align:left">License</td>
       <td style="text-align:left">number</td>
-      <td style="text-align:left">License ID for current user (license limits the number of devices)</td>
+      <td style="text-align:left">License ID for the current user (license limits the number of devices)</td>
     </tr>
     <tr>
       <td style="text-align:left">Traffic limit</td>
       <td style="text-align:left">number</td>
-      <td style="text-align:left">Per-day or per-month traffic limit for current user (bytes)</td>
+      <td style="text-align:left">The Per-day or per-month traffic limit for the current user (bytes)</td>
     </tr>
     <tr>
       <td style="text-align:left">Extref</td>
@@ -132,7 +132,7 @@ For each user session, the following data is collected:
 | End time | timestamp | When has this session stopped? \(e.g 9999-12-31 23:59:59.999999 UTC\) |
 | RX | integer | Amount of traffic received \(bytes\) |
 | TX | integer | Amount of traffic transmitted \(bytes\) |
-| Server ID | integer | VPN-node ID for current session on particular device |
+| Server ID | integer | VPN-node ID for the current session on a particular device |
 | Internal IP | string | Internal session IP. It is different from the real device IP. |
 
 Data is preserved for **12 months.**
