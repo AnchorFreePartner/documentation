@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.5.0
+
+* Correct handle of crash inside okhttp
+* Added
+  * Backend\#locations - for city level virtual locations
+  * SessionConfig.Builder\#withCountry
+  * SessionConfig.Builder\#withLocation
+* Deprecated
+  * SessionConfig.Builder\#withVirtualLocation
+
 ### 3.4.17
 
 * fix for reconnection with kill switch enabled
