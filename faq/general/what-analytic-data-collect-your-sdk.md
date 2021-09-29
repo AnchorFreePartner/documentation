@@ -11,7 +11,7 @@ SDK performs Network Availability Test for better understanding what's happening
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | af\_platform | String | android |
-| uid | String | Application uid. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _uid_\). |
+| uid | String | Application UID. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _UID_\). |
 | app\_name | String | Application package name |
 | app\_build | String | Id based on app signature. Helpful to figure out if the app was cracked. |
 | app\_version | String | Application version name |
@@ -192,213 +192,31 @@ Properties specific for event _connection\_end\_detailed:_
 
 ### connection\_start
 
-| **Name** | **Description** |
+| Name | Description |
 | :--- | :--- |
+| m\_ui | Connection is initiated via interaction with the UI elements |
+| m\_system | Connection is initiated via interaction with the system menu |
+| m\_tray | Connection is initiated via interaction with a notification message or a tile |
+| m\_other | Connection is initiated via some other type of interaction |
+| a\_app\_run | Connection is initiated automatically on the app launch |
+| a\_reconnect | Connection is initiated after an intended VPN session termination |
+| a\_error | Connection is initiated as a result of an unexpected VPN session disconnect |
+| a\_sleep | Connection is initiated after a device has returned from the sleep/hibernation mode |
+| a\_network | Connection is initiated due to the network status change |
+| a\_other | Connection is initiated automatically due to any other reason |
 
+There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bug that can and shall be fixed. It can be a blockage that should be addressed by changing the configuration or in the worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
 
-| m\_ui | Connection is initiated by a user clicking in application UI button, widget, notification window, etc. |
-| :--- | :--- |
+In order to distinguish these cases, a **network availability test** will be performed on every unsuccessful connect or unintended disconnect that will report whether the network is available or not.
 
-
-| m\_system | Connection is initiated via user's click/action from a system menu. |
-| :--- | :--- |
-
-
-| m\_tray | Connection is initiated by a user clicking on ongoing notification or tile services |
-| :--- | :--- |
-
-
-| m\_other | Connection is initiated via some other user's actions. |
-| :--- | :--- |
-
-
-| a\_app\_run | Connection is initiated automatically as the result of an app launch that is configured to trigger it. |
-| :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">a_reconnect</th>
-      <th style="text-align:left">
-        <p>Connection is initiated after intended (without an error) previous session
-          termination. This can be result of:</p>
-        <ul>
-          <li>Changing Virtual Locations</li>
-          <li>Upgrading or Downgrading</li>
-          <li>Keeping intended VPN connection (UI/user intention requires VPN to be
-            on)</li>
-          <li>etc.</li>
-        </ul>
-        <p><em>Note that this reason should only be used if the connection is initiated right after the previous connection termination and as long as we are trying to initiate connection. That is, if while reconnecting network become unavailable, the reason for the first session initiation after the network become available shall be a_network (not a_reconnect). However, in case the session initiation failed, for the next attempt to initiate the session, the same reason (a_network) shall be used.</em>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">a_error</th>
-      <th style="text-align:left">
-        <p>Connection is initiated as a result of retry from the previous session
-          termination due to an error.</p>
-        <p><em>Note that this reason should only be used if connection is initiated right after the previous connection termination and as long as we are trying to initiate connection. That is, if the error has happened due to the network lost, the reason for the first session initiated after the network become available shall be a_network (not a_error). However, in case the session initiation failed, for the next attempt to initiate the session, the same reason (a_error) shall be used.</em>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-| a\_sleep | Connection is initiated due to device returned from the sleep mode \(resume\), hibernation mode, etc. |
-| :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">a_network</th>
-      <th style="text-align:left">
-        <p>Connection is initiated due to the status of the network has changed (network
-          become available). In this case, we shall reconnect in of the following
-          cases:</p>
-        <ul>
-          <li>We were connected manually, so regardless of the wifi protection settings</li>
-          <li>The network requires protection as per user&apos;s setting (automatic
-            protection)</li>
-        </ul>
-        <p><em>Note the reconnect due to network switch is covered by this reason (not a_reconnect).</em>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">a_other</th>
-      <th style="text-align:left">
-        <p>Connection is initiated automatically due to any other reason.</p>
-        <p><em>Note the share of a_other reason should be few percent. In case it is not so, extra reasons shall be introduced.</em>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-| **Name** | **Description** |
-| :--- | :--- |
-
-
-| m\_ui | Connection is terminated by a user clicking in application UI button, widget, notification window, etc. |
-| :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">m_system</th>
-      <th style="text-align:left">
-        <p>Connection is terminated via user&apos;s click/action from a system menu.</p>
-        <p>For iOS, turn off inside device&apos;s setting.</p>
-        <p>For Android, turn off from system&apos;s VPN notification (aka <b>revoke</b>).</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-| m\_tray | Connection is terminated by user clicking on ongoing notification or tile services |
-| :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">m_other</th>
-      <th style="text-align:left">
-        <p>Connection is terminated via some other user&apos;s actions.</p>
-        <p><em>Note the share of m_other reason should be few percent. In case it is not so, extra reasons shall be introduced.</em>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">a_error</th>
-      <th style="text-align:left">
-        <p>Connection is terminated due to an error (including unavailability of
-          the network).</p>
-        <p>Error description shall be provided in error_code and error properties.</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-| a\_sleep | Connection is terminated due to device goes to sleep, suspend, shut down, etc. |
-| :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">a_reconnect</th>
-      <th style="text-align:left">
-        <p>Connection is terminated intentionally in order to immediately reconnect.
-          This can be result of:</p>
-        <ul>
-          <li>Changing Virtual Locations</li>
-          <li>Upgrading or downgrading</li>
-          <li>Client version updating</li>
-          <li>etc.</li>
-        </ul>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-| a\_network | Connection is terminated due to the network has changed |
-| :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">a_other</th>
-      <th style="text-align:left">
-        <p>Connection is terminated automatically due to any other reason.</p>
-        <p><em>Note the share of a_other reason should be few percent. In case it is not so, extra reasons shall be introduced.</em>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-There are several reasons for a connection attempt to fail or an established connection to drop unexpectedly. It can be an infrastructure issue or a client bugs that can and shall be fixed. It can be a blockage that should be addressed by changing of the configuration or in worst case improving the VPN core and re-releasing the client. But it can also be a. problem with the network that can’t be fixed in principle.
-
-In order to distinguish these cases, a **network availability test** will be performed on every unsuccessful connect or unintended disconnect that will report whether the network in available or not.
-
-This test includes: check captive portal, current network type, ping test and certificate test.
+This test includes: check the captive portal, current network type, ping test, and security certificate test.
 
 ### Captive Portal test
 
 This test is to check if there is a Captive portal. It usually means that  
-all requests are redirected by network provider to their own login page.
+all requests are redirected by the network provider to their own login page.
 
-To detect this case SDK sends a request to one of urls from the list and expects response code 204:  
+To detect this case SDK sends a request to one of URLs from the list and expects response code 204:  
 [https://google.com/generate\_204](https://google.com/generate_204),  
 [https://gstatic.com/generate\_204](https://gstatic.com/generate_204),  
 [https://maps.google.com/generate\_204](https://maps.google.com/generate_204),  
