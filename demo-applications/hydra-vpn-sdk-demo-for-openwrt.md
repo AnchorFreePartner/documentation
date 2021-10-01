@@ -1,11 +1,8 @@
----
-description: >-
-  Please pay attention that this limited version does not support dynamic
-  configuration via websockets or any kind of statistics/reporting and can send
-  a lot of debug information to stdout.
----
-
 # Hydra VPN SDK demo for OpenWRT
+
+{% hint style="info" %}
+Please pay attention that this limited version does not support dynamic configuration via websockets or any kind of statistics/reporting and can send a lot of debug information to stdout.
+{% endhint %}
 
 [GitHub project link](https://github.com/AnchorFreePartner/hydra-sdk-wrt/tree/ng)
 
@@ -42,7 +39,7 @@ You can download [pre-compiled library and binary files for x86\_64](https://fir
 Most of the options could be left unchanged for this demo. But the next options should be updated properly in afwrt-ws.conf:
 
 * "wan\_ifname": name of your "Wide Area Network" interface, which your device connected to the internet through
-* "protected\_ip\_addrs": array of protected IP addresses on internal network you want to test, with Country \(Virtual Location\) code for each
+* "protected\_ip\_addrs": array of protected IP addresses on the internal network you want to test, with Country \(Virtual Location\) code for each
 
 Option "token" is hard coded until the second release. It will be retrieved internally using the “[/user/login](https://anchorfreepartner.github.io/apidocs/user.html#post-/user/login)” method. 
 
@@ -56,7 +53,7 @@ VBox-based environment could be set up according to the instruction:
 
 ### Available country codes
 
-In the current release, a list of available country codes is hard coded by the following ones:
+In the current release, a list of available country codes is hardcoded by the following ones:
 
 * ar
 * au
