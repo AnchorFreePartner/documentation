@@ -4,6 +4,15 @@ The main purpose of this is to improve the connection quality of the SDK. SDK co
 
 SDK performs Network Availability Test for better understanding what's happening when a connection error is received. It includes diagnostics of the current network connection such as a Captive Portal check, pinging of a popular public web resource, etc.
 
+{% hint style="warning" %}
+SDK **does not collect** or analyze any **Personal Identifiable Information.** 
+
+* all the geolocation data is inaccurate and provide an approximation
+* cell phone service provider and ISP data is used for statistical purposes only
+* any hardware information is used for the service quiality improvement
+* all the identifers are auto-generated
+{% endhint %}
+
 ## Common properties
 
 ### Common Android device-related properties:
@@ -11,25 +20,25 @@ SDK performs Network Availability Test for better understanding what's happening
 | **Property Name** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | af\_platform | String | android |
-| uid | String | Application UID. The kernel user-ID that has been assigned to this application; currently this is not a unique ID \(multiple applications can have the same _UID_\). |
+| uid | String | Application UID. The kernel user-ID that has been assigned to this application by the operating system of the device; currently this is not a unique ID \(multiple applications can have the same _UID_\). |
 | app\_name | String | Application package name |
-| app\_build | String | Id based on app signature. Helpful to figure out if the app was cracked. |
+| app\_build | String | ID based on app signature. Helpful to figure out if the app was cracked. |
 | app\_version | String | Application version name |
 | app\_release | String | Application version code |
-| carrier | String | Telephony carrier |
-| has\_telephone | Boolean | Shows if the device is a phone |
+| carrier | String | Telephony carrier name |
+| has\_telephone | Boolean | Shows if the device is a phone or other type of device |
 | memory\_remains | String | Remaining RAM |
 | memory\_total | String | Total RAM |
 | model | String | android.os.Build.MODEL |
 | device\_manufacturer | String | android.os.Build.MANUFACTURER |
-| locale | String | Current device locale |
-| device\_language | String | Current device language |
+| locale | String | Current device locale \(provided by the device itself\) |
+| device\_language | String | Current device language \(provided by the device itself\) |
 | hydra\_base\_url | String | Base API URL |
 | android\_sdk\_int | String | Build.VERSION.SDK\_INT |
 | android\_version\_name | String | Build.VERSION.RELEASE |
 | connection\_type | String | Type of current active network |
-| time\_zone | String | Device time zone in "-0800" format |
-| af\_hash | String | Device id generated on the first app install |
+| time\_zone | String | Device time zone in "-0800" format \(is taken from the device settings\) |
+| af\_hash | String | Device ID auto-generated on the first app install |
 | sdk\_version | String | SDK version name |
 | sdk\_version\_code | Integer | SDK version code |
 
@@ -40,12 +49,12 @@ SDK performs Network Availability Test for better understanding what's happening
 | af\_platform | String | “ios” |
 | app\_name | String | Application package name |
 | app\_release | String | Application version code |
-| distinct\_id | String | Unique id generated on the first app install |
+| distinct\_id | String | Unique id auto-generated on the first app install |
 | epoch | Integer | Time of generated event in UNIX format |
 | carrier | String | Telephony carrier name |
 | model | String | iPhone model, eg. iPhone8,2 |
 | manufacturer | String | “Apple” |
-| af\_hash | String | Device id generated on first app install |
+| af\_hash | String | Device id auto-generated on first app install |
 | sdk\_version | String | SDK version name |
 | lib\_version | String | Analytics SDK version |
 | os | String | Device OS \(iOS\) |
@@ -53,29 +62,33 @@ SDK performs Network Availability Test for better understanding what's happening
 | screen\_height | Integer | Device screen height |
 | screen\_width | Integer | Device screen width |
 | server\_protocol | String | SDK server protocol e.g., hydra |
-| sim\_country | String | Country of carrier |
-| wifi | Bool | Indicates if a device is on a Wi-Fi network |
+| sim\_country | String | Country of the carrier \(provided by the SIM card\) |
+| wifi | Bool | Indicates if a device is using Wi-Fi network \(with no specific information on this network\) |
 | time | Integer | The current time on the device \(in UNIX format\) |
 
 ### Common connection properties for all platforms
 
 | Property Name | Type | Description |
 | :--- | :--- | :--- |
-| catime | Integer | Unix millisecond timestamp \(since Epoch\) on the client, when a connection attempt was initiated |
-| caid | String | Connection attempt ID assigned by the client on the actual attempt |
+| catime | Integer | UNIX millisecond timestamp \(since Epoch\) on the client, when a connection attempt was initiated |
+| caid | String | Connection attempt ID auto-generated by the client on the actual attempt |
 | reason | String | Describes the source of a VPN session initiation or termination \(user click, reconnect, etc.\) |
 | error\_code | Integer | Numerical code of an error category \(0 = success\). See section "error\_code" below |
 | error | String | Error description. See the "error" section below |
 | protocol | String | The protocol used for the connection attempt |
 | server\_ip | String | The server IP address used to establish a connection \(empty if the attempt was unsuccessful\) |
-| session\_id | String | An identifier assigned by the VPN node in case of a successful connection attempt \(should match with the value on the server\) |
+| session\_id | String | An identifier assigned by the VPN node in case of a successful connection attempt \(should match with the value on the server\). The identifier is valid until the intended end of the session. |
 | hydra\_version | String | The version of Hydra protocol used to establish a connection |
 | notes | JSON | Extra information on service delivery configuration \(in case Hydra was used\), region ID, ISP name, and a numerical representation of the network availability test result. |
-| parent\_caid | String | caid of the original connection attempt \(in case the connection was broken\) |
+| parent\_caid | String | caid of the original connection attempt \(in case the connection was broken\). This property is used to recover the session. |
 | is\_ipv6\_only | Integer | This flag shows if the ISP support IPv6 protocol only \(1 - yes, 0 - no\) |
-| first | Boolean | Indicates the first launch on the application |
+| first | Boolean | Indicates the first launch of the application. Always has a "false" value after the initial launch. |
 
 ## Connection events
+
+{% hint style="warning" %}
+The latest version of SDK provides **an option to turn** on/**off event sending**. It is up to the application developer to use or not this function of the SDK.
+{% endhint %}
 
 There are 4 connection events:
 
@@ -109,7 +122,7 @@ Properties specific for event _connection\_start\_detailed_:
 | :--- | :--- | :--- |
 | network\_availability | Float | Share of passed Network Availability tests rounded to 2 digits after the decimal point. |
 | notes | JSON | detailed results of the Network Availability Test. |
-| details | JSON | an array of JSON with connection results of all low -evel attempts to connect. |
+| details | JSON | an array of JSON with connection results of all low-level attempts to connect. |
 
 ### Event: _connection\_end_
 
@@ -229,12 +242,12 @@ TODO
 
 ### Network type test
 
-SDK calls system api to check if any type of network interface is established. For example on older versions of Android SDK uses api  
+SDK calls system API to check if any type of network interface is established. For example on older versions of Android SDK uses API  
 [https://developer.android.com/reference/android/net/ConnectivityManager\#getNetworkInfo\(android.net.Network](https://developer.android.com/reference/android/net/ConnectivityManager#getNetworkInfo%28android.net.Network)\)
 
 ### Certificate test
 
-In some particular cases there can be more significant issues with your connection like issues with web certificates. To test this case SDK sends a request to one of the following url and checks that certificate is valid:
+In some particular cases, there can be more significant issues with your connection like issues with web certificates. To test this case SDK sends a request to one of the following URL and checks that the certificate is valid:
 
 [https://google.com/](https://google.com/),  
 [https://apple.com](https://apple.com),  
