@@ -1,16 +1,16 @@
 # What analytic data is collected by your SDK?
 
-The main purpose of this is to improve the connection quality of the SDK. SDK collects anonymous data about a device and connection start and stop attempts.
+The main **purpose** of this is **to improve the connection quality** of the SDK. The SDK **collects anonymous data** about a device and connection start and stop attempts.
 
-SDK performs Network Availability Test for better understanding what's happening when a connection error is received. It includes diagnostics of the current network connection such as a Captive Portal check, pinging of a popular public web resource, etc.
+The SDK performs Network Availability Test for better understanding what's happening when a connection error is received. It includes diagnostics of the current network connection such as a Captive Portal check, pinging of a popular public web resource, etc.
 
 {% hint style="warning" %}
-SDK **does not collect** or analyze any **Personal Identifiable Information.** 
+The SDK **does not collect** or analyze any **Personal Identifiable Information.** 
 
 * all the geolocation data is inaccurate and provide an approximation
 * cell phone service provider and ISP data is used for statistical purposes only
-* any hardware information is used for the service quiality improvement
-* all the identifers are auto-generated
+* any hardware information is used for the service quality improvement
+* all the identifiers are auto-generated
 {% endhint %}
 
 ## Common properties
@@ -63,7 +63,7 @@ SDK **does not collect** or analyze any **Personal Identifiable Information.**
 | screen\_width | Integer | Device screen width |
 | server\_protocol | String | SDK server protocol e.g., hydra |
 | sim\_country | String | Country of the carrier \(provided by the SIM card\) |
-| wifi | Bool | Indicates if a device is using Wi-Fi network \(with no specific information on this network\) |
+| wifi | Bool | Indicates if a device is using a Wi-Fi network \(with no specific information on this network\) |
 | time | Integer | The current time on the device \(in UNIX format\) |
 
 ### Common connection properties for all platforms
@@ -162,7 +162,7 @@ Properties specific for event _connection\_end_:
   </tbody>
 </table>
 
-When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and _connection\_end\_detailed_ event should be reported. If a user has canceled, no need to send the event.  
+When a connection is terminated unexpectedly \(no user intention to terminate the session\), network availability tests should be performed and the _connection\_end\_detailed_ event should be reported. If a user has canceled, no need to send the event.  
 Properties specific for event _connection\_end\_detailed:_
 
 | **Property Name** | **Type** | **Notes** |
