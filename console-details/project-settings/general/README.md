@@ -32,6 +32,10 @@ Each license has 2 parameters. The first parameter is the devices limit, the sec
 * **Description** - text description of the project. 
 * **Icon** - you can set the icon for the project. You can see this icon in the list of projects.
 
+{% hint style="info" %}
+**Private** **Key** and **Config** fields are masked by default. You can reveal the real value by clicking on the ![](../../../.gitbook/assets/closed-eye.svg) button and hide it back by clicking on the ![](../../../.gitbook/assets/opened-eye.svg) button
+{% endhint %}
+
 ### Actions
 
 * **Upload image** - click the button and select a file to upload \(see parameter "**Icon**"\).
