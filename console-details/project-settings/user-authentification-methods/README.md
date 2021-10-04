@@ -6,11 +6,17 @@ description: Find out how to manage authentication methods of your project
 
 Client applications can use these methods for User authentication. See parameter "_auth\_method_" in SDK or REST API [_/user/login_](https://backend.northghost.com/doc/user/index.html#!/user-controller/loginDevice). Each project user should be registered in the project. 
 
-The project can use more than one user authentication methods.
+## Overview
 
-The Platform supports the following Authentication methods.
+![](../../../.gitbook/assets/screenshot-2021-10-04-at-7.34.50-pm.png)
+
+{% hint style="info" %}
+**Auth settings** column values are masked by default. You can reveal the real value by clicking on the ![](../../../.gitbook/assets/closed-eye.svg) button and hide it back by clicking on the ![](../../../.gitbook/assets/opened-eye.svg) button
+{% endhint %}
 
 ## Methods
+
+The project can use more than one user authentication method. The Platform supports the following authentication methods:
 
 ### Anonymous
 
