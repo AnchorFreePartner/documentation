@@ -1,5 +1,10 @@
 # Changelog
 
+### 3.6.0
+
+* Added
+  * UnifiedSDK\#setAnalyticsEnabled - to control internal sdk analytics.
+
 ### 3.5.0
 
 * Correct handle of crash inside okhttp
