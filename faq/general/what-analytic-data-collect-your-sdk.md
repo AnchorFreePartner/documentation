@@ -87,7 +87,7 @@ SDK **does not collect** or analyze any **Personal Identifiable Information.**
 ## Connection events
 
 {% hint style="warning" %}
-The latest version of SDK provides **an option to turn** on/**off event sending**. It is up to the application developer to use or not this function of the SDK.
+The latest version of SDK provides **an option to turn** on/**off event sending**. It is up to the application developer to use or not use this function of the SDK.
 {% endhint %}
 
 There are 4 connection events:
