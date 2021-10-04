@@ -6,7 +6,15 @@ description: >-
 
 # Payment methods
 
-## Purchase flow overview
+## Overview
+
+![](../../../.gitbook/assets/screenshot-2021-10-04-at-7.36.36-pm.png)
+
+{% hint style="info" %}
+**Payments settings** column values are masked by default. You can reveal the real value by clicking on the ![](../../../.gitbook/assets/closed-eye.svg) button and hide it back by clicking on the ![](../../../.gitbook/assets/opened-eye.svg) button
+{% endhint %}
+
+## Purchase flow
 
 ### First purchase
 
