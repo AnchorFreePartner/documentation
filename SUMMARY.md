@@ -34,6 +34,7 @@
   * [Authentication methods](console-details/project-settings/user-authentification-methods/README.md)
     * [Auth Plugin requirements](console-details/project-settings/user-authentification-methods/auth-plugin-requirements.md)
   * [Payment methods](console-details/project-settings/user-payment-methods/README.md)
+    * [Supported payment methods](console-details/project-settings/user-payment-methods/supported-payment-methods.md)
     * [Payments Plugin requirements](console-details/project-settings/user-payment-methods/custom-payments-plugin-requirements.md)
   * [VPN](console-details/project-settings/vpn/README.md)
     * [General](console-details/project-settings/vpn/general.md)
