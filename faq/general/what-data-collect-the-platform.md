@@ -135,6 +135,8 @@ For each user session, the following data is collected:
 | :--- | :--- | :--- |
 | Session ID | string | A unique auto-generated session identifier \(e.g a3f727d261640aa65cc3c89a47080c2b\) |
 | Device ID | integer | A unique auto-generated device identifier |
+| Carried ID | string |  |
+| User ID | string | A unique auto-generated identifier |
 | Start time | timestamp | When has the session started? \(e.g 9999-12-31 23:59:59.999999 UTC\) |
 | End time | timestamp | When has this session stopped? \(e.g 9999-12-31 23:59:59.999999 UTC\) |
 | RX | integer | Amount of traffic received \(bytes\) |
