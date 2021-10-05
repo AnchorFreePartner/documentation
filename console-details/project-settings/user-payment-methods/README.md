@@ -14,24 +14,7 @@ description: >-
 **Payments settings** column values are masked by default. You can reveal the real value by clicking on the ![](../../../.gitbook/assets/closed-eye.svg) button and hide it back by clicking on the ![](../../../.gitbook/assets/opened-eye.svg) button
 {% endhint %}
 
-## Purchase flow
-
-### First purchase
-
-* When a user is authorized and logged in to your application, their user state is “free” with a traffic limit.
-* A user purchases an in-app subscription, e.g., an in-app purchase on Android Play or Apple Store.
-* The application calls a POST method [`/user/purchase`](https://backend.northghost.com/doc/user/index.html#!/user-controller/sendPurchase) \(the same method in SDK\) and sends a purchase receipt to the Platform.
-* The Platform verifies the purchase in the Purchase service \(e.g., in Android Play or Apple Store\).
-* If the purchase is valid, the Platform removes the traffic limit for the user.
-
-### After the first purchase
-
-* The Platform will call the Purchase service once a day per user to verify each purchase. 
-* If the purchase is invalid, the traffic limit is returned.
-
-The process described above will be based on the Platform's _user\_id_, user's unique identifier.
-
-## Payment methods in your project
+You can choose one of the supported payment methods for your project or ask us for the custom implementation.
 
 {% page-ref page="supported-payment-methods.md" %}
 
