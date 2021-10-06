@@ -14,6 +14,10 @@ Client applications can use these methods for User authentication. See parameter
 **Auth settings** column values are masked by default. You can reveal the real value by clicking on the ![](../../../.gitbook/assets/closed-eye.svg) button and hide it back by clicking on the ![](../../../.gitbook/assets/opened-eye.svg) button
 {% endhint %}
 
+{% hint style="warning" %}
+The "Auth method" tab is visible for the project owner role only
+{% endhint %}
+
 ## Methods
 
 The project can use more than one user authentication method. The Platform supports the following authentication methods:
