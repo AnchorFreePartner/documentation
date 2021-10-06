@@ -8,6 +8,10 @@ description: >-
 
 ## Overview
 
+{% hint style="warning" %}
+The "Payments method" tab is visible for the project owner role only
+{% endhint %}
+
 ![](../../../.gitbook/assets/screenshot-2021-10-04-at-7.36.36-pm.png)
 
 {% hint style="info" %}
