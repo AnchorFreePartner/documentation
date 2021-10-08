@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.6.1
+
+* fix for background allocations
+
 ### 3.6.0
 
 * Added
