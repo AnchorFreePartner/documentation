@@ -9,5 +9,7 @@ description: >-
 
 ![Normal connection flow](../../.gitbook/assets/flow-1.drawio.svg)
 
-{% page-ref page="vpn-platform-flow.md" %}
+{% hint style="info" %}
+All included API endpoints are [described in OpenAPI notation](https://anchorfreepartner.github.io/apidocs/user.html#overview)
+{% endhint %}
 
