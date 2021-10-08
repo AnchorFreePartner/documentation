@@ -107,6 +107,12 @@ Register a new device and returns an access token, that will also be included in
 
 `auth_token` - OAuth token \(if a relevant OAuth provider is set for the auth method\)
 
+{% hint style="warning" %}
+Auth token value may only consist of Latin letters, numbers, and dot, underscore, minus, tilde symbols. 
+
+"**url encode**" must be applied for any other characters \(especially for /, ?, &, =, % symbols\)
+{% endhint %}
+
 ```text
 int afwrt_set_access_token(const char *access_token)
 ```
