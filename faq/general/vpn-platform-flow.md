@@ -7,7 +7,7 @@ description: >-
 
 # VPN Platform Flow
 
-  
+![Normal connection flow](../../.gitbook/assets/flow-1.drawio.svg)
 
-![](../../.gitbook/assets/flow-1-1.jpg)
+{% page-ref page="vpn-platform-flow.md" %}
 
