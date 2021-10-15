@@ -28,9 +28,9 @@
     * [Location rules](console-details/network-locations/pools/location-rules.md)
 * [Settings](console-details/project-settings/README.md)
   * [General](console-details/project-settings/general/README.md)
-    * [Project config description \(JSON format\)](console-details/project-settings/general/project-config-description-json-format/README.md)
-      * [Server selector \(JSON format\)](console-details/project-settings/general/project-config-description-json-format/server-selector-json-format.md)
-      * [Request selector \(JSON format\)](console-details/project-settings/general/project-config-description-json-format/request-selector-json-format.md)
+    * [Project config description (JSON format)](console-details/project-settings/general/project-config-description-json-format/README.md)
+      * [Server selector (JSON format)](console-details/project-settings/general/project-config-description-json-format/server-selector-json-format.md)
+      * [Request selector (JSON format)](console-details/project-settings/general/project-config-description-json-format/request-selector-json-format.md)
   * [Authentication methods](console-details/project-settings/user-authentification-methods/README.md)
     * [Auth Plugin requirements](console-details/project-settings/user-authentification-methods/auth-plugin-requirements.md)
   * [Payment methods](console-details/project-settings/user-payment-methods/README.md)
@@ -53,7 +53,7 @@
   * [Custom sdk dependencies](sdk/vpn-sdk-for-android/custom-sdk-dependencies.md)
   * [Usage](sdk/vpn-sdk-for-android/usage.md)
   * [CNL List](sdk/vpn-sdk-for-android/cnl-list.md)
-  * [Fireshield\(Hydra transport\)](sdk/vpn-sdk-for-android/fireshield-hydra-transport.md)
+  * [Fireshield(Hydra transport)](sdk/vpn-sdk-for-android/fireshield-hydra-transport.md)
   * [Traffic rules](sdk/vpn-sdk-for-android/traffic-rules.md)
   * [OpenVPN transport](sdk/vpn-sdk-for-android/openvpn-transport.md)
   * [Reconnection strategy](sdk/vpn-sdk-for-android/reconnection-strategy.md)
@@ -66,7 +66,7 @@
 * [Hydra VPN SDK for Windows](sdk/hydra-sdk-for-windows.md)
 * [Hydra VPN SDK for Routers](sdk/hydra-vpn-sdk-for-routers/README.md)
   * [SDK. Shared library.](sdk/hydra-vpn-sdk-for-routers/hydra-vpn-sdk-for-routers-sdk.md)
-  * [Configuration Interface \(CI\)](sdk/hydra-vpn-sdk-for-routers/hydra-vpn-sdk-for-routers-ci/README.md)
+  * [Configuration Interface (CI)](sdk/hydra-vpn-sdk-for-routers/hydra-vpn-sdk-for-routers-ci/README.md)
     * [Unix Domain Sockets CI](sdk/hydra-vpn-sdk-for-routers/hydra-vpn-sdk-for-routers-ci/hydra-vpn-sdk-for-routers-ci-unix-domain.md)
     * [REST API CI](sdk/hydra-vpn-sdk-for-routers/hydra-vpn-sdk-for-routers-ci/hydra-vpn-sdk-for-routers-ci-rest-api.md)
 
@@ -75,7 +75,7 @@
 * [Partner API](https://anchorfreepartner.github.io/apidocs/partner.html)
 * [User API](https://anchorfreepartner.github.io/apidocs/user.html)
 
-## Sample applications <a id="demo-applications"></a>
+## Sample applications <a href="demo-applications" id="demo-applications"></a>
 
 * [Hydra VPN SDK demo for iOS](demo-applications/demo-unifysdk-ios.md)
 * [IPSEC VPN SDK demo for iOS](demo-applications/ipsec-vpn-sdk-demo-for-ios.md)
@@ -107,10 +107,17 @@
   * [What analytic data is collected by your SDK?](faq/general/what-analytic-data-collect-your-sdk.md)
   * [How the Platform restricts access to our data?](faq/general/how-the-platform-restrict-access-to-our-data.md)
   * [Why DNS Leak tests often indicate positive result?](faq/general/why-dns-leak-tests-often-indicate-that-there-is-dns-leak.md)
+  * [Do we need to perform endpoint health checks?](faq/general/do-we-need-to-perform-endpoint-health-checks.md)
+  * [How is the VPN exit node found?](faq/general/how-is-the-vpn-exit-node-found.md)
+  * [How are streams re-marked if VPN is enabled/disabled on an active flow?](faq/general/how-are-streams-re-marked-if-vpn-is-enabled-disabled-on-an-active-flow.md)
+  * [Is there a maximum number of supported devices?](faq/general/is-there-a-maximum-number-of-supported-devices.md)
+  * [Are both IPv4 and IPv6 supported?](faq/general/are-both-ipv4-and-ipv6-supported.md)
+  * [What is the MTU of the tunnel?](faq/general/what-is-the-mtu-of-the-tunnel.md)
+  * [Are any redundancy measures in terms of reliability provided?](faq/general/are-any-redundancy-measures-in-terms-of-reliability-provided.md)
+  * [Do you block broadcast and multicast to/from the VPN?](faq/general/do-you-block-broadcast-and-multicast-to-from-the-vpn.md)
 * [Fireshield](faq/fireshield/README.md)
   * [What types of protection does Fireshield offer?](faq/fireshield/what-types-of-protection-does-fireshield-offer.md)
   * [What type of traffic Pango Protection and Fireshield are able to handle?](faq/fireshield/what-type-of-traffic-pango-protection-and-fireshield-are-able-to-handle.md)
   * [Will the Fireshield filtering work with non-web related traffic?](faq/fireshield/will-the-fireshield-filtering-work-with-non-web-related-traffic.md)
   * [Does the current version of Fireshield support leverage IP and name server data, subnets blocking?](faq/fireshield/does-current-version-of-fireshield-is-able-of-leveraging-ip-and-name-server-data-subnets-blocking.md)
   * [Which is the best way - using Fireshield or setting up a DNS service and force the SDK to use it?](faq/fireshield/which-is-the-best-way-using-fireshield-or-setting-up-a-dns-service-and-force-the-sdk-to-use-it.md)
-
