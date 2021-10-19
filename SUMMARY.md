@@ -114,6 +114,7 @@
   * [Are both IPv4 and IPv6 supported?](faq/general/are-both-ipv4-and-ipv6-supported.md)
   * [What is the MTU of the tunnel?](faq/general/what-is-the-mtu-of-the-tunnel.md)
   * [Are any redundancy measures in terms of reliability provided?](faq/general/are-any-redundancy-measures-in-terms-of-reliability-provided.md)
+  * [Is there any load balancing?](faq/general/is-there-any-load-balancing.md)
   * [Do you block broadcast and multicast to/from the VPN?](faq/general/do-you-block-broadcast-and-multicast-to-from-the-vpn.md)
 * [Fireshield](faq/fireshield/README.md)
   * [What types of protection does Fireshield offer?](faq/fireshield/what-types-of-protection-does-fireshield-offer.md)
