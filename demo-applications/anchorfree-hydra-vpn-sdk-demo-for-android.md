@@ -16,22 +16,21 @@ Minimum Android SDK version 15
 
 1. Clone app source code locally
 2. Import project in Android Studio
-3. Register an account at [developer.anchorfree.com](https://developer.anchorfree.com/)
+3. Register an account at [developer.anchorfree.com](https://developer.anchorfree.com)
 4. Create a project
 
 ![](../.gitbook/assets/first-project.png)
 
-    5. Add locations
+&#x20;   5\. Add locations
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](<../.gitbook/assets/image (2).png>)
 
-   6. Login to the app using **project\_id** from dashboard
+&#x20;  6\. Login to the app using **project\_id** from dashboard
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](<../.gitbook/assets/image (3).png>)
 
-   7. Click "Connect"
+&#x20;  7\. Click "Connect"
 
 ## Documentation
 
 For more detailed information refer to [SDK documentation](https://pango.gitbook.io/pango-platform/sdk/vpn-sdk-for-android).
-

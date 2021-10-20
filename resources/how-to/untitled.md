@@ -13,33 +13,33 @@ Secret key has been designed for the users to make it easy for them to control t
 
 ## Follow below mentioned steps to easily obtain Shared Secret key from iTunes Connect for In-App Purchase:
 
- **Step 1:** Login into your iTunes Connect Development account  
+&#x20;**Step 1:** Login into your iTunes Connect Development account &#x20;
 
-![](../../.gitbook/assets/itunes_connect_login.png)
+![](../../.gitbook/assets/itunes\_connect\_login.png)
 
- **Step 2:** Click on My Apps icon  
+&#x20;**Step 2:** Click on My Apps icon &#x20;
 
-![](../../.gitbook/assets/itunes_connect_myapps.png)
+![](../../.gitbook/assets/itunes\_connect\_myapps.png)
 
- **Step 3:** All of your created applications will appear. Click on the specific app for which you want to enable In-App Purchase  
+&#x20;**Step 3:** All of your created applications will appear. Click on the specific app for which you want to enable In-App Purchase &#x20;
 
-![](../../.gitbook/assets/itunes_connect_app.png)
+![](../../.gitbook/assets/itunes\_connect\_app.png)
 
- **Step 4:** Go to **Features**  
+&#x20;**Step 4:** Go to **Features **&#x20;
 
-![](../../.gitbook/assets/itunes_connect_features.png)
+![](../../.gitbook/assets/itunes\_connect\_features.png)
 
- **Step 5:** Click on **App Specific Shared Secret**  
+&#x20;**Step 5:** Click on **App Specific Shared Secret **&#x20;
 
-![](../../.gitbook/assets/itunes_connect_secret.png)
+![](../../.gitbook/assets/itunes\_connect\_secret.png)
 
- **Step 6:** A pop-up window will appear, click on **Generate App-Specific Shared Secret**  
+&#x20;**Step 6:** A pop-up window will appear, click on **Generate App-Specific Shared Secret **&#x20;
 
-![](../../.gitbook/assets/itunes_connect_generate_app_secret.png)
+![](../../.gitbook/assets/itunes\_connect\_generate\_app\_secret.png)
 
- **Step 7:** Here is your Shared Secret Key, copy and paste it into the respective field on creator software  
+&#x20;**Step 7:** Here is your Shared Secret Key, copy and paste it into the respective field on creator software &#x20;
 
-![](../../.gitbook/assets/itunes_connect_secret_key.png)
+![](../../.gitbook/assets/itunes\_connect\_secret\_key.png)
 
 ## **What is the Secret Key?**
 
@@ -53,7 +53,7 @@ Without using a shared secret key in any specific communication, the parties inv
 
 The Shared Secret Key can be used to authenticate the instances while logging into a remote system through techniques such as challenge-response or it can also be used for a key derivation function to create one or more keys to be used for encryption.
 
-## **Shared Key Authentication \(SKA\)**
+## **Shared Key Authentication (SKA)**
 
 Shared Key Authentication is a procedure by which a computer can get access to a specific wireless network area that follows the Wired Equivalent Privacy protocol. The access point of the shared secret key responds by generating a series of characters called a ‘challenge text’ for the computer.
 
@@ -69,7 +69,7 @@ iTunes Connect is a service platform developed by Apple Inc., which allocates di
 
 Previously, iTunes Connect also used to manage and upload applications on Mac App Store and the App Store, but in June 2018, Apple launched App Store Connect as an individual, however, visually similar, service.
 
-Both App Store Connect and iTunes Connect let users edit, add, remove, edit digital items’ metadata \(keywords, screenshots, description\), manage availability, view analytics \(revenues, number of downloads, and more\), and collaborate on the similar tasks by increasing the number of team members.
+Both App Store Connect and iTunes Connect let users edit, add, remove, edit digital items’ metadata (keywords, screenshots, description), manage availability, view analytics (revenues, number of downloads, and more), and collaborate on the similar tasks by increasing the number of team members.
 
 ## **Shared Secret Key for iTunes Connect**
 
@@ -88,4 +88,3 @@ An auto-renewable subscription service is an iOS In-App Purchase category that p
 Among millions of applications available for the installation in Apple App Stores, not all of them have in-app purchases or subscription charges. But some useful apps need to be secured and controlled in terms of auto-renewable subscriptions.
 
 Users have been provided with the shared secret key to get the same job done. These apps include the regular apps that you keep handy and the secret apple apps that you need to keep locked.
-

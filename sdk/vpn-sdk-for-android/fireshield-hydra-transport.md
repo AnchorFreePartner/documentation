@@ -1,10 +1,10 @@
-# Fireshield\(Hydra transport\)
+# Fireshield(Hydra transport)
 
-## Categorization service \(aka Fireshield\) \(Hydra transport only\)
+## Categorization service (aka Fireshield) (Hydra transport only)
 
 Unified SDK provides ability to categorize domains, goes through VPN and performs specified actions on them. To configureit, you need to create an instance of **FireshieldConfig** and pass it to **SessionConfig.Builder** when starting a VPN session:
 
-```text
+```
 final SessionInfo session = new SessionConfig.Builder()
                 .withVirtualLocation(UnifiedSDK.COUNTRY_OPTIMAL)
                 .withReason(TrackingConstants.GprReasons.M_UI)
@@ -29,13 +29,13 @@ Categorization configuration based on specification of categories and rules for 
 
 To create categories, you can use one of factory methods:
 
-* **FireshieldCategory.Builder.vpn** - create a category with **VPN** action \(traffic \(encrypted\) goes through the tunnel as IP packets \)
-* **FireshieldCategory.Builder.proxy** - create a category with **Proxy** action \(traffic \(encrypted\) goes through the tunnel as a payload \(for TCP only\)\)
-* **FireshieldCategory.Builder.bypass** - create a category with **Bypass** action \(traffic goes directly to its destination, without a vpn tunnel\)
-* **FireshieldCategory.Builder.block** - create a category with **Block** action \(traffic gets blocked\)
-* **FireshieldCategory.Builder.blockAlertPage** - create a category with **Block** action \(traffic gets blocked\) and a redirection to a specified Alert Page \(works for HTTP only\)
+* **FireshieldCategory.Builder.vpn** - create a category with **VPN** action (traffic (encrypted) goes through the tunnel as IP packets )
+* **FireshieldCategory.Builder.proxy** - create a category with **Proxy** action (traffic (encrypted) goes through the tunnel as a payload (for TCP only))
+* **FireshieldCategory.Builder.bypass** - create a category with **Bypass** action (traffic goes directly to its destination, without a vpn tunnel)
+* **FireshieldCategory.Builder.block** - create a category with **Block** action (traffic gets blocked)
+* **FireshieldCategory.Builder.blockAlertPage** - create a category with **Block **action (traffic gets blocked) and a redirection to a specified Alert Page (works for HTTP only)
 
-To create category rules \(which domains get to specified category\) you can use one of the factory methods:
+To create category rules (which domains get to specified category) you can use one of the factory methods:
 
 * **FireshieldCategoryRule.Builder.fromAssets** - create category rules from file stored in **Assets** folder
 * **FireshieldCategoryRule.Builder.fromDomains** - create category rules from the list of domains
@@ -47,9 +47,9 @@ Possible values are defined as constants in **FireshieldConfig.Services.**
 
 ### Alert page configuration
 
-**AlertPage** static method accepts two parameters: domain and path, on categorization action user will be redirected to \[https://domain/page?url=&lt;blocked\_url&gt;\]
+**AlertPage** static method accepts two parameters: domain and path, on categorization action user will be redirected to \[https://domain/page?url=\<blocked\_url>]
 
-```text
+````
 
 FireshieldConfig createFireshieldConfig(){
         FireshieldConfig.Builder builder = new FireshieldConfig.Builder();
@@ -77,11 +77,11 @@ UnifiedSDK.addVpnCallListener(new VpnCallback() {
         }
     }
 });
-```
+````
 
 SDK provides access to some categorisation stats
 
-```text
+```
 final FireshieldStats stats = new FireshieldStatus();
 //get total scanned connections count
 stats.getScannedConnectionsCount(new Callback<Integer>() {
@@ -102,5 +102,4 @@ stats.getSessionScannedConnectionsCount();
 stats.resetScannedConnectionsCount();
 ```
 
-## 
-
+##

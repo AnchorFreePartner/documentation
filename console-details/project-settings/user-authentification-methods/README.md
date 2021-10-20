@@ -18,13 +18,13 @@ The "Auth method" tab is visible for the project owner role only
 
 ## Methods
 
-Client applications can use these methods for User authentication. See parameter "_auth\_method_" in SDK or REST API [_/user/login_](https://backend.northghost.com/doc/user/index.html#!/user-controller/loginDevice). Each project user should be registered in the project. 
+Client applications can use these methods for User authentication. See parameter "_auth\_method_" in SDK or REST API [_/user/login_](https://backend.northghost.com/doc/user/index.html#!/user-controller/loginDevice). Each project user should be registered in the project.&#x20;
 
 The project can use more than one user authentication method. The Platform supports the following authentication methods:
 
 ### Anonymous
 
-_anonymous_ - anonymous authentication method. A user device will be registered as an anonymous user without any additional details. 
+_anonymous_ - anonymous authentication method. A user device will be registered as an anonymous user without any additional details.&#x20;
 
 {% hint style="info" %}
 An anonymous user can be free or paid but additional devices cannot be added to this user account.
@@ -32,7 +32,7 @@ An anonymous user can be free or paid but additional devices cannot be added to 
 
 Auth Settings:
 
-```text
+```
 {}
 ```
 
@@ -40,31 +40,37 @@ Auth Settings:
 
 _firebase_ - this user authentication method supports the Google Firebase Authentication Service:
 
-{% page-ref page="./" %}
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
 
-This service supports different user sign-in methods - ![](../../../.gitbook/assets/email_icon.png) _Email/password_, ![](../../../.gitbook/assets/phone_icon.svg) _Phone,_ ![](../../../.gitbook/assets/google_icon.svg) _Google_, ![](../../../.gitbook/assets/facebook_icon.svg) _Facebook_, ![](../../../.gitbook/assets/mslive_icon.svg) _Microsoft_, ![](../../../.gitbook/assets/apple_icon.png) _Apple_ and more. 
+This service supports different user sign-in methods - ![](../../../.gitbook/assets/email\_icon.png) _Email/password_, ![](../../../.gitbook/assets/phone\_icon.svg) _Phone, _![](../../../.gitbook/assets/google\_icon.svg) _Google_, ![](../../../.gitbook/assets/facebook\_icon.svg) _Facebook_, ![](../../../.gitbook/assets/mslive\_icon.svg) _Microsoft_, ![](../../../.gitbook/assets/apple\_icon.png) _Apple_ and more.&#x20;
 
 {% hint style="info" %}
-If a user signs in on 2 or more devices using the same account, all devices will be assigned to that user account. An authorized user can be free or paid \(applies to all of his devices\).
+If a user signs in on 2 or more devices using the same account, all devices will be assigned to that user account. An authorized user can be free or paid (applies to all of his devices).
 {% endhint %}
 
 Auth Settings:
 
-```text
+```
 {
    "firebase_api_key": "AIzaSyBAw-hTjkyR78yqQccPVQHdNAdbJas_Lb0"
 }
 ```
 
-where "_firebase\_api\_key_" is the key of the Firebase project.  To learn how to create a Firebase project, refer to this: 
+where "_firebase\_api\_key_" is the key of the Firebase project.  To learn how to create a Firebase project, refer to this:&#x20;
 
-{% page-ref page="../../../resources/how-to/create-the-firebase-project-for-user-authentication.md" %}
+{% content-ref url="../../../resources/how-to/create-the-firebase-project-for-user-authentication.md" %}
+[create-the-firebase-project-for-user-authentication.md](../../../resources/how-to/create-the-firebase-project-for-user-authentication.md)
+{% endcontent-ref %}
 
 ### Custom methods
 
 If you have a User authentication service, we can make a plugin and support your service for your projects. Requirements for the Plugin are listed here:
 
-{% page-ref page="auth-plugin-requirements.md" %}
+{% content-ref url="auth-plugin-requirements.md" %}
+[auth-plugin-requirements.md](auth-plugin-requirements.md)
+{% endcontent-ref %}
 
 Please contact us if you have any questions about the Plugin.
 
@@ -74,37 +80,35 @@ Please contact us if you have any questions about the Plugin.
 
 If you are going to add new user authentication method to the project you need to do the following:
 
-1. Click the "![](../../../.gitbook/assets/plus_icon.jpeg)**Add**" button. You will see a form that looks like this:
+1. Click the "![](../../../.gitbook/assets/plus\_icon.jpeg)**Add**" button. You will see a form that looks like this:
 
-![Create authentication method dialog](../../../.gitbook/assets/add_new_auth.png)
+![Create authentication method dialog](../../../.gitbook/assets/add\_new\_auth.png)
 
 Fill in the name of your authentication method. For anonymous method - "_anonymous_", for Firebase - "firebase", for custom -  _the name of your plugin_.
 
 Then, you have to input the settings of the authentication method.
 
-   2. Click "**New auth method**". As a result, this new authentication method should show up in the table, for example:
+&#x20;  2\. Click "**New auth method**". As a result, this new authentication method should show up in the table, for example:
 
-![Authentication methods settings overview](../../../.gitbook/assets/auth_methods.png)
+![Authentication methods settings overview](../../../.gitbook/assets/auth\_methods.png)
 
 ### Editing method parameters
 
 If you are going to change settings of an existing authentication method, you need to do the following:
 
-1. Select an authentication method and click the "![](../../../.gitbook/assets/edit_icon.png)" button. You will see a form that looks like this:
+1. Select an authentication method and click the "![](../../../.gitbook/assets/edit\_icon.png)" button. You will see a form that looks like this:
 
-![Edit authentication method dialog](../../../.gitbook/assets/edit_auth_settings.png)
+![Edit authentication method dialog](../../../.gitbook/assets/edit\_auth\_settings.png)
 
-  2. Edit the JSON and click "**Edit auth method**". 
+&#x20; 2\. Edit the JSON and click "**Edit auth method**".&#x20;
 
 ### Delete method
 
 If you are going to delete an existing authentication method, you need to do the following:
 
-1. Select an authentication method you want to delete and click the "![](../../../.gitbook/assets/delete_icon.png)" button. You will see a form that looks like this:
+1. Select an authentication method you want to delete and click the "![](../../../.gitbook/assets/delete\_icon.png)" button. You will see a form that looks like this:
 
-![Delete authentication method dialog](../../../.gitbook/assets/delete_auth_method.png)
+![Delete authentication method dialog](../../../.gitbook/assets/delete\_auth\_method.png)
 
-   2. Click "**Delete auth method**". 
-
-
+&#x20;  2\. Click "**Delete auth method**".&#x20;
 

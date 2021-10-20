@@ -4,7 +4,7 @@
 
 If your project TargetSDK is 29 and you use Google App Bundle for application distribution, add
 
-```text
+```
 android.bundle.enableUncompressedNativeLibs=false
 ```
 
@@ -14,22 +14,22 @@ To add OpenVPN transport support:
 
 1. Add OpenVPN depencency to `build.gradle`:
 
-```text
+```
 com.github.AnchorFreePartner.hydra-sdk-android:openvpn:{VERSION_NAME}
 ```
 
-    2. Register both or one transport with SDK config:
+&#x20;   2\. Register both or one transport with SDK config:
 
-```text
+```
 List<TransportConfig> transports = new ArrayList<>();
 transports.add(HydraTransportConfig.create());
 transports.add(OpenVpnTransportConfig.tcp());
 UnifiedSDK.update(transportConfigs, callback);
 ```
 
-    3. Specify transport on VPN start:
+&#x20;   3\. Specify transport on VPN start:
 
-```text
+```
 final SessionInfo session = new SessionConfig.Builder()
                 .withVirtualLocation(UnifiedSDK.COUNTRY_OPTIMAL)
                 .withReason(TrackingConstants.GprReasons.M_UI)
@@ -48,5 +48,4 @@ sdk.getVPN().start(session, new CompletableCallback() {
 });
 ```
 
-## 
-
+##

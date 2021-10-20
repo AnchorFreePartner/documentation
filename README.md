@@ -19,11 +19,19 @@ description: >-
 
 Take a look at this use cases list in order to decide if Aura Developer Platform matches your needs:
 
-{% page-ref page="resources/use-cases/" %}
+{% content-ref url="resources/use-cases/" %}
+[use-cases](resources/use-cases/)
+{% endcontent-ref %}
 
 Try out Platform services - it is the best way to discover its capabilities:
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
 Check out our Frequently Asked Questions:
 
-
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 

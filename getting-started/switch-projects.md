@@ -17,7 +17,7 @@ A click on the menu will open it. It displays a list of your projects, the one y
 Clicking on the name of another project will switch the Management Console to work with it.
 
 {% hint style="info" %}
-Is some cases the list of projects can become too long to scroll; you can type the full name \(or a part\) of the project in the search field. This will automatically filter the list.
+Is some cases the list of projects can become too long to scroll; you can type the full name (or a part) of the project in the search field. This will automatically filter the list.
 {% endhint %}
 
 By clicking on the "**All project**" menu item, you will be redirected to the projects overview dashboard:
@@ -25,6 +25,5 @@ By clicking on the "**All project**" menu item, you will be redirected to the pr
 ![Projects overview dashboard](../.gitbook/assets/screenshot-2021-06-08-at-13.29.00.png)
 
 {% hint style="info" %}
-Projects on the dashboard can be viewed as a list or a grid ****by clicking on the respective button between "Search" and "Add project"
+Projects on the dashboard can be viewed as a list or a grid** **by clicking on the respective button between "Search" and "Add project"
 {% endhint %}
-

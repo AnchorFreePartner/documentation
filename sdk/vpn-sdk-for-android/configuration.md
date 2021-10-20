@@ -4,7 +4,7 @@
 
 Proguard rules are included in sdk, but you can use these if required:
 
-```text
+```
     -dontwarn okio.**
     -keepattributes InnerClasses
     -dontwarn sun.misc.**
@@ -57,7 +57,7 @@ Proguard rules are included in sdk, but you can use these if required:
 
 Add this string resource to your source file to set custom process name for vpn
 
-```text
+```
 <string name="vpn_process_name" translatable="false">:vpn</string>
 ```
 
@@ -65,7 +65,7 @@ Add this string resource to your source file to set custom process name for vpn
 
 Add Java 8 support to project **build.gradle**
 
-```text
+```
 compileOptions {
     sourceCompatibility 1.8
     targetCompatibility 1.8
@@ -80,14 +80,14 @@ To configure sdk notification, use **NotificationConfig.Builder** class
 
 **Disable notifications**
 
-```text
+```
     NotificationConfig.Builder builder = NotificationConfig.newBuilder();
     builder = builder.disabled()
 ```
 
 **Notifications for different states**
 
-```text
+```
 //Notification to be displayed when vpn is connected
 builder.inConnected("Title","Message");
 //Notification to be displayed when vpn is not connected
@@ -114,13 +114,13 @@ If **inPause** was not called, it will try to use string resource **default\_not
 
 #### Notification click intent
 
-To configure action when a user clicks a notification, use **clickAction** method. You must have Activity responding to the specified action. Action will be used to create an Intent. If **clickAction** is not specified, sdk will open application launch activity on notification click.
+To configure action when a user clicks a notification, use **clickAction** method. You must have Activity responding to the specified action. Action will be used to create an Intent. If **clickAction **is not specified, sdk will open application launch activity on notification click.
 
 In intent extras sdk will set a boolean value **UnifiedSDKNotificationManager.EXTRA\_NOTIFICATION** as **true**.
 
 To handle click action, register `intent-filter` with your activity
 
-```text
+```
 <intent-filter>
     <action android:name="com.sdk.notification.action"/>
     <category android:name="android.intent.category.DEFAULT"/>
@@ -131,9 +131,8 @@ To handle click action, register `intent-filter` with your activity
 
 Notification config can be updated calling the sdk method
 
-```text
+```
     UnifiedSDK.update(createNotificationConfig());
 ```
 
-## 
-
+##

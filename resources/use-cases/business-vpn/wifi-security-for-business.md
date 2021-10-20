@@ -6,28 +6,28 @@ description: >-
 
 # Wi-Fi Security for Business
 
-_Wi-Fi Security for Business_ is a versatile application designed for the needs of clients who want to provide VPN to a specific number of users. All the users have to do is log in using either their emails or user IDs, depending on the authorisation type in a specific project. If a user was added to your project, they will be able to access it through this application, connect to any of the available virtual locations and enjoy unlimited VPN access!
+_Wi-Fi Security for Business _is a versatile application designed for the needs of clients who want to provide VPN to a specific number of users. All the users have to do is log in using either their emails or user IDs, depending on the authorisation type in a specific project. If a user was added to your project, they will be able to access it through this application, connect to any of the available virtual locations and enjoy unlimited VPN access!
 
 To download the _Wi-Fi Security for Business_ application for different platforms, follow the corresponding links:
 
-* [**Wi-Fi Security for Business** for Windows](https://firebasestorage.googleapis.com/v0/b/oauth-default-4d635.appspot.com/o/Windows%2FWi-Fi_Security_for_Business_1.3.2.127.msi?alt=media&token=b9dabb98-0031-4fba-a728-372b5322877a) ****![](../../../.gitbook/assets/ms-store-small.png) 
-* [**Wi-Fi Security for Business** for Android](https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness&hl=en_US) ****![](../../../.gitbook/assets/play-store-logo-small.jpg) 
-* [**Wi-Fi Security for Business** for iOS](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544) ****![](../../../.gitbook/assets/appstore-logo-small.png) 
-* **Wi-Fi Security for Business** for macOS ****![](../../../.gitbook/assets/ios-logo-small.jpg) — the app is not available for general public, but you can acquire it if you [**contact us**](mailto:r.mukherji@pango.co)
+* [**Wi-Fi Security for Business** for Windows](https://firebasestorage.googleapis.com/v0/b/oauth-default-4d635.appspot.com/o/Windows%2FWi-Fi\_Security\_for\_Business\_1.3.2.127.msi?alt=media\&token=b9dabb98-0031-4fba-a728-372b5322877a)** **![](../../../.gitbook/assets/ms-store-small.png)&#x20;
+* [**Wi-Fi Security for Business** for Android](https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness\&hl=en\_US)** **![](../../../.gitbook/assets/play-store-logo-small.jpg)&#x20;
+* [**Wi-Fi Security for Business** for iOS](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544)** **![](../../../.gitbook/assets/appstore-logo-small.png)&#x20;
+* **Wi-Fi Security for Business** for macOS** **![](../../../.gitbook/assets/ios-logo-small.jpg) — the app is not available for general public, but you can acquire it if you [**contact us**](mailto:r.mukherji@pango.co)
 
-Below, we will explore user interface of the Windows application, but it is quite similar to the applications on other platforms, so it is a decent representation of all the _Wi-Fi Security for Business_ applications we offer. 
+Below, we will explore user interface of the Windows application, but it is quite similar to the applications on other platforms, so it is a decent representation of all the _Wi-Fi Security for Business_ applications we offer.&#x20;
 
 The first thing you see after installing and launching the _Wi-Fi Security for Business_ application is a log-in screen:
 
 ![](../../../.gitbook/assets/wifi-security-login-tom-briantic.png)
 
-There, you \(or a user you have added to the project\) have to enter credentials to access the project. 
+There, you (or a user you have added to the project) have to enter credentials to access the project.&#x20;
 
 {% hint style="warning" %}
 Please note that even if you are the owner of the project, you have to add a user for yourself to access the vpn.
 {% endhint %}
 
-After a successful authentication, you will be directed to the main screen of the application and connected to the most suitable vpn server \(diplayed in the top-right portion of the screen\):
+After a successful authentication, you will be directed to the main screen of the application and connected to the most suitable vpn server (diplayed in the top-right portion of the screen):
 
 {% tabs %}
 {% tab title="Connected" %}
@@ -55,14 +55,14 @@ Also, if there are private servers added to the project, you will be able to see
 
 By clicking on the burger menu in the top-left corner, you can expand the menu on the left, revealing the names of the menu items:
 
-![](../../../.gitbook/assets/wifi-security-left-menu-2%20%281%29.png)
+![](<../../../.gitbook/assets/wifi-security-left-menu-2 (1).png>)
 
-  Or, you can just click the items right away to jump to corresponding pages.
+&#x20; Or, you can just click the items right away to jump to corresponding pages.
 
 ![](../../../.gitbook/assets/wifi-security-networks.png)
 
-If you set the 'Public Wi-Fi' slider to 'Off', next time you connect to a public wi-fi network \(e.g. a network in a library or a mall\), the application will not automatically send your data through a secure channel.  
-The same goes for private wi-fi networks \(e.g. at home or at work\) and ethernet networks \(connection through a cable\).
+If you set the 'Public Wi-Fi' slider to 'Off', next time you connect to a public wi-fi network (e.g. a network in a library or a mall), the application will not automatically send your data through a secure channel.\
+The same goes for private wi-fi networks (e.g. at home or at work) and ethernet networks (connection through a cable).
 
 On the 'Networks' page you can change how the application acts when connected to public, private and ethernet networks.
 
@@ -73,4 +73,3 @@ If you encounter any sort of trouble while using the application, consult the FA
 ![](../../../.gitbook/assets/wifi-security-settings-tom-briantic.png)
 
 On the 'Settings' page, you can change global setting of the application, as well as contact us, sign out of the account and view both terms of service and privacy policy. The version of the application is also situated on this page.
-

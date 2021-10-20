@@ -9,7 +9,7 @@ Dynamic Configuration Interface based on REST API.
 
 ### Minimal working configuration
 
-```text
+```
 {
     ...SDK config params...
     "ci_rest" : {
@@ -20,33 +20,33 @@ Dynamic Configuration Interface based on REST API.
 
 ### All configuration parameters
 
-```text
+```
 "token"
 ```
 
 Authorization token used to restrict access.
 
-```text
+```
 "host"
 ```
 
-IP address on which REST API should listen. 
+IP address on which REST API should listen.&#x20;
 
 _Default:_ `"127.0.0.1"`
 
-```text
+```
 "port"
 ```
 
-Port to listen on. 
+Port to listen on.&#x20;
 
 _Default:_ `61438`
 
-```text
+```
 "disabled"
 ```
 
-Handy flag to fast disable dynamic interface not removing `"ci_rest"` configuration section 
+Handy flag to fast disable dynamic interface not removing `"ci_rest"` configuration section&#x20;
 
 _Default:_ `0`
 
@@ -55,7 +55,7 @@ _Default:_ `0`
 * 500 - internal error. Allocation errors, internal exceptions.
 * 200 - success.
 * 404 - request unrecognized.
-* 400 - bad request. Required request parameters are missing. 
+* 400 - bad request. Required request parameters are missing.&#x20;
 * 413 - request body is too long.
 
 To provide detailed information `"status"` field is also available in [response body](./#responses).
@@ -64,27 +64,27 @@ To provide detailed information `"status"` field is also available in [response 
 
 ### Ping
 
-```text
+```
 <host>:<port>/api/ping
 ```
 
-_Type:_ `POST` 
+_Type:_ `POST`&#x20;
 
-_Body:_ `{ "token" : "your_secret_token" }`
+_Body: _`{ "token" : "your_secret_token" }`
 
-### Protect IP address 
+### Protect IP address&#x20;
 
-```text
+```
 <host>:<port>/api/protected_ip
 ```
 
-_Type:_ `POST` 
+_Type:_ `POST`&#x20;
 
-_Body:_ `{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149", "vl" : "ca-ontario-toronto" }`
+_Body: _`{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149", "vl" : "ca-ontario-toronto" }`
 
 ### Unprotect IP
 
-```text
+```
 <host>:<port>/api/protected_ip
 ```
 
@@ -94,7 +94,7 @@ _Body:_ `{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149" }`
 
 ### Protect MAC
 
-```text
+```
 <host>:<port>/api/protected_mac
 ```
 
@@ -104,7 +104,7 @@ _Body:_ `{ "token" : "your_secret_token", "mac_addr" : "08:00:27:aa:d7:17", "vl"
 
 ### Unprotect MAC
 
-```text
+```
 <host>:<port>/api/protected_mac
 ```
 
@@ -114,7 +114,7 @@ _Body:_ `{ "token" : "your_secret_token", "mac_addr" : "08:00:27:aa:d7:17" }`
 
 ### Protect interface
 
-```text
+```
 <host>:<port>/api/protected_iface
 ```
 
@@ -124,7 +124,7 @@ _Body:_ `{ "token" : "your_secret_token", "iface" : "eth2", "vl" : "ca-ontario-t
 
 ### Unprotect interface
 
-```text
+```
 <host>:<port>/api/protected_iface
 ```
 
@@ -134,7 +134,7 @@ _Body:_ `{ "token" : "your_secret_token", "iface" : "eth2" }`
 
 ### Dump config file
 
-```text
+```
 <host>:<port>/api/dump_config
 ```
 
@@ -144,11 +144,10 @@ _Body:_ `{ "token" : "your_secret_token", "config_path" : "/etc/afwrt/afwrt-ci.c
 
 ### Get available countries
 
-```text
+```
 <host>:<port>/api/countries
 ```
 
 _Type:_ `POST`
 
 _Body:_ `{ "token" : "your_secret_token" }`
-

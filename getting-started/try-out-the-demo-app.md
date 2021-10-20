@@ -6,7 +6,7 @@ description: Get your hands on the real experience with the demo application
 
 ## General
 
-To get a better idea of the system, we suggest setting up and building a test iOS application, and then see the results of its work in the Management Console. 
+To get a better idea of the system, we suggest setting up and building a test iOS application, and then see the results of its work in the Management Console.&#x20;
 
 You can get the latest demo Xcode project from the repository:
 
@@ -16,9 +16,9 @@ You can get the latest demo Xcode project from the repository:
 Instructions from the README file can be omitted, since they have already been implemented in the latest version of the project
 {% endhint %}
 
-After you open the project in the Xcode, locate the _AppDelegate.swift_ file and fill the "**carrierId**" variable with the value of **ProjectID** for your project:
+After you open the project in the Xcode, locate the _AppDelegate.swift _file and fill the "**carrierId**" variable with the value of **ProjectID** for your project:
 
-```text
+```
 CakeTube.instance().configure(CTConfig.create { (c) in
             c.baseUrl = "https://backend.northghost.com"
             c.carrierId = ""
@@ -76,4 +76,3 @@ It would probably be missing in the list, you need to type it in
 {% endhint %}
 
 ![](../.gitbook/assets/screenshot-2021-06-08-at-14.27.21.png)
-

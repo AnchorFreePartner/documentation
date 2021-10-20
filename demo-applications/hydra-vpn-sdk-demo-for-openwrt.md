@@ -14,12 +14,12 @@ Please pay attention that this limited version does not support dynamic configur
 
 * for x86\_64 target
 
-`opkg install afwrt-ws_0.3_x86_64.ipk`  
+`opkg install afwrt-ws_0.3_x86_64.ipk`\
 
 
 * for mvebu/cortexa9 target
 
-`opkg install afwrt-ws_0.3_arm_cortex-a9_vfpv3-d16.ipk`  
+`opkg install afwrt-ws_0.3_arm_cortex-a9_vfpv3-d16.ipk`\
 
 
 If package installation was succeeded, the next files should appear on your WRT system:
@@ -31,7 +31,7 @@ If package installation was succeeded, the next files should appear on your WRT 
 
 Please take a look at the section below and check /etc/afwrt-ws.conf was configured properly for your setup and execute afwrt-ws binary with root privileges.
 
-You can download [pre-compiled library and binary files for x86\_64](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_OpenWRT_version_latest.zip?alt=media&token=8ec44727-dc79-4299-b17c-b926840473e3) architecture  
+You can download [pre-compiled library and binary files for x86\_64](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK\_OpenWRT\_version\_latest.zip?alt=media\&token=8ec44727-dc79-4299-b17c-b926840473e3) architecture\
 
 
 ### Configuration
@@ -39,9 +39,9 @@ You can download [pre-compiled library and binary files for x86\_64](https://fir
 Most of the options could be left unchanged for this demo. But the next options should be updated properly in afwrt-ws.conf:
 
 * "wan\_ifname": name of your "Wide Area Network" interface, which your device connected to the internet through
-* "protected\_ip\_addrs": array of protected IP addresses on the internal network you want to test, with Country \(Virtual Location\) code for each
+* "protected\_ip\_addrs": array of protected IP addresses on the internal network you want to test, with Country (Virtual Location) code for each
 
-Option "token" is hard coded until the second release. It will be retrieved internally using the “[/user/login](https://anchorfreepartner.github.io/apidocs/user.html#post-/user/login)” method. 
+Option "token" is hard coded until the second release. It will be retrieved internally using the “[/user/login](https://anchorfreepartner.github.io/apidocs/user.html#post-/user/login)” method.&#x20;
 
 {% hint style="info" %}
 The advantage of x86\_64 format is that this build can be deployed and tested on any developer machine w/o real hardware. We recommend using VirtualBox.
@@ -91,6 +91,4 @@ From the next release, this list will be retrieved dynamically from the backend 
 
 `Resolving example.net... failed: Name or service not known.`
 
-Please check your router DNS settings. Dnsmasq may not be configured properly or DHCP-client configured on WAN interface can’t get DNS-server address from your DHCP server.  
-
-
+Please check your router DNS settings. Dnsmasq may not be configured properly or DHCP-client configured on WAN interface can’t get DNS-server address from your DHCP server.\

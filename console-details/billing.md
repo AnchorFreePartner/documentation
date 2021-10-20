@@ -14,7 +14,5 @@ Your active plan is marked with "**Current plan"** text
 
 You can see detailed information on features included with each plan by clicking the "**Show features**" link.
 
-You can **downgrade** from the premium plan by clicking on the respective button. However, an automatic downgrade is not available and you will be redirected to the "**Contact Us**" form.
-
-
+You can **downgrade **from the premium plan by clicking on the respective button. However, an automatic downgrade is not available and you will be redirected to the "**Contact Us**" form.
 

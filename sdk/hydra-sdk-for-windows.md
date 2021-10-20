@@ -6,7 +6,7 @@ description: >-
 
 # Hydra VPN SDK for Windows
 
-Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK_Win_version_1.4.1.285_partnerapi_1.0.3.56_with_TAP_signed.zip?alt=media&token=73debe41-b872-4355-948d-b27f7a830ba1)
+Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0/b/web-portal-for-partners.appspot.com/o/products%2FHydraSDK\_Win\_version\_1.4.1.285\_partnerapi\_1.0.3.56\_with\_TAP\_signed.zip?alt=media\&token=73debe41-b872-4355-948d-b27f7a830ba1)
 
 ## Requirements
 
@@ -16,7 +16,7 @@ Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0
 ## Files
 
 * HydraExecutable\x32bit\afvpn.dll
-* HydraExecutable\x32bit\hydra.exe 
+* HydraExecutable\x32bit\hydra.exe&#x20;
 * HydraExecutable\x64bit\afvpn.dll
 * HydraExecutable\x64bit\hydra.exe
 * TapDriver\x32\AFTap.inf
@@ -53,13 +53,13 @@ Download [the last version of the SDK](https://firebasestorage.googleapis.com/v0
 
 TAP driver installation requires administrator permissions. For windows 7, 8 and 8.1 execute the following command:
 
-```text
+```
 tapinstall.exe install AFTap.inf aftap0901
 ```
 
 and for Windows 10:
 
-```text
+```
 tapinstall.exe install OemVista.inf tap0901
 ```
 
@@ -67,7 +67,7 @@ tapinstall.exe install OemVista.inf tap0901
 
 To be able to use the Hydra service, you need to install it into the system once. It could be done by the following command:
 
-```text
+```
 Hydra.Sdk.Windows.Service.exe -install <serviceName>
 ```
 
@@ -148,7 +148,7 @@ else
 
 After a successful login, you can start a VPN connection, but first you have to get available VPN nodes. An example of connect implementation:
 
-```text
+```
 var loginResponse = await hydraSdk.Login(CarrierId, AuthMethod.Anonymous()).ConfigureAwait(false);
 var carrier = new Carrier(CarrierId, CarrierId, loginResponse.AccessToken);
 var nodes = await hydraSdk.GetNodes(carrier).ConfigureAwait(false);
@@ -158,7 +158,7 @@ await hydraSdk.StartVpn(firstOrDefault).ConfigureAwait(false);
 
 To stop the connection:
 
-```text
+```
 await hydraSdk.StopVpn().ConfigureAwait(false);
 ```
 
@@ -166,7 +166,7 @@ await hydraSdk.StopVpn().ConfigureAwait(false);
 
 #### `VpnConnectionStateChanged`
 
-Occurs when the SDK changes its state. `ConnectionStateChangedEventArgs` contains two properties:
+Occurs when the SDK changes its state. `ConnectionStateChangedEventArgs `contains two properties:
 
 `VpnConnectionState State` is the current state of the SDK. Possible values are:
 
@@ -190,7 +190,7 @@ Key places of Hydra SDK are instrumented with logging for debug purposes. If you
 
 First, create class derived from `BaseLoggerListener` and implement abstract methods:
 
-```text
+```
 internal class MyLoggerListener : BaseLoggerListener
 {
     public override void Trace(string message)
@@ -204,7 +204,7 @@ internal class MyLoggerListener : BaseLoggerListener
 
 Then add an instance of your logger listener as handler to the HydraLogger:
 
-```text
+```
 HydraLogger.AddHandler(new MyLoggerListener());
 ```
 
@@ -212,7 +212,7 @@ That's all. You will get log output of your logger.
 
 ## Console application example
 
-```text
+```
 namespace ConsoleVPN
 {
     using System;
@@ -264,9 +264,8 @@ namespace ConsoleVPN
 
 ## Release notes
 
-### 1.4.0.277 -&gt; 1.4.1.285
+### 1.4.0.277 -> 1.4.1.285
 
 * 'Connecting' state occurs faster
 * The following libraries were removed: Microsoft.Practices.ServiceLocation.dll, Microsoft.Practices.Unity.Configuration.dll, Microsoft.Practices.Unity.dll, Microsoft.Practices.Unity.RegistrationByConvention.dll, SimpleWifi.dll
 * General bug fixes and improvements
-

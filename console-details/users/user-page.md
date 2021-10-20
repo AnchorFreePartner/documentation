@@ -8,85 +8,33 @@ description: Find out how to get detailed information on specific user
 
 General user data includes the following information:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Traffic</td>
-      <td style="text-align:left">User daily bandwidth limit (in Mb). If the user doesn&apos;t have a bandwidth
-        limit, you will see <em>&apos;Unlimited&apos;</em>. You can change the user
-        bandwidth limit (see below).</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">License</td>
-      <td style="text-align:left">User license. The license determines how many devices a user can register.
-        You can change the license (see below).</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Activated devices</td>
-      <td style="text-align:left">Number of user&apos;s registered devices</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Status</td>
-      <td style="text-align:left">
-        <p>User status:</p>
-        <ul>
-          <li>Invited - a user that has been registered, but has not logged in for the
-            first time.</li>
-          <li>Active - an active user.</li>
-          <li>Disabled - a blocked user. The user can&apos;t use the Platform services.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Registration time</td>
-      <td style="text-align:left">The time of the first user&apos;s registration in the project.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Purchases</td>
-      <td style="text-align:left">This parameter is displayed only for users of <em>&apos;Public VPN&apos;</em> projects.
-        If a user has an active subscription, this field will contain <em>&apos;Active&apos;</em>.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Extref</td>
-      <td style="text-align:left">Additional parameter. It can include any data (e.g. User ID of your external
-        service). You can change this (see below).</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Description</td>
-      <td style="text-align:left">User description (e.g. user&apos;s full name). You can change this (see
-        below).</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">User country</td>
-      <td style="text-align:left">User&apos;s original country. You can change this (see below).</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Auth method</td>
-      <td style="text-align:left">Authentication method of this user.</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter         | Description                                                                                                                                                                                                                             |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Traffic           | User daily bandwidth limit (in Mb). If the user doesn't have a bandwidth limit, you will see _'Unlimited'_. You can change the user bandwidth limit (see below).                                                                        |
+| License           | User license. The license determines how many devices a user can register. You can change the license (see below).                                                                                                                      |
+| Activated devices | Number of user's registered devices                                                                                                                                                                                                     |
+| Status            | <p>User status:</p><ul><li>Invited - a user that has been registered, but has not logged in for the first time.</li><li>Active - an active user.</li><li>Disabled - a blocked user. The user can't use the Platform services.</li></ul> |
+| Registration time | The time of the first user's registration in the project.                                                                                                                                                                               |
+| Purchases         | This parameter is displayed only for users of _'Public VPN'_ projects. If a user has an active subscription, this field will contain _'Active'_.                                                                                        |
+| Extref            | Additional parameter. It can include any data (e.g. User ID of your external service). You can change this (see below).                                                                                                                 |
+| Description       | User description (e.g. user's full name). You can change this (see below).                                                                                                                                                              |
+| User country      | User's original country. You can change this (see below).                                                                                                                                                                               |
+| Auth method       | Authentication method of this user.                                                                                                                                                                                                     |
 
 ## Sessions
 
 You can find all sessions of the user on this page. This page includes the list of sessions and the search filter.
 
-| Parameter | Description |
-| :--- | :--- |
-| Device ID | Device ID, generated by the Platform. |
-| Server | Name of VPN node. It is the name of a server with a VPN tunnel between it and the user's device. |
-| Location | Location of the VPN server. |
-| Start time | Session start time. |
-| End time | Session end time. If the session is active, this field will be empty. |
-| Internal IP | Internal IP address of this session \(VPN node assigns the IP for this session\). This IP is not a real user's IP or user external IP. |
-| Download | Received bytes |
-| Upload | Transmitted bytes |
+| Parameter   | Description                                                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Device ID   | Device ID, generated by the Platform.                                                                                                |
+| Server      | Name of VPN node. It is the name of a server with a VPN tunnel between it and the user's device.                                     |
+| Location    | Location of the VPN server.                                                                                                          |
+| Start time  | Session start time.                                                                                                                  |
+| End time    | Session end time. If the session is active, this field will be empty.                                                                |
+| Internal IP | Internal IP address of this session (VPN node assigns the IP for this session). This IP is not a real user's IP or user external IP. |
+| Download    | Received bytes                                                                                                                       |
+| Upload      | Transmitted bytes                                                                                                                    |
 
 You can sort the list data by any column.
 
@@ -96,9 +44,9 @@ You will see active sessions on top of the session list.
 
 At the top, there is a filter. You can filter the session list by user device or session time.
 
-![Devices Filter](../../.gitbook/assets/filter_devices.png)
+![Devices Filter](../../.gitbook/assets/filter\_devices.png)
 
-![Session time filter](../../.gitbook/assets/filter_date.png)
+![Session time filter](../../.gitbook/assets/filter\_date.png)
 
 {% hint style="info" %}
 Selected session time periods can be up to 30 days.
@@ -108,46 +56,15 @@ Selected session time periods can be up to 30 days.
 
 You can find all of the user's devices on this page. This page includes the following characteristics:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Device ID</td>
-      <td style="text-align:left">Device ID, generated by the Platform.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Access Token</td>
-      <td style="text-align:left">Device secret, generated by the Platform.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Name</td>
-      <td style="text-align:left">Device name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Device Type</td>
-      <td style="text-align:left">
-        <p>Device type:</p>
-        <ul>
-          <li>Android</li>
-          <li>iOS</li>
-          <li>macOS</li>
-          <li>Windows</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Registration Time</td>
-      <td style="text-align:left">Device registration time</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter         | Description                                                                            |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| Device ID         | Device ID, generated by the Platform.                                                  |
+| Access Token      | Device secret, generated by the Platform.                                              |
+| Name              | Device name                                                                            |
+| Device Type       | <p>Device type:</p><ul><li>Android</li><li>iOS</li><li>macOS</li><li>Windows</li></ul> |
+| Registration Time | Device registration time                                                               |
 
-You can delete a user's device from the list \(see **Actions** on this page\).
+You can delete a user's device from the list (see **Actions** on this page).
 
 ## Purchases
 
@@ -157,57 +74,18 @@ All user subscriptions can be found on this page. This page includes a list of s
 This page is available only in "_Public VPN_" projects.
 {% endhint %}
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Transaction ID</td>
-      <td style="text-align:left">Purchase transaction ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Product ID</td>
-      <td style="text-align:left">Purchase product ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Type</td>
-      <td style="text-align:left">
-        <p>Purchase type:</p>
-        <ul>
-          <li>apple</li>
-          <li>google</li>
-          <li>etc.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Transaction Time</td>
-      <td style="text-align:left">Purchase transaction time</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Expiration Time</td>
-      <td style="text-align:left">Purchase expiration time</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Active</td>
-      <td style="text-align:left">Shows whether a purchase is active or not</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Trial</td>
-      <td style="text-align:left">Shows whether the trial period is active or not</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Raw Data</td>
-      <td style="text-align:left">Raw purchase data in JSON format</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter        | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| Transaction ID   |  Purchase transaction ID                                                 |
+| Product ID       | Purchase product ID                                                      |
+| Type             | <p>Purchase type:</p><ul><li>apple</li><li>google</li><li>etc.</li></ul> |
+| Transaction Time | Purchase transaction time                                                |
+| Expiration Time  | Purchase expiration time                                                 |
+| Active           | Shows whether a purchase is active or not                                |
+| Trial            | Shows whether the trial period is active or not                          |
+| Raw Data         | Raw purchase data in JSON format                                         |
 
-You can deactivate an active purchase and try to activate a non-active purchase \(see **Actions** on this page\).
+You can deactivate an active purchase and try to activate a non-active purchase (see **Actions** on this page).
 
 ## Actions
 
@@ -215,25 +93,25 @@ You can deactivate an active purchase and try to activate a non-active purchase 
 
 To change the _"Traffic"_ parameter, you need to:
 
-1. Open User - _"General"_ tab
-2. Click the Settings icon![](../../.gitbook/assets/settings_icon.webp)
+1. Open User - _"General" _tab
+2. Click the Settings icon![](../../.gitbook/assets/settings\_icon.webp)
 
-![](../../.gitbook/assets/set_limit.png)
+![](../../.gitbook/assets/set\_limit.png)
 
-3. In this form, you can: 
+3\. In this form, you can:&#x20;
 
-* Set daily limit \(bytes\),
+* Set daily limit (bytes),
 * Toggle the_"Traffic reset"_ on and off. The current daily limit will reset to 0 after the limit update.
 * Set the user's traffic limit to unlimited.
 
-  4. Click the _"Set limit"_ button to update the traffic limit.
+&#x20; 4\. Click the _"Set limit"_ button to update the traffic limit.
 
 ### Changing the license
 
-To change the _"License"_ parameter, you need to: 
+To change the _"License"_ parameter, you need to:&#x20;
 
-1. Open User - _"General"_ tab
-2. Click the Edit icon ![](../../.gitbook/assets/edit_icon.png)near the corresponding f
+1. Open User - _"General" _tab
+2. Click the Edit icon ![](../../.gitbook/assets/edit\_icon.png)near the corresponding f
 3. Select a new license from the list of available licenses and click the _"Save"_ button to update it.
 
 {% hint style="info" %}
@@ -242,50 +120,50 @@ The license name usually includes 2 numbers. The first number is the limit of de
 
 ### Changing Description, Extref or Country
 
-To change the _"Description"_, _"Extref"_ or _"User country"_ parameters, you need to:
+To change the _"Description"_, _"Extref"_ or _"User country" _parameters, you need to:
 
-1. Open User - _"General"_ tab
-2. Click the Edit icon ![](../../.gitbook/assets/edit_icon.png) near the corresponding field
+1. Open User - _"General" _tab
+2. Click the Edit icon ![](../../.gitbook/assets/edit\_icon.png) near the corresponding field
 3. Change the values and click the _"Save"_ button to update the parameters.
 
 ### Changing a user's status
 
 To activate or deactivate a user, you need to:
 
-1. Open User - _"General"_ tab 
+1. Open User - _"General" _tab&#x20;
 2. Click the ![](../../.gitbook/assets/checkbox.webp) Status checkbox. Checkbox ON - user active, checkbox OFF - user disabled.
 
 ### Deleting a device
 
-If a user doesn't have free device slots \(reached the limit of devices\), you can delete his old registered devices. 
+If a user doesn't have free device slots (reached the limit of devices), you can delete his old registered devices.&#x20;
 
 {% hint style="info" %}
 Sessions with deleted devices will be available in the user's session story.
 {% endhint %}
 
-To delete a user's device, you need to: 
+To delete a user's device, you need to:&#x20;
 
-1. Open User - _"Devices"_ tab 
-2. Select a device to delete and click the ![](../../.gitbook/assets/delete_icon.png)icon .
+1. Open User - _"Devices"_ tab&#x20;
+2. Select a device to delete and click the ![](../../.gitbook/assets/delete\_icon.png)icon .
 
-![](../../.gitbook/assets/delete_device.png)
+![](../../.gitbook/assets/delete\_device.png)
 
-   3. Click the _"Delete device"_ button to finish.
+&#x20;  3\. Click the _"Delete device"_ button to finish.
 
 ### Activating/deactivating a purchase
 
-You can try to activate a purchase or deactivate an active purchase. 
+You can try to activate a purchase or deactivate an active purchase.&#x20;
 
 #### Deactivating a purchase
 
 To deactivate a purchase, you need to:
 
-1. Open User - _"Purchases"_ tab 
-2. Select an active purchase in the list and click the ![](../../.gitbook/assets/delete_icon.png) icon near it
+1. Open User - _"Purchases"_ tab&#x20;
+2. Select an active purchase in the list and click the ![](../../.gitbook/assets/delete\_icon.png) icon near it
 
-![](../../.gitbook/assets/purchas_deactivate.png)
+![](../../.gitbook/assets/purchas\_deactivate.png)
 
-   3. Click the _"Disable purchase"_ button.
+&#x20;  3\. Click the _"Disable purchase"_ button.
 
 {% hint style="info" %}
 Usually, the application logic tries to recover a purchase if it has a valid receipt.
@@ -293,14 +171,14 @@ Usually, the application logic tries to recover a purchase if it has a valid rec
 
 #### Activating a purchase
 
-To activate a purchase, you need to: 
+To activate a purchase, you need to:&#x20;
 
-1. Open User - _"Purchases"_ tab 
-2. Select an inactive purchase in the list and click the ![](../../.gitbook/assets/play_icon.webp) icon near it 
+1. Open User - _"Purchases" _tab&#x20;
+2. Select an inactive purchase in the list and click the ![](../../.gitbook/assets/play\_icon.webp) icon near it&#x20;
 
-![](../../.gitbook/assets/purchase_activation.png)
+![](../../.gitbook/assets/purchase\_activation.png)
 
-   3. Click the _"Activate purchase"_ button.
+&#x20;  3\. Click the _"Activate purchase"_ button.
 
 {% hint style="info" %}
 The Platform verifies active purchases every 24 hours. If a purchase verification fails, the platform will automatically deactivate it again.
@@ -308,17 +186,16 @@ The Platform verifies active purchases every 24 hours. If a purchase verificatio
 
 ### Deleting a user
 
-You can delete a user and all his data \(user info, user devices, session story\). To delete a user, you need to:
+You can delete a user and all his data (user info, user devices, session story). To delete a user, you need to:
 
-1. Click the![](../../.gitbook/assets/delete_icon.png) icon in the top-right corner
+1. Click the![](../../.gitbook/assets/delete\_icon.png) icon in the top-right corner
 
-![](../../.gitbook/assets/user_delete.png)
+![](../../.gitbook/assets/user\_delete.png)
 
-   2. Set the user ID. It is necessary for the verification of the action 
+&#x20;  2\. Set the user ID. It is necessary for the verification of the action&#x20;
 
-   3. Click the _"Delete user data"_ button.
+&#x20;  3\. Click the _"Delete user data"_ button.
 
 {% hint style="danger" %}
 **Caution**: this action is **irreversible**.
 {% endhint %}
-

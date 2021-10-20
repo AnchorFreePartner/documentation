@@ -7,17 +7,17 @@
 ### 3.6.0
 
 * Added
-  * UnifiedSDK\#setAnalyticsEnabled - to control internal sdk analytics.
+  * UnifiedSDK#setAnalyticsEnabled - to control internal sdk analytics.
 
 ### 3.5.0
 
 * Correct handle of crash inside okhttp
 * Added
-  * Backend\#locations - for city level virtual locations
-  * SessionConfig.Builder\#withCountry
-  * SessionConfig.Builder\#withLocation
+  * Backend#locations - for city level virtual locations
+  * SessionConfig.Builder#withCountry
+  * SessionConfig.Builder#withLocation
 * Deprecated
-  * SessionConfig.Builder\#withVirtualLocation
+  * SessionConfig.Builder#withVirtualLocation
 
 ### 3.4.17
 
@@ -25,7 +25,7 @@
 
 ### 3.4.16
 
-* Fix for cash on &gt; 100 calls to registerNetworkCallback
+* Fix for cash on > 100 calls to registerNetworkCallback
 
 ### 3.4.15
 
@@ -38,7 +38,7 @@
 
 ### 3.4.12
 
-* various bug fixes 
+* various bug fixes&#x20;
 * memory usage improvements
 
 ### 3.4.11
@@ -51,7 +51,7 @@
 
 ### 3.4.9
 
-* various bug fixes 
+* various bug fixes&#x20;
 
 ### 3.4.6 - 3.4.8
 
@@ -76,14 +76,16 @@
 ### 3.4.0
 
 * Hydra transport updated
-* Various bug fixes 
+* Various bug fixes\
+
 * Added
-  * TrafficRule\#blockDns
-  * TrafficRule\#blockPkt
-  * TrafficRule\#udp
-  * TrafficRule\#tcp 
+  * TrafficRule#blockDns
+  * TrafficRule#blockPkt
+  * TrafficRule#udp
+  * TrafficRule#tcp\
+
 * Deprecated
-  * TrafficRule\#block 
+  * TrafficRule#block&#x20;
 
 ### 3.3.3
 
@@ -116,8 +118,8 @@
 #### 3.1.2
 
 * Added
-  * SessionConfig\#keepVpnOnReconnect
-  * UnifiedSDK\#setReconnectionEnabled\(boolean\)
+  * SessionConfig#keepVpnOnReconnect
+  * UnifiedSDK#setReconnectionEnabled(boolean)
 * Fixes
   * Fix relogin on NOT\_AUTHORIZED error
   * rare crashes
@@ -128,15 +130,15 @@
 * Fixes
   * Documentation on android 10 connect openvpn
 * Added
-  * UnifiedSDKConfigBuilder\#runCallbacksOn
-  * UnifiedSDK\#update\(CallbackMode\)
+  * UnifiedSDKConfigBuilder#runCallbacksOn
+  * UnifiedSDK#update(CallbackMode)
 * Deprecated
-  * UnifiedSDKConfigBuilder\#idfaEnabled
+  * UnifiedSDKConfigBuilder#idfaEnabled
 
 #### 3.1.0
 
 * Added
-  * SessionConfig.Builder\#withTransportFallback - configure transport fallback on multiple transports configured
+  * SessionConfig.Builder#withTransportFallback - configure transport fallback on multiple transports configured
 * Fixed
   * Always On disconnect issue
   * Captive portal detection
@@ -182,7 +184,7 @@
 
 * Internal refactoring
 * Removed all deprecated versions
-* startVPN/stopVPN errors are forwarded also to vpnError callback of HydraSdk.addVpnListener\(\). Callbacks on startVpn/stopVpn will be called when operation is finished
+* startVPN/stopVPN errors are forwarded also to vpnError callback of HydraSdk.addVpnListener(). Callbacks on startVpn/stopVpn will be called when operation is finished
 * Cannot turn off notification for PAUSED state
 * new VpnState - PAUSED - sdk moves to this state when connection was lost due to network loss, and will be restored on network connected
 * vpnError callback now gets base HydraException
@@ -211,13 +213,13 @@
 
 * Added
   * class SessionConfig to configure starting vpn session
-  * To update vpn config without restarting vpn\(limited options update\) void updateConfig\(@NonNull final SessionConfig sessionConfig, @NonNull final CompletableCallback callback\)
-  * void startVPN\(@NonNull final SessionConfig sessionConfig, @NonNull final Callback callback\)
+  * To update vpn config without restarting vpn(limited options update) void updateConfig(@NonNull final SessionConfig sessionConfig, @NonNull final CompletableCallback callback)
+  * void startVPN(@NonNull final SessionConfig sessionConfig, @NonNull final Callback callback)
 * Deprecated
-  * void startVPN\(@TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback\)
-  * void startVPN\(@NonNull final String countryCode, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback\)
-  * void startVPNForApps\(@NonNull final String countryCode, @NonNull final List allowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback\)
-  * void startVPNExceptApps\(@NonNull final String countryCode, @NonNull final List disallowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback\)
+  * void startVPN(@TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback)
+  * void startVPN(@NonNull final String countryCode, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback)
+  * void startVPNForApps(@NonNull final String countryCode, @NonNull final List allowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback)
+  * void startVPNExceptApps(@NonNull final String countryCode, @NonNull final List disallowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback)
   * addBlacklistDomain
   * addBlacklistDomains
   * addBypassDomains
@@ -249,13 +251,12 @@
 #### 0.28.3
 
 * Deprecated
-  * TrafficStats getTrafficStats\(\)
-  * VPNState getVpnState\(\)
-  * void current\(@NonNull final Callback callback\)
-  * void startVPNForApps\(@NonNull final List allowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback\)
-  * void startVPNExceptApps\(@NonNull final List disallowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback\)
-  * boolean isLoggingEnabled\(\)
-  * void setLoggingEnabled\(\)
-  * boolean isVpnStarted\(\)
-  * VPNState getVpnState\(\)
-
+  * TrafficStats getTrafficStats()
+  * VPNState getVpnState()
+  * void current(@NonNull final Callback callback)
+  * void startVPNForApps(@NonNull final List allowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback)
+  * void startVPNExceptApps(@NonNull final List disallowedApps, @TrackingConstants.GprReason @NonNull final String reason, @NonNull final Callback callback)
+  * boolean isLoggingEnabled()
+  * void setLoggingEnabled()
+  * boolean isVpnStarted()
+  * VPNState getVpnState()
