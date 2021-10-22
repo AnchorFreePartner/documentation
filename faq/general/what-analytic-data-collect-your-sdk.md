@@ -209,9 +209,7 @@ To detect this case SDK sends a request to one of URLs from the list and expects
 [https://www.google.com/generate\_204](https://www.google.com/generate\_204),\
 [https://clients3.google.com/generate\_204](https://clients3.google.com/generate\_204)
 
-### Ping test
 
-TODO
 
 ### Network type test
 
