@@ -15,6 +15,8 @@ Major options of the configuration:
 | device\_id   | char      | Desirable device identifier. The default value "default\_device\_id" will be used if this parameter is empty                                                               |
 | device\_type | char      | Any value (i.e. Android / macOS / Windows / iOS). The default value "wrt" will be used if this parameter is empty                                                          |
 | project\_id  | char      | Public key of the project, which is sometimes referred to as project name or carrier ID. The default value "af\_router\_sdk\_test" will be used if this parameter is empty |
+| rcvbuf       | int       | Socket receive buffer limit specified in bytes (values below 1 will be ignored and no limit will be applied)                                                               |
+| sndbuf       | int       | Socket send buffer limit specified in bytes (values below 1 will be ignored and no limit will be applied)                                                                  |
 
 ## Running
 
