@@ -8,16 +8,16 @@ To see all available API, check API Reference.
 
 ## Table of Contents
 
-* [Integration](broken-reference)
-* [Manual switching SDK](broken-reference)
-  * [Configure manual switching SDK](broken-reference)
-  * [Switch VPN protocol manually](broken-reference)
-* [Auto switching SDK](broken-reference)
-  * [Configure auto switching SDK](broken-reference)
-* [Loggin in](broken-reference)
-* [Connecting VPN and obtaining status](broken-reference)
-* [Active VPN protocol autocorrection](broken-reference)
-* [Hydra features](broken-reference)
+* [Integration](composed-sdk.md#integration)
+* [Manual switching SDK](composed-sdk.md#manual-switching-sdk)
+  * [Configure manual switching SDK](composed-sdk.md#configure-manual-switching-sdk)
+  * [Switch VPN protocol manually](composed-sdk.md#switch-vpn-protocol-manually)
+* [Auto switching SDK](composed-sdk.md#auto-switching-sdk)
+  * [Configure auto switching SDK](composed-sdk.md#configure-auto-switching-sdk)
+* [Loggin in](composed-sdk.md#loggin-in)
+* [Connecting VPN and obtaining status](composed-sdk.md#connecting-vpn-and-obtaining-status)
+* [Active VPN protocol autocorrection](composed-sdk.md#active-vpn-protocol-autocorrection)
+* [Hydra features](composed-sdk.md#hydra-features)
 
 ## Integration
 

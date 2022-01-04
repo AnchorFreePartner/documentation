@@ -8,11 +8,11 @@ To see all available API, check API Reference.
 
 ## Table of Contents
 
-* [Integration](broken-reference)
-* [Configure IPSecSDK](broken-reference)
-* [Connecting VPN and obtaining status](broken-reference)
-* [Using On Demand mode](broken-reference)
-* [Error Handling](broken-reference)
+* [Integration](ipsec-sdk.md#integration)
+* [Configure IPSecSDK](ipsec-sdk.md#configure-ipsecsdk)
+* [Connecting VPN and obtaining status](ipsec-sdk.md#connecting-vpn-and-obtaining-status)
+* [Using On Demand mode](ipsec-sdk.md#using-on-demand-mode)
+* [Error Handling](ipsec-sdk.md#error-handling)
 
 ## Integration
 

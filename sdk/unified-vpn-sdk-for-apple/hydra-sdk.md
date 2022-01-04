@@ -8,18 +8,18 @@ To see all available API, check API Reference.
 
 ## Table of Contents
 
-* [Integration](broken-reference)
-* [Configure HydraSDK](broken-reference)
-* [Connecting VPN and obtaining status](broken-reference)
-* [Using On Demand mode](broken-reference)
-  * [On Demand and users with limited traffic](broken-reference)
-* [Categorization service (aka Fireshield)](broken-reference)
-  * [Create fireshield config](broken-reference)
-  * [Fireshield configuration](broken-reference)
-  * [Fireshield modes](broken-reference)
-  * [Monitoring](broken-reference)
-* [Error Handling](broken-reference)
-* [Crash Reporting](broken-reference)
+* [Integration](hydra-sdk.md#integration)
+* [Configure HydraSDK](hydra-sdk.md#configure-hydrasdk)
+* [Connecting VPN and obtaining status](hydra-sdk.md#connecting-vpn-and-obtaining-status)
+* [Using On Demand mode](hydra-sdk.md#using-on-demand-mode)
+  * [On Demand and users with limited traffic](hydra-sdk.md#on-demand-and-users-with-limited-traffic)
+* [Categorization service (aka Fireshield)](hydra-sdk.md#categorization-service-aka-fireshield)
+  * [Create fireshield config](hydra-sdk.md#create-fireshield-config)
+  * [Fireshield configuration](hydra-sdk.md#fireshield-configuration)
+  * [Fireshield modes](hydra-sdk.md#fireshield-modes)
+  * [Monitoring](hydra-sdk.md#monitoring)
+* [Error Handling](hydra-sdk.md#error-handling)
+* [Crash Reporting](hydra-sdk.md#crash-reporting)
 
 ## Integration
 
