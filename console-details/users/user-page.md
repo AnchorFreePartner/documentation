@@ -93,7 +93,7 @@ You can deactivate an active purchase and try to activate a non-active purchase 
 
 To change the _"Traffic"_ parameter, you need to:
 
-1. Open User - _"General" _tab
+1. Open User - _"General"_ tab
 2. Click the Settings icon![](../../.gitbook/assets/settings\_icon.webp)
 
 ![](../../.gitbook/assets/set\_limit.png)
@@ -110,7 +110,7 @@ To change the _"Traffic"_ parameter, you need to:
 
 To change the _"License"_ parameter, you need to:&#x20;
 
-1. Open User - _"General" _tab
+1. Open User - _"General"_ tab
 2. Click the Edit icon ![](../../.gitbook/assets/edit\_icon.png)near the corresponding f
 3. Select a new license from the list of available licenses and click the _"Save"_ button to update it.
 
@@ -120,9 +120,9 @@ The license name usually includes 2 numbers. The first number is the limit of de
 
 ### Changing Description, Extref or Country
 
-To change the _"Description"_, _"Extref"_ or _"User country" _parameters, you need to:
+To change the _"Description"_, _"Extref"_ or _"User country"_ parameters, you need to:
 
-1. Open User - _"General" _tab
+1. Open User - _"General"_ tab
 2. Click the Edit icon ![](../../.gitbook/assets/edit\_icon.png) near the corresponding field
 3. Change the values and click the _"Save"_ button to update the parameters.
 
@@ -130,7 +130,7 @@ To change the _"Description"_, _"Extref"_ or _"User country" _parameters, you ne
 
 To activate or deactivate a user, you need to:
 
-1. Open User - _"General" _tab&#x20;
+1. Open User - _"General"_ tab&#x20;
 2. Click the ![](../../.gitbook/assets/checkbox.webp) Status checkbox. Checkbox ON - user active, checkbox OFF - user disabled.
 
 ### Deleting a device
@@ -173,7 +173,7 @@ Usually, the application logic tries to recover a purchase if it has a valid rec
 
 To activate a purchase, you need to:&#x20;
 
-1. Open User - _"Purchases" _tab&#x20;
+1. Open User - _"Purchases"_ tab&#x20;
 2. Select an inactive purchase in the list and click the ![](../../.gitbook/assets/play\_icon.webp) icon near it&#x20;
 
 ![](../../.gitbook/assets/purchase\_activation.png)

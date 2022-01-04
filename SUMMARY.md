@@ -60,8 +60,14 @@
   * [Exceptions](sdk/vpn-sdk-for-android/exceptions.md)
   * [Version migration](sdk/vpn-sdk-for-android/version-migration.md)
   * [Changelog](sdk/vpn-sdk-for-android/changelog.md)
-* [Hydra VPN SDK for iOS/macOS](sdk/hydra-vpn-sdk-for-ios/README.md)
-  * [Changelog](sdk/hydra-vpn-sdk-for-ios/changelog.md)
+* [Unified VPN SDK for iOS/macOS](sdk/unified-vpn-sdk-for-apple/README.md)
+  * [Changelog](sdk/unified-vpn-sdk-for-apple/changelog.md)
+  * [IPSec SDK](sdk/unified-vpn-sdk-for-apple/ipsec-sdk.md)
+  * [Hydra SDK](sdk/unified-vpn-sdk-for-apple/hydra-sdk.md)
+  * [Composed SDK](sdk/unified-vpn-sdk-for-apple/composed-sdk.md)
+  * [Application setup](sdk/unified-vpn-sdk-for-apple/application-setup.md)
+  * [Hydra network extension setup](sdk/unified-vpn-sdk-for-apple/hydra-network-extension-setup.md)
+  * [API Reference](sdk/unified-vpn-sdk-for-apple/api-reference.md)
 * [IPSEC VPN SDK for iOS/macOS](sdk/ipsec-vpn-sdk-for-ios-macos.md)
 * [Hydra VPN SDK for Windows](sdk/hydra-sdk-for-windows.md)
 * [Hydra VPN SDK for Routers](sdk/hydra-vpn-sdk-for-routers/README.md)
@@ -75,7 +81,7 @@
 * [Partner API](https://anchorfreepartner.github.io/apidocs/partner.html)
 * [User API](https://anchorfreepartner.github.io/apidocs/user.html)
 
-## Sample applications <a href="demo-applications" id="demo-applications"></a>
+## Sample applications <a href="#demo-applications" id="demo-applications"></a>
 
 * [Hydra VPN SDK demo for iOS](demo-applications/demo-unifysdk-ios.md)
 * [IPSEC VPN SDK demo for iOS](demo-applications/ipsec-vpn-sdk-demo-for-ios.md)

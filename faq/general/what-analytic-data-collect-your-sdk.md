@@ -5,7 +5,7 @@ The main **purpose** of this is **to improve the connection quality** of the SDK
 The SDK performs Network Availability Test for better understanding what's happening when a connection error is received. It includes diagnostics of the current network connection such as a Captive Portal check, pinging of a popular public web resource, etc.
 
 {% hint style="warning" %}
-The SDK **does not collect** or analyze any **Personal Identifiable Information. **
+The SDK **does not collect** or analyze any **Personal Identifiable Information.**&#x20;
 
 * all the geolocation data is inaccurate and provide an approximation
 * cell phone service provider and ISP data is used for statistical purposes only
@@ -133,7 +133,7 @@ Properties specific for event _connection\_end_:
 | Property Name | Type    | Description                                                                                                                                               |
 | ------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | duration      | Integer | the duration of the VPN session in milliseconds                                                                                                           |
-| traffic       | JSON    | <p>traffic statistics in bytes </p><p><code>{</code></p><p><code>  "bytes_in: 100, </code></p><p><code>  "bytes_out": 100</code></p><p><code>}</code></p> |
+| traffic       | JSON    | <p>traffic statistics in bytes </p><p><code>{</code></p><p>  <code>"bytes_in: 100,</code> </p><p>  <code>"bytes_out": 100</code></p><p><code>}</code></p> |
 
 When a connection is terminated unexpectedly (no user intention to terminate the session), network availability tests should be performed and the _connection\_end\_detailed_ event should be reported. If a user has canceled, no need to send the event.\
 Properties specific for event _connection\_end\_detailed:_

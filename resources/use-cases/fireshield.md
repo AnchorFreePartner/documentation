@@ -120,8 +120,8 @@ Fireshield works according to the tuned config on Pango Management Console. For 
 | enabled     | <p>true</p><p>false</p>                                                                                                  | <p>True - Fireshield feature is ON</p><p>False - Fireshield feature is OFF</p>                                                                 |
 | alert\_page | <p>"domain": "connect.bitdefender.net", </p><p>"path": "safe_zone.html"</p>                                              | User will be redirected to this page (domain + path) if block\_alert\_page type is set up for category                                         |
 | categories  | <p>{ </p><p>"category": "safe",</p><p> "type": "proxy_peer" </p><p>}</p>                                                 | There is a list of categories and actions that we need to do with this particular category.                                                    |
-| domains     | <p><code>{ </code></p><p><code>"unsafe:trackers": </code></p><p><code>[ "twitter.com" ] </code></p><p><code>}</code></p> | There is a list of websites that we want to control ourself without using services                                                             |
-| services    | <p><code>"bbss",</code></p><p><code> "ip",</code></p><p><code> "bitdefender"</code></p>                                  | There is a services list that uses for categorizing entered domain Note: _ip_ service should be added if you want to use _bitdefender _service |
+| domains     | <p><code>{</code> </p><p><code>"unsafe:trackers":</code> </p><p><code>[ "twitter.com" ]</code> </p><p><code>}</code></p> | There is a list of websites that we want to control ourself without using services                                                             |
+| services    | <p><code>"bbss",</code></p><p> <code>"ip",</code></p><p> <code>"bitdefender"</code></p>                                  | There is a services list that uses for categorizing entered domain Note: _ip_ service should be added if you want to use _bitdefender_ service |
 
 **More info about categories:**
 

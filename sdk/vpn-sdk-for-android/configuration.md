@@ -114,7 +114,7 @@ If **inPause** was not called, it will try to use string resource **default\_not
 
 #### Notification click intent
 
-To configure action when a user clicks a notification, use **clickAction** method. You must have Activity responding to the specified action. Action will be used to create an Intent. If **clickAction **is not specified, sdk will open application launch activity on notification click.
+To configure action when a user clicks a notification, use **clickAction** method. You must have Activity responding to the specified action. Action will be used to create an Intent. If **clickAction** is not specified, sdk will open application launch activity on notification click.
 
 In intent extras sdk will set a boolean value **UnifiedSDKNotificationManager.EXTRA\_NOTIFICATION** as **true**.
 

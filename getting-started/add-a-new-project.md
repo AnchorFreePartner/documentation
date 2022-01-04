@@ -27,7 +27,7 @@ Provided credentials will be checked; if successful, you will be redirected to t
 * **Description.** It is a description of the project, e.g. its purpose or target audience.&#x20;
 
 {% hint style="info" %}
-Using the **Upload image **button, you can upload a project icon that will be displayed near the project name. This is optional.
+Using the **Upload image** button, you can upload a project icon that will be displayed near the project name. This is optional.
 {% endhint %}
 
 5\. Click **Create**

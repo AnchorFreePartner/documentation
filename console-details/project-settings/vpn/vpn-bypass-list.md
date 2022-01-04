@@ -93,6 +93,6 @@ The incorrect domain will not be included in the new Bypass list (see screenshot
 
 If there is a large number of domains in the bypass list, the![](../../../.gitbook/assets/search\_icon.png)**Search domains** feature can be used to find a desired domain in the list.
 
-### **Download **
+### **Download**&#x20;
 
 Click ![](../../../.gitbook/assets/download\_icon.webp) **Download**, and the list of domains will be downloaded to your device.

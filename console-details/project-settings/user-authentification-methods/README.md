@@ -44,7 +44,7 @@ _firebase_ - this user authentication method supports the Google Firebase Authen
 [.](./)
 {% endcontent-ref %}
 
-This service supports different user sign-in methods - ![](../../../.gitbook/assets/email\_icon.png) _Email/password_, ![](../../../.gitbook/assets/phone\_icon.svg) _Phone, _![](../../../.gitbook/assets/google\_icon.svg) _Google_, ![](../../../.gitbook/assets/facebook\_icon.svg) _Facebook_, ![](../../../.gitbook/assets/mslive\_icon.svg) _Microsoft_, ![](../../../.gitbook/assets/apple\_icon.png) _Apple_ and more.&#x20;
+This service supports different user sign-in methods - ![](../../../.gitbook/assets/email\_icon.png) _Email/password_, ![](../../../.gitbook/assets/phone\_icon.svg) _Phone,_ ![](../../../.gitbook/assets/google\_icon.svg) _Google_, ![](../../../.gitbook/assets/facebook\_icon.svg) _Facebook_, ![](../../../.gitbook/assets/mslive\_icon.svg) _Microsoft_, ![](../../../.gitbook/assets/apple\_icon.png) _Apple_ and more.&#x20;
 
 {% hint style="info" %}
 If a user signs in on 2 or more devices using the same account, all devices will be assigned to that user account. An authorized user can be free or paid (applies to all of his devices).

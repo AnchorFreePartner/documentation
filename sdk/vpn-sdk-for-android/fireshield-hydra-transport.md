@@ -33,7 +33,7 @@ To create categories, you can use one of factory methods:
 * **FireshieldCategory.Builder.proxy** - create a category with **Proxy** action (traffic (encrypted) goes through the tunnel as a payload (for TCP only))
 * **FireshieldCategory.Builder.bypass** - create a category with **Bypass** action (traffic goes directly to its destination, without a vpn tunnel)
 * **FireshieldCategory.Builder.block** - create a category with **Block** action (traffic gets blocked)
-* **FireshieldCategory.Builder.blockAlertPage** - create a category with **Block **action (traffic gets blocked) and a redirection to a specified Alert Page (works for HTTP only)
+* **FireshieldCategory.Builder.blockAlertPage** - create a category with **Block** action (traffic gets blocked) and a redirection to a specified Alert Page (works for HTTP only)
 
 To create category rules (which domains get to specified category) you can use one of the factory methods:
 

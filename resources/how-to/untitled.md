@@ -25,15 +25,15 @@ Secret key has been designed for the users to make it easy for them to control t
 
 ![](../../.gitbook/assets/itunes\_connect\_app.png)
 
-&#x20;**Step 4:** Go to **Features **&#x20;
+&#x20;**Step 4:** Go to **Features**&#x20;
 
 ![](../../.gitbook/assets/itunes\_connect\_features.png)
 
-&#x20;**Step 5:** Click on **App Specific Shared Secret **&#x20;
+&#x20;**Step 5:** Click on **App Specific Shared Secret**&#x20;
 
 ![](../../.gitbook/assets/itunes\_connect\_secret.png)
 
-&#x20;**Step 6:** A pop-up window will appear, click on **Generate App-Specific Shared Secret **&#x20;
+&#x20;**Step 6:** A pop-up window will appear, click on **Generate App-Specific Shared Secret**&#x20;
 
 ![](../../.gitbook/assets/itunes\_connect\_generate\_app\_secret.png)
 

@@ -42,7 +42,7 @@ A member can't add a new member with a role higher than his own role
 Our SDK provides this member's email to an application (per OS). Your application can use this email to a support contact
 {% endhint %}
 
-&#x20; 5\. Click on "**Add member" **button
+&#x20; 5\. Click on "**Add member"** button
 
 ### Editing a member
 
@@ -52,7 +52,7 @@ If you want to change settings of an existing member, do the following:
 
 ![Edit member dialog](../../.gitbook/assets/edite\_member.png)
 
-&#x20; 2\. Edit settings and click on "**Save changes" **button
+&#x20; 2\. Edit settings and click on "**Save changes"** button
 
 ### Deleting a member
 
@@ -62,4 +62,4 @@ If you want to delete an existing member, do the following:
 
 ![Delete member dialog ](../../.gitbook/assets/delete\_member.png)
 
-&#x20;  2\. Click on "**Delete member" **button
+&#x20;  2\. Click on "**Delete member"** button

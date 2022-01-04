@@ -29,4 +29,4 @@ If network type is set to WiFi:
 
 In case of missing permission, SDK will not be able to get network SSID and BSSID.
 
-When a user changes network while a vpn session is up and running, and a new network was matched with CNL rules with **Disabled **action, SDK will not reconnect to this network and throw `CnlBlockedException` in `VpnStateListener#vpnError` callback.
+When a user changes network while a vpn session is up and running, and a new network was matched with CNL rules with **Disabled** action, SDK will not reconnect to this network and throw `CnlBlockedException` in `VpnStateListener#vpnError` callback.

@@ -101,7 +101,7 @@ Available `Builder` methods
 * `withVirtualLocation` - define virtual location for session (country)
 * `withPrivateGroup` - define private server for session
 * `withVpnParams` - define vpn tunnel params. Like dns servers, additional routes.
-* `addDnsRule` - add dns rule for session. More on [Traffic rules](traffic-rules.md) page. _For Hydra transport only. _
+* `addDnsRule` - add dns rule for session. More on [Traffic rules](traffic-rules.md) page. _For Hydra transport only._&#x20;
 * `addProxyRule` - add proxy rule for session. More on [Traffic rules](traffic-rules.md) page. _For Hydra transport only._
 * `withFireshieldConfig` - define categorisation service rules (more on [Fireshield](fireshield-hydra-transport.md) resource page). _For Hydra transport only_
 * `withTransportFallback` - define the order of transports to fallback when some error happen.&#x20;

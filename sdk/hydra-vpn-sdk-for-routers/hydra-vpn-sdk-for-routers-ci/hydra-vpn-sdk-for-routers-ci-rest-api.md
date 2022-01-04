@@ -70,7 +70,7 @@ To provide detailed information `"status"` field is also available in [response 
 
 _Type:_ `POST`&#x20;
 
-_Body: _`{ "token" : "your_secret_token" }`
+_Body:_ `{ "token" : "your_secret_token" }`
 
 ### Protect IP address&#x20;
 
@@ -80,7 +80,7 @@ _Body: _`{ "token" : "your_secret_token" }`
 
 _Type:_ `POST`&#x20;
 
-_Body: _`{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149", "vl" : "ca-ontario-toronto" }`
+_Body:_ `{ "token" : "your_secret_token", "ip_addr" : "192.168.50.149", "vl" : "ca-ontario-toronto" }`
 
 ### Unprotect IP
 

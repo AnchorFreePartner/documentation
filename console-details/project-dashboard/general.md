@@ -36,7 +36,7 @@ This graph displays active, invited, blocked, and deleted users. &#x20;
 
 #### Details
 
-* **Active users **- Users who are authorized in the project.
+* **Active users** - Users who are authorized in the project.
 * **Blocked users** - Users who have been blocked from the project.
 * **Invited users** - Users who have been added to the project but have not logged into the application (not authorized).
 * **Deleted users** - Users who have been deleted from the project.

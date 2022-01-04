@@ -16,7 +16,7 @@ This is a piece of the full Flow diagram:
 [vpn-platform-flow.md](../../../faq/general/vpn-platform-flow.md)
 {% endcontent-ref %}
 
-_**oAuth Server **_- your User authentication service.
+_**oAuth Server**_ - your User authentication service.
 
 _**App**_ - your application with our SDK
 
@@ -24,9 +24,9 @@ _**App**_ - your application with our SDK
 
 **2nd phase (Login to Platform)**:&#x20;
 
-**Step 4**: The App calls a POST_ _`/user/login` method (or calls a login method of our SDK) with the parameter "_auth\_method_" = your plugin name and "_access\_token_" = oAuth token.&#x20;
+**Step 4**: The App calls a POST __ `/user/login` method (or calls a login method of our SDK) with the parameter "_auth\_method_" = your plugin name and "_access\_token_" = oAuth token.&#x20;
 
-**Step 5**: The Platform verifies this oAuth token in your oAuth Server. In this step, the "GetUserInfo (_oauth\_token)" _method is called (its name can be changed)._ _You should provide this method for us.
+**Step 5**: The Platform verifies this oAuth token in your oAuth Server. In this step, the "GetUserInfo (_oauth\_token)"_ method is called (its name can be changed). __ You should provide this method for us.
 
 **Step 6**: The example of the response to this method:&#x20;
 
@@ -59,7 +59,7 @@ If a user's oAuth token verification is successful, the response includes {"resu
 }
 ```
 
-If the verification is successful, the Platform registers the user and his device in the project. The process of registration can include set specific user parameters like _Traffic_, _License_, _Status_, _Extref_, _Description_, _User country _(it depends on your application logic)_. _See descriptions of these parameters:
+If the verification is successful, the Platform registers the user and his device in the project. The process of registration can include set specific user parameters like _Traffic_, _License_, _Status_, _Extref_, _Description_, _User country_ (it depends on your application logic)_._ See descriptions of these parameters:
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)

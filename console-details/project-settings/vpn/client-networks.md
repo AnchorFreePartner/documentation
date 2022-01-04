@@ -25,7 +25,7 @@ If you are going to add a new network rule to the project, you need to do the fo
 ![Add client network dialog](../../../.gitbook/assets/add\_wifirule\_networkrule.png)
 
 * Enter a **SSID** (Name of the WiFi network) or a **BSSID** (MAC address of the Wi-Fi network). Optional field.
-* Authorized options are **Yes**, **No** or **Does not matter **(if the network has a password).
+* Authorized options are **Yes**, **No** or **Does not matter** (if the network has a password).
 * Finally, pick the **Action** option. Either select **enable** or **disable**, to automatically turn on the VPN (enable) or turn off the VPN when this network is used.
 
 &#x20; 3\. Click **Save** to add new rule. As a result, you will see the new rule in the list of rules:

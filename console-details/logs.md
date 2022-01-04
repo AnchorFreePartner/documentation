@@ -37,7 +37,7 @@ In the top-right corner, there is the filter option ![](../.gitbook/assets/filtr
 | Type             | Types of changes. You can select multiple types from the list or / and perform an input search.                                |
 | Interval         | Date/s of changes.                                                                                                             |
 
-Select the parameters and click on the "**Find" **button. The results will be shown shortly.
+Select the parameters and click on the "**Find"** button. The results will be shown shortly.
 
 You can clear all the parameters selected by clicking on "**Reset**" button.
 

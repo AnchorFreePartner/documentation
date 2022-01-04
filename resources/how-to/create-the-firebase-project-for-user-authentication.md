@@ -52,7 +52,7 @@ You can use any available sign-in method available in Firebase Authentication.
 
 **Step 8:** Enable Email/Password sign-in and click on "**Save**". You are done with the Firebase part.
 
-**Step 9: **Open Firebase project settings: &#x20;
+**Step 9:** Open Firebase project settings: &#x20;
 
 ![](../../.gitbook/assets/firebase\_settings.png)
 
@@ -70,7 +70,7 @@ see details:
 [user-authentification-methods](../../console-details/project-settings/user-authentification-methods/)
 {% endcontent-ref %}
 
-**Step 11: **add the Firebase Authentication to your application. See official documentation:
+**Step 11:** add the Firebase Authentication to your application. See official documentation:
 
 {% content-ref url="create-the-firebase-project-for-user-authentication.md" %}
 [create-the-firebase-project-for-user-authentication.md](create-the-firebase-project-for-user-authentication.md)

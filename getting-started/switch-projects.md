@@ -25,5 +25,5 @@ By clicking on the "**All project**" menu item, you will be redirected to the pr
 ![Projects overview dashboard](../.gitbook/assets/screenshot-2021-06-08-at-13.29.00.png)
 
 {% hint style="info" %}
-Projects on the dashboard can be viewed as a list or a grid** **by clicking on the respective button between "Search" and "Add project"
+Projects on the dashboard can be viewed as a list or a grid **** by clicking on the respective button between "Search" and "Add project"
 {% endhint %}

@@ -23,7 +23,7 @@ This tab shows you the list of users in the project, e.g.: &#x20;
 
 ### User search
 
-In the top right corner, there is the _Search_ _Users _option![](../../.gitbook/assets/search\_icon.png). You can click this button and change filter options.
+In the top right corner, there is the _Search_ _Users_ option![](../../.gitbook/assets/search\_icon.png). You can click this button and change filter options.
 
 If your project type is _"Public VPN"_, you can see the following search field in the top-right corner of the screen:&#x20;
 
@@ -60,7 +60,7 @@ Update option is available for _"Private VPN"_ projects only. You can change sev
 
 ![](../../.gitbook/assets/users\_update.png)
 
-You can update _Status_ and _Description _fields_. _Select a_ _field, set a parameter and click the _"Update" _button.
+You can update _Status_ and _Description_ fields_._ Select a __ field, set a parameter and click the _"Update"_ button.
 
 {% hint style="info" %}
 If you need to change other parameters of the user, you need to open the detailed user data and change desired parameters there.
@@ -68,7 +68,7 @@ If you need to change other parameters of the user, you need to open the detaile
 
 ### Mass update
 
-Mass update option is only available for _"Private VPN"_ projects. This option is similar to the _"Update"_ option but it accepts .CSV (Comma Separated Value) files. To** **perform a mass update, a .CSV file with the updates in it should be uploaded. Notice that only the _'Description'_ and _'Status'_ fields can be modified. The template is as follows:&#x20;
+Mass update option is only available for _"Private VPN"_ projects. This option is similar to the _"Update"_ option but it accepts .CSV (Comma Separated Value) files. To **** perform a mass update, a .CSV file with the updates in it should be uploaded. Notice that only the _'Description'_ and _'Status'_ fields can be modified. The template is as follows:&#x20;
 
 | User name | Description | Status |
 | --------- | ----------- | ------ |
@@ -77,11 +77,11 @@ Click the '_Mass update'_ button ![](../../.gitbook/assets/upload\_icon.png)in t
 
 ![](../../.gitbook/assets/users\_massupdate.png)
 
-Upload the file by clicking on the _'Add file' _button and select the file. Click the '_Update'_ button to update the users.
+Upload the file by clicking on the _'Add file'_ button and select the file. Click the '_Update'_ button to update the users.
 
 ### Add user
 
-This option is only available for_ 'Private VPN' _projects.&#x20;
+This option is only available for _'Private VPN'_ projects.&#x20;
 
 You can add a user to your project:
 
@@ -123,7 +123,7 @@ You can add multiple users to your project:
 Click _'Download example'_ to download a sample .CSV file.
 {% endhint %}
 
-&#x20; 4\. Click the _'Add' _button. The Platform will attempt to add users to the project and give you the summary:
+&#x20; 4\. Click the _'Add'_ button. The Platform will attempt to add users to the project and give you the summary:
 
 ![](../../.gitbook/assets/add\_users\_result.png)
 

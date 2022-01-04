@@ -10,7 +10,7 @@ You need a payment plugin if your application uses another payment service, not 
 
 **Step 1.** Your App buys a subscription in your Payment service and gets a purchase receipt.
 
-**Step 2. **Send** **the** **_purchase receipt _to the Platform side:
+**Step 2.** Send **** the **** _purchase receipt_ to the Platform side:
 
 1. the App calls POST [`/user/purchase`](https://backend.northghost.com/doc/all/index.html#!/user-controller/sendPurchase) (SDK includes the same method) with parameters `token = your purchase receipt` and `type = name your plagin`.
 2. your Backend calls [POST](https://backend.northghost.com/doc/all/index.html#!/partner-controller/sendPurchaseByPartner) [`/partner/subscribers/{user_id}/purchase`](https://backend.northghost.com/doc/all/index.html#!/partner-controller/sendPurchaseByPartner) with parameters `body = your purchase receipt` and `user_id = the user ID`.
@@ -24,7 +24,7 @@ You need a payment plugin if your application uses another payment service, not 
   * changes the user's traffic limit to _Unlimited,_
   * sends a _purchase\_id_ to the App_._
 
-**Step 4.  **The Platform will check the _Purchase receipt_ every 24 hours.
+**Step 4.**  The Platform will check the _Purchase receipt_ every 24 hours.
 
 * If the result is _Success_, the Platform:
   * does nothing.

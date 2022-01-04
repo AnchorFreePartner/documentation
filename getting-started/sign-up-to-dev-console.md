@@ -31,16 +31,16 @@ Before you fill the form, please take a minute to read and agree (if applicable)
 If the email address provided is not unique, the following error message will be displayed: **This email address was already registered**
 {% endhint %}
 
-* **Password - **a** **reliable password for your account; it can contain Latin characters, special symbols, and numbers.
+* **Password -** a **** reliable password for your account; it can contain Latin characters, special symbols, and numbers.
 
 {% hint style="warning" %}
 If the password repeats the current email, the following error message will be displayed: **Using your email as a password is a bad security practice. Please choose another password**
 {% endhint %}
 
-* **First name - **your first name for the account; it can only contain Latin characters and numbers.
-* **Last name - **your last name for the account; it can only contain Latin characters and numbers
+* **First name -** your first name for the account; it can only contain Latin characters and numbers.
+* **Last name -** your last name for the account; it can only contain Latin characters and numbers
 * **Company name -** your company name; it can contain Latin characters, special symbols, and numbers (e.g. _Planet\_Global100%_)
-* **Terms of Service/Privacy Policy - **an agreement checkbox
+* **Terms of Service/Privacy Policy -** an agreement checkbox
 
 4\. Click on the "**Sign up**" button below the form.
 
@@ -48,7 +48,7 @@ If the password repeats the current email, the following error message will be d
 
 ![Confirmation page](../.gitbook/assets/email-sign-up-confirmation.png)
 
-6\. Click on the "**OK" **button.
+6\. Click on the "**OK"** button.
 
 7\. Check your email box; a sign-up confirmation letter with the subject "Verify your email for Aura PaaS" should arrive shortly:
 

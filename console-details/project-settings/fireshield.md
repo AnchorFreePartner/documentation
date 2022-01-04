@@ -13,16 +13,16 @@ Fireshield is a network security service; turned on, it will check all project u
 
 ![Fireshield settings page](../../.gitbook/assets/screenshot-2021-05-28-at-17.29.09.png)
 
-* **Enabled **- a switch to turn Fireshield on (ticked) / off (empty)
-* **Alert page **- a special web page to redirect a user in case a fireshield protection worked (e.g. with an explanation why a website user have tried to reach is blocked)
-  * **domain **- an actual domain name of the web-site (e.g. example.com)
-  * **path **- a path to the particular page on the web-site (e.g. example.html)
-* **Services **- a list of database sources used to determine if the resource is safe/unsafe
+* **Enabled** - a switch to turn Fireshield on (ticked) / off (empty)
+* **Alert page** - a special web page to redirect a user in case a fireshield protection worked (e.g. with an explanation why a website user have tried to reach is blocked)
+  * **domain** - an actual domain name of the web-site (e.g. example.com)
+  * **path** - a path to the particular page on the web-site (e.g. example.html)
+* **Services** - a list of database sources used to determine if the resource is safe/unsafe
   * **securityzones** - synchronized every 5 minutes
   * **ip** - technical entry (required for proper Bitdefender service work)
   * **bbss** - merged to own database once a day
   * **bitdefender** - requested in real time and supplemented with 30 minutes lifetime cache (can be cleared earlier if the number of records is more than 20 000)
-* **Categories **- a list of pre-determined web-resource categories with general **safe**/**unsafe** and more specific:
+* **Categories** - a list of pre-determined web-resource categories with general **safe**/**unsafe** and more specific:
   *   **unsafe:malware** - a list of websites that may try to setup a malicious
 
       software on user's computer in order to spy or cause damage
@@ -35,4 +35,4 @@ Fireshield is a network security service; turned on, it will check all project u
 Rules configured for the general **unsafe** category apply to all **unsafe:\*** categories
 {% endhint %}
 
-* **Domains **- a mechanism to add custom domain names to the specific category (for the current project only)
+* **Domains** - a mechanism to add custom domain names to the specific category (for the current project only)

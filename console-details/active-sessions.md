@@ -9,7 +9,7 @@ This tab shows you the list of sessions that are active in the current project:
 ![](../.gitbook/assets/screenshot-2021-06-03-at-16.50.51.png)
 
 {% hint style="warning" %}
-The list includes up to **5 000 **active sessions
+The list includes up to **5 000** active sessions
 {% endhint %}
 
 The list includes the following information:

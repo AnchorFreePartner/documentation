@@ -33,7 +33,7 @@ Select what type of data is going to be exported by clicking on "**Add**" button
 
 ![Export data types selection menu](../.gitbook/assets/select\_type\_data\_export.png)
 
-A new export task will be created with "**In**_** **_**progress**" status and displayed in the list. When processing of the task is complete, the status will change to either "**Done**", "**Failed**" or "**No Data**". In case of success, the link to the export file will appear in the "**Download**" column.
+A new export task will be created with "**In **_****_** progress**" status and displayed in the list. When processing of the task is complete, the status will change to either "**Done**", "**Failed**" or "**No Data**". In case of success, the link to the export file will appear in the "**Download**" column.
 
 {% hint style="info" %}
 Failed tasks can be restarted

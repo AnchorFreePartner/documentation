@@ -16,7 +16,7 @@ You can get the latest demo Xcode project from the repository:
 Instructions from the README file can be omitted, since they have already been implemented in the latest version of the project
 {% endhint %}
 
-After you open the project in the Xcode, locate the _AppDelegate.swift _file and fill the "**carrierId**" variable with the value of **ProjectID** for your project:
+After you open the project in the Xcode, locate the _AppDelegate.swift_ file and fill the "**carrierId**" variable with the value of **ProjectID** for your project:
 
 ```
 CakeTube.instance().configure(CTConfig.create { (c) in

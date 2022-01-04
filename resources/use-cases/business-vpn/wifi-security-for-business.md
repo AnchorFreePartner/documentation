@@ -6,14 +6,14 @@ description: >-
 
 # Wi-Fi Security for Business
 
-_Wi-Fi Security for Business _is a versatile application designed for the needs of clients who want to provide VPN to a specific number of users. All the users have to do is log in using either their emails or user IDs, depending on the authorisation type in a specific project. If a user was added to your project, they will be able to access it through this application, connect to any of the available virtual locations and enjoy unlimited VPN access!
+_Wi-Fi Security for Business_ is a versatile application designed for the needs of clients who want to provide VPN to a specific number of users. All the users have to do is log in using either their emails or user IDs, depending on the authorisation type in a specific project. If a user was added to your project, they will be able to access it through this application, connect to any of the available virtual locations and enjoy unlimited VPN access!
 
 To download the _Wi-Fi Security for Business_ application for different platforms, follow the corresponding links:
 
-* [**Wi-Fi Security for Business** for Windows](https://firebasestorage.googleapis.com/v0/b/oauth-default-4d635.appspot.com/o/Windows%2FWi-Fi\_Security\_for\_Business\_1.3.2.127.msi?alt=media\&token=b9dabb98-0031-4fba-a728-372b5322877a)** **![](../../../.gitbook/assets/ms-store-small.png)&#x20;
-* [**Wi-Fi Security for Business** for Android](https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness\&hl=en\_US)** **![](../../../.gitbook/assets/play-store-logo-small.jpg)&#x20;
-* [**Wi-Fi Security for Business** for iOS](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544)** **![](../../../.gitbook/assets/appstore-logo-small.png)&#x20;
-* **Wi-Fi Security for Business** for macOS** **![](../../../.gitbook/assets/ios-logo-small.jpg) — the app is not available for general public, but you can acquire it if you [**contact us**](mailto:r.mukherji@pango.co)
+* [**Wi-Fi Security for Business** for Windows](https://firebasestorage.googleapis.com/v0/b/oauth-default-4d635.appspot.com/o/Windows%2FWi-Fi\_Security\_for\_Business\_1.3.2.127.msi?alt=media\&token=b9dabb98-0031-4fba-a728-372b5322877a) **** ![](../../../.gitbook/assets/ms-store-small.png)&#x20;
+* [**Wi-Fi Security for Business** for Android](https://play.google.com/store/apps/details?id=com.anchorfree.wifisecuritybusiness\&hl=en\_US) **** ![](../../../.gitbook/assets/play-store-logo-small.jpg)&#x20;
+* [**Wi-Fi Security for Business** for iOS](https://apps.apple.com/us/app/wi-fi-security-for-business/id1441048544) **** ![](../../../.gitbook/assets/appstore-logo-small.png)&#x20;
+* **Wi-Fi Security for Business** for macOS **** ![](../../../.gitbook/assets/ios-logo-small.jpg) — the app is not available for general public, but you can acquire it if you [**contact us**](mailto:r.mukherji@pango.co)
 
 Below, we will explore user interface of the Windows application, but it is quite similar to the applications on other platforms, so it is a decent representation of all the _Wi-Fi Security for Business_ applications we offer.&#x20;
 
