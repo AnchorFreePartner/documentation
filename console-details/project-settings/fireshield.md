@@ -11,6 +11,8 @@ description: >-
 
 Fireshield is a network security service; turned on, it will check all project users' IP and DNS requests through a categorized database in order to determine if the web resource is safe/unsafe to communicate with and process it according to the configured rules.
 
+![Fireshield settings page](<../../.gitbook/assets/image (9).png>)
+
 ![Fireshield settings page](../../.gitbook/assets/screenshot-2021-05-28-at-17.29.09.png)
 
 * **Enabled** - a switch to turn Fireshield on (ticked) / off (empty)
@@ -20,7 +22,6 @@ Fireshield is a network security service; turned on, it will check all project u
 * **Services** - a list of database sources used to determine if the resource is safe/unsafe
   * **securityzones** - synchronized every 5 minutes
   * **ip** - technical entry (required for proper Bitdefender service work)
-  * **bbss** - merged to own database once a day
   * **bitdefender** - requested in real time and supplemented with 30 minutes lifetime cache (can be cleared earlier if the number of records is more than 20 000)
 * **Categories** - a list of pre-determined web-resource categories with general **safe**/**unsafe** and more specific:
   *   **unsafe:malware** - a list of websites that may try to setup a malicious

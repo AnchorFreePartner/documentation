@@ -61,7 +61,7 @@ If a user's oAuth token verification is successful, the response includes {"resu
 
 If the verification is successful, the Platform registers the user and his device in the project. The process of registration can include set specific user parameters like _Traffic_, _License_, _Status_, _Extref_, _Description_, _User country_ (it depends on your application logic)_._ See descriptions of these parameters:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../users/user-page.md" %}
+[user-page.md](../../users/user-page.md)
 {% endcontent-ref %}
 

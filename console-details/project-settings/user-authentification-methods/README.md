@@ -38,11 +38,7 @@ Auth Settings:
 
 ### Firebase
 
-_firebase_ - this user authentication method supports the Google Firebase Authentication Service:
-
-{% content-ref url="./" %}
-[.](./)
-{% endcontent-ref %}
+_firebase_ - this user authentication method supports the Google Firebase Authentication Service.
 
 This service supports different user sign-in methods - ![](../../../.gitbook/assets/email\_icon.png) _Email/password_, ![](../../../.gitbook/assets/phone\_icon.svg) _Phone,_ ![](../../../.gitbook/assets/google\_icon.svg) _Google_, ![](../../../.gitbook/assets/facebook\_icon.svg) _Facebook_, ![](../../../.gitbook/assets/mslive\_icon.svg) _Microsoft_, ![](../../../.gitbook/assets/apple\_icon.png) _Apple_ and more.&#x20;
 
