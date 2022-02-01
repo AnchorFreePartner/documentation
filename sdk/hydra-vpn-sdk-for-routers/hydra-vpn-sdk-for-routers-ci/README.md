@@ -8,15 +8,17 @@ It supports static file configuration and dynamic configuration using [REST API]
 
 Major options of the configuration:
 
-| Parameter    | Data type | Description                                                                                                                                                                |
-| ------------ | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| auth\_method | char      | Any supported OAuth provider (i.e. Firebase) or anonymous                                                                                                                  |
-| auth\_token  | char      | OAuth token (if a relevant OAuth provider is set for the auth method)                                                                                                      |
-| device\_id   | char      | Desirable device identifier. The default value "default\_device\_id" will be used if this parameter is empty                                                               |
-| device\_type | char      | Any value (i.e. Android / macOS / Windows / iOS). The default value "wrt" will be used if this parameter is empty                                                          |
-| project\_id  | char      | Public key of the project, which is sometimes referred to as project name or carrier ID. The default value "af\_router\_sdk\_test" will be used if this parameter is empty |
-| rcvbuf       | int       | Socket receive buffer limit specified in bytes (values below 1 will be ignored and no limit will be applied)                                                               |
-| sndbuf       | int       | Socket send buffer limit specified in bytes (values below 1 will be ignored and no limit will be applied)                                                                  |
+| Parameter         | Data type | Description                                                                                                                                                                                        |
+| ----------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| auth\_method      | char      | Any supported OAuth provider (i.e. Firebase) or anonymous                                                                                                                                          |
+| auth\_token       | char      | OAuth token (if a relevant OAuth provider is set for the auth method)                                                                                                                              |
+| device\_id        | char      | Desirable device identifier. The default value "default\_device\_id" will be used if this parameter is empty                                                                                       |
+| device\_type      | char      | Any value (i.e. Android / macOS / Windows / iOS). The default value "wrt" will be used if this parameter is empty                                                                                  |
+| project\_id       | char      | Public key of the project, which is sometimes referred to as project name or carrier ID. The default value "af\_router\_sdk\_test" will be used if this parameter is empty                         |
+| rcvbuf            | int       | Socket receive buffer limit specified in bytes (values below 1 will be ignored and no limit will be applied)                                                                                       |
+| sndbuf            | int       | Socket send buffer limit specified in bytes (values below 1 will be ignored and no limit will be applied)                                                                                          |
+| no\_iptables      | int       | Routes internal configuration switcher. **1** (routes are configurated with internal SDK mechanism) and **0** (routes are configurated externally) are accetable values, with latter being default |
+| no\_socket\_setup | int       | Virtual interface configuration switcher. **1** (ignore **tun\_addr** value**)** and **0** (use **tun\_addr** value)are acceptable values, with latter being default                               |
 
 ## Running
 
@@ -70,7 +72,7 @@ _Value:_ `"protect_mac"`&#x20;
 _Params:_&#x20;
 
 * "`mac_addr"` - MAC address to protect
-* `"vl" `- desired VPN country traffic from "mac\_addr" go to
+* `"vl"` - desired VPN country traffic from "mac\_addr" go to
 
 ### Unprotect MAC
 
