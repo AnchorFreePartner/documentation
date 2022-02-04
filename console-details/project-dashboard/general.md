@@ -14,7 +14,7 @@ The graph “**Active Sessions by Protocol**” shows a realtime number of activ
 
 #### Details
 
-We can see active sessions per protocol just by clicking particular colored lines in the graph and check how many sessions were active in a certain time frame or even in a certain minute. The graph updates every 30 secs.
+We can see active sessions per protocol just by clicking particular colored lines in the graph and check how many sessions were active in a certain time frame or even in a certain minute.
 
 ### Active Sessions by Locations
 
@@ -24,34 +24,11 @@ The graph shows us the amount of real-time sessions per virtual location and you
 
 #### Details
 
-There, we can see all virtual locations for all active users, including anonymous and paid users. To look up a detailed list, just click on the graph line and open a pop-up menu. To select a certain country, click the country code. The list of virtual locations is scrollable. It updates every 30 secs.
+There, we can see all virtual locations for all active users, including anonymous and paid users. To look up a detailed list, just click on the graph line and open a pop-up menu. To select a certain country, click the country code. The list of virtual locations is scrollable.
 
 For countries, the ALPHA-2 codes are used.
 
-### Users
-
-This graph displays active, invited, blocked, and deleted users. &#x20;
-
-![](<../../.gitbook/assets/users\_graph (1).png>)
-
-#### Details
-
-* **Active users** - Users who are authorized in the project.
-* **Blocked users** - Users who have been blocked from the project.
-* **Invited users** - Users who have been added to the project but have not logged into the application (not authorized).
-* **Deleted users** - Users who have been deleted from the project.
-
-### Devices
-
-This graph displays how many devices were actively using the application at a given moment. &#x20;
-
-![](<../../.gitbook/assets/devices\_graph (1).png>)
-
-#### Details
-
-In the bottom right is a number of devices that are currently using the application.
-
-### Connected Users
+### Daily, Weekly, Monthly Connected Users
 
 This graph displays the number of connected users daily, weekly, and monthly.
 
@@ -63,7 +40,7 @@ This graph displays the number of connected users daily, weekly, and monthly.
 
 The graph updates every 24 hours.
 
-### Connected Devices
+### Daily, Weekly, Monthly Connected Devices
 
 This graph displays connected devices daily, weekly, and monthly.
 
@@ -75,31 +52,25 @@ This graph displays connected devices daily, weekly, and monthly.
 
 The graph updates every 24 hours.
 
-### Inactive Users
+### Network Traffic
 
-This graph displays inactive users in the current day, last week, and last month. &#x20;
+This graph displays total traffic for the current day.
 
-![](<../../.gitbook/assets/inactive\_users\_graph (1).png>)
-
-The graph updates every 24 hours.
-
-### Inactive Devices
-
-This graph displays all inactive devices in the current day, last week, and last month.
-
-![](<../../.gitbook/assets/inactive\_devices\_graph (1).png>)
-
-This graph updates every 24 hours.
+![](<../../.gitbook/assets/image (14).png>)
 
 ## Actions
 
+### Data Refresh
+
+In the top right corner, there is the Data Refresh button ![](<../../.gitbook/assets/image (13).png>). You can change time period for data refreshing - 5m (default), 15m, 30m, 1h, 2h, 1d.
+
 ### Filters
 
-In the top right corner, there is the Filter button ![](../../.gitbook/assets/filtr\_icon.jpg). You can click this button and change the time period of graphs' data - 1 day (default), 7 days, 14 days, 30 days, or Custom.
+Also in the top right corner, there is the Filter button ![](<../../.gitbook/assets/image (12).png>). You can click this button and change the time period of graphs' data - 1 day (default), 7 days, 14 days, 30 days, or Custom.
 
 ### Export data
 
-If you want to export the data from the graphs, you can use the Export button ![](../../.gitbook/assets/export\_icon.png) in the top-right corner or move to the 'Export Data' tab ![](../../.gitbook/assets/export\_icon.png) in the left menu. You can see it in the next document:
+If you want to export the data from the graphs, you can use the Export button ![](<../../.gitbook/assets/image (10).png>) in the top-right corner or move to the 'Export Data' tab in the left menu. You can see it in the next document:
 
 {% content-ref url="../export-data.md" %}
 [export-data.md](../export-data.md)
