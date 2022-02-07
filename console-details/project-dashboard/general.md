@@ -56,7 +56,7 @@ The graph updates every 24 hours.
 
 This graph displays total traffic for the current day.
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 ## Actions
 

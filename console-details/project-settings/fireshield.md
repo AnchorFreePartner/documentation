@@ -11,7 +11,7 @@ description: >-
 
 Fireshield is a network security service; turned on, it will check all project users' IP and DNS requests through a categorized database in order to determine if the web resource is safe/unsafe to communicate with and process it according to the configured rules.
 
-![Fireshield settings page](<../../.gitbook/assets/image (9) (1).png>)
+![Fireshield settings page](<../../.gitbook/assets/image (9) (2).png>)
 
 ![Fireshield settings page](../../.gitbook/assets/screenshot-2021-05-28-at-17.29.09.png)
 
