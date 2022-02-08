@@ -12,7 +12,7 @@ Android SDK is a part of Aura Partner SDK which contains client-side libraries a
 
 ### Versioning convention
 
-Android SDK versioning is in format MAJOR.MINOR.PATCH and should be associated with version in Jira. [See conventioning rules](https://semver.org/)
+Android SDK versioning is in format MAJOR.MINOR.PATCH and should be associated with version in Jira. [See conventioning rules](https://semver.org)
 
 The Android SDK provides API containing:
 
@@ -25,17 +25,17 @@ Android min sdk version 15
 
 ### **Changelog**
 
-SDK versions list is [**here**](changelog.md)\*\*\*\*
+SDK versions list is [**here**](changelog.md)****
 
 ### Version Migration
 
-For migration between versions, check [**this**](version-migration.md)\*\*\*\*
+For migration between versions, check [**this**](version-migration.md)****
 
 ### Prerequisites
 
 In order to be able to use the SDK, the following steps have to be done:
 
-1. Register an account at [developer.aura.com](https://developer.aura.com/)
+1. Register an account at [developer.aura.com](https://developer.aura.com)
 2. Create a project and use a name for your project as a Public key. Private key is optional.
 3. Use SDK where `carrierId` equals given _Public Key_ and `baseUrl` equals _URL_ from the project details.
 
@@ -45,7 +45,7 @@ To use this library, you should add **jitpack** repository.
 
 Add this to root `build.gradle`
 
-```text
+```
 allprojects {
     repositories {
         ...
@@ -58,7 +58,7 @@ allprojects {
 
 And then  add dependencies in `build.gradle` of your app module. Version name is available at the top of this document.
 
-```text
+```
 dependencies {
 
     implementation 'com.github.AnchorFreePartner.hydra-sdk-android:sdk:{VERSION_NAME}'
@@ -68,7 +68,7 @@ dependencies {
 
 ## Other Resources:
 
-* [Configuration](configuration.md)
+* [Configuration](configuration/)
 * [Custom sdk dependencies](custom-sdk-dependencies.md)
 * [Usage](usage.md)
 * [Client network list](cnl-list.md)
@@ -85,4 +85,3 @@ You can find source code of sample app with integrated sdk on [GitHub](https://g
 ## Contact US
 
 If you have problems integrating the sdk or found an issue, feel free to submit a bug to [GitHub](https://github.com/AnchorFreePartner/hydrasdk-demo-android/issues/new).
-

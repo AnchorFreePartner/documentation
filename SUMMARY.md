@@ -49,7 +49,8 @@
 ## SDK
 
 * [Unified VPN SDK for Android](sdk/vpn-sdk-for-android/README.md)
-  * [Configuration](sdk/vpn-sdk-for-android/configuration.md)
+  * [Configuration](sdk/vpn-sdk-for-android/configuration/README.md)
+    * [Backend urls](sdk/vpn-sdk-for-android/configuration/backend-urls.md)
   * [Custom sdk dependencies](sdk/vpn-sdk-for-android/custom-sdk-dependencies.md)
   * [Usage](sdk/vpn-sdk-for-android/usage.md)
   * [CNL List](sdk/vpn-sdk-for-android/cnl-list.md)
