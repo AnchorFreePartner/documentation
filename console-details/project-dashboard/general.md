@@ -8,13 +8,13 @@ description: Get a quick insight into the operational status of the project
 
 ### Active Sessions by Protocol
 
-The graph “**Active Sessions by Protocol**” shows a realtime number of active sessions per VPN protocol. We use the most popular VPN protocols for iOS, Android, macOS, and Windows platforms like OpenVPN, IPSec, and also the HYDRA protocol, designed and patented by Pango, that is more advanced and has higher performance benchmarks in this day and age. &#x20;
+The graph “**Active Sessions by Protocol**” shows a real-time number of active sessions per VPN protocol. We use the most popular VPN protocols for iOS, Android, macOS, and Windows platforms like OpenVPN, IPSec, and also the HYDRA protocol, designed and patented by Aura, that is more advanced and has higher performance benchmarks in this day and age. &#x20;
 
 ![](<../../.gitbook/assets/active\_session\_protocol (1).png>)
 
 #### Details
 
-We can see active sessions per protocol just by clicking particular colored lines in the graph and check how many sessions were active in a certain time frame or even in a certain minute.
+We can see active sessions per-protocol just by clicking particular colored lines in the graph and check how many sessions were active in a certain time frame or even in a certain minute.
 
 ### Active Sessions by Locations
 
@@ -62,7 +62,7 @@ This graph displays total traffic for the current day.
 
 ### Data Refresh
 
-In the top right corner, there is the Data Refresh button ![](<../../.gitbook/assets/image (13).png>). You can change time period for data refreshing - 5m (default), 15m, 30m, 1h, 2h, 1d.
+In the top right corner, there is the Data Refresh button ![](<../../.gitbook/assets/image (13).png>). You can change the time period for data refreshing - 5m (default), 15m, 30m, 1h, 2h, 1d.
 
 ### Filters
 
