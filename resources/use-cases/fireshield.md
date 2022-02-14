@@ -40,11 +40,11 @@ Android, iOS, and Win SDK support the Fireshield feature.
 
 ### **Technical details**
 
-Fireshield works according to the tuned config on Pango Management Console. For example, if the user opens the untrusted website he will get the result that configured for this specific type of category.
+Fireshield works according to the tuned config on Aura Management Console. For example, if the user opens the untrusted website he will get the result that is configured for this specific type of category.
 
 **How to set up Fireshield config:**
 
-1. Open Pango Management Console
+1. Open Aura Management Console
 2. Choose your Project&#x20;
 3. Open Setting page, General tab
 4. Enter valid JSON config to Config field
