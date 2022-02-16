@@ -7,7 +7,7 @@ Unified SDK provides ability to automatically start/stop vpn sessions when a use
 After the first start of vpn connection sdk will download configuration from server. When user is not running an active vpn session, sdk will show a notification configured by CNL state of `NotificationConfigBuilder`
 
 ```
-NotificationConfig.Builder builder = NotificationConfig.newBuilder();
+SdkNotificationConfig.Builder builder = SdkNotificationConfig.newBuilder();
 builder.inCnl("Title","Message");
 ```
 

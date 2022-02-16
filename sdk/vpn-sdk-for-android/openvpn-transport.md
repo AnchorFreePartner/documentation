@@ -31,11 +31,11 @@ UnifiedSDK.update(transportConfigs, callback);
 
 ```
 final SessionInfo session = new SessionConfig.Builder()
-                .withVirtualLocation(UnifiedSDK.COUNTRY_OPTIMAL)
+                .withLocation(UnifiedSDK.COUNTRY_OPTIMAL)
                 .withReason(TrackingConstants.GprReasons.M_UI)
-                .withTransport(CaketubeTransport.TRANSPORT_ID_TCP)
+                .withTransport(OpenVpnTransport.TRANSPORT_ID_TCP)
                 .build();
-sdk.getVPN().start(session, new CompletableCallback() {
+sdk.getVpn().start(session, new CompletableCallback() {
     @Override
     public void complete() {
 

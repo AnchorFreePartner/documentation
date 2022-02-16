@@ -5,14 +5,13 @@
 You can control some parts of sdk internal logic by overriding dependencies used by sdk.
 
 1. Define raw resource e.g **sdk\_deps.json**
-2. Setup meta-data in **AndroidManifest.json**
+2.  Setup meta-data in **AndroidManifest.json**
 
-   ```markup
-   <meta-data
-            android:name="com.anchorfree.vpnsdk.deps"
-            android:resource="@raw/sdk_deps"/>
-   ```
-
+    ```markup
+    <meta-data
+             android:name="com.anchorfree.vpnsdk.deps"
+             android:resource="@raw/sdk_deps"/>
+    ```
 3. Ensure custom dependency classes is not renamed or removed by ProGuard or similar software
 
 Content of **sdk\_deps.json**
@@ -34,7 +33,7 @@ General structure of dependencies config looks like
 
 #### Custom logger
 
-1. Define class that extends **com.anchorfree.vpnsdk.UnifiedLogDelegate**
+1. Define class that extends **unified.vpn.sdk.UnifiedLogDelegate**
 
 ```java
 @Keep
@@ -136,4 +135,3 @@ Setup SDK dependency override in **sdk\_deps**
      }
  }
 ```
-

@@ -2,9 +2,9 @@
 
 ## Exceptions
 
-All exceptions SDK can throw extends **com.anchorfree.vpnsdk.exceptions.VpnException**
+All exceptions SDK can throw extends **unified.vpn.sdk.VpnException**
 
-There are couple of main derivatives of this exception: 
+There are couple of main derivatives of this exception:&#x20;
 
 **PartnerApiException** - Thrown in case of server API errors
 
@@ -31,7 +31,7 @@ Thrown when error happens in VPN transport
 **getCode** - code of error
 
 * `HydraVpnTransportException` - is thrown by **Hydra** transport
-* `CaketubeTransportException` - is thrown by **OpenVPN** transport
+* `OpenVpnTransportException` - is thrown by **OpenVPN** transport
 
 Possible values for **getCode** on **Hydra** transport
 
@@ -42,9 +42,9 @@ Possible values for **getCode** on **Hydra** transport
 
 Possible values for **getCode** on **OpenVPN** transport
 
-* `CaketubeTransportException.CONNECTION_BROKEN_ERROR` - server interrupted connection
-* `CaketubeTransportException.CONNECTION_FAILED_ERROR` - failed to connect to server
-* `CaketubeTransportException.CONNECTION_AUTH_FAILURE` - server reported auth failure
+* `OpenVpnTransportException.CONNECTION_BROKEN_ERROR` - server interrupted connection
+* `OpenVpnTransportException.CONNECTION_FAILED_ERROR` - failed to connect to server
+* `OpenVpnTransportException.CONNECTION_AUTH_FAILURE` - server reported auth failure
 
 #### **NetworkRelatedException**
 
@@ -61,4 +61,3 @@ Thrown for any other unexpected cases. In **getCause** you can get original sour
 #### **CnlBlockedException**
 
 Thrown when connecting to network that has **Disabled** state in CNL config.
-

@@ -21,7 +21,7 @@ The Android SDK provides API containing:
 
 ### Compatibility
 
-Android min sdk version 15
+Android min sdk version 21
 
 ### **Changelog**
 
@@ -70,7 +70,7 @@ dependencies {
 
 * [Configuration](configuration/)
 * [Custom sdk dependencies](custom-sdk-dependencies.md)
-* [Usage](usage.md)
+* [Usage](usage/)
 * [Client network list](cnl-list.md)
 * [Fireshield](fireshield-hydra-transport.md)
 * [Traffic rules](traffic-rules.md)
