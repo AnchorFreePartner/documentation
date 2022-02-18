@@ -56,21 +56,21 @@ The graph updates every 24 hours.
 
 This graph displays total traffic for the current day.
 
-![](<../../.gitbook/assets/image (14) (1).png>)
+![](<../../.gitbook/assets/image (14) (1) (1).png>)
 
 ## Actions
 
 ### Data Refresh
 
-In the top right corner, there is the Data Refresh button ![](<../../.gitbook/assets/image (13).png>). You can change the time period for data refreshing - 5m (default), 15m, 30m, 1h, 2h, 1d.
+In the top right corner, there is the Data Refresh button ![](<../../.gitbook/assets/image (13) (1).png>). You can change the time period for data refreshing - 5m (default), 15m, 30m, 1h, 2h, 1d.
 
 ### Filters
 
-Also in the top right corner, there is the Filter button ![](<../../.gitbook/assets/image (12).png>). You can click this button and change the time period of graphs' data - 1 day (default), 7 days, 14 days, 30 days, or Custom.
+Also in the top right corner, there is the Filter button ![](<../../.gitbook/assets/image (12) (1).png>). You can click this button and change the time period of graphs' data - 1 day (default), 7 days, 14 days, 30 days, or Custom.
 
 ### Export data
 
-If you want to export the data from the graphs, you can use the Export button ![](<../../.gitbook/assets/image (10).png>) in the top-right corner or move to the 'Export Data' tab in the left menu. You can see it in the next document:
+If you want to export the data from the graphs, you can use the Export button ![](<../../.gitbook/assets/image (10) (1).png>) in the top-right corner or move to the 'Export Data' tab in the left menu. You can see it in the next document:
 
 {% content-ref url="../export-data.md" %}
 [export-data.md](../export-data.md)

@@ -6,7 +6,7 @@ description: Take a look on your plan upgrade options and existing invoices
 
 This page presents all payment plans available and allows to view all your invoices:
 
-![Payment plan options page](<../.gitbook/assets/image (10) (1).png>)
+![Payment plan options page](<../.gitbook/assets/image (10) (1) (1).png>)
 
 {% hint style="info" %}
 Your active plan is marked with "**Current plan"** text
